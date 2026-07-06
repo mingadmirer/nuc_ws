@@ -1,0 +1,7 @@
+/home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/src/r2_serial_driver/src/command_encoder.cpp: In static member function ‘static std::vector<unsigned char> CommandEncoder::encode(CommandEncoder::MotionType, uint16_t)’:
+/home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/src/r2_serial_driver/src/command_encoder.cpp:34:14: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+   34 |     if (data > 99999) data = 99999;
+      |         ~~~~~^~~~~~~
+/home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/src/r2_serial_driver/src/command_encoder.cpp:34:30: warning: unsigned conversion from ‘int’ to ‘uint16_t’ {aka ‘short unsigned int’} changes value from ‘99999’ to ‘34463’ [-Woverflow]
+   34 |     if (data > 99999) data = 99999;
+      |                              ^~~~~

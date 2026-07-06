@@ -1,0 +1,268 @@
+[0.010s] Invoking command in '/home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/build/detection_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/src/detection_interfaces -DCMAKE_INSTALL_PREFIX=/home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces
+[0.070s] -- The C compiler identification is GNU 11.4.0
+[0.131s] -- The CXX compiler identification is GNU 11.4.0
+[0.139s] -- Detecting C compiler ABI info
+[0.215s] -- Detecting C compiler ABI info - done
+[0.224s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.224s] -- Detecting C compile features
+[0.225s] -- Detecting C compile features - done
+[0.229s] -- Detecting CXX compiler ABI info
+[0.328s] -- Detecting CXX compiler ABI info - done
+[0.336s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.337s] -- Detecting CXX compile features
+[0.337s] -- Detecting CXX compile features - done
+[0.340s] -- Found ament_cmake: 1.3.14 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.506s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.610s] -- Found builtin_interfaces: 1.2.2 (/opt/ros/humble/share/builtin_interfaces/cmake)
+[0.644s] -- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.649s] -- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.657s] -- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.669s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.685s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.700s] -- Found std_msgs: 4.9.1 (/opt/ros/humble/share/std_msgs/cmake)
+[0.713s] -- Found rosidl_default_generators: 1.2.1 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[1.010s] -- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)
+[1.404s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[1.555s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.579s] -- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") 
+[1.580s] -- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)
+[1.608s] -- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") 
+[1.608s] -- Using PYTHON_EXECUTABLE: /usr/bin/python3
+[1.608s] -- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10
+[1.608s] -- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+[1.632s] -- Found PythonExtra: .so  
+[1.765s] -- Configuring done
+[1.811s] -- Generating done
+[1.824s] -- Build files have been written to: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/build/detection_interfaces
+[1.831s] Invoked command in '/home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/build/detection_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/src/detection_interfaces -DCMAKE_INSTALL_PREFIX=/home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces
+[1.833s] Invoking command in '/home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/build/detection_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/build/detection_interfaces -- -j8 -l8
+[1.877s] [  2%] Generating C code for ROS interfaces
+[1.888s] [  5%] Generating Rust code for ROS interfaces
+[1.888s] [  7%] Generating C++ code for ROS interfaces
+[1.898s] [  7%] Built target ament_cmake_python_copy_detection_interfaces
+[2.173s] running egg_info
+[2.174s] creating detection_interfaces.egg-info
+[2.174s] writing detection_interfaces.egg-info/PKG-INFO
+[2.175s] writing dependency_links to detection_interfaces.egg-info/dependency_links.txt
+[2.175s] writing top-level names to detection_interfaces.egg-info/top_level.txt
+[2.175s] writing manifest file 'detection_interfaces.egg-info/SOURCES.txt'
+[2.178s] reading manifest file 'detection_interfaces.egg-info/SOURCES.txt'
+[2.178s] writing manifest file 'detection_interfaces.egg-info/SOURCES.txt'
+[2.204s] [  7%] Built target ament_cmake_python_build_detection_interfaces_egg
+[2.277s] [  7%] Built target detection_interfaces__rs
+[2.340s] [ 12%] Building C object CMakeFiles/detection_interfaces__rosidl_generator_c.dir/rosidl_generator_c/detection_interfaces/msg/detail/detection_result__functions.c.o
+[2.341s] [ 12%] Building C object CMakeFiles/detection_interfaces__rosidl_generator_c.dir/rosidl_generator_c/detection_interfaces/msg/detail/detection_array__functions.c.o
+[2.345s] [ 12%] Built target detection_interfaces__cpp
+[2.357s] [ 15%] Generating C++ type support dispatch for ROS interfaces
+[2.359s] [ 17%] Generating C++ introspection for ROS interfaces
+[2.361s] [ 20%] Generating C++ type support for eProsima Fast-RTPS
+[2.403s] [ 22%] Linking C shared library libdetection_interfaces__rosidl_generator_c.so
+[2.447s] [ 22%] Built target detection_interfaces__rosidl_generator_c
+[2.460s] [ 27%] Generating C introspection for ROS interfaces
+[2.460s] [ 27%] Generating C type support for eProsima Fast-RTPS
+[2.463s] [ 30%] Generating C type support dispatch for ROS interfaces
+[2.812s] [ 32%] Building CXX object CMakeFiles/detection_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/detection_interfaces/msg/detail/dds_fastrtps/detection_result__type_support.cpp.o
+[2.814s] [ 35%] Building CXX object CMakeFiles/detection_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/detection_interfaces/msg/detail/dds_fastrtps/detection_array__type_support.cpp.o
+[2.899s] [ 40%] Building CXX object CMakeFiles/detection_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/detection_interfaces/msg/detail/detection_array__type_support_c.cpp.o
+[2.899s] [ 40%] Building CXX object CMakeFiles/detection_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/detection_interfaces/msg/detail/detection_result__type_support_c.cpp.o
+[3.028s] [ 42%] Building CXX object CMakeFiles/detection_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/detection_interfaces/msg/detection_result__type_support.cpp.o
+[3.105s] [ 45%] Building CXX object CMakeFiles/detection_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/detection_interfaces/msg/detail/detection_result__type_support.cpp.o
+[3.128s] [ 47%] Building CXX object CMakeFiles/detection_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/detection_interfaces/msg/detection_result__type_support.cpp.o
+[3.181s] [ 50%] Building CXX object CMakeFiles/detection_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/detection_interfaces/msg/detection_array__type_support.cpp.o
+[3.212s] [ 52%] Building C object CMakeFiles/detection_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/detection_interfaces/msg/detail/detection_result__type_support.c.o
+[3.239s] [ 55%] Linking CXX shared library libdetection_interfaces__rosidl_typesupport_c.so
+[3.276s] [ 57%] Building C object CMakeFiles/detection_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/detection_interfaces/msg/detail/detection_array__type_support.c.o
+[3.316s] [ 57%] Built target detection_interfaces__rosidl_typesupport_c
+[3.333s] [ 60%] Building CXX object CMakeFiles/detection_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/detection_interfaces/msg/detail/detection_array__type_support.cpp.o
+[3.350s] [ 62%] Linking C shared library libdetection_interfaces__rosidl_typesupport_introspection_c.so
+[3.412s] [ 62%] Built target detection_interfaces__rosidl_typesupport_introspection_c
+[3.428s] [ 65%] Building CXX object CMakeFiles/detection_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/detection_interfaces/msg/detection_array__type_support.cpp.o
+[3.515s] [ 67%] Linking CXX shared library libdetection_interfaces__rosidl_typesupport_fastrtps_c.so
+[3.569s] [ 70%] Linking CXX shared library libdetection_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[3.608s] [ 70%] Built target detection_interfaces__rosidl_typesupport_fastrtps_c
+[3.669s] [ 70%] Built target detection_interfaces__rosidl_typesupport_fastrtps_cpp
+[3.804s] [ 72%] Linking CXX shared library libdetection_interfaces__rosidl_typesupport_cpp.so
+[3.851s] [ 72%] Built target detection_interfaces__rosidl_typesupport_cpp
+[3.913s] [ 75%] Linking CXX shared library libdetection_interfaces__rosidl_typesupport_introspection_cpp.so
+[3.993s] [ 75%] Built target detection_interfaces__rosidl_typesupport_introspection_cpp
+[4.015s] [ 75%] Built target detection_interfaces
+[4.038s] [ 77%] Generating Python code for ROS interfaces
+[4.643s] [ 77%] Built target detection_interfaces__py
+[4.664s] [ 80%] Building C object CMakeFiles/detection_interfaces__rosidl_generator_py.dir/rosidl_generator_py/detection_interfaces/msg/_detection_result_s.c.o
+[4.664s] [ 82%] Building C object CMakeFiles/detection_interfaces__rosidl_generator_py.dir/rosidl_generator_py/detection_interfaces/msg/_detection_array_s.c.o
+[4.780s] [ 85%] Linking C shared library rosidl_generator_py/detection_interfaces/libdetection_interfaces__rosidl_generator_py.so
+[4.825s] [ 85%] Built target detection_interfaces__rosidl_generator_py
+[4.849s] [ 87%] Building C object CMakeFiles/detection_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/detection_interfaces/_detection_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o
+[4.849s] [ 90%] Building C object CMakeFiles/detection_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/detection_interfaces/_detection_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o
+[4.849s] [ 92%] Building C object CMakeFiles/detection_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/detection_interfaces/_detection_interfaces_s.ep.rosidl_typesupport_c.c.o
+[4.970s] [100%] Linking C shared library rosidl_generator_py/detection_interfaces/detection_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[4.970s] [ 97%] Linking C shared library rosidl_generator_py/detection_interfaces/detection_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[4.970s] [100%] Linking C shared library rosidl_generator_py/detection_interfaces/detection_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[5.017s] [100%] Built target detection_interfaces__rosidl_typesupport_introspection_c__pyext
+[5.017s] [100%] Built target detection_interfaces__rosidl_typesupport_c__pyext
+[5.017s] [100%] Built target detection_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[5.030s] Invoked command in '/home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/build/detection_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/build/detection_interfaces -- -j8 -l8
+[5.042s] Invoking command in '/home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/build/detection_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/build/detection_interfaces
+[5.052s] -- Install configuration: ""
+[5.052s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/share/ament_index/resource_index/rosidl_interfaces/detection_interfaces
+[5.053s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces
+[5.053s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg
+[5.053s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail
+[5.053s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__functions.h
+[5.053s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__functions.h
+[5.053s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__struct.h
+[5.053s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__type_support.h
+[5.054s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__type_support.h
+[5.054s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__functions.c
+[5.054s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__struct.h
+[5.054s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__functions.c
+[5.054s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detection_result.h
+[5.054s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detection_array.h
+[5.054s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/rosidl_generator_c__visibility_control.h
+[5.055s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/share/detection_interfaces/environment/library_path.sh
+[5.055s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/share/detection_interfaces/environment/library_path.dsv
+[5.055s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_generator_c.so
+[5.056s] -- Set runtime path of "/home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_generator_c.so" to ""
+[5.056s] -- Up-to-date: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces
+[5.056s] -- Up-to-date: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg
+[5.056s] -- Up-to-date: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail
+[5.056s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__rosidl_typesupport_fastrtps_c.h
+[5.056s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__rosidl_typesupport_fastrtps_c.h
+[5.056s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[5.057s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_fastrtps_c.so
+[5.057s] -- Set runtime path of "/home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_fastrtps_c.so" to ""
+[5.057s] -- Up-to-date: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces
+[5.057s] -- Up-to-date: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg
+[5.058s] -- Up-to-date: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail
+[5.058s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__traits.hpp
+[5.058s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__struct.hpp
+[5.058s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__struct.hpp
+[5.058s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__type_support.hpp
+[5.058s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__builder.hpp
+[5.058s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__traits.hpp
+[5.058s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__type_support.hpp
+[5.058s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__builder.hpp
+[5.059s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[5.059s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detection_result.hpp
+[5.059s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detection_array.hpp
+[5.059s] -- Up-to-date: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces
+[5.059s] -- Up-to-date: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg
+[5.059s] -- Up-to-date: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail
+[5.060s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/dds_fastrtps
+[5.060s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__rosidl_typesupport_fastrtps_cpp.hpp
+[5.060s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__rosidl_typesupport_fastrtps_cpp.hpp
+[5.060s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[5.060s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[5.061s] -- Set runtime path of "/home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""
+[5.061s] -- Up-to-date: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces
+[5.061s] -- Up-to-date: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg
+[5.061s] -- Up-to-date: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail
+[5.061s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__type_support.c
+[5.061s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__rosidl_typesupport_introspection_c.h
+[5.061s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__rosidl_typesupport_introspection_c.h
+[5.061s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__type_support.c
+[5.062s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[5.062s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_introspection_c.so
+[5.062s] -- Set runtime path of "/home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_introspection_c.so" to ""
+[5.063s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_c.so
+[5.063s] -- Set runtime path of "/home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_c.so" to ""
+[5.063s] -- Up-to-date: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces
+[5.063s] -- Up-to-date: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg
+[5.064s] -- Up-to-date: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail
+[5.064s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__type_support.cpp
+[5.064s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__rosidl_typesupport_introspection_cpp.hpp
+[5.064s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__type_support.cpp
+[5.064s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__rosidl_typesupport_introspection_cpp.hpp
+[5.064s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_introspection_cpp.so
+[5.065s] -- Set runtime path of "/home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_introspection_cpp.so" to ""
+[5.065s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_cpp.so
+[5.066s] -- Set runtime path of "/home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_cpp.so" to ""
+[5.066s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/share/detection_interfaces/environment/pythonpath.sh
+[5.066s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/share/detection_interfaces/environment/pythonpath.dsv
+[5.066s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces-1.0.0-py3.10.egg-info
+[5.066s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces-1.0.0-py3.10.egg-info/top_level.txt
+[5.067s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces-1.0.0-py3.10.egg-info/dependency_links.txt
+[5.067s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces-1.0.0-py3.10.egg-info/SOURCES.txt
+[5.067s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces-1.0.0-py3.10.egg-info/PKG-INFO
+[5.067s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces
+[5.067s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/_detection_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[5.067s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/detection_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[5.067s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/detection_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[5.067s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/libdetection_interfaces__rosidl_generator_py.so
+[5.068s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/msg
+[5.068s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/msg/_detection_array_s.c
+[5.068s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/msg/_detection_result.py
+[5.068s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/msg/_detection_result_s.c
+[5.068s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/msg/_detection_array.py
+[5.068s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/msg/__init__.py
+[5.068s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/_detection_interfaces_s.ep.rosidl_typesupport_c.c
+[5.069s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/_detection_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[5.069s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/detection_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[5.069s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/__init__.py
+[5.107s] Listing '/home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces'...
+[5.107s] Compiling '/home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/__init__.py'...
+[5.108s] Listing '/home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/msg'...
+[5.108s] Compiling '/home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/msg/__init__.py'...
+[5.108s] Compiling '/home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/msg/_detection_array.py'...
+[5.108s] Compiling '/home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/msg/_detection_result.py'...
+[5.113s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/detection_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[5.113s] -- Set runtime path of "/home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/detection_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so" to ""
+[5.114s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/detection_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[5.114s] -- Set runtime path of "/home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/detection_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so" to ""
+[5.115s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/detection_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[5.115s] -- Set runtime path of "/home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/detection_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so" to ""
+[5.115s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_generator_py.so
+[5.116s] -- Set runtime path of "/home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_generator_py.so" to ""
+[5.116s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/share/ament_index/resource_index/rust_packages/detection_interfaces
+[5.117s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/share/detection_interfaces/rust
+[5.117s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/share/detection_interfaces/rust/src
+[5.117s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/share/detection_interfaces/rust/src/msg
+[5.117s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/share/detection_interfaces/rust/src/msg/rmw.rs
+[5.117s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/share/detection_interfaces/rust/src/lib.rs
+[5.117s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/share/detection_interfaces/rust/src/msg.rs
+[5.117s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/share/detection_interfaces/rust/Cargo.toml
+[5.117s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/share/detection_interfaces/rust/build.rs
+[5.117s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/share/detection_interfaces/msg/DetectionResult.idl
+[5.117s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/share/detection_interfaces/msg/DetectionArray.idl
+[5.118s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/share/detection_interfaces/msg/DetectionResult.msg
+[5.118s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/share/detection_interfaces/msg/DetectionArray.msg
+[5.118s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/share/ament_index/resource_index/package_run_dependencies/detection_interfaces
+[5.119s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/share/ament_index/resource_index/parent_prefix_path/detection_interfaces
+[5.119s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/share/detection_interfaces/environment/ament_prefix_path.sh
+[5.119s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/share/detection_interfaces/environment/ament_prefix_path.dsv
+[5.119s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/share/detection_interfaces/environment/path.sh
+[5.119s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/share/detection_interfaces/environment/path.dsv
+[5.120s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/share/detection_interfaces/local_setup.bash
+[5.121s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/share/detection_interfaces/local_setup.sh
+[5.121s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/share/detection_interfaces/local_setup.zsh
+[5.121s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/share/detection_interfaces/local_setup.dsv
+[5.121s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/share/detection_interfaces/package.dsv
+[5.121s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/share/ament_index/resource_index/packages/detection_interfaces
+[5.121s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/export_detection_interfaces__rosidl_generator_cExport.cmake
+[5.122s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/export_detection_interfaces__rosidl_generator_cExport-noconfig.cmake
+[5.122s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/export_detection_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[5.122s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/export_detection_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[5.122s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/export_detection_interfaces__rosidl_generator_cppExport.cmake
+[5.123s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/export_detection_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[5.123s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/export_detection_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[5.123s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[5.124s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[5.124s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfaces__rosidl_typesupport_cExport.cmake
+[5.124s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[5.124s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[5.124s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[5.125s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfaces__rosidl_typesupport_cppExport.cmake
+[5.125s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[5.125s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/export_detection_interfaces__rosidl_generator_pyExport.cmake
+[5.125s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/export_detection_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[5.125s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/rosidl_cmake-extras.cmake
+[5.125s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[5.126s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[5.126s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[5.126s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[5.126s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[5.126s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[5.126s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfacesConfig.cmake
+[5.127s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfacesConfig-version.cmake
+[5.127s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/share/detection_interfaces/package.xml
+[5.129s] Invoked command in '/home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/build/detection_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/build/detection_interfaces

@@ -1,0 +1,40 @@
+[0.011s] Invoking command in '/home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/build/r2_mission': AMENT_PREFIX_PATH=/home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/build/r2_mission -- -j8 -l8
+[0.075s] [ 20%] Building CXX object r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/src/command_encoder.cpp.o
+[0.192s] /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/src/r2_serial_driver/src/command_encoder.cpp: In static member function ‘static std::vector<unsigned char> CommandEncoder::encode(CommandEncoder::MotionType, uint16_t)’:
+[0.192s] /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/src/r2_serial_driver/src/command_encoder.cpp:34:14: warning: comparison is always false due to limited range of data type [-Wtype-limits]
+[0.192s]    34 |     if (data > 99999) data = 99999;
+[0.192s]       |         ~~~~~^~~~~~~
+[0.193s] /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/src/r2_serial_driver/src/command_encoder.cpp:34:30: warning: unsigned conversion from ‘int’ to ‘uint16_t’ {aka ‘short unsigned int’} changes value from ‘99999’ to ‘34463’ [-Woverflow]
+[0.193s]    34 |     if (data > 99999) data = 99999;
+[0.193s]       |                              ^~~~~
+[0.258s] [ 40%] Linking CXX static library libr2_serial_driver_core.a
+[0.299s] [ 60%] Built target r2_serial_driver_core
+[0.337s] [ 80%] Building CXX object CMakeFiles/r2_mission_node.dir/src/mission_node.cpp.o
+[9.717s] [100%] Linking CXX executable r2_mission_node
+[10.189s] [100%] Built target r2_mission_node
+[10.200s] Invoked command in '/home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/build/r2_mission' returned '0': AMENT_PREFIX_PATH=/home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/build/r2_mission -- -j8 -l8
+[10.202s] Invoking command in '/home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/build/r2_mission': AMENT_PREFIX_PATH=/home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/build/r2_mission
+[10.211s] -- Install configuration: ""
+[10.211s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/r2_mission/lib/r2_mission/r2_mission_node
+[10.216s] -- Set runtime path of "/home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/r2_mission/lib/r2_mission/r2_mission_node" to ""
+[10.216s] -- Up-to-date: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/r2_mission/share/r2_mission/launch
+[10.216s] -- Up-to-date: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/r2_mission/share/r2_mission/launch/bringup.launch.py
+[10.217s] -- Up-to-date: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/r2_mission/share/r2_mission/config
+[10.217s] -- Up-to-date: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/r2_mission/share/r2_mission/config/params.yaml
+[10.217s] -- Up-to-date: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/r2_mission/share/ament_index/resource_index/package_run_dependencies/r2_mission
+[10.217s] -- Up-to-date: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/r2_mission/share/ament_index/resource_index/parent_prefix_path/r2_mission
+[10.217s] -- Up-to-date: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/r2_mission/share/r2_mission/environment/ament_prefix_path.sh
+[10.217s] -- Up-to-date: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/r2_mission/share/r2_mission/environment/ament_prefix_path.dsv
+[10.217s] -- Up-to-date: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/r2_mission/share/r2_mission/environment/path.sh
+[10.218s] -- Up-to-date: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/r2_mission/share/r2_mission/environment/path.dsv
+[10.218s] -- Up-to-date: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/r2_mission/share/r2_mission/local_setup.bash
+[10.218s] -- Up-to-date: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/r2_mission/share/r2_mission/local_setup.sh
+[10.218s] -- Up-to-date: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/r2_mission/share/r2_mission/local_setup.zsh
+[10.218s] -- Up-to-date: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/r2_mission/share/r2_mission/local_setup.dsv
+[10.218s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/r2_mission/share/r2_mission/package.dsv
+[10.218s] -- Up-to-date: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/r2_mission/share/ament_index/resource_index/packages/r2_mission
+[10.218s] -- Up-to-date: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/r2_mission/share/r2_mission/cmake/r2_missionConfig.cmake
+[10.219s] -- Up-to-date: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/r2_mission/share/r2_mission/cmake/r2_missionConfig-version.cmake
+[10.219s] -- Up-to-date: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/r2_mission/share/r2_mission/package.xml
+[10.219s] -- Installing: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/r2_mission/lib/libr2_serial_driver_core.a
+[10.220s] Invoked command in '/home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/build/r2_mission' returned '0': AMENT_PREFIX_PATH=/home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/build/r2_mission

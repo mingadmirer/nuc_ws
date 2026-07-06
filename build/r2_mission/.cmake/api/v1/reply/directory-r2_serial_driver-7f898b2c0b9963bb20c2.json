@@ -1,0 +1,45 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : 
+		[
+			"install"
+		],
+		"files" : 
+		[
+			"/home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/src/r2_serial_driver/CMakeLists.txt"
+		],
+		"nodes" : 
+		[
+			{
+				"file" : 0
+			},
+			{
+				"command" : 0,
+				"file" : 0,
+				"line" : 11,
+				"parent" : 0
+			}
+		]
+	},
+	"installers" : 
+	[
+		{
+			"backtrace" : 1,
+			"component" : "Unspecified",
+			"destination" : "lib",
+			"paths" : 
+			[
+				"r2_serial_driver/libr2_serial_driver_core.a"
+			],
+			"targetId" : "r2_serial_driver_core::@34fd17d8e37659dcab68",
+			"targetIndex" : 2,
+			"type" : "target"
+		}
+	],
+	"paths" : 
+	{
+		"build" : "r2_serial_driver",
+		"source" : "/home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/src/r2_serial_driver"
+	}
+}

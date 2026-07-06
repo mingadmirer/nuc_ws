@@ -1,0 +1,329 @@
+[0.000000] (-) TimerEvent: {}
+[0.000143] (detection_interfaces) JobQueued: {'identifier': 'detection_interfaces', 'dependencies': OrderedDict()}
+[0.000311] (r2_mission) JobQueued: {'identifier': 'r2_mission', 'dependencies': OrderedDict([('detection_interfaces', '/home/mingadmirer/nuc_ws/install/detection_interfaces')])}
+[0.001186] (detection_interfaces) JobStarted: {'identifier': 'detection_interfaces'}
+[0.010589] (detection_interfaces) JobProgress: {'identifier': 'detection_interfaces', 'progress': 'cmake'}
+[0.011411] (detection_interfaces) JobProgress: {'identifier': 'detection_interfaces', 'progress': 'build'}
+[0.012093] (detection_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mingadmirer/nuc_ws/build/detection_interfaces', '--', '-j8', '-l8'], 'cwd': '/home/mingadmirer/nuc_ws/build/detection_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('ANTHROPIC_MODEL', 'deepseek-v4-pro[1m]'), ('AI_AGENT', 'claude-code_2-1-175_agent'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'mingadmirer'), ('SSH_CLIENT', '10.119.149.36 14710 22'), ('CLAUDE_CODE_ENTRYPOINT', 'cli'), ('GIT_EDITOR', 'true'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/mingadmirer/.vscode-server/cli/servers/Stable-7e7950df89d055b5a378379db9ee14290772148a/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/mingadmirer/.vscode-server/cli/servers/Stable-7e7950df89d055b5a378379db9ee14290772148a/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/mingadmirer'), ('TERM_PROGRAM_VERSION', '1.126.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-42d0ee89-61ed-4e07-ba39-f21619590564.sock'), ('ANTHROPIC_DEFAULT_SONNET_MODEL', 'deepseek-v4-pro[1m]'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/mingadmirer/.vscode-server/cli/servers/Stable-7e7950df89d055b5a378379db9ee14290772148a/server/extensions/git/dist/askpass-main.js'), ('CLAUDE_CODE_CHILD_SESSION', '1'), ('VSCODE_GIT_ASKPASS_NODE', '/home/mingadmirer/.vscode-server/cli/servers/Stable-7e7950df89d055b5a378379db9ee14290772148a/server/node'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mingadmirer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('CLAUDE_CODE_SSE_PORT', '31848'), ('XDG_SESSION_CLASS', 'user'), ('ANTHROPIC_BASE_URL', 'https://api.deepseek.com/anthropic'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('ANTHROPIC_DEFAULT_OPUS_MODEL', 'deepseek-v4-pro[1m]'), ('PATH', '/home/mingadmirer/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/mingadmirer/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/mingadmirer/.vscode-server/cli/servers/Stable-7e7950df89d055b5a378379db9ee14290772148a/server/bin/remote-cli:/home/mingadmirer/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('COREPACK_ENABLE_AUTO_PIN', '0'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('CLAUDE_EFFORT', 'high'), ('NoDefaultCurrentDirectoryInExePath', '1'), ('LANG', 'zh_CN.UTF-8'), ('ANTHROPIC_DEFAULT_HAIKU_MODEL', 'deepseek-v4-flash'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-03a25901b5.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('ANTHROPIC_AUTH_TOKEN', 'sk-f3aae6b04a344439914906c5855e7726'), ('CLAUDE_CODE_SESSION_ID', '1a5d3d02-b895-4e92-a50c-4df5d4a99b00'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CLAUDECODE', '1'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/mingadmirer/nuc_ws/build/detection_interfaces'), ('COPILOT_DEBUG_NONCE', 'e369aa0bed25757c36198c286364ab0b'), ('SSH_CONNECTION', '10.119.149.36 14710 10.119.149.211 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('CLAUDE_CODE_EXECPATH', '/usr/lib/node_modules/@anthropic-ai/claude-code/bin/claude.exe'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.068064] (detection_interfaces) StdoutLine: {'line': b'[  2%] Built target detection_interfaces__cpp\n'}
+[0.068334] (detection_interfaces) StdoutLine: {'line': b'[  5%] Built target detection_interfaces__rs\n'}
+[0.068681] (detection_interfaces) StdoutLine: {'line': b'[ 15%] Built target detection_interfaces__rosidl_generator_c\n'}
+[0.082557] (detection_interfaces) StdoutLine: {'line': b'[ 15%] Built target ament_cmake_python_copy_detection_interfaces\n'}
+[0.097711] (detection_interfaces) StdoutLine: {'line': b'[ 25%] Built target detection_interfaces__rosidl_typesupport_cpp\n'}
+[0.099068] (detection_interfaces) StdoutLine: {'line': b'[ 35%] Built target detection_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[0.099715] (-) TimerEvent: {}
+[0.100997] (detection_interfaces) StdoutLine: {'line': b'[ 45%] Built target detection_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[0.107340] (detection_interfaces) StdoutLine: {'line': b'[ 55%] Built target detection_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[0.111591] (detection_interfaces) StdoutLine: {'line': b'[ 75%] Built target detection_interfaces__rosidl_typesupport_introspection_c\n'}
+[0.111861] (detection_interfaces) StdoutLine: {'line': b'[ 75%] Built target detection_interfaces__rosidl_typesupport_c\n'}
+[0.134093] (detection_interfaces) StdoutLine: {'line': b'[ 75%] Built target detection_interfaces\n'}
+[0.158212] (detection_interfaces) StdoutLine: {'line': b'[ 77%] Built target detection_interfaces__py\n'}
+[0.184066] (detection_interfaces) StdoutLine: {'line': b'[ 85%] Built target detection_interfaces__rosidl_generator_py\n'}
+[0.199827] (-) TimerEvent: {}
+[0.208516] (detection_interfaces) StdoutLine: {'line': b'[ 90%] Built target detection_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[0.208963] (detection_interfaces) StdoutLine: {'line': b'[ 95%] Built target detection_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[0.209122] (detection_interfaces) StdoutLine: {'line': b'[100%] Built target detection_interfaces__rosidl_typesupport_c__pyext\n'}
+[0.299940] (-) TimerEvent: {}
+[0.377483] (detection_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[0.378293] (detection_interfaces) StdoutLine: {'line': b'writing detection_interfaces.egg-info/PKG-INFO\n'}
+[0.378531] (detection_interfaces) StdoutLine: {'line': b'writing dependency_links to detection_interfaces.egg-info/dependency_links.txt\n'}
+[0.378864] (detection_interfaces) StdoutLine: {'line': b'writing top-level names to detection_interfaces.egg-info/top_level.txt\n'}
+[0.381865] (detection_interfaces) StdoutLine: {'line': b"reading manifest file 'detection_interfaces.egg-info/SOURCES.txt'\n"}
+[0.382577] (detection_interfaces) StdoutLine: {'line': b"writing manifest file 'detection_interfaces.egg-info/SOURCES.txt'\n"}
+[0.400054] (-) TimerEvent: {}
+[0.413978] (detection_interfaces) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_detection_interfaces_egg\n'}
+[0.427894] (detection_interfaces) CommandEnded: {'returncode': 0}
+[0.428747] (detection_interfaces) JobProgress: {'identifier': 'detection_interfaces', 'progress': 'install'}
+[0.438920] (detection_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/mingadmirer/nuc_ws/build/detection_interfaces'], 'cwd': '/home/mingadmirer/nuc_ws/build/detection_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('ANTHROPIC_MODEL', 'deepseek-v4-pro[1m]'), ('AI_AGENT', 'claude-code_2-1-175_agent'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'mingadmirer'), ('SSH_CLIENT', '10.119.149.36 14710 22'), ('CLAUDE_CODE_ENTRYPOINT', 'cli'), ('GIT_EDITOR', 'true'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/mingadmirer/.vscode-server/cli/servers/Stable-7e7950df89d055b5a378379db9ee14290772148a/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/mingadmirer/.vscode-server/cli/servers/Stable-7e7950df89d055b5a378379db9ee14290772148a/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/mingadmirer'), ('TERM_PROGRAM_VERSION', '1.126.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-42d0ee89-61ed-4e07-ba39-f21619590564.sock'), ('ANTHROPIC_DEFAULT_SONNET_MODEL', 'deepseek-v4-pro[1m]'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/mingadmirer/.vscode-server/cli/servers/Stable-7e7950df89d055b5a378379db9ee14290772148a/server/extensions/git/dist/askpass-main.js'), ('CLAUDE_CODE_CHILD_SESSION', '1'), ('VSCODE_GIT_ASKPASS_NODE', '/home/mingadmirer/.vscode-server/cli/servers/Stable-7e7950df89d055b5a378379db9ee14290772148a/server/node'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mingadmirer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('CLAUDE_CODE_SSE_PORT', '31848'), ('XDG_SESSION_CLASS', 'user'), ('ANTHROPIC_BASE_URL', 'https://api.deepseek.com/anthropic'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('ANTHROPIC_DEFAULT_OPUS_MODEL', 'deepseek-v4-pro[1m]'), ('PATH', '/home/mingadmirer/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/mingadmirer/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/mingadmirer/.vscode-server/cli/servers/Stable-7e7950df89d055b5a378379db9ee14290772148a/server/bin/remote-cli:/home/mingadmirer/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('COREPACK_ENABLE_AUTO_PIN', '0'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('CLAUDE_EFFORT', 'high'), ('NoDefaultCurrentDirectoryInExePath', '1'), ('LANG', 'zh_CN.UTF-8'), ('ANTHROPIC_DEFAULT_HAIKU_MODEL', 'deepseek-v4-flash'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-03a25901b5.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('ANTHROPIC_AUTH_TOKEN', 'sk-f3aae6b04a344439914906c5855e7726'), ('CLAUDE_CODE_SESSION_ID', '1a5d3d02-b895-4e92-a50c-4df5d4a99b00'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CLAUDECODE', '1'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/mingadmirer/nuc_ws/build/detection_interfaces'), ('COPILOT_DEBUG_NONCE', 'e369aa0bed25757c36198c286364ab0b'), ('SSH_CONNECTION', '10.119.149.36 14710 10.119.149.211 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('CLAUDE_CODE_EXECPATH', '/usr/lib/node_modules/@anthropic-ai/claude-code/bin/claude.exe'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.449769] (detection_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[0.449964] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/share/ament_index/resource_index/rosidl_interfaces/detection_interfaces\n'}
+[0.450113] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces\n'}
+[0.450357] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg\n'}
+[0.450841] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail\n'}
+[0.450982] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__functions.h\n'}
+[0.451215] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__functions.h\n'}
+[0.451349] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__struct.h\n'}
+[0.452443] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__type_support.h\n'}
+[0.452585] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__type_support.h\n'}
+[0.452811] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__functions.c\n'}
+[0.452951] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__struct.h\n'}
+[0.453083] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__functions.c\n'}
+[0.453570] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detection_result.h\n'}
+[0.453728] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detection_array.h\n'}
+[0.453963] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[0.454090] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/share/detection_interfaces/environment/library_path.sh\n'}
+[0.454218] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/share/detection_interfaces/environment/library_path.dsv\n'}
+[0.454346] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_generator_c.so\n'}
+[0.454566] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces\n'}
+[0.454718] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg\n'}
+[0.455152] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail\n'}
+[0.455281] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__rosidl_typesupport_fastrtps_c.h\n'}
+[0.455506] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__rosidl_typesupport_fastrtps_c.h\n'}
+[0.455643] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[0.455778] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[0.455906] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces\n'}
+[0.456145] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg\n'}
+[0.456276] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail\n'}
+[0.456593] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__traits.hpp\n'}
+[0.456992] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__struct.hpp\n'}
+[0.457208] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__struct.hpp\n'}
+[0.457964] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__type_support.hpp\n'}
+[0.458108] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__builder.hpp\n'}
+[0.458240] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__traits.hpp\n'}
+[0.458371] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__type_support.hpp\n'}
+[0.458499] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__builder.hpp\n'}
+[0.458639] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[0.458774] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detection_result.hpp\n'}
+[0.458909] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detection_array.hpp\n'}
+[0.459038] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces\n'}
+[0.459165] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg\n'}
+[0.459292] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail\n'}
+[0.459416] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/dds_fastrtps\n'}
+[0.459543] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.459685] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[0.459816] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[0.459953] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[0.460080] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces\n'}
+[0.460208] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg\n'}
+[0.460335] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail\n'}
+[0.460466] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__type_support.c\n'}
+[0.460593] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__rosidl_typesupport_introspection_c.h\n'}
+[0.460736] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__rosidl_typesupport_introspection_c.h\n'}
+[0.460863] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__type_support.c\n'}
+[0.460991] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[0.461118] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[0.461245] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_c.so\n'}
+[0.461371] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces\n'}
+[0.461497] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg\n'}
+[0.461632] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail\n'}
+[0.461764] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__type_support.cpp\n'}
+[0.461891] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.462017] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__type_support.cpp\n'}
+[0.462142] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__rosidl_typesupport_introspection_cpp.hpp\n'}
+[0.462278] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[0.462405] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_cpp.so\n'}
+[0.462533] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/share/detection_interfaces/environment/pythonpath.sh\n'}
+[0.462673] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/share/detection_interfaces/environment/pythonpath.dsv\n'}
+[0.462807] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces-1.0.0-py3.10.egg-info\n'}
+[0.462939] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /home/mingadmirer/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces-1.0.0-py3.10.egg-info/top_level.txt\n'}
+[0.463066] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /home/mingadmirer/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces-1.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[0.463195] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /home/mingadmirer/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces-1.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[0.463321] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /home/mingadmirer/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces-1.0.0-py3.10.egg-info/PKG-INFO\n'}
+[0.463463] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces\n'}
+[0.463591] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/_detection_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[0.463735] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/detection_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.463864] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/detection_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.463991] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/libdetection_interfaces__rosidl_generator_py.so\n'}
+[0.464116] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/msg\n'}
+[0.464243] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/msg/_detection_array_s.c\n'}
+[0.464371] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/msg/_detection_result.py\n'}
+[0.464499] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/msg/_detection_result_s.c\n'}
+[0.464634] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/msg/_detection_array.py\n'}
+[0.464766] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/msg/__init__.py\n'}
+[0.464893] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/_detection_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[0.465017] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/_detection_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[0.465140] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/detection_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.465273] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/__init__.py\n'}
+[0.492142] (detection_interfaces) StdoutLine: {'line': b"Listing '/home/mingadmirer/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces'...\n"}
+[0.492401] (detection_interfaces) StdoutLine: {'line': b"Listing '/home/mingadmirer/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/msg'...\n"}
+[0.496962] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/detection_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.497532] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/detection_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.498185] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/detection_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[0.498875] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_generator_py.so\n'}
+[0.500388] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/share/ament_index/resource_index/rust_packages/detection_interfaces\n'}
+[0.501239] (-) TimerEvent: {}
+[0.501278] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/share/detection_interfaces/rust\n'}
+[0.502145] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/share/detection_interfaces/rust/src\n'}
+[0.503188] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/share/detection_interfaces/rust/src/msg\n'}
+[0.503342] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/share/detection_interfaces/rust/src/msg/rmw.rs\n'}
+[0.503501] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/share/detection_interfaces/rust/src/lib.rs\n'}
+[0.503656] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/share/detection_interfaces/rust/src/msg.rs\n'}
+[0.503793] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/share/detection_interfaces/rust/Cargo.toml\n'}
+[0.503935] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/share/detection_interfaces/rust/build.rs\n'}
+[0.504062] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/share/detection_interfaces/msg/DetectionResult.idl\n'}
+[0.504206] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/share/detection_interfaces/msg/DetectionArray.idl\n'}
+[0.504347] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/share/detection_interfaces/msg/DetectionResult.msg\n'}
+[0.504473] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/share/detection_interfaces/msg/DetectionArray.msg\n'}
+[0.504634] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/share/ament_index/resource_index/package_run_dependencies/detection_interfaces\n'}
+[0.504775] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/share/ament_index/resource_index/parent_prefix_path/detection_interfaces\n'}
+[0.504931] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/share/detection_interfaces/environment/ament_prefix_path.sh\n'}
+[0.505218] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/share/detection_interfaces/environment/ament_prefix_path.dsv\n'}
+[0.505488] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/share/detection_interfaces/environment/path.sh\n'}
+[0.505830] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/share/detection_interfaces/environment/path.dsv\n'}
+[0.506423] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/share/detection_interfaces/local_setup.bash\n'}
+[0.506628] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/share/detection_interfaces/local_setup.sh\n'}
+[0.506899] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/share/detection_interfaces/local_setup.zsh\n'}
+[0.507252] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/share/detection_interfaces/local_setup.dsv\n'}
+[0.507418] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /home/mingadmirer/nuc_ws/install/detection_interfaces/share/detection_interfaces/package.dsv\n'}
+[0.507868] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/share/ament_index/resource_index/packages/detection_interfaces\n'}
+[0.508039] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/export_detection_interfaces__rosidl_generator_cExport.cmake\n'}
+[0.508272] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/export_detection_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[0.508506] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/export_detection_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[0.508745] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/export_detection_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[0.509020] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/export_detection_interfaces__rosidl_generator_cppExport.cmake\n'}
+[0.509251] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/export_detection_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[0.509532] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/export_detection_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[0.509739] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[0.510204] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[0.510513] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[0.510784] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[0.511030] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[0.511187] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[0.511438] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[0.511701] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[0.511984] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/export_detection_interfaces__rosidl_generator_pyExport.cmake\n'}
+[0.512248] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/export_detection_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[0.512511] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[0.512829] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[0.512995] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[0.513377] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[0.514199] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[0.514458] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[0.514800] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[0.515122] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfacesConfig.cmake\n'}
+[0.515358] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfacesConfig-version.cmake\n'}
+[0.515592] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/detection_interfaces/share/detection_interfaces/package.xml\n'}
+[0.515992] (detection_interfaces) CommandEnded: {'returncode': 0}
+[0.537493] (detection_interfaces) JobEnded: {'identifier': 'detection_interfaces', 'rc': 0}
+[0.538834] (r2_mission) JobStarted: {'identifier': 'r2_mission'}
+[0.546217] (r2_mission) JobProgress: {'identifier': 'r2_mission', 'progress': 'cmake'}
+[0.546787] (r2_mission) JobProgress: {'identifier': 'r2_mission', 'progress': 'build'}
+[0.547557] (r2_mission) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mingadmirer/nuc_ws/build/r2_mission', '--', '-j8', '-l8'], 'cwd': '/home/mingadmirer/nuc_ws/build/r2_mission', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('ANTHROPIC_MODEL', 'deepseek-v4-pro[1m]'), ('AI_AGENT', 'claude-code_2-1-175_agent'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'mingadmirer'), ('SSH_CLIENT', '10.119.149.36 14710 22'), ('CLAUDE_CODE_ENTRYPOINT', 'cli'), ('GIT_EDITOR', 'true'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/mingadmirer/.vscode-server/cli/servers/Stable-7e7950df89d055b5a378379db9ee14290772148a/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/mingadmirer/nuc_ws/install/detection_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/mingadmirer/.vscode-server/cli/servers/Stable-7e7950df89d055b5a378379db9ee14290772148a/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/mingadmirer'), ('TERM_PROGRAM_VERSION', '1.126.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-42d0ee89-61ed-4e07-ba39-f21619590564.sock'), ('ANTHROPIC_DEFAULT_SONNET_MODEL', 'deepseek-v4-pro[1m]'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/mingadmirer/.vscode-server/cli/servers/Stable-7e7950df89d055b5a378379db9ee14290772148a/server/extensions/git/dist/askpass-main.js'), ('CLAUDE_CODE_CHILD_SESSION', '1'), ('VSCODE_GIT_ASKPASS_NODE', '/home/mingadmirer/.vscode-server/cli/servers/Stable-7e7950df89d055b5a378379db9ee14290772148a/server/node'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mingadmirer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('CLAUDE_CODE_SSE_PORT', '31848'), ('XDG_SESSION_CLASS', 'user'), ('ANTHROPIC_BASE_URL', 'https://api.deepseek.com/anthropic'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('ANTHROPIC_DEFAULT_OPUS_MODEL', 'deepseek-v4-pro[1m]'), ('PATH', '/home/mingadmirer/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/mingadmirer/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/mingadmirer/.vscode-server/cli/servers/Stable-7e7950df89d055b5a378379db9ee14290772148a/server/bin/remote-cli:/home/mingadmirer/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('COREPACK_ENABLE_AUTO_PIN', '0'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('CLAUDE_EFFORT', 'high'), ('NoDefaultCurrentDirectoryInExePath', '1'), ('LANG', 'zh_CN.UTF-8'), ('ANTHROPIC_DEFAULT_HAIKU_MODEL', 'deepseek-v4-flash'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-03a25901b5.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/mingadmirer/nuc_ws/install/detection_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('ANTHROPIC_AUTH_TOKEN', 'sk-f3aae6b04a344439914906c5855e7726'), ('CLAUDE_CODE_SESSION_ID', '1a5d3d02-b895-4e92-a50c-4df5d4a99b00'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CLAUDECODE', '1'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/mingadmirer/nuc_ws/build/r2_mission'), ('COPILOT_DEBUG_NONCE', 'e369aa0bed25757c36198c286364ab0b'), ('SSH_CONNECTION', '10.119.149.36 14710 10.119.149.211 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('CLAUDE_CODE_EXECPATH', '/usr/lib/node_modules/@anthropic-ai/claude-code/bin/claude.exe'), ('PYTHONPATH', '/home/mingadmirer/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/mingadmirer/nuc_ws/install/detection_interfaces:/opt/ros/humble')]), 'shell': False}
+[0.601391] (-) TimerEvent: {}
+[0.605458] (r2_mission) StdoutLine: {'line': b'[ 60%] Built target r2_serial_driver_core\n'}
+[0.626516] (r2_mission) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target r2_mission_node\n'}
+[0.642767] (r2_mission) StdoutLine: {'line': b'[ 80%] Building CXX object CMakeFiles/r2_mission_node.dir/src/mission_node.cpp.o\n'}
+[0.701554] (-) TimerEvent: {}
+[0.801760] (-) TimerEvent: {}
+[0.902021] (-) TimerEvent: {}
+[1.002256] (-) TimerEvent: {}
+[1.102479] (-) TimerEvent: {}
+[1.202694] (-) TimerEvent: {}
+[1.302861] (-) TimerEvent: {}
+[1.403098] (-) TimerEvent: {}
+[1.503311] (-) TimerEvent: {}
+[1.603483] (-) TimerEvent: {}
+[1.703688] (-) TimerEvent: {}
+[1.803843] (-) TimerEvent: {}
+[1.904052] (-) TimerEvent: {}
+[2.004264] (-) TimerEvent: {}
+[2.104480] (-) TimerEvent: {}
+[2.204691] (-) TimerEvent: {}
+[2.304955] (-) TimerEvent: {}
+[2.405171] (-) TimerEvent: {}
+[2.505373] (-) TimerEvent: {}
+[2.605573] (-) TimerEvent: {}
+[2.705781] (-) TimerEvent: {}
+[2.805986] (-) TimerEvent: {}
+[2.906202] (-) TimerEvent: {}
+[3.006411] (-) TimerEvent: {}
+[3.106625] (-) TimerEvent: {}
+[3.206841] (-) TimerEvent: {}
+[3.307020] (-) TimerEvent: {}
+[3.407214] (-) TimerEvent: {}
+[3.507413] (-) TimerEvent: {}
+[3.607607] (-) TimerEvent: {}
+[3.707792] (-) TimerEvent: {}
+[3.807961] (-) TimerEvent: {}
+[3.908143] (-) TimerEvent: {}
+[4.008367] (-) TimerEvent: {}
+[4.108565] (-) TimerEvent: {}
+[4.208833] (-) TimerEvent: {}
+[4.309040] (-) TimerEvent: {}
+[4.409239] (-) TimerEvent: {}
+[4.509450] (-) TimerEvent: {}
+[4.609667] (-) TimerEvent: {}
+[4.709890] (-) TimerEvent: {}
+[4.810106] (-) TimerEvent: {}
+[4.910342] (-) TimerEvent: {}
+[5.010544] (-) TimerEvent: {}
+[5.110739] (-) TimerEvent: {}
+[5.210984] (-) TimerEvent: {}
+[5.311199] (-) TimerEvent: {}
+[5.411400] (-) TimerEvent: {}
+[5.511620] (-) TimerEvent: {}
+[5.611850] (-) TimerEvent: {}
+[5.712082] (-) TimerEvent: {}
+[5.812310] (-) TimerEvent: {}
+[5.912497] (-) TimerEvent: {}
+[6.012712] (-) TimerEvent: {}
+[6.112905] (-) TimerEvent: {}
+[6.213101] (-) TimerEvent: {}
+[6.313269] (-) TimerEvent: {}
+[6.413467] (-) TimerEvent: {}
+[6.513686] (-) TimerEvent: {}
+[6.613950] (-) TimerEvent: {}
+[6.714235] (-) TimerEvent: {}
+[6.814462] (-) TimerEvent: {}
+[6.914718] (-) TimerEvent: {}
+[7.014947] (-) TimerEvent: {}
+[7.115173] (-) TimerEvent: {}
+[7.215392] (-) TimerEvent: {}
+[7.315618] (-) TimerEvent: {}
+[7.415851] (-) TimerEvent: {}
+[7.516054] (-) TimerEvent: {}
+[7.616276] (-) TimerEvent: {}
+[7.716507] (-) TimerEvent: {}
+[7.816743] (-) TimerEvent: {}
+[7.916974] (-) TimerEvent: {}
+[8.017183] (-) TimerEvent: {}
+[8.117402] (-) TimerEvent: {}
+[8.217669] (-) TimerEvent: {}
+[8.317933] (-) TimerEvent: {}
+[8.418124] (-) TimerEvent: {}
+[8.518394] (-) TimerEvent: {}
+[8.618651] (-) TimerEvent: {}
+[8.718894] (-) TimerEvent: {}
+[8.819107] (-) TimerEvent: {}
+[8.919348] (-) TimerEvent: {}
+[9.019554] (-) TimerEvent: {}
+[9.119764] (-) TimerEvent: {}
+[9.219966] (-) TimerEvent: {}
+[9.320158] (-) TimerEvent: {}
+[9.420391] (-) TimerEvent: {}
+[9.520617] (-) TimerEvent: {}
+[9.620866] (-) TimerEvent: {}
+[9.721079] (-) TimerEvent: {}
+[9.821298] (-) TimerEvent: {}
+[9.921547] (-) TimerEvent: {}
+[10.021828] (-) TimerEvent: {}
+[10.122052] (-) TimerEvent: {}
+[10.222241] (-) TimerEvent: {}
+[10.322459] (-) TimerEvent: {}
+[10.422675] (-) TimerEvent: {}
+[10.492754] (r2_mission) StdoutLine: {'line': b'[100%] Linking CXX executable r2_mission_node\n'}
+[10.522756] (-) TimerEvent: {}
+[10.622905] (-) TimerEvent: {}
+[10.723121] (-) TimerEvent: {}
+[10.823305] (-) TimerEvent: {}
+[10.923517] (-) TimerEvent: {}
+[10.944588] (r2_mission) StdoutLine: {'line': b'[100%] Built target r2_mission_node\n'}
+[10.956432] (r2_mission) CommandEnded: {'returncode': 0}
+[10.957218] (r2_mission) JobProgress: {'identifier': 'r2_mission', 'progress': 'install'}
+[10.958211] (r2_mission) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/mingadmirer/nuc_ws/build/r2_mission'], 'cwd': '/home/mingadmirer/nuc_ws/build/r2_mission', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('ANTHROPIC_MODEL', 'deepseek-v4-pro[1m]'), ('AI_AGENT', 'claude-code_2-1-175_agent'), ('LANGUAGE', 'zh_CN:zh'), ('USER', 'mingadmirer'), ('SSH_CLIENT', '10.119.149.36 14710 22'), ('CLAUDE_CODE_ENTRYPOINT', 'cli'), ('GIT_EDITOR', 'true'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/home/mingadmirer/.vscode-server/cli/servers/Stable-7e7950df89d055b5a378379db9ee14290772148a/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/mingadmirer/nuc_ws/install/detection_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/home/mingadmirer/.vscode-server/cli/servers/Stable-7e7950df89d055b5a378379db9ee14290772148a/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/home/mingadmirer'), ('TERM_PROGRAM_VERSION', '1.126.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/1000/vscode-ipc-42d0ee89-61ed-4e07-ba39-f21619590564.sock'), ('ANTHROPIC_DEFAULT_SONNET_MODEL', 'deepseek-v4-pro[1m]'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/home/mingadmirer/.vscode-server/cli/servers/Stable-7e7950df89d055b5a378379db9ee14290772148a/server/extensions/git/dist/askpass-main.js'), ('CLAUDE_CODE_CHILD_SESSION', '1'), ('VSCODE_GIT_ASKPASS_NODE', '/home/mingadmirer/.vscode-server/cli/servers/Stable-7e7950df89d055b5a378379db9ee14290772148a/server/node'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'mingadmirer'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('CLAUDE_CODE_SSE_PORT', '31848'), ('XDG_SESSION_CLASS', 'user'), ('ANTHROPIC_BASE_URL', 'https://api.deepseek.com/anthropic'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '3'), ('ROS_LOCALHOST_ONLY', '0'), ('ANTHROPIC_DEFAULT_OPUS_MODEL', 'deepseek-v4-pro[1m]'), ('PATH', '/home/mingadmirer/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/home/mingadmirer/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/home/mingadmirer/.vscode-server/cli/servers/Stable-7e7950df89d055b5a378379db9ee14290772148a/server/bin/remote-cli:/home/mingadmirer/.local/bin:/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('COREPACK_ENABLE_AUTO_PIN', '0'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('CLAUDE_EFFORT', 'high'), ('NoDefaultCurrentDirectoryInExePath', '1'), ('LANG', 'zh_CN.UTF-8'), ('ANTHROPIC_DEFAULT_HAIKU_MODEL', 'deepseek-v4-flash'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/1000/vscode-git-03a25901b5.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/mingadmirer/nuc_ws/install/detection_interfaces:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('ANTHROPIC_AUTH_TOKEN', 'sk-f3aae6b04a344439914906c5855e7726'), ('CLAUDE_CODE_SESSION_ID', '1a5d3d02-b895-4e92-a50c-4df5d4a99b00'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('CLAUDECODE', '1'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/home/mingadmirer/nuc_ws/build/r2_mission'), ('COPILOT_DEBUG_NONCE', 'e369aa0bed25757c36198c286364ab0b'), ('SSH_CONNECTION', '10.119.149.36 14710 10.119.149.211 22'), ('XDG_DATA_DIRS', '/usr/share/gnome:/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('CLAUDE_CODE_EXECPATH', '/usr/lib/node_modules/@anthropic-ai/claude-code/bin/claude.exe'), ('PYTHONPATH', '/home/mingadmirer/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/mingadmirer/nuc_ws/install/detection_interfaces:/opt/ros/humble')]), 'shell': False}
+[10.966056] (r2_mission) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[10.966355] (r2_mission) StdoutLine: {'line': b'-- Installing: /home/mingadmirer/nuc_ws/install/r2_mission/lib/r2_mission/r2_mission_node\n'}
+[10.972145] (r2_mission) StdoutLine: {'line': b'-- Set runtime path of "/home/mingadmirer/nuc_ws/install/r2_mission/lib/r2_mission/r2_mission_node" to ""\n'}
+[10.972313] (r2_mission) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/r2_mission/share/r2_mission/launch\n'}
+[10.972426] (r2_mission) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/r2_mission/share/r2_mission/launch/bringup.launch.py\n'}
+[10.972695] (r2_mission) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/r2_mission/share/r2_mission/config\n'}
+[10.972906] (r2_mission) StdoutLine: {'line': b'-- Installing: /home/mingadmirer/nuc_ws/install/r2_mission/share/r2_mission/config/params.yaml\n'}
+[10.973179] (r2_mission) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/r2_mission/share/ament_index/resource_index/package_run_dependencies/r2_mission\n'}
+[10.973277] (r2_mission) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/r2_mission/share/ament_index/resource_index/parent_prefix_path/r2_mission\n'}
+[10.973425] (r2_mission) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/r2_mission/share/r2_mission/environment/ament_prefix_path.sh\n'}
+[10.973546] (r2_mission) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/r2_mission/share/r2_mission/environment/ament_prefix_path.dsv\n'}
+[10.973660] (r2_mission) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/r2_mission/share/r2_mission/environment/path.sh\n'}
+[10.973722] (r2_mission) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/r2_mission/share/r2_mission/environment/path.dsv\n'}
+[10.973778] (r2_mission) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/r2_mission/share/r2_mission/local_setup.bash\n'}
+[10.973834] (r2_mission) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/r2_mission/share/r2_mission/local_setup.sh\n'}
+[10.973890] (r2_mission) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/r2_mission/share/r2_mission/local_setup.zsh\n'}
+[10.973945] (r2_mission) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/r2_mission/share/r2_mission/local_setup.dsv\n'}
+[10.974002] (r2_mission) StdoutLine: {'line': b'-- Installing: /home/mingadmirer/nuc_ws/install/r2_mission/share/r2_mission/package.dsv\n'}
+[10.974057] (r2_mission) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/r2_mission/share/ament_index/resource_index/packages/r2_mission\n'}
+[10.974110] (r2_mission) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/r2_mission/share/r2_mission/cmake/r2_missionConfig.cmake\n'}
+[10.974164] (r2_mission) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/r2_mission/share/r2_mission/cmake/r2_missionConfig-version.cmake\n'}
+[10.974223] (r2_mission) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/r2_mission/share/r2_mission/package.xml\n'}
+[10.974279] (r2_mission) StdoutLine: {'line': b'-- Up-to-date: /home/mingadmirer/nuc_ws/install/r2_mission/lib/libr2_serial_driver_core.a\n'}
+[10.974833] (r2_mission) CommandEnded: {'returncode': 0}
+[10.987901] (r2_mission) JobEnded: {'identifier': 'r2_mission', 'rc': 0}
+[10.988659] (-) EventReactorShutdown: {}

@@ -1,0 +1,33 @@
+[0.012s] Invoking command in '/home/mingadmirer/nuc_ws/build/r2_mission': AMENT_PREFIX_PATH=/home/mingadmirer/nuc_ws/install/detection_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mingadmirer/nuc_ws/install/detection_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/mingadmirer/nuc_ws/install/detection_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mingadmirer/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mingadmirer/nuc_ws/build/r2_mission -- -j8 -l8
+[0.060s] Consolidate compiler generated dependencies of target r2_serial_driver_core
+[0.072s] [ 60%] Built target r2_serial_driver_core
+[0.092s] Consolidate compiler generated dependencies of target r2_mission_node
+[0.108s] [ 80%] Building CXX object CMakeFiles/r2_mission_node.dir/src/mission_node.cpp.o
+[9.294s] [100%] Linking CXX executable r2_mission_node
+[9.743s] [100%] Built target r2_mission_node
+[9.755s] Invoked command in '/home/mingadmirer/nuc_ws/build/r2_mission' returned '0': AMENT_PREFIX_PATH=/home/mingadmirer/nuc_ws/install/detection_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mingadmirer/nuc_ws/install/detection_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/mingadmirer/nuc_ws/install/detection_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mingadmirer/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --build /home/mingadmirer/nuc_ws/build/r2_mission -- -j8 -l8
+[9.756s] Invoking command in '/home/mingadmirer/nuc_ws/build/r2_mission': AMENT_PREFIX_PATH=/home/mingadmirer/nuc_ws/install/detection_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mingadmirer/nuc_ws/install/detection_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/mingadmirer/nuc_ws/install/detection_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mingadmirer/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/mingadmirer/nuc_ws/build/r2_mission
+[9.765s] -- Install configuration: ""
+[9.766s] -- Installing: /home/mingadmirer/nuc_ws/install/r2_mission/lib/r2_mission/r2_mission_node
+[9.771s] -- Set runtime path of "/home/mingadmirer/nuc_ws/install/r2_mission/lib/r2_mission/r2_mission_node" to ""
+[9.771s] -- Up-to-date: /home/mingadmirer/nuc_ws/install/r2_mission/share/r2_mission/launch
+[9.771s] -- Up-to-date: /home/mingadmirer/nuc_ws/install/r2_mission/share/r2_mission/launch/bringup.launch.py
+[9.771s] -- Up-to-date: /home/mingadmirer/nuc_ws/install/r2_mission/share/r2_mission/config
+[9.771s] -- Installing: /home/mingadmirer/nuc_ws/install/r2_mission/share/r2_mission/config/params.yaml
+[9.772s] -- Up-to-date: /home/mingadmirer/nuc_ws/install/r2_mission/share/ament_index/resource_index/package_run_dependencies/r2_mission
+[9.772s] -- Up-to-date: /home/mingadmirer/nuc_ws/install/r2_mission/share/ament_index/resource_index/parent_prefix_path/r2_mission
+[9.772s] -- Up-to-date: /home/mingadmirer/nuc_ws/install/r2_mission/share/r2_mission/environment/ament_prefix_path.sh
+[9.772s] -- Up-to-date: /home/mingadmirer/nuc_ws/install/r2_mission/share/r2_mission/environment/ament_prefix_path.dsv
+[9.772s] -- Up-to-date: /home/mingadmirer/nuc_ws/install/r2_mission/share/r2_mission/environment/path.sh
+[9.772s] -- Up-to-date: /home/mingadmirer/nuc_ws/install/r2_mission/share/r2_mission/environment/path.dsv
+[9.772s] -- Up-to-date: /home/mingadmirer/nuc_ws/install/r2_mission/share/r2_mission/local_setup.bash
+[9.772s] -- Up-to-date: /home/mingadmirer/nuc_ws/install/r2_mission/share/r2_mission/local_setup.sh
+[9.772s] -- Up-to-date: /home/mingadmirer/nuc_ws/install/r2_mission/share/r2_mission/local_setup.zsh
+[9.773s] -- Up-to-date: /home/mingadmirer/nuc_ws/install/r2_mission/share/r2_mission/local_setup.dsv
+[9.773s] -- Installing: /home/mingadmirer/nuc_ws/install/r2_mission/share/r2_mission/package.dsv
+[9.773s] -- Up-to-date: /home/mingadmirer/nuc_ws/install/r2_mission/share/ament_index/resource_index/packages/r2_mission
+[9.773s] -- Up-to-date: /home/mingadmirer/nuc_ws/install/r2_mission/share/r2_mission/cmake/r2_missionConfig.cmake
+[9.773s] -- Up-to-date: /home/mingadmirer/nuc_ws/install/r2_mission/share/r2_mission/cmake/r2_missionConfig-version.cmake
+[9.773s] -- Up-to-date: /home/mingadmirer/nuc_ws/install/r2_mission/share/r2_mission/package.xml
+[9.773s] -- Up-to-date: /home/mingadmirer/nuc_ws/install/r2_mission/lib/libr2_serial_driver_core.a
+[9.775s] Invoked command in '/home/mingadmirer/nuc_ws/build/r2_mission' returned '0': AMENT_PREFIX_PATH=/home/mingadmirer/nuc_ws/install/detection_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/mingadmirer/nuc_ws/install/detection_interfaces:/opt/ros/humble LD_LIBRARY_PATH=/home/mingadmirer/nuc_ws/install/detection_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/home/mingadmirer/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/cmake --install /home/mingadmirer/nuc_ws/build/r2_mission

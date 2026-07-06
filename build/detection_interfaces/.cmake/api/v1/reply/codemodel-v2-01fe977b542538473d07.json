@@ -1,0 +1,258 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1,
+						2
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-72da482b4786058298f6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						17,
+						18
+					]
+				},
+				{
+					"build" : "detection_interfaces__py",
+					"jsonFile" : "directory-detection_interfaces__py-8d6e8685c17fdb1df45e.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/mingadmirer/nuc_ws/build/detection_interfaces/detection_interfaces__py",
+					"targetIndexes" : 
+					[
+						4
+					]
+				},
+				{
+					"build" : "detection_interfaces__rs",
+					"jsonFile" : "directory-detection_interfaces__rs-ede2296880ae719b8577.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/mingadmirer/nuc_ws/build/detection_interfaces/detection_interfaces__rs",
+					"targetIndexes" : 
+					[
+						16
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1,
+						2
+					],
+					"name" : "detection_interfaces",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17,
+						18
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_detection_interfaces_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_detection_interfaces_egg-f51880546dccbaa983fe.json",
+					"name" : "ament_cmake_python_build_detection_interfaces_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_copy_detection_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_copy_detection_interfaces-d69646dc62444c52d818.json",
+					"name" : "ament_cmake_python_copy_detection_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "detection_interfaces::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-detection_interfaces-0cdad8102c4dc6776cf3.json",
+					"name" : "detection_interfaces",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "detection_interfaces__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-detection_interfaces__cpp-21d9b954ce720242acbe.json",
+					"name" : "detection_interfaces__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "detection_interfaces__py::@43325b90271eaa1013b4",
+					"jsonFile" : "target-detection_interfaces__py-ed3ef1a95eecedfb760b.json",
+					"name" : "detection_interfaces__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "detection_interfaces__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-detection_interfaces__rosidl_generator_c-8384da4adca566740e32.json",
+					"name" : "detection_interfaces__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "detection_interfaces__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-detection_interfaces__rosidl_generator_py-9c4eb1c3a5107751355e.json",
+					"name" : "detection_interfaces__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "detection_interfaces__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-detection_interfaces__rosidl_typesupport_c-f78796cd3744f691e8c4.json",
+					"name" : "detection_interfaces__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "detection_interfaces__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-detection_interfaces__rosidl_typesupport_c__pyext-57b007ad07f9bc2cdbae.json",
+					"name" : "detection_interfaces__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "detection_interfaces__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-detection_interfaces__rosidl_typesupport_cpp-46baf15e73528089c129.json",
+					"name" : "detection_interfaces__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "detection_interfaces__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-detection_interfaces__rosidl_typesupport_fastrtps_c-5740409f5e38f11f9b50.json",
+					"name" : "detection_interfaces__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "detection_interfaces__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-detection_interfaces__rosidl_typesupport_fastrtps_c__pyext-cac9a38973375449d362.json",
+					"name" : "detection_interfaces__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "detection_interfaces__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-detection_interfaces__rosidl_typesupport_fastrtps_cpp-9ce7ab8ef11c09d34a6a.json",
+					"name" : "detection_interfaces__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "detection_interfaces__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-detection_interfaces__rosidl_typesupport_introspection_c-05ccda09102c74acc793.json",
+					"name" : "detection_interfaces__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "detection_interfaces__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-detection_interfaces__rosidl_typesupport_introspection_c__pyext-47b88a7e20455886b030.json",
+					"name" : "detection_interfaces__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "detection_interfaces__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-detection_interfaces__rosidl_typesupport_introspection_cpp-cba237eaa1b2e88f535d.json",
+					"name" : "detection_interfaces__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 2,
+					"id" : "detection_interfaces__rs::@1977d7595a31b7b085a4",
+					"jsonFile" : "target-detection_interfaces__rs-d6ce3579e39ad7d7bd38.json",
+					"name" : "detection_interfaces__rs",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "detection_interfaces_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-detection_interfaces_uninstall-4b9fb672dab597a9f9be.json",
+					"name" : "detection_interfaces_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-537528bd04f2be6f04c9.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/mingadmirer/nuc_ws/build/detection_interfaces",
+		"source" : "/home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/src/detection_interfaces"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

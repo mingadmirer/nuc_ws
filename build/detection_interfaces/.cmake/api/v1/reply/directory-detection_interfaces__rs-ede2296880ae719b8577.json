@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "detection_interfaces__rs",
+		"source" : "/home/mingadmirer/nuc_ws/build/detection_interfaces/detection_interfaces__rs"
+	}
+}

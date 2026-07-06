@@ -1,0 +1,7 @@
+{
+  "package_name": "detection_interfaces",
+  "non_idl_tuples": [
+    "/home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/src/detection_interfaces:msg/DetectionResult.msg",
+    "/home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/src/detection_interfaces:msg/DetectionArray.msg"
+  ]
+}

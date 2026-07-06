@@ -1,0 +1,22 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from detection_interfaces/msg/DetectionArray.msg
+// generated code does not contain a copyright notice
+
+#include "detection_interfaces/msg/DetectionResult.idl"
+#include "std_msgs/msg/Header.idl"
+
+module detection_interfaces {
+  module msg {
+    @verbatim (language="comment", text=
+      "一帧内的所有检测结果")
+    struct DetectionArray {
+      @verbatim (language="comment", text=
+        "帧头 (时间戳 + frame_id)")
+      std_msgs::msg::Header header;
+
+      @verbatim (language="comment", text=
+        "检测结果数组")
+      sequence<detection_interfaces::msg::DetectionResult> detections;
+    };
+  };
+};

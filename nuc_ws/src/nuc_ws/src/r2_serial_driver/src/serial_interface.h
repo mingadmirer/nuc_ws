@@ -30,6 +30,10 @@ public:
     /// 发送 len 字节（阻塞）
     bool send(const uint8_t* data, size_t len);
 
+    /// 可靠发送：发送后等待 expected_ack，收不到或内容不匹配则重试（最多 max_retries 次）
+    bool sendReliable(const uint8_t* data, size_t len,
+                      const char* expected_ack, int max_retries = 5);
+
     /// 接收，最多读 max_len 字节，返回实际读到的字节数（非阻塞）
     int recv(uint8_t* buf, size_t max_len, int timeout_ms = 100);
 

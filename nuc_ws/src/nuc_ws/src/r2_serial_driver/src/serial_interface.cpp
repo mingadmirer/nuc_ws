@@ -103,6 +103,35 @@ void SerialInterface::flush() {
     }
 }
 
+bool SerialInterface::sendReliable(const uint8_t* data, size_t len,
+                                    const char* expected_ack, int max_retries) {
+    if (!expected_ack) {
+        return send(data, len);
+    }
+
+    for (int attempt = 1; attempt <= max_retries; ++attempt) {
+        if (!isOpen()) return false;
+
+        flush();
+        if (!send(data, len)) {
+            usleep(10000);
+            continue;
+        }
+
+        usleep(5000);
+        uint8_t buf[128] = {};
+        int n = recv(buf, sizeof(buf) - 1, 50);
+        if (n > 0) {
+            std::string resp(reinterpret_cast<char*>(buf), n);
+            if (resp.find(expected_ack) != std::string::npos) {
+                return true;
+            }
+        }
+    }
+
+    return false;
+}
+
 int SerialInterface::baudToConstant(int baud) {
     switch (baud) {
         case 9600:   return B9600;

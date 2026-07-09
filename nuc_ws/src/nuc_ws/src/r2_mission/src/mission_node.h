@@ -27,6 +27,7 @@ public:
         GRIP_LIFT,
         RETREAT_ROTATE,
         COMPLETE,
+        RECOVERY,
         ERROR
     };
 
@@ -44,8 +45,9 @@ private:
     void sendRelease();
     void sendWristAngle(int deg);
 
-    // 串口
-    bool sendFrame(const std::vector<uint8_t>& frame);
+    // 串口（委托 serial_.sendReliable）
+    bool sendFrameReliable(const std::vector<uint8_t>& frame);
+    bool handshakeSTM32();
 
     // 工具
     static std::string stateName(State s);
@@ -72,6 +74,9 @@ private:
 
     // ── 串口 ──
     SerialInterface serial_;
+    std::string serial_device_;
+    int baudrate_;
+    int consecutive_failures_ = 0;
 
     // ── 参数 ──
     // 批次伺服

@@ -60,57 +60,11 @@ MissionNode::MissionNode(const rclcpp::NodeOptions& opts)
     wrist_delay_s_    = declare_parameter("wrist_delay_s", 0.5);
     release_delay_s_  = declare_parameter("release_delay_s", 5.0);
 
-    // ── 串口：轮询等待 STM32 上电并握手 ──
-    std::string dev = declare_parameter("serial_device", "/dev/serial/by-id/usb-STMicroelectronics_STM32_Virtual_ComPort_326B326C3034-if00");
-    int baud = declare_parameter("baudrate", 115200);
+    // ── 串口：保存设备参数 ──
+    serial_device_ = declare_parameter("serial_device", "/dev/serial/by-id/usb-STMicroelectronics_STM32_Virtual_ComPort_326B326C3034-if00");
+    baudrate_ = declare_parameter("baudrate", 115200);
 
-    RCLCPP_INFO(get_logger(), "等待 STM32 上电: %s", dev.c_str());
-
-    bool ready = false;
-    int retry = 0;
-    const uint8_t hs_cmd[] = {'M','s','t','o','p','0','0','0','0','0'};
-
-    while (!ready && rclcpp::ok()) {
-        ++retry;
-
-        // 1. 尝试打开串口
-        if (!serial_.isOpen()) {
-            if (!serial_.open(dev, baud)) {
-                RCLCPP_WARN(get_logger(), "[第%d次] 串口未就绪，1秒后重试...", retry);
-                std::this_thread::sleep_for(std::chrono::seconds(1));
-                continue;
-            }
-            RCLCPP_INFO(get_logger(), "[第%d次] 串口已打开", retry);
-        }
-
-        // 2. 握手: Mstop00000 → 期待 Car stopped
-        serial_.flush();
-        serial_.send(hs_cmd, 10);
-
-        std::this_thread::sleep_for(std::chrono::milliseconds(300));
-        uint8_t buf[64] = {};
-        int n = serial_.recv(buf, sizeof(buf) - 1, 200);
-        if (n > 0) {
-            std::string resp(reinterpret_cast<char*>(buf), n);
-            RCLCPP_INFO(get_logger(), "[第%d次] 握手返回: %s", retry, resp.c_str());
-            if (resp.find("Car stopped") != std::string::npos) {
-                ready = true;
-                RCLCPP_INFO(get_logger(), "✓ STM32 固件就绪！（%d次握手成功）", retry);
-            } else {
-                RCLCPP_WARN(get_logger(), "[第%d次] 返回异常，重试...", retry);
-            }
-        } else {
-            RCLCPP_WARN(get_logger(), "[第%d次] 无应答，重试...", retry);
-        }
-
-        if (!ready) {
-            std::this_thread::sleep_for(std::chrono::seconds(1));
-        }
-    }
-    // 如果 rclcpp::ok() 为 false，节点正在关闭
-    if (!ready) {
-        RCLCPP_ERROR(get_logger(), "✗ STM32 握手失败，节点继续运行但串口不可用！");
-    }
+    handshakeSTM32();
 
     // ── 订阅 /detections（RDK 发布，NTP 时间同步）──
     sub_det_ = create_subscription<detection_interfaces::msg::DetectionArray>(
@@ -136,6 +90,7 @@ std::string MissionNode::stateName(State s) {
         case GRIP_LIFT:       return "GRIP_LIFT";
         case RETREAT_ROTATE:  return "RETREAT_ROTATE";
         case COMPLETE:        return "COMPLETE";
+        case RECOVERY:        return "RECOVERY";
         default:              return "ERROR";
     }
 }
@@ -167,14 +122,14 @@ void MissionNode::transitionTo(State s) {
     case ALIGN_RACK: {
         RCLCPP_INFO(get_logger(), "Step0: 初始右移 speed=%d time=%.1fs",
                     initial_right_speed_, initial_right_time_);
-        sendFrame(CommandEncoder::encode(CommandEncoder::TRANSLATE_RIGHT,
+        sendFrameReliable(CommandEncoder::encode(CommandEncoder::TRANSLATE_RIGHT,
                                          initial_right_speed_));
 
         delay_timer_ = create_wall_timer(
             std::chrono::duration<double>(initial_right_time_ + 0.3),
         [this]() {
             delay_timer_->cancel();
-            sendFrame(CommandEncoder::encodeStop());
+            sendFrameReliable(CommandEncoder::encodeStop());
             transitionTo(APPROACH_SPEAR);
         });
         break;
@@ -195,20 +150,20 @@ void MissionNode::transitionTo(State s) {
     case FINAL_APPROACH: {
         RCLCPP_INFO(get_logger(), "Step3c: 盲走近端 speed=%d time=%.1fs (无需视觉)",
                     final_approach_speed_, final_approach_time_s_);
-        sendFrame(CommandEncoder::encode(CommandEncoder::TRANSLATE_RIGHT,
+        sendFrameReliable(CommandEncoder::encode(CommandEncoder::TRANSLATE_RIGHT,
                                          final_approach_speed_));
         delay_timer_ = create_wall_timer(
             std::chrono::duration<double>(final_approach_time_s_ + 0.1),
         [this]() {
             delay_timer_->cancel();
-            sendFrame(CommandEncoder::encodeStop());
+            sendFrameReliable(CommandEncoder::encodeStop());
             // 腕部降到100，再右移800×0.5s
             sendWristAngle(100);
             RCLCPP_INFO(get_logger(), "腕部降至100，右移盲走800×1.0s");
-            sendFrame(CommandEncoder::encode(CommandEncoder::TRANSLATE_RIGHT, 800));
+            sendFrameReliable(CommandEncoder::encode(CommandEncoder::TRANSLATE_RIGHT, 800));
             delay_timer_ = create_wall_timer(1.1s, [this]() {
                 delay_timer_->cancel();
-                sendFrame(CommandEncoder::encodeStop());
+                sendFrameReliable(CommandEncoder::encodeStop());
                 transitionTo(GRIP_LIFT);
             });
         });
@@ -237,7 +192,7 @@ void MissionNode::transitionTo(State s) {
     case RETREAT_ROTATE: {
         RCLCPP_INFO(get_logger(), "Step6: 左移(退开) speed=%d time=%.1fs",
                     translate_left_speed_, translate_left_time_s_);
-        sendFrame(CommandEncoder::encode(CommandEncoder::TRANSLATE_LEFT,
+        sendFrameReliable(CommandEncoder::encode(CommandEncoder::TRANSLATE_LEFT,
                                          translate_left_speed_));
 
         delay_timer_ = create_wall_timer(
@@ -246,14 +201,14 @@ void MissionNode::transitionTo(State s) {
             delay_timer_->cancel();
             RCLCPP_INFO(get_logger(), "Step7: 右旋 speed=%d time=%.1fs",
                         rotate_right_speed_, rotate_right_time_s_);
-            sendFrame(CommandEncoder::encode(CommandEncoder::TURN_RIGHT,
+            sendFrameReliable(CommandEncoder::encode(CommandEncoder::TURN_RIGHT,
                                              rotate_right_speed_));
 
             delay_timer_ = create_wall_timer(
                 std::chrono::duration<double>(rotate_right_time_s_ + 0.5),
             [this]() {
                 delay_timer_->cancel();
-                sendFrame(CommandEncoder::encodeStop());
+                sendFrameReliable(CommandEncoder::encodeStop());
                 RCLCPP_INFO(get_logger(), "全车停止");
                 transitionTo(COMPLETE);
             });
@@ -274,6 +229,22 @@ void MissionNode::transitionTo(State s) {
         break;
     }
 
+    case RECOVERY: {
+        RCLCPP_WARN(get_logger(), "下位机连接丢失，关闭串口，3s后重新握手...");
+        serial_.close();
+        delay_timer_ = create_wall_timer(3s, [this]() {
+            delay_timer_->cancel();
+            if (handshakeSTM32()) {
+                RCLCPP_INFO(get_logger(), "恢复成功，重新开始任务");
+                transitionTo(INIT);
+            } else {
+                RCLCPP_ERROR(get_logger(), "恢复失败，节点继续但串口不可用");
+                // 不转移状态，等下次失败再触发恢复
+            }
+        });
+        break;
+    }
+
     default: break;
     }
 }
@@ -285,12 +256,12 @@ void MissionNode::onTick() {
     if (state_ == APPROACH_SPEAR && dt > 15.0) {
         RCLCPP_WARN(get_logger(), "[%s] 深度伺服超时 %.0fs，强制推进",
                     stateName(state_).c_str(), dt);
-        sendFrame(CommandEncoder::encodeStop());
+        sendFrameReliable(CommandEncoder::encodeStop());
         transitionTo(ALIGN_LATERAL);
     } else if (state_ == ALIGN_LATERAL && dt > lateral_timeout_s_) {
         RCLCPP_WARN(get_logger(), "[%s] 横向伺服超时 %.0fs，强制推进",
                     stateName(state_).c_str(), dt);
-        sendFrame(CommandEncoder::encodeStop());
+        sendFrameReliable(CommandEncoder::encodeStop());
         transitionTo(FINAL_APPROACH);
     }
 }
@@ -389,7 +360,7 @@ void MissionNode::onDetection(const detection_interfaces::msg::DetectionArray::S
                 float err = avg_d - static_cast<float>(target_depth_mm_);
                 if (std::abs(err) < depth_threshold_mm_) {
                     RCLCPP_INFO(get_logger(), "[%s] 深度到达！", stateName(state_).c_str());
-                    sendFrame(CommandEncoder::encodeStop());
+                    sendFrameReliable(CommandEncoder::encodeStop());
                     transitionTo(ALIGN_LATERAL);
                     return;
                 }
@@ -399,14 +370,14 @@ void MissionNode::onDetection(const detection_interfaces::msg::DetectionArray::S
                 RCLCPP_INFO(get_logger(), "[%s] 深度偏差=%.0fmm 移动=%.2fs",
                             stateName(state_).c_str(), err, move_time_s);
                 if (err > 0)
-                    sendFrame(CommandEncoder::encode(CommandEncoder::TRANSLATE_RIGHT, 2000));
+                    sendFrameReliable(CommandEncoder::encode(CommandEncoder::TRANSLATE_RIGHT, 2000));
                 else
-                    sendFrame(CommandEncoder::encode(CommandEncoder::TRANSLATE_LEFT, 2000));
+                    sendFrameReliable(CommandEncoder::encode(CommandEncoder::TRANSLATE_LEFT, 2000));
             } else {
                 float lateral_err = -pixel_off * avg_d / static_cast<float>(fx_);
                 if (std::abs(lateral_err) < lateral_threshold_mm_) {
                     RCLCPP_INFO(get_logger(), "[%s] 横向到达！", stateName(state_).c_str());
-                    sendFrame(CommandEncoder::encodeStop());
+                    sendFrameReliable(CommandEncoder::encodeStop());
                     transitionTo(FINAL_APPROACH);
                     return;
                 }
@@ -416,9 +387,9 @@ void MissionNode::onDetection(const detection_interfaces::msg::DetectionArray::S
                 RCLCPP_INFO(get_logger(), "[%s] 横向偏差=%.0fmm 移动=%.2fs",
                             stateName(state_).c_str(), lateral_err, move_time_s);
                 if (lateral_err > 0)
-                    sendFrame(CommandEncoder::encode(CommandEncoder::FORWARD, 2000));
+                    sendFrameReliable(CommandEncoder::encode(CommandEncoder::FORWARD, 2000));
                 else
-                    sendFrame(CommandEncoder::encode(CommandEncoder::BACKWARD, 2000));
+                    sendFrameReliable(CommandEncoder::encode(CommandEncoder::BACKWARD, 2000));
             }
 
             servo_buffer_.clear();
@@ -429,7 +400,7 @@ void MissionNode::onDetection(const detection_interfaces::msg::DetectionArray::S
                 std::chrono::duration<double>(move_time_s),
             [this]() {
                 servo_move_timer_->cancel();
-                sendFrame(CommandEncoder::encodeStop());
+                sendFrameReliable(CommandEncoder::encodeStop());
                 servo_moving_ = false;
                 RCLCPP_INFO(get_logger(), "[%s] 移动结束，重新收集",
                             stateName(state_).c_str());
@@ -447,52 +418,82 @@ void MissionNode::onDetection(const detection_interfaces::msg::DetectionArray::S
 }
 
 // ── 夹爪 ──
-void MissionNode::sendGrip()       { sendFrame(CommandEncoder::encodeGrip()); }
-void MissionNode::sendRelease()    { sendFrame(CommandEncoder::encodeRelease()); }
+void MissionNode::sendGrip()       { sendFrameReliable(CommandEncoder::encodeGrip()); }
+void MissionNode::sendRelease()    { sendFrameReliable(CommandEncoder::encodeRelease()); }
 void MissionNode::sendWristAngle(int deg) {
-    sendFrame(CommandEncoder::encodeWristAngle(static_cast<uint8_t>(deg)));
+    sendFrameReliable(CommandEncoder::encodeWristAngle(static_cast<uint8_t>(deg)));
 }
 
-// ── 命令名称映射 ──
-static const char* motionName(const std::vector<uint8_t>& frame) {
-    if (frame.size() < 6) return "?";
-    // frame: M + 4-char cmd + 5-digit data  (10 bytes ASCII)
-    std::string cmd(frame.begin() + 1, frame.begin() + 5);
-    if (cmd == "fwrd") return "前进";
-    if (cmd == "bwrd") return "后退";
-    if (cmd == "ltrn") return "左转";
-    if (cmd == "rtrn") return "右转";
-    if (cmd == "ltrl") return "左移";
-    if (cmd == "rtrl") return "右移";
-    if (cmd == "stop") return "停止";
-    if (cmd == "fing") {
-        std::string data(frame.begin() + 5, frame.begin() + 10);
-        return (data == "55555") ? "夹爪夹紧" : (data == "44444") ? "夹爪松开" : "夹爪";
+// ── STM32 握手（阻塞轮询直到就绪）──
+bool MissionNode::handshakeSTM32() {
+    RCLCPP_INFO(get_logger(), "等待 STM32 上电: %s", serial_device_.c_str());
+
+    const uint8_t hs_cmd[] = {'M','s','t','o','p','0','0','0','0','0'};
+    bool ready = false;
+    int retry = 0;
+
+    while (!ready && rclcpp::ok()) {
+        ++retry;
+
+        if (!serial_.isOpen()) {
+            if (!serial_.open(serial_device_, baudrate_)) {
+                RCLCPP_WARN(get_logger(), "[第%d次] 串口未就绪，1秒后重试...", retry);
+                std::this_thread::sleep_for(std::chrono::seconds(1));
+                continue;
+            }
+            RCLCPP_INFO(get_logger(), "[第%d次] 串口已打开", retry);
+        }
+
+        serial_.flush();
+        serial_.send(hs_cmd, 10);
+
+        std::this_thread::sleep_for(std::chrono::milliseconds(100));
+        uint8_t buf[64] = {};
+        int n = serial_.recv(buf, sizeof(buf) - 1, 100);
+        if (n > 0) {
+            std::string resp(reinterpret_cast<char*>(buf), n);
+            RCLCPP_INFO(get_logger(), "[第%d次] 握手返回: %s", retry, resp.c_str());
+            if (resp.find("Car stopped") != std::string::npos) {
+                ready = true;
+                RCLCPP_INFO(get_logger(), "STM32 固件就绪！（%d次握手成功）", retry);
+            } else {
+                RCLCPP_WARN(get_logger(), "[第%d次] 返回异常，重试...", retry);
+            }
+        } else {
+            RCLCPP_WARN(get_logger(), "[第%d次] 无应答，重试...", retry);
+        }
+
+        if (!ready) {
+            std::this_thread::sleep_for(std::chrono::seconds(1));
+        }
     }
-    if (cmd == "fwrs") return "腕部";
-    return "?";
+
+    if (!ready) {
+        RCLCPP_ERROR(get_logger(), "STM32 握手失败！");
+    }
+    return ready;
 }
 
-static int motionData(const std::vector<uint8_t>& frame) {
-    if (frame.size() < 10) return 0;
-    return std::stoi(std::string(frame.begin() + 5, frame.begin() + 10));
-}
+// ── 串口（委托 SerialInterface::sendReliable）──
+bool MissionNode::sendFrameReliable(const std::vector<uint8_t>& frame) {
+    const char* expected = CommandEncoder::expectedAck(frame);
+    bool ok = serial_.sendReliable(frame.data(), frame.size(), expected);
+    if (ok) {
+        consecutive_failures_ = 0;
+        return true;
+    }
 
-// ── 串口 ──
-bool MissionNode::sendFrame(const std::vector<uint8_t>& frame) {
-    if (!serial_.isOpen()) {
-        RCLCPP_ERROR(get_logger(), "串口未打开，无法发送");
-        return false;
+    consecutive_failures_++;
+    RCLCPP_WARN(get_logger(), "[%s] 发送失败 (连续%d次)",
+                stateName(state_).c_str(), consecutive_failures_);
+
+    if (consecutive_failures_ >= 3) {
+        RCLCPP_ERROR(get_logger(), "[%s] 连续%d次发送失败，下位机可能断电！",
+                     stateName(state_).c_str(), consecutive_failures_);
+        consecutive_failures_ = 0;
+        transitionTo(RECOVERY);
     }
-    bool ok = serial_.send(frame.data(), frame.size());
-    if (!ok) {
-        RCLCPP_ERROR(get_logger(), "串口写入失败 (len=%zu)", frame.size());
-    } else {
-        RCLCPP_INFO(get_logger(), "[%s] 串口发送: %s %d",
-                    stateName(state_).c_str(),
-                    motionName(frame), motionData(frame));
-    }
-    return ok;
+    return false;
 }
 
 // ── main ──

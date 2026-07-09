@@ -23,7 +23,17 @@ target_include_directories(r2_mission_node PRIVATE
 target_link_libraries(r2_mission_node r2_serial_driver_core)
 ament_target_dependencies(r2_mission_node rclcpp detection_interfaces std_msgs)
 
-install(TARGETS r2_mission_node
+add_executable(blue_mission_node
+  src/bluemisson_node.cpp
+)
+target_include_directories(blue_mission_node PRIVATE
+  src
+  ${CMAKE_CURRENT_SOURCE_DIR}/../r2_serial_driver/src
+)
+target_link_libraries(blue_mission_node r2_serial_driver_core)
+ament_target_dependencies(blue_mission_node rclcpp detection_interfaces std_msgs)
+
+install(TARGETS r2_mission_node blue_mission_node
   RUNTIME DESTINATION lib/${PROJECT_NAME}
 )
 

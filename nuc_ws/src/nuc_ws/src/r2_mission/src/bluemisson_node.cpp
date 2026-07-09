@@ -120,17 +120,23 @@ void BlueMissionNode::transitionTo(State s) {
     }
 
     case ALIGN_RACK: {
-        RCLCPP_INFO(get_logger(), "Step0: 初始右移 speed=%d time=%.1fs",
-                    initial_right_speed_, initial_right_time_);
-        sendFrameReliable(CommandEncoder::encode(CommandEncoder::TRANSLATE_RIGHT,
-                                         initial_right_speed_));
+        RCLCPP_INFO(get_logger(), "Step0: 前进 speed=2000 time=5.0s");
+        sendFrameReliable(CommandEncoder::encode(CommandEncoder::FORWARD, 2000));
 
-        delay_timer_ = create_wall_timer(
-            std::chrono::duration<double>(initial_right_time_ + 0.3),
-        [this]() {
+        delay_timer_ = create_wall_timer(5.05s, [this]() {
             delay_timer_->cancel();
-            sendFrameReliable(CommandEncoder::encodeStop());
-            transitionTo(APPROACH_SPEAR);
+            RCLCPP_INFO(get_logger(), "Step0b: 右移 speed=%d time=%.1fs",
+                        initial_right_speed_, initial_right_time_);
+            sendFrameReliable(CommandEncoder::encode(CommandEncoder::TRANSLATE_RIGHT,
+                                             initial_right_speed_));
+
+            delay_timer_ = create_wall_timer(
+                std::chrono::duration<double>(initial_right_time_ + 0.05),
+            [this]() {
+                delay_timer_->cancel();
+                sendFrameReliable(CommandEncoder::encodeStop());
+                transitionTo(APPROACH_SPEAR);
+            });
         });
         break;
     }
@@ -153,7 +159,7 @@ void BlueMissionNode::transitionTo(State s) {
         sendFrameReliable(CommandEncoder::encode(CommandEncoder::TRANSLATE_RIGHT,
                                          final_approach_speed_));
         delay_timer_ = create_wall_timer(
-            std::chrono::duration<double>(final_approach_time_s_ + 0.1),
+            std::chrono::duration<double>(final_approach_time_s_ + 0.05),
         [this]() {
             delay_timer_->cancel();
             sendFrameReliable(CommandEncoder::encodeStop());
@@ -196,21 +202,27 @@ void BlueMissionNode::transitionTo(State s) {
                                          translate_left_speed_));
 
         delay_timer_ = create_wall_timer(
-            std::chrono::duration<double>(translate_left_time_s_ + 0.3),
+            std::chrono::duration<double>(translate_left_time_s_ + 0.05),
         [this]() {
             delay_timer_->cancel();
-            RCLCPP_INFO(get_logger(), "Step7: 右旋 speed=%d time=%.1fs",
+            RCLCPP_INFO(get_logger(), "Step7: 左旋 speed=%d time=%.1fs",
                         rotate_right_speed_, rotate_right_time_s_);
-            sendFrameReliable(CommandEncoder::encode(CommandEncoder::TURN_RIGHT,
+            sendFrameReliable(CommandEncoder::encode(CommandEncoder::TURN_LEFT,
                                              rotate_right_speed_));
 
             delay_timer_ = create_wall_timer(
-                std::chrono::duration<double>(rotate_right_time_s_ + 0.5),
+                std::chrono::duration<double>(rotate_right_time_s_ + 0.05),
             [this]() {
                 delay_timer_->cancel();
-                sendFrameReliable(CommandEncoder::encodeStop());
-                RCLCPP_INFO(get_logger(), "全车停止");
-                transitionTo(COMPLETE);
+                RCLCPP_INFO(get_logger(), "Step8: 再左移退开 speed=2000 time=5.0s");
+                sendFrameReliable(CommandEncoder::encode(CommandEncoder::TRANSLATE_LEFT, 2000));
+
+                delay_timer_ = create_wall_timer(5.05s, [this]() {
+                    delay_timer_->cancel();
+                    sendFrameReliable(CommandEncoder::encodeStop());
+                    RCLCPP_INFO(get_logger(), "全车停止");
+                    transitionTo(COMPLETE);
+                });
             });
         });
         break;

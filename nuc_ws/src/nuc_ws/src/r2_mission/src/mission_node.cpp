@@ -126,7 +126,7 @@ void MissionNode::transitionTo(State s) {
                                          initial_right_speed_));
 
         delay_timer_ = create_wall_timer(
-            std::chrono::duration<double>(initial_right_time_ + 0.3),
+            std::chrono::duration<double>(initial_right_time_ + 0.05),
         [this]() {
             delay_timer_->cancel();
             sendFrameReliable(CommandEncoder::encodeStop());
@@ -153,7 +153,7 @@ void MissionNode::transitionTo(State s) {
         sendFrameReliable(CommandEncoder::encode(CommandEncoder::TRANSLATE_RIGHT,
                                          final_approach_speed_));
         delay_timer_ = create_wall_timer(
-            std::chrono::duration<double>(final_approach_time_s_ + 0.1),
+            std::chrono::duration<double>(final_approach_time_s_ + 0.05),
         [this]() {
             delay_timer_->cancel();
             sendFrameReliable(CommandEncoder::encodeStop());
@@ -196,7 +196,7 @@ void MissionNode::transitionTo(State s) {
                                          translate_left_speed_));
 
         delay_timer_ = create_wall_timer(
-            std::chrono::duration<double>(translate_left_time_s_ + 0.3),
+            std::chrono::duration<double>(translate_left_time_s_ + 0.05),
         [this]() {
             delay_timer_->cancel();
             RCLCPP_INFO(get_logger(), "Step7: 右旋 speed=%d time=%.1fs",
@@ -205,7 +205,7 @@ void MissionNode::transitionTo(State s) {
                                              rotate_right_speed_));
 
             delay_timer_ = create_wall_timer(
-                std::chrono::duration<double>(rotate_right_time_s_ + 0.5),
+                std::chrono::duration<double>(rotate_right_time_s_ + 0.05),
             [this]() {
                 delay_timer_->cancel();
                 sendFrameReliable(CommandEncoder::encodeStop());

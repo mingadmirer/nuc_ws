@@ -218,14 +218,6 @@ void MissionNode::transitionTo(State s) {
 
     case COMPLETE: {
         RCLCPP_INFO(get_logger(), "=== 崇武探幽 完成 ===");
-        RCLCPP_INFO(get_logger(), "等待 %.0fs 后松开夹爪...", release_delay_s_);
-        delay_timer_ = create_wall_timer(
-            std::chrono::duration<double>(release_delay_s_),
-        [this]() {
-            delay_timer_->cancel();
-            RCLCPP_INFO(get_logger(), "松开夹爪");
-            sendRelease();
-        });
         break;
     }
 

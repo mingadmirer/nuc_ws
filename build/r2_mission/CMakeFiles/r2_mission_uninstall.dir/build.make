@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/src/r2_mission
+CMAKE_SOURCE_DIR = /root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_mission
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mingadmirer/nuc_ws/build/r2_mission
+CMAKE_BINARY_DIR = /root/nuc_ws/build/r2_mission
 
 # Utility rule file for r2_mission_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/r2_mission_uninstall.dir/compiler_depend.make
 include CMakeFiles/r2_mission_uninstall.dir/progress.make
 
 CMakeFiles/r2_mission_uninstall:
-	/usr/bin/cmake -P /home/mingadmirer/nuc_ws/build/r2_mission/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /root/nuc_ws/build/r2_mission/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 r2_mission_uninstall: CMakeFiles/r2_mission_uninstall
 r2_mission_uninstall: CMakeFiles/r2_mission_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/r2_mission_uninstall.dir/clean:
 .PHONY : CMakeFiles/r2_mission_uninstall.dir/clean
 
 CMakeFiles/r2_mission_uninstall.dir/depend:
-	cd /home/mingadmirer/nuc_ws/build/r2_mission && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/src/r2_mission /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/src/r2_mission /home/mingadmirer/nuc_ws/build/r2_mission /home/mingadmirer/nuc_ws/build/r2_mission /home/mingadmirer/nuc_ws/build/r2_mission/CMakeFiles/r2_mission_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/nuc_ws/build/r2_mission && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_mission /root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_mission /root/nuc_ws/build/r2_mission /root/nuc_ws/build/r2_mission /root/nuc_ws/build/r2_mission/CMakeFiles/r2_mission_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/r2_mission_uninstall.dir/depend
 

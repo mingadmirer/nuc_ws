@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/src/detection_interfaces
+CMAKE_SOURCE_DIR = /root/nuc_ws/nuc_ws/src/nuc_ws/src/detection_interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mingadmirer/nuc_ws/build/detection_interfaces
+CMAKE_BINARY_DIR = /root/nuc_ws/build/detection_interfaces
 
 # Utility rule file for ament_cmake_python_copy_detection_interfaces.
 
@@ -67,7 +67,7 @@ include CMakeFiles/ament_cmake_python_copy_detection_interfaces.dir/compiler_dep
 include CMakeFiles/ament_cmake_python_copy_detection_interfaces.dir/progress.make
 
 CMakeFiles/ament_cmake_python_copy_detection_interfaces:
-	/usr/bin/cmake -E copy_directory /home/mingadmirer/nuc_ws/build/detection_interfaces/rosidl_generator_py/detection_interfaces /home/mingadmirer/nuc_ws/build/detection_interfaces/ament_cmake_python/detection_interfaces/detection_interfaces
+	/usr/bin/cmake -E copy_directory /root/nuc_ws/build/detection_interfaces/rosidl_generator_py/detection_interfaces /root/nuc_ws/build/detection_interfaces/ament_cmake_python/detection_interfaces/detection_interfaces
 
 ament_cmake_python_copy_detection_interfaces: CMakeFiles/ament_cmake_python_copy_detection_interfaces
 ament_cmake_python_copy_detection_interfaces: CMakeFiles/ament_cmake_python_copy_detection_interfaces.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/ament_cmake_python_copy_detection_interfaces.dir/clean:
 .PHONY : CMakeFiles/ament_cmake_python_copy_detection_interfaces.dir/clean
 
 CMakeFiles/ament_cmake_python_copy_detection_interfaces.dir/depend:
-	cd /home/mingadmirer/nuc_ws/build/detection_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/src/detection_interfaces /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/src/detection_interfaces /home/mingadmirer/nuc_ws/build/detection_interfaces /home/mingadmirer/nuc_ws/build/detection_interfaces /home/mingadmirer/nuc_ws/build/detection_interfaces/CMakeFiles/ament_cmake_python_copy_detection_interfaces.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/nuc_ws/build/detection_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/nuc_ws/nuc_ws/src/nuc_ws/src/detection_interfaces /root/nuc_ws/nuc_ws/src/nuc_ws/src/detection_interfaces /root/nuc_ws/build/detection_interfaces /root/nuc_ws/build/detection_interfaces /root/nuc_ws/build/detection_interfaces/CMakeFiles/ament_cmake_python_copy_detection_interfaces.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/ament_cmake_python_copy_detection_interfaces.dir/depend
 

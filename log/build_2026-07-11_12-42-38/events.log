@@ -1,0 +1,1068 @@
+[0.000000] (-) TimerEvent: {}
+[0.002029] (detection_interfaces) JobQueued: {'identifier': 'detection_interfaces', 'dependencies': OrderedDict()}
+[0.005463] (r2_mission) JobQueued: {'identifier': 'r2_mission', 'dependencies': OrderedDict([('detection_interfaces', '/root/nuc_ws/install/detection_interfaces')])}
+[0.006944] (detection_interfaces) JobStarted: {'identifier': 'detection_interfaces'}
+[0.069423] (detection_interfaces) JobProgress: {'identifier': 'detection_interfaces', 'progress': 'cmake'}
+[0.074076] (detection_interfaces) JobProgress: {'identifier': 'detection_interfaces', 'progress': 'build'}
+[0.078641] (detection_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/nuc_ws/build/detection_interfaces', '--', '-j8', '-l8'], 'cwd': '/root/nuc_ws/build/detection_interfaces', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('USER', 'root'), ('SSH_CLIENT', '192.168.127.1 5978 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/root/.vscode-server/cli/servers/Stable-fc3def6774c76082adf699d366f31a557ce5573f/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/root/nuc_ws/install/detection_interfaces/lib:/home/sunrise/yolov8_bpu_ws/install/astra_camera/lib:/home/sunrise/yolov8_bpu_ws/install/astra_camera_msgs/lib:/opt/tros/humble/lib/aarch64-linux-gnu:/opt/tros/humble/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/hobot/lib:/app/lib:/app/pub/lib:/middleware/lib:/middleware/pub/lib:/usr/hobot/lib/sensor:/system/lib:/system/usr/lib:/lib:'), ('BROWSER', '/root/.vscode-server/cli/servers/Stable-fc3def6774c76082adf699d366f31a557ce5573f/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/root'), ('TERM_PROGRAM_VERSION', '1.128.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/0/vscode-ipc-13a3860b-bd96-4aca-81f8-606cdac14e19.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/cli/servers/Stable-fc3def6774c76082adf699d366f31a557ce5573f/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/cli/servers/Stable-fc3def6774c76082adf699d366f31a557ce5573f/server/node'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/root/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/0/bus'), ('COLORTERM', 'truecolor'), ('DEBUGINFOD_URLS', ''), ('TROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/root/nuc_ws/install:/home/sunrise/yolov8_bpu_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('CLAUDE_CODE_SSE_PORT', '40014'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/bin:/root/.npm-global/bin:/root/.local/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/root/.vscode-server/cli/servers/Stable-fc3def6774c76082adf699d366f31a557ce5573f/server/bin/remote-cli:/usr/bin:/root/.npm-global/bin:/root/.local/bin:/opt/tros/humble/bin:/opt/ros/humble/bin:/usr/hobot/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/root/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/bundled/scripts/noConfigScripts'), ('XDG_RUNTIME_DIR', '/run/user/0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/root/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-727925dfe9f5f408.txt'), ('LANG', 'zh_CN.UTF-8'), ('PYTHONSTARTUP', '/root/.vscode-server/data/User/workspaceStorage/e8a4ff05734f609f5190758930daf7ff-1/ms-python.python/pythonrc.py'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/0/vscode-git-48e5be0f1a.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/root/nuc_ws/install/r2_mission:/root/nuc_ws/install/detection_interfaces:/home/sunrise/yolov8_bpu_ws/install/yolov8_bpu:/home/sunrise/yolov8_bpu_ws/install/astra_camera:/home/sunrise/yolov8_bpu_ws/install/astra_camera_msgs:/opt/tros/humble:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/root/nuc_ws/build/detection_interfaces'), ('LC_ALL', 'zh_CN.UTF-8'), ('COPILOT_DEBUG_NONCE', 'd32c0e1ac4aa323d25c24c27e5167647'), ('SSH_CONNECTION', '192.168.127.1 5978 192.168.127.10 22'), ('PYTHONPATH', '/root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages:/home/sunrise/yolov8_bpu_ws/install/yolov8_bpu/lib/python3.10/site-packages:/home/sunrise/yolov8_bpu_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages:/opt/tros/humble/lib/python3.10/site-packages:/opt/tros/humble/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/nuc_ws/install/r2_mission:/root/nuc_ws/install/detection_interfaces:/home/sunrise/yolov8_bpu_ws/install/astra_camera:/home/sunrise/yolov8_bpu_ws/install/astra_camera_msgs:/home/sunrise/yolov8_bpu_ws/install/yolov8_bpu:/opt/tros/humble:/opt/ros/humble')]), 'shell': False}
+[0.100084] (-) TimerEvent: {}
+[0.201330] (-) TimerEvent: {}
+[0.306296] (-) TimerEvent: {}
+[0.409310] (-) TimerEvent: {}
+[0.429282] (detection_interfaces) StdoutLine: {'line': b'[  2%] Built target detection_interfaces__cpp\n'}
+[0.436455] (detection_interfaces) StdoutLine: {'line': b'[ 12%] Built target detection_interfaces__rosidl_generator_c\n'}
+[0.509557] (-) TimerEvent: {}
+[0.524052] (detection_interfaces) StdoutLine: {'line': b'[ 12%] Built target ament_cmake_python_copy_detection_interfaces\n'}
+[0.605895] (detection_interfaces) StdoutLine: {'line': b'[ 23%] Built target detection_interfaces__rosidl_typesupport_cpp\n'}
+[0.619845] (-) TimerEvent: {}
+[0.649397] (detection_interfaces) StdoutLine: {'line': b'[ 41%] Built target detection_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[0.656803] (detection_interfaces) StdoutLine: {'line': b'[ 43%] Built target detection_interfaces__rosidl_typesupport_introspection_c\n'}
+[0.676879] (detection_interfaces) StdoutLine: {'line': b'[ 53%] Built target detection_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[0.722484] (detection_interfaces) StdoutLine: {'line': b'[ 64%] Built target detection_interfaces__rosidl_typesupport_c\n'}
+[0.724587] (-) TimerEvent: {}
+[0.781959] (detection_interfaces) StdoutLine: {'line': b'[ 74%] Built target detection_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[0.824861] (-) TimerEvent: {}
+[0.906151] (detection_interfaces) StdoutLine: {'line': b'[ 74%] Built target detection_interfaces\n'}
+[0.925182] (-) TimerEvent: {}
+[1.026933] (-) TimerEvent: {}
+[1.030512] (detection_interfaces) StdoutLine: {'line': b'[ 76%] Built target detection_interfaces__py\n'}
+[1.127194] (-) TimerEvent: {}
+[1.158517] (detection_interfaces) StdoutLine: {'line': b'[ 84%] Built target detection_interfaces__rosidl_generator_py\n'}
+[1.228817] (-) TimerEvent: {}
+[1.317141] (detection_interfaces) StdoutLine: {'line': b'[ 89%] Built target detection_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[1.323813] (detection_interfaces) StdoutLine: {'line': b'[ 94%] Built target detection_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[1.329047] (-) TimerEvent: {}
+[1.365728] (detection_interfaces) StdoutLine: {'line': b'[100%] Built target detection_interfaces__rosidl_typesupport_c__pyext\n'}
+[1.429314] (-) TimerEvent: {}
+[1.530590] (-) TimerEvent: {}
+[1.631673] (-) TimerEvent: {}
+[1.732825] (-) TimerEvent: {}
+[1.833997] (-) TimerEvent: {}
+[1.935081] (-) TimerEvent: {}
+[2.036221] (-) TimerEvent: {}
+[2.137402] (-) TimerEvent: {}
+[2.238468] (-) TimerEvent: {}
+[2.339635] (-) TimerEvent: {}
+[2.441073] (-) TimerEvent: {}
+[2.542174] (-) TimerEvent: {}
+[2.643335] (-) TimerEvent: {}
+[2.666457] (detection_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[2.743545] (-) TimerEvent: {}
+[2.817533] (detection_interfaces) StdoutLine: {'line': b'writing detection_interfaces.egg-info/PKG-INFO\n'}
+[2.821229] (detection_interfaces) StdoutLine: {'line': b'writing dependency_links to detection_interfaces.egg-info/dependency_links.txt\n'}
+[2.824532] (detection_interfaces) StdoutLine: {'line': b'writing top-level names to detection_interfaces.egg-info/top_level.txt\n'}
+[2.843820] (-) TimerEvent: {}
+[2.944945] (-) TimerEvent: {}
+[3.045935] (-) TimerEvent: {}
+[3.147036] (-) TimerEvent: {}
+[3.248280] (-) TimerEvent: {}
+[3.274676] (detection_interfaces) StdoutLine: {'line': b"reading manifest file 'detection_interfaces.egg-info/SOURCES.txt'\n"}
+[3.283286] (detection_interfaces) StdoutLine: {'line': b"writing manifest file 'detection_interfaces.egg-info/SOURCES.txt'\n"}
+[3.348546] (-) TimerEvent: {}
+[3.449854] (-) TimerEvent: {}
+[3.551132] (-) TimerEvent: {}
+[3.594309] (detection_interfaces) StdoutLine: {'line': b'[100%] Built target ament_cmake_python_build_detection_interfaces_egg\n'}
+[3.651382] (-) TimerEvent: {}
+[3.664220] (detection_interfaces) CommandEnded: {'returncode': 0}
+[3.672055] (detection_interfaces) JobProgress: {'identifier': 'detection_interfaces', 'progress': 'install'}
+[3.722745] (detection_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/root/nuc_ws/build/detection_interfaces'], 'cwd': '/root/nuc_ws/build/detection_interfaces', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('USER', 'root'), ('SSH_CLIENT', '192.168.127.1 5978 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/root/.vscode-server/cli/servers/Stable-fc3def6774c76082adf699d366f31a557ce5573f/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/root/nuc_ws/install/detection_interfaces/lib:/home/sunrise/yolov8_bpu_ws/install/astra_camera/lib:/home/sunrise/yolov8_bpu_ws/install/astra_camera_msgs/lib:/opt/tros/humble/lib/aarch64-linux-gnu:/opt/tros/humble/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/hobot/lib:/app/lib:/app/pub/lib:/middleware/lib:/middleware/pub/lib:/usr/hobot/lib/sensor:/system/lib:/system/usr/lib:/lib:'), ('BROWSER', '/root/.vscode-server/cli/servers/Stable-fc3def6774c76082adf699d366f31a557ce5573f/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/root'), ('TERM_PROGRAM_VERSION', '1.128.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/0/vscode-ipc-13a3860b-bd96-4aca-81f8-606cdac14e19.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/cli/servers/Stable-fc3def6774c76082adf699d366f31a557ce5573f/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/cli/servers/Stable-fc3def6774c76082adf699d366f31a557ce5573f/server/node'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/root/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/0/bus'), ('COLORTERM', 'truecolor'), ('DEBUGINFOD_URLS', ''), ('TROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/root/nuc_ws/install:/home/sunrise/yolov8_bpu_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('CLAUDE_CODE_SSE_PORT', '40014'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/bin:/root/.npm-global/bin:/root/.local/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/root/.vscode-server/cli/servers/Stable-fc3def6774c76082adf699d366f31a557ce5573f/server/bin/remote-cli:/usr/bin:/root/.npm-global/bin:/root/.local/bin:/opt/tros/humble/bin:/opt/ros/humble/bin:/usr/hobot/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/root/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/bundled/scripts/noConfigScripts'), ('XDG_RUNTIME_DIR', '/run/user/0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/root/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-727925dfe9f5f408.txt'), ('LANG', 'zh_CN.UTF-8'), ('PYTHONSTARTUP', '/root/.vscode-server/data/User/workspaceStorage/e8a4ff05734f609f5190758930daf7ff-1/ms-python.python/pythonrc.py'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/0/vscode-git-48e5be0f1a.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/root/nuc_ws/install/r2_mission:/root/nuc_ws/install/detection_interfaces:/home/sunrise/yolov8_bpu_ws/install/yolov8_bpu:/home/sunrise/yolov8_bpu_ws/install/astra_camera:/home/sunrise/yolov8_bpu_ws/install/astra_camera_msgs:/opt/tros/humble:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/root/nuc_ws/build/detection_interfaces'), ('LC_ALL', 'zh_CN.UTF-8'), ('COPILOT_DEBUG_NONCE', 'd32c0e1ac4aa323d25c24c27e5167647'), ('SSH_CONNECTION', '192.168.127.1 5978 192.168.127.10 22'), ('PYTHONPATH', '/root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages:/home/sunrise/yolov8_bpu_ws/install/yolov8_bpu/lib/python3.10/site-packages:/home/sunrise/yolov8_bpu_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages:/opt/tros/humble/lib/python3.10/site-packages:/opt/tros/humble/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/nuc_ws/install/r2_mission:/root/nuc_ws/install/detection_interfaces:/home/sunrise/yolov8_bpu_ws/install/astra_camera:/home/sunrise/yolov8_bpu_ws/install/astra_camera_msgs:/home/sunrise/yolov8_bpu_ws/install/yolov8_bpu:/opt/tros/humble:/opt/ros/humble')]), 'shell': False}
+[3.751629] (-) TimerEvent: {}
+[3.776307] (detection_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[3.778906] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/ament_index/resource_index/rosidl_interfaces/detection_interfaces\n'}
+[3.781188] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces\n'}
+[3.783057] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg\n'}
+[3.788033] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail\n'}
+[3.792520] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__functions.h\n'}
+[3.794179] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__type_support.h\n'}
+[3.797362] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__functions.c\n'}
+[3.798793] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__functions.h\n'}
+[3.800449] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__type_support.h\n'}
+[3.802078] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__struct.h\n'}
+[3.802998] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__struct.h\n'}
+[3.805446] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__functions.c\n'}
+[3.808474] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[3.809735] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detection_array.h\n'}
+[3.811380] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detection_result.h\n'}
+[3.813237] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/environment/library_path.sh\n'}
+[3.814299] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/environment/library_path.dsv\n'}
+[3.815266] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_generator_c.so\n'}
+[3.816214] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces\n'}
+[3.817133] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg\n'}
+[3.818096] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail\n'}
+[3.819049] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__rosidl_typesupport_fastrtps_c.h\n'}
+[3.819857] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__rosidl_typesupport_fastrtps_c.h\n'}
+[3.820762] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[3.821621] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[3.822437] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces\n'}
+[3.823237] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg\n'}
+[3.823979] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail\n'}
+[3.824756] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__struct.hpp\n'}
+[3.825493] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__builder.hpp\n'}
+[3.826350] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__type_support.hpp\n'}
+[3.827197] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__builder.hpp\n'}
+[3.828121] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__traits.hpp\n'}
+[3.828966] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__type_support.hpp\n'}
+[3.829787] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__struct.hpp\n'}
+[3.830756] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__traits.hpp\n'}
+[3.831731] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detection_result.hpp\n'}
+[3.832602] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[3.833438] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detection_array.hpp\n'}
+[3.834426] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces\n'}
+[3.835269] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg\n'}
+[3.836199] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail\n'}
+[3.837137] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.838235] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[3.839164] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/dds_fastrtps\n'}
+[3.839962] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[3.840778] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[3.841578] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces\n'}
+[3.842459] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg\n'}
+[3.843240] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail\n'}
+[3.844015] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__type_support.c\n'}
+[3.844873] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__type_support.c\n'}
+[3.845629] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__rosidl_typesupport_introspection_c.h\n'}
+[3.846364] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__rosidl_typesupport_introspection_c.h\n'}
+[3.847237] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[3.849749] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[3.852351] (-) TimerEvent: {}
+[3.854515] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_c.so\n'}
+[3.855656] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces\n'}
+[3.856547] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg\n'}
+[3.857478] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail\n'}
+[3.858519] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__type_support.cpp\n'}
+[3.859369] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__type_support.cpp\n'}
+[3.860317] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.861294] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__rosidl_typesupport_introspection_cpp.hpp\n'}
+[3.862118] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[3.863067] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_cpp.so\n'}
+[3.863926] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/environment/pythonpath.sh\n'}
+[3.865080] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/environment/pythonpath.dsv\n'}
+[3.866122] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces-1.0.0-py3.10.egg-info\n'}
+[3.867121] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces-1.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[3.868084] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces-1.0.0-py3.10.egg-info/PKG-INFO\n'}
+[3.869012] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces-1.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[3.869863] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces-1.0.0-py3.10.egg-info/top_level.txt\n'}
+[3.870715] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces\n'}
+[3.871501] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/detection_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[3.872425] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/libdetection_interfaces__rosidl_generator_py.so\n'}
+[3.873287] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/_detection_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[3.874202] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/detection_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[3.875089] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/detection_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[3.876184] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/msg\n'}
+[3.877030] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/msg/_detection_result_s.c\n'}
+[3.878092] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/msg/_detection_array_s.c\n'}
+[3.878979] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/msg/_detection_array.py\n'}
+[3.880038] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/msg/_detection_result.py\n'}
+[3.880935] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/msg/__init__.py\n'}
+[3.881791] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/_detection_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[3.882629] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/__init__.py\n'}
+[3.883472] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/_detection_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[3.952615] (-) TimerEvent: {}
+[4.053766] (-) TimerEvent: {}
+[4.097970] (detection_interfaces) StdoutLine: {'line': b"Listing '/root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces'...\n"}
+[4.099159] (detection_interfaces) StdoutLine: {'line': b"Listing '/root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/msg'...\n"}
+[4.154087] (-) TimerEvent: {}
+[4.162403] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/detection_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[4.164002] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/detection_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[4.165574] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/detection_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[4.167127] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_generator_py.so\n'}
+[4.178269] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/msg/DetectionResult.idl\n'}
+[4.179224] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/msg/DetectionArray.idl\n'}
+[4.180047] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/msg/DetectionResult.msg\n'}
+[4.180864] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/msg/DetectionArray.msg\n'}
+[4.181616] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/ament_index/resource_index/package_run_dependencies/detection_interfaces\n'}
+[4.182461] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/ament_index/resource_index/parent_prefix_path/detection_interfaces\n'}
+[4.183307] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/environment/ament_prefix_path.sh\n'}
+[4.184122] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/environment/ament_prefix_path.dsv\n'}
+[4.184923] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/environment/path.sh\n'}
+[4.185685] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/environment/path.dsv\n'}
+[4.186452] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/local_setup.bash\n'}
+[4.190164] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/local_setup.sh\n'}
+[4.193521] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/local_setup.zsh\n'}
+[4.197714] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/local_setup.dsv\n'}
+[4.198656] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/package.dsv\n'}
+[4.200501] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/ament_index/resource_index/packages/detection_interfaces\n'}
+[4.203166] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/export_detection_interfaces__rosidl_generator_cExport.cmake\n'}
+[4.205581] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/export_detection_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[4.208091] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/export_detection_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[4.210634] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/export_detection_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[4.211644] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/export_detection_interfaces__rosidl_generator_cppExport.cmake\n'}
+[4.212556] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/export_detection_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[4.213382] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/export_detection_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[4.214168] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[4.214935] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[4.215728] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[4.216557] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[4.219011] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[4.220285] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[4.221211] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[4.222124] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[4.222950] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/export_detection_interfaces__rosidl_generator_pyExport.cmake\n'}
+[4.223761] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/export_detection_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[4.251867] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[4.252952] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[4.253822] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[4.254755] (-) TimerEvent: {}
+[4.255538] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[4.256840] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[4.259176] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[4.260182] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[4.261072] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfacesConfig.cmake\n'}
+[4.261908] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfacesConfig-version.cmake\n'}
+[4.262754] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/package.xml\n'}
+[4.263606] (detection_interfaces) CommandEnded: {'returncode': 0}
+[4.359419] (-) TimerEvent: {}
+[4.462830] (-) TimerEvent: {}
+[4.472790] (detection_interfaces) JobEnded: {'identifier': 'detection_interfaces', 'rc': 0}
+[4.477627] (r2_mission) JobStarted: {'identifier': 'r2_mission'}
+[4.539418] (r2_mission) JobProgress: {'identifier': 'r2_mission', 'progress': 'cmake'}
+[4.545082] (r2_mission) JobProgress: {'identifier': 'r2_mission', 'progress': 'build'}
+[4.547507] (r2_mission) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/nuc_ws/build/r2_mission', '--', '-j8', '-l8'], 'cwd': '/root/nuc_ws/build/r2_mission', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('USER', 'root'), ('SSH_CLIENT', '192.168.127.1 5978 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/root/.vscode-server/cli/servers/Stable-fc3def6774c76082adf699d366f31a557ce5573f/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/root/nuc_ws/install/detection_interfaces/lib:/home/sunrise/yolov8_bpu_ws/install/astra_camera/lib:/home/sunrise/yolov8_bpu_ws/install/astra_camera_msgs/lib:/opt/tros/humble/lib/aarch64-linux-gnu:/opt/tros/humble/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/hobot/lib:/app/lib:/app/pub/lib:/middleware/lib:/middleware/pub/lib:/usr/hobot/lib/sensor:/system/lib:/system/usr/lib:/lib'), ('BROWSER', '/root/.vscode-server/cli/servers/Stable-fc3def6774c76082adf699d366f31a557ce5573f/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/root'), ('TERM_PROGRAM_VERSION', '1.128.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/0/vscode-ipc-13a3860b-bd96-4aca-81f8-606cdac14e19.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/cli/servers/Stable-fc3def6774c76082adf699d366f31a557ce5573f/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/cli/servers/Stable-fc3def6774c76082adf699d366f31a557ce5573f/server/node'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/root/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/0/bus'), ('COLORTERM', 'truecolor'), ('DEBUGINFOD_URLS', ''), ('TROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/root/nuc_ws/install:/home/sunrise/yolov8_bpu_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('CLAUDE_CODE_SSE_PORT', '40014'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/bin:/root/.npm-global/bin:/root/.local/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/root/.vscode-server/cli/servers/Stable-fc3def6774c76082adf699d366f31a557ce5573f/server/bin/remote-cli:/usr/bin:/root/.npm-global/bin:/root/.local/bin:/opt/tros/humble/bin:/opt/ros/humble/bin:/usr/hobot/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/root/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/bundled/scripts/noConfigScripts'), ('XDG_RUNTIME_DIR', '/run/user/0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/root/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-727925dfe9f5f408.txt'), ('LANG', 'zh_CN.UTF-8'), ('PYTHONSTARTUP', '/root/.vscode-server/data/User/workspaceStorage/e8a4ff05734f609f5190758930daf7ff-1/ms-python.python/pythonrc.py'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/0/vscode-git-48e5be0f1a.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/root/nuc_ws/install/r2_mission:/root/nuc_ws/install/detection_interfaces:/home/sunrise/yolov8_bpu_ws/install/yolov8_bpu:/home/sunrise/yolov8_bpu_ws/install/astra_camera:/home/sunrise/yolov8_bpu_ws/install/astra_camera_msgs:/opt/tros/humble:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/root/nuc_ws/build/r2_mission'), ('LC_ALL', 'zh_CN.UTF-8'), ('COPILOT_DEBUG_NONCE', 'd32c0e1ac4aa323d25c24c27e5167647'), ('SSH_CONNECTION', '192.168.127.1 5978 192.168.127.10 22'), ('PYTHONPATH', '/root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages:/home/sunrise/yolov8_bpu_ws/install/yolov8_bpu/lib/python3.10/site-packages:/home/sunrise/yolov8_bpu_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages:/opt/tros/humble/lib/python3.10/site-packages:/opt/tros/humble/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/nuc_ws/install/detection_interfaces:/root/nuc_ws/install/r2_mission:/home/sunrise/yolov8_bpu_ws/install/astra_camera:/home/sunrise/yolov8_bpu_ws/install/astra_camera_msgs:/home/sunrise/yolov8_bpu_ws/install/yolov8_bpu:/opt/tros/humble:/opt/ros/humble')]), 'shell': False}
+[4.563104] (-) TimerEvent: {}
+[4.665214] (-) TimerEvent: {}
+[4.769251] (-) TimerEvent: {}
+[4.870479] (-) TimerEvent: {}
+[4.949717] (r2_mission) StdoutLine: {'line': b'[ 42%] Built target r2_serial_driver_core\n'}
+[4.970997] (-) TimerEvent: {}
+[5.077531] (-) TimerEvent: {}
+[5.114024] (r2_mission) StdoutLine: {'line': b'[ 71%] Built target r2_mission_node\n'}
+[5.118088] (r2_mission) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding CXX object CMakeFiles/blue_mission_node.dir/src/bluemisson_node.cpp.o\x1b[0m\n'}
+[5.177849] (-) TimerEvent: {}
+[5.279020] (-) TimerEvent: {}
+[5.385655] (-) TimerEvent: {}
+[5.487087] (-) TimerEvent: {}
+[5.588391] (-) TimerEvent: {}
+[5.689556] (-) TimerEvent: {}
+[5.790824] (-) TimerEvent: {}
+[5.891928] (-) TimerEvent: {}
+[5.993131] (-) TimerEvent: {}
+[6.094297] (-) TimerEvent: {}
+[6.195460] (-) TimerEvent: {}
+[6.296598] (-) TimerEvent: {}
+[6.397752] (-) TimerEvent: {}
+[6.498836] (-) TimerEvent: {}
+[6.600174] (-) TimerEvent: {}
+[6.701482] (-) TimerEvent: {}
+[6.803002] (-) TimerEvent: {}
+[6.904117] (-) TimerEvent: {}
+[7.005242] (-) TimerEvent: {}
+[7.106406] (-) TimerEvent: {}
+[7.207575] (-) TimerEvent: {}
+[7.310774] (-) TimerEvent: {}
+[7.411957] (-) TimerEvent: {}
+[7.513217] (-) TimerEvent: {}
+[7.614405] (-) TimerEvent: {}
+[7.715637] (-) TimerEvent: {}
+[7.816766] (-) TimerEvent: {}
+[7.917976] (-) TimerEvent: {}
+[8.019483] (-) TimerEvent: {}
+[8.120699] (-) TimerEvent: {}
+[8.221907] (-) TimerEvent: {}
+[8.323315] (-) TimerEvent: {}
+[8.424513] (-) TimerEvent: {}
+[8.525646] (-) TimerEvent: {}
+[8.626880] (-) TimerEvent: {}
+[8.728594] (-) TimerEvent: {}
+[8.830057] (-) TimerEvent: {}
+[8.931277] (-) TimerEvent: {}
+[9.032560] (-) TimerEvent: {}
+[9.133723] (-) TimerEvent: {}
+[9.304413] (-) TimerEvent: {}
+[9.405753] (-) TimerEvent: {}
+[9.506939] (-) TimerEvent: {}
+[9.608139] (-) TimerEvent: {}
+[9.709302] (-) TimerEvent: {}
+[9.810350] (-) TimerEvent: {}
+[9.911607] (-) TimerEvent: {}
+[10.012765] (-) TimerEvent: {}
+[10.113818] (-) TimerEvent: {}
+[10.214887] (-) TimerEvent: {}
+[10.316033] (-) TimerEvent: {}
+[10.417372] (-) TimerEvent: {}
+[10.518491] (-) TimerEvent: {}
+[10.619752] (-) TimerEvent: {}
+[10.720869] (-) TimerEvent: {}
+[10.821957] (-) TimerEvent: {}
+[10.923051] (-) TimerEvent: {}
+[11.024265] (-) TimerEvent: {}
+[11.125397] (-) TimerEvent: {}
+[11.226471] (-) TimerEvent: {}
+[11.327572] (-) TimerEvent: {}
+[11.428656] (-) TimerEvent: {}
+[11.529810] (-) TimerEvent: {}
+[11.630957] (-) TimerEvent: {}
+[11.732206] (-) TimerEvent: {}
+[11.833405] (-) TimerEvent: {}
+[11.934593] (-) TimerEvent: {}
+[12.035683] (-) TimerEvent: {}
+[12.136702] (-) TimerEvent: {}
+[12.237825] (-) TimerEvent: {}
+[12.338908] (-) TimerEvent: {}
+[12.440126] (-) TimerEvent: {}
+[12.541277] (-) TimerEvent: {}
+[12.642428] (-) TimerEvent: {}
+[12.743667] (-) TimerEvent: {}
+[12.844721] (-) TimerEvent: {}
+[12.945879] (-) TimerEvent: {}
+[13.046999] (-) TimerEvent: {}
+[13.148271] (-) TimerEvent: {}
+[13.249346] (-) TimerEvent: {}
+[13.350417] (-) TimerEvent: {}
+[13.451548] (-) TimerEvent: {}
+[13.552582] (-) TimerEvent: {}
+[13.653687] (-) TimerEvent: {}
+[13.754732] (-) TimerEvent: {}
+[13.855732] (-) TimerEvent: {}
+[13.956681] (-) TimerEvent: {}
+[14.057832] (-) TimerEvent: {}
+[14.158850] (-) TimerEvent: {}
+[14.259940] (-) TimerEvent: {}
+[14.360986] (-) TimerEvent: {}
+[14.462092] (-) TimerEvent: {}
+[14.563090] (-) TimerEvent: {}
+[14.664134] (-) TimerEvent: {}
+[14.765259] (-) TimerEvent: {}
+[14.866261] (-) TimerEvent: {}
+[14.967364] (-) TimerEvent: {}
+[15.068466] (-) TimerEvent: {}
+[15.169503] (-) TimerEvent: {}
+[15.270622] (-) TimerEvent: {}
+[15.371708] (-) TimerEvent: {}
+[15.472738] (-) TimerEvent: {}
+[15.573888] (-) TimerEvent: {}
+[15.675048] (-) TimerEvent: {}
+[15.776130] (-) TimerEvent: {}
+[15.877494] (-) TimerEvent: {}
+[15.978553] (-) TimerEvent: {}
+[16.079638] (-) TimerEvent: {}
+[16.180682] (-) TimerEvent: {}
+[16.281743] (-) TimerEvent: {}
+[16.382957] (-) TimerEvent: {}
+[16.484104] (-) TimerEvent: {}
+[16.585378] (-) TimerEvent: {}
+[16.686658] (-) TimerEvent: {}
+[16.788081] (-) TimerEvent: {}
+[16.889219] (-) TimerEvent: {}
+[16.990296] (-) TimerEvent: {}
+[17.091436] (-) TimerEvent: {}
+[17.192612] (-) TimerEvent: {}
+[17.293641] (-) TimerEvent: {}
+[17.394665] (-) TimerEvent: {}
+[17.495717] (-) TimerEvent: {}
+[17.596769] (-) TimerEvent: {}
+[17.697857] (-) TimerEvent: {}
+[17.798909] (-) TimerEvent: {}
+[17.899976] (-) TimerEvent: {}
+[18.001035] (-) TimerEvent: {}
+[18.102090] (-) TimerEvent: {}
+[18.203127] (-) TimerEvent: {}
+[18.304171] (-) TimerEvent: {}
+[18.405449] (-) TimerEvent: {}
+[18.506660] (-) TimerEvent: {}
+[18.608467] (-) TimerEvent: {}
+[18.709700] (-) TimerEvent: {}
+[18.810829] (-) TimerEvent: {}
+[18.912085] (-) TimerEvent: {}
+[19.013237] (-) TimerEvent: {}
+[19.114440] (-) TimerEvent: {}
+[19.215764] (-) TimerEvent: {}
+[19.317031] (-) TimerEvent: {}
+[19.418301] (-) TimerEvent: {}
+[19.519675] (-) TimerEvent: {}
+[19.620787] (-) TimerEvent: {}
+[19.721894] (-) TimerEvent: {}
+[19.823019] (-) TimerEvent: {}
+[19.924131] (-) TimerEvent: {}
+[20.025272] (-) TimerEvent: {}
+[20.126440] (-) TimerEvent: {}
+[20.227613] (-) TimerEvent: {}
+[20.328669] (-) TimerEvent: {}
+[20.429769] (-) TimerEvent: {}
+[20.531136] (-) TimerEvent: {}
+[20.632404] (-) TimerEvent: {}
+[20.733634] (-) TimerEvent: {}
+[20.835106] (-) TimerEvent: {}
+[20.936462] (-) TimerEvent: {}
+[21.037886] (-) TimerEvent: {}
+[21.139745] (-) TimerEvent: {}
+[21.240856] (-) TimerEvent: {}
+[21.342031] (-) TimerEvent: {}
+[21.443058] (-) TimerEvent: {}
+[21.544142] (-) TimerEvent: {}
+[21.645341] (-) TimerEvent: {}
+[21.746483] (-) TimerEvent: {}
+[21.847671] (-) TimerEvent: {}
+[21.948758] (-) TimerEvent: {}
+[22.049966] (-) TimerEvent: {}
+[22.151150] (-) TimerEvent: {}
+[22.252480] (-) TimerEvent: {}
+[22.353769] (-) TimerEvent: {}
+[22.454906] (-) TimerEvent: {}
+[22.556038] (-) TimerEvent: {}
+[22.657169] (-) TimerEvent: {}
+[22.758378] (-) TimerEvent: {}
+[22.859601] (-) TimerEvent: {}
+[22.960679] (-) TimerEvent: {}
+[23.061708] (-) TimerEvent: {}
+[23.162858] (-) TimerEvent: {}
+[23.264029] (-) TimerEvent: {}
+[23.365239] (-) TimerEvent: {}
+[23.466468] (-) TimerEvent: {}
+[23.567607] (-) TimerEvent: {}
+[23.668882] (-) TimerEvent: {}
+[23.770302] (-) TimerEvent: {}
+[23.871401] (-) TimerEvent: {}
+[23.972464] (-) TimerEvent: {}
+[24.073643] (-) TimerEvent: {}
+[24.174912] (-) TimerEvent: {}
+[24.276222] (-) TimerEvent: {}
+[24.377482] (-) TimerEvent: {}
+[24.478569] (-) TimerEvent: {}
+[24.579726] (-) TimerEvent: {}
+[24.680852] (-) TimerEvent: {}
+[24.782363] (-) TimerEvent: {}
+[24.883548] (-) TimerEvent: {}
+[24.984744] (-) TimerEvent: {}
+[25.085983] (-) TimerEvent: {}
+[25.187353] (-) TimerEvent: {}
+[25.288718] (-) TimerEvent: {}
+[25.389890] (-) TimerEvent: {}
+[25.491364] (-) TimerEvent: {}
+[25.592668] (-) TimerEvent: {}
+[25.693938] (-) TimerEvent: {}
+[25.795186] (-) TimerEvent: {}
+[25.903756] (-) TimerEvent: {}
+[26.004866] (-) TimerEvent: {}
+[26.106019] (-) TimerEvent: {}
+[26.207137] (-) TimerEvent: {}
+[26.308470] (-) TimerEvent: {}
+[26.409765] (-) TimerEvent: {}
+[26.511036] (-) TimerEvent: {}
+[26.612275] (-) TimerEvent: {}
+[26.714295] (-) TimerEvent: {}
+[26.815439] (-) TimerEvent: {}
+[26.916677] (-) TimerEvent: {}
+[27.017774] (-) TimerEvent: {}
+[27.118856] (-) TimerEvent: {}
+[27.219952] (-) TimerEvent: {}
+[27.321028] (-) TimerEvent: {}
+[27.422288] (-) TimerEvent: {}
+[27.523535] (-) TimerEvent: {}
+[27.624885] (-) TimerEvent: {}
+[27.726139] (-) TimerEvent: {}
+[27.827390] (-) TimerEvent: {}
+[27.928725] (-) TimerEvent: {}
+[28.029961] (-) TimerEvent: {}
+[28.131251] (-) TimerEvent: {}
+[28.232429] (-) TimerEvent: {}
+[28.333601] (-) TimerEvent: {}
+[28.434730] (-) TimerEvent: {}
+[28.535890] (-) TimerEvent: {}
+[28.637004] (-) TimerEvent: {}
+[28.738184] (-) TimerEvent: {}
+[28.839331] (-) TimerEvent: {}
+[28.940475] (-) TimerEvent: {}
+[29.041756] (-) TimerEvent: {}
+[29.142895] (-) TimerEvent: {}
+[29.244049] (-) TimerEvent: {}
+[29.345210] (-) TimerEvent: {}
+[29.446271] (-) TimerEvent: {}
+[29.547448] (-) TimerEvent: {}
+[29.648620] (-) TimerEvent: {}
+[29.749789] (-) TimerEvent: {}
+[29.850847] (-) TimerEvent: {}
+[29.952024] (-) TimerEvent: {}
+[30.053325] (-) TimerEvent: {}
+[30.154900] (-) TimerEvent: {}
+[30.255961] (-) TimerEvent: {}
+[30.357075] (-) TimerEvent: {}
+[30.458255] (-) TimerEvent: {}
+[30.559427] (-) TimerEvent: {}
+[30.660655] (-) TimerEvent: {}
+[30.761975] (-) TimerEvent: {}
+[30.863138] (-) TimerEvent: {}
+[30.964275] (-) TimerEvent: {}
+[31.065437] (-) TimerEvent: {}
+[31.166565] (-) TimerEvent: {}
+[31.267942] (-) TimerEvent: {}
+[31.369121] (-) TimerEvent: {}
+[31.470356] (-) TimerEvent: {}
+[31.571584] (-) TimerEvent: {}
+[31.672717] (-) TimerEvent: {}
+[31.775003] (-) TimerEvent: {}
+[31.876197] (-) TimerEvent: {}
+[31.977252] (-) TimerEvent: {}
+[32.078496] (-) TimerEvent: {}
+[32.179590] (-) TimerEvent: {}
+[32.280693] (-) TimerEvent: {}
+[32.381756] (-) TimerEvent: {}
+[32.482873] (-) TimerEvent: {}
+[32.583964] (-) TimerEvent: {}
+[32.685226] (-) TimerEvent: {}
+[32.786419] (-) TimerEvent: {}
+[32.887518] (-) TimerEvent: {}
+[32.988637] (-) TimerEvent: {}
+[33.089772] (-) TimerEvent: {}
+[33.190868] (-) TimerEvent: {}
+[33.291928] (-) TimerEvent: {}
+[33.393018] (-) TimerEvent: {}
+[33.494179] (-) TimerEvent: {}
+[33.595497] (-) TimerEvent: {}
+[33.696592] (-) TimerEvent: {}
+[33.797781] (-) TimerEvent: {}
+[33.899082] (-) TimerEvent: {}
+[34.000180] (-) TimerEvent: {}
+[34.101412] (-) TimerEvent: {}
+[34.202732] (-) TimerEvent: {}
+[34.303868] (-) TimerEvent: {}
+[34.404957] (-) TimerEvent: {}
+[34.506133] (-) TimerEvent: {}
+[34.507618] (<colcon_parallel_executor.executor.parallel.ParallelExecutorExtension object at 0xffff8f3ed1b0>) ParallelStatus: {'processing': ('r2_mission',)}
+[34.606387] (-) TimerEvent: {}
+[34.707527] (-) TimerEvent: {}
+[34.808863] (-) TimerEvent: {}
+[34.910167] (-) TimerEvent: {}
+[35.011263] (-) TimerEvent: {}
+[35.112410] (-) TimerEvent: {}
+[35.213716] (-) TimerEvent: {}
+[35.315073] (-) TimerEvent: {}
+[35.416259] (-) TimerEvent: {}
+[35.517481] (-) TimerEvent: {}
+[35.619204] (-) TimerEvent: {}
+[35.720397] (-) TimerEvent: {}
+[35.824606] (-) TimerEvent: {}
+[35.925888] (-) TimerEvent: {}
+[36.027127] (-) TimerEvent: {}
+[36.128224] (-) TimerEvent: {}
+[36.229303] (-) TimerEvent: {}
+[36.330515] (-) TimerEvent: {}
+[36.431610] (-) TimerEvent: {}
+[36.532784] (-) TimerEvent: {}
+[36.633969] (-) TimerEvent: {}
+[36.735063] (-) TimerEvent: {}
+[36.836142] (-) TimerEvent: {}
+[36.937244] (-) TimerEvent: {}
+[37.038432] (-) TimerEvent: {}
+[37.139665] (-) TimerEvent: {}
+[37.240715] (-) TimerEvent: {}
+[37.341829] (-) TimerEvent: {}
+[37.442944] (-) TimerEvent: {}
+[37.544908] (-) TimerEvent: {}
+[37.645969] (-) TimerEvent: {}
+[37.747164] (-) TimerEvent: {}
+[37.848366] (-) TimerEvent: {}
+[37.949568] (-) TimerEvent: {}
+[38.050675] (-) TimerEvent: {}
+[38.151786] (-) TimerEvent: {}
+[38.252880] (-) TimerEvent: {}
+[38.353914] (-) TimerEvent: {}
+[38.454913] (-) TimerEvent: {}
+[38.556060] (-) TimerEvent: {}
+[38.657484] (-) TimerEvent: {}
+[38.758662] (-) TimerEvent: {}
+[38.859790] (-) TimerEvent: {}
+[38.960879] (-) TimerEvent: {}
+[39.061974] (-) TimerEvent: {}
+[39.163124] (-) TimerEvent: {}
+[39.264392] (-) TimerEvent: {}
+[39.365620] (-) TimerEvent: {}
+[39.466802] (-) TimerEvent: {}
+[39.569006] (-) TimerEvent: {}
+[39.670365] (-) TimerEvent: {}
+[39.771556] (-) TimerEvent: {}
+[39.872679] (-) TimerEvent: {}
+[39.973737] (-) TimerEvent: {}
+[40.074780] (-) TimerEvent: {}
+[40.175966] (-) TimerEvent: {}
+[40.277055] (-) TimerEvent: {}
+[40.378216] (-) TimerEvent: {}
+[40.479249] (-) TimerEvent: {}
+[40.580416] (-) TimerEvent: {}
+[40.681504] (-) TimerEvent: {}
+[40.782710] (-) TimerEvent: {}
+[40.883769] (-) TimerEvent: {}
+[40.984894] (-) TimerEvent: {}
+[41.086055] (-) TimerEvent: {}
+[41.187168] (-) TimerEvent: {}
+[41.288277] (-) TimerEvent: {}
+[41.389322] (-) TimerEvent: {}
+[41.490422] (-) TimerEvent: {}
+[41.591476] (-) TimerEvent: {}
+[41.692446] (-) TimerEvent: {}
+[41.793515] (-) TimerEvent: {}
+[41.894597] (-) TimerEvent: {}
+[41.995639] (-) TimerEvent: {}
+[42.096699] (-) TimerEvent: {}
+[42.197819] (-) TimerEvent: {}
+[42.298854] (-) TimerEvent: {}
+[42.399938] (-) TimerEvent: {}
+[42.501079] (-) TimerEvent: {}
+[42.602115] (-) TimerEvent: {}
+[42.703152] (-) TimerEvent: {}
+[42.804298] (-) TimerEvent: {}
+[42.905379] (-) TimerEvent: {}
+[43.006460] (-) TimerEvent: {}
+[43.107484] (-) TimerEvent: {}
+[43.208988] (-) TimerEvent: {}
+[43.310055] (-) TimerEvent: {}
+[43.411241] (-) TimerEvent: {}
+[43.513435] (-) TimerEvent: {}
+[43.614486] (-) TimerEvent: {}
+[43.715795] (-) TimerEvent: {}
+[43.816868] (-) TimerEvent: {}
+[43.917956] (-) TimerEvent: {}
+[44.019059] (-) TimerEvent: {}
+[44.120171] (-) TimerEvent: {}
+[44.221268] (-) TimerEvent: {}
+[44.322373] (-) TimerEvent: {}
+[44.423444] (-) TimerEvent: {}
+[44.524544] (-) TimerEvent: {}
+[44.625642] (-) TimerEvent: {}
+[44.726847] (-) TimerEvent: {}
+[44.827981] (-) TimerEvent: {}
+[44.929155] (-) TimerEvent: {}
+[45.030216] (-) TimerEvent: {}
+[45.131380] (-) TimerEvent: {}
+[45.232551] (-) TimerEvent: {}
+[45.333775] (-) TimerEvent: {}
+[45.434902] (-) TimerEvent: {}
+[45.536009] (-) TimerEvent: {}
+[45.637232] (-) TimerEvent: {}
+[45.738668] (-) TimerEvent: {}
+[45.839835] (-) TimerEvent: {}
+[45.941187] (-) TimerEvent: {}
+[46.042303] (-) TimerEvent: {}
+[46.143304] (-) TimerEvent: {}
+[46.244338] (-) TimerEvent: {}
+[46.345659] (-) TimerEvent: {}
+[46.446727] (-) TimerEvent: {}
+[46.547952] (-) TimerEvent: {}
+[46.649070] (-) TimerEvent: {}
+[46.750135] (-) TimerEvent: {}
+[46.851137] (-) TimerEvent: {}
+[46.952246] (-) TimerEvent: {}
+[47.053350] (-) TimerEvent: {}
+[47.154347] (-) TimerEvent: {}
+[47.255363] (-) TimerEvent: {}
+[47.356411] (-) TimerEvent: {}
+[47.457572] (-) TimerEvent: {}
+[47.558714] (-) TimerEvent: {}
+[47.659776] (-) TimerEvent: {}
+[47.761144] (-) TimerEvent: {}
+[47.862366] (-) TimerEvent: {}
+[47.963745] (-) TimerEvent: {}
+[48.064823] (-) TimerEvent: {}
+[48.165925] (-) TimerEvent: {}
+[48.267046] (-) TimerEvent: {}
+[48.368206] (-) TimerEvent: {}
+[48.469514] (-) TimerEvent: {}
+[48.570901] (-) TimerEvent: {}
+[48.672200] (-) TimerEvent: {}
+[48.774281] (-) TimerEvent: {}
+[48.875465] (-) TimerEvent: {}
+[48.976572] (-) TimerEvent: {}
+[49.077717] (-) TimerEvent: {}
+[49.178894] (-) TimerEvent: {}
+[49.280075] (-) TimerEvent: {}
+[49.381158] (-) TimerEvent: {}
+[49.482390] (-) TimerEvent: {}
+[49.583738] (-) TimerEvent: {}
+[49.684918] (-) TimerEvent: {}
+[49.786102] (-) TimerEvent: {}
+[49.887463] (-) TimerEvent: {}
+[49.988717] (-) TimerEvent: {}
+[50.089838] (-) TimerEvent: {}
+[50.190962] (-) TimerEvent: {}
+[50.292398] (-) TimerEvent: {}
+[50.393595] (-) TimerEvent: {}
+[50.494802] (-) TimerEvent: {}
+[50.595986] (-) TimerEvent: {}
+[50.697085] (-) TimerEvent: {}
+[50.798243] (-) TimerEvent: {}
+[50.899268] (-) TimerEvent: {}
+[51.000303] (-) TimerEvent: {}
+[51.101307] (-) TimerEvent: {}
+[51.202531] (-) TimerEvent: {}
+[51.303708] (-) TimerEvent: {}
+[51.404913] (-) TimerEvent: {}
+[51.506088] (-) TimerEvent: {}
+[51.607164] (-) TimerEvent: {}
+[51.708268] (-) TimerEvent: {}
+[51.809288] (-) TimerEvent: {}
+[51.910387] (-) TimerEvent: {}
+[52.011371] (-) TimerEvent: {}
+[52.112377] (-) TimerEvent: {}
+[52.213465] (-) TimerEvent: {}
+[52.314507] (-) TimerEvent: {}
+[52.415559] (-) TimerEvent: {}
+[52.516663] (-) TimerEvent: {}
+[52.617767] (-) TimerEvent: {}
+[52.718898] (-) TimerEvent: {}
+[52.820091] (-) TimerEvent: {}
+[52.921202] (-) TimerEvent: {}
+[53.022340] (-) TimerEvent: {}
+[53.123417] (-) TimerEvent: {}
+[53.224571] (-) TimerEvent: {}
+[53.325627] (-) TimerEvent: {}
+[53.426716] (-) TimerEvent: {}
+[53.528133] (-) TimerEvent: {}
+[53.629362] (-) TimerEvent: {}
+[53.730498] (-) TimerEvent: {}
+[53.831584] (-) TimerEvent: {}
+[53.932724] (-) TimerEvent: {}
+[54.033894] (-) TimerEvent: {}
+[54.135061] (-) TimerEvent: {}
+[54.236179] (-) TimerEvent: {}
+[54.337425] (-) TimerEvent: {}
+[54.438597] (-) TimerEvent: {}
+[54.539734] (-) TimerEvent: {}
+[54.640833] (-) TimerEvent: {}
+[54.741853] (-) TimerEvent: {}
+[54.843004] (-) TimerEvent: {}
+[54.944019] (-) TimerEvent: {}
+[55.045071] (-) TimerEvent: {}
+[55.146273] (-) TimerEvent: {}
+[55.247398] (-) TimerEvent: {}
+[55.348486] (-) TimerEvent: {}
+[55.449698] (-) TimerEvent: {}
+[55.550766] (-) TimerEvent: {}
+[55.652011] (-) TimerEvent: {}
+[55.753131] (-) TimerEvent: {}
+[55.854254] (-) TimerEvent: {}
+[55.955327] (-) TimerEvent: {}
+[56.056744] (-) TimerEvent: {}
+[56.157795] (-) TimerEvent: {}
+[56.258935] (-) TimerEvent: {}
+[56.360091] (-) TimerEvent: {}
+[56.461467] (-) TimerEvent: {}
+[56.562780] (-) TimerEvent: {}
+[56.664026] (-) TimerEvent: {}
+[56.765189] (-) TimerEvent: {}
+[56.866469] (-) TimerEvent: {}
+[56.967607] (-) TimerEvent: {}
+[57.068823] (-) TimerEvent: {}
+[57.169975] (-) TimerEvent: {}
+[57.271095] (-) TimerEvent: {}
+[57.372313] (-) TimerEvent: {}
+[57.473438] (-) TimerEvent: {}
+[57.574496] (-) TimerEvent: {}
+[57.675623] (-) TimerEvent: {}
+[57.776712] (-) TimerEvent: {}
+[57.877818] (-) TimerEvent: {}
+[57.978938] (-) TimerEvent: {}
+[58.080054] (-) TimerEvent: {}
+[58.181152] (-) TimerEvent: {}
+[58.282209] (-) TimerEvent: {}
+[58.383325] (-) TimerEvent: {}
+[58.484559] (-) TimerEvent: {}
+[58.585659] (-) TimerEvent: {}
+[58.686860] (-) TimerEvent: {}
+[58.788034] (-) TimerEvent: {}
+[58.889209] (-) TimerEvent: {}
+[58.990354] (-) TimerEvent: {}
+[59.091541] (-) TimerEvent: {}
+[59.192975] (-) TimerEvent: {}
+[59.294024] (-) TimerEvent: {}
+[59.395123] (-) TimerEvent: {}
+[59.496213] (-) TimerEvent: {}
+[59.597225] (-) TimerEvent: {}
+[59.698459] (-) TimerEvent: {}
+[59.799964] (-) TimerEvent: {}
+[59.900955] (-) TimerEvent: {}
+[60.001977] (-) TimerEvent: {}
+[60.107648] (-) TimerEvent: {}
+[60.208956] (-) TimerEvent: {}
+[60.310286] (-) TimerEvent: {}
+[60.411470] (-) TimerEvent: {}
+[60.512451] (-) TimerEvent: {}
+[60.613467] (-) TimerEvent: {}
+[60.714596] (-) TimerEvent: {}
+[60.815714] (-) TimerEvent: {}
+[60.916763] (-) TimerEvent: {}
+[61.017836] (-) TimerEvent: {}
+[61.118916] (-) TimerEvent: {}
+[61.219878] (-) TimerEvent: {}
+[61.320930] (-) TimerEvent: {}
+[61.422043] (-) TimerEvent: {}
+[61.523149] (-) TimerEvent: {}
+[61.624322] (-) TimerEvent: {}
+[61.725365] (-) TimerEvent: {}
+[61.826663] (-) TimerEvent: {}
+[61.927812] (-) TimerEvent: {}
+[62.028853] (-) TimerEvent: {}
+[62.129908] (-) TimerEvent: {}
+[62.230983] (-) TimerEvent: {}
+[62.332079] (-) TimerEvent: {}
+[62.433089] (-) TimerEvent: {}
+[62.534188] (-) TimerEvent: {}
+[62.635242] (-) TimerEvent: {}
+[62.736321] (-) TimerEvent: {}
+[62.837541] (-) TimerEvent: {}
+[62.938841] (-) TimerEvent: {}
+[63.039952] (-) TimerEvent: {}
+[63.140992] (-) TimerEvent: {}
+[63.242119] (-) TimerEvent: {}
+[63.343251] (-) TimerEvent: {}
+[63.444338] (-) TimerEvent: {}
+[63.545621] (-) TimerEvent: {}
+[63.646628] (-) TimerEvent: {}
+[63.747695] (-) TimerEvent: {}
+[63.848813] (-) TimerEvent: {}
+[63.949834] (-) TimerEvent: {}
+[64.050922] (-) TimerEvent: {}
+[64.152208] (-) TimerEvent: {}
+[64.253241] (-) TimerEvent: {}
+[64.354297] (-) TimerEvent: {}
+[64.455416] (-) TimerEvent: {}
+[64.537471] (<colcon_parallel_executor.executor.parallel.ParallelExecutorExtension object at 0xffff8f3ed1b0>) ParallelStatus: {'processing': ('r2_mission',)}
+[64.555632] (-) TimerEvent: {}
+[64.656620] (-) TimerEvent: {}
+[64.757700] (-) TimerEvent: {}
+[64.858782] (-) TimerEvent: {}
+[64.959820] (-) TimerEvent: {}
+[65.060886] (-) TimerEvent: {}
+[65.162589] (-) TimerEvent: {}
+[65.263620] (-) TimerEvent: {}
+[65.364832] (-) TimerEvent: {}
+[65.465832] (-) TimerEvent: {}
+[65.566842] (-) TimerEvent: {}
+[65.667947] (-) TimerEvent: {}
+[65.769071] (-) TimerEvent: {}
+[65.870196] (-) TimerEvent: {}
+[65.971523] (-) TimerEvent: {}
+[66.072576] (-) TimerEvent: {}
+[66.173692] (-) TimerEvent: {}
+[66.274959] (-) TimerEvent: {}
+[66.376166] (-) TimerEvent: {}
+[66.477379] (-) TimerEvent: {}
+[66.580603] (-) TimerEvent: {}
+[66.681740] (-) TimerEvent: {}
+[66.782854] (-) TimerEvent: {}
+[66.884093] (-) TimerEvent: {}
+[66.985147] (-) TimerEvent: {}
+[67.086193] (-) TimerEvent: {}
+[67.187390] (-) TimerEvent: {}
+[67.288619] (-) TimerEvent: {}
+[67.389853] (-) TimerEvent: {}
+[67.491140] (-) TimerEvent: {}
+[67.592305] (-) TimerEvent: {}
+[67.693442] (-) TimerEvent: {}
+[67.794702] (-) TimerEvent: {}
+[67.895906] (-) TimerEvent: {}
+[67.997059] (-) TimerEvent: {}
+[68.098226] (-) TimerEvent: {}
+[68.199452] (-) TimerEvent: {}
+[68.300630] (-) TimerEvent: {}
+[68.401887] (-) TimerEvent: {}
+[68.503507] (-) TimerEvent: {}
+[68.604599] (-) TimerEvent: {}
+[68.705599] (-) TimerEvent: {}
+[68.806699] (-) TimerEvent: {}
+[68.907794] (-) TimerEvent: {}
+[69.008781] (-) TimerEvent: {}
+[69.109763] (-) TimerEvent: {}
+[69.210721] (-) TimerEvent: {}
+[69.311759] (-) TimerEvent: {}
+[69.412733] (-) TimerEvent: {}
+[69.513759] (-) TimerEvent: {}
+[69.614781] (-) TimerEvent: {}
+[69.715742] (-) TimerEvent: {}
+[69.816762] (-) TimerEvent: {}
+[69.918009] (-) TimerEvent: {}
+[70.019029] (-) TimerEvent: {}
+[70.120041] (-) TimerEvent: {}
+[70.221025] (-) TimerEvent: {}
+[70.322250] (-) TimerEvent: {}
+[70.423358] (-) TimerEvent: {}
+[70.524442] (-) TimerEvent: {}
+[70.625550] (-) TimerEvent: {}
+[70.726684] (-) TimerEvent: {}
+[70.827985] (-) TimerEvent: {}
+[70.928985] (-) TimerEvent: {}
+[71.030117] (-) TimerEvent: {}
+[71.131326] (-) TimerEvent: {}
+[71.232317] (-) TimerEvent: {}
+[71.333321] (-) TimerEvent: {}
+[71.434325] (-) TimerEvent: {}
+[71.535381] (-) TimerEvent: {}
+[71.636412] (-) TimerEvent: {}
+[71.737530] (-) TimerEvent: {}
+[71.838517] (-) TimerEvent: {}
+[71.939720] (-) TimerEvent: {}
+[72.040833] (-) TimerEvent: {}
+[72.141849] (-) TimerEvent: {}
+[72.242993] (-) TimerEvent: {}
+[72.344332] (-) TimerEvent: {}
+[72.445405] (-) TimerEvent: {}
+[72.546405] (-) TimerEvent: {}
+[72.647527] (-) TimerEvent: {}
+[72.748554] (-) TimerEvent: {}
+[72.849535] (-) TimerEvent: {}
+[72.950498] (-) TimerEvent: {}
+[73.051831] (-) TimerEvent: {}
+[73.152788] (-) TimerEvent: {}
+[73.253801] (-) TimerEvent: {}
+[73.354809] (-) TimerEvent: {}
+[73.455790] (-) TimerEvent: {}
+[73.556856] (-) TimerEvent: {}
+[73.658050] (-) TimerEvent: {}
+[73.759021] (-) TimerEvent: {}
+[73.860260] (-) TimerEvent: {}
+[73.961202] (-) TimerEvent: {}
+[74.062243] (-) TimerEvent: {}
+[74.163293] (-) TimerEvent: {}
+[74.264387] (-) TimerEvent: {}
+[74.365379] (-) TimerEvent: {}
+[74.466399] (-) TimerEvent: {}
+[74.567480] (-) TimerEvent: {}
+[74.668499] (-) TimerEvent: {}
+[74.769526] (-) TimerEvent: {}
+[74.870591] (-) TimerEvent: {}
+[74.971686] (-) TimerEvent: {}
+[75.072771] (-) TimerEvent: {}
+[75.173904] (-) TimerEvent: {}
+[75.274940] (-) TimerEvent: {}
+[75.376022] (-) TimerEvent: {}
+[75.477169] (-) TimerEvent: {}
+[75.578446] (-) TimerEvent: {}
+[75.679677] (-) TimerEvent: {}
+[75.780738] (-) TimerEvent: {}
+[75.881800] (-) TimerEvent: {}
+[75.982960] (-) TimerEvent: {}
+[76.084117] (-) TimerEvent: {}
+[76.185297] (-) TimerEvent: {}
+[76.286408] (-) TimerEvent: {}
+[76.387744] (-) TimerEvent: {}
+[76.488871] (-) TimerEvent: {}
+[76.590041] (-) TimerEvent: {}
+[76.691193] (-) TimerEvent: {}
+[76.792377] (-) TimerEvent: {}
+[76.893763] (-) TimerEvent: {}
+[76.994780] (-) TimerEvent: {}
+[77.095793] (-) TimerEvent: {}
+[77.197017] (-) TimerEvent: {}
+[77.298117] (-) TimerEvent: {}
+[77.399327] (-) TimerEvent: {}
+[77.500450] (-) TimerEvent: {}
+[77.601505] (-) TimerEvent: {}
+[77.702646] (-) TimerEvent: {}
+[77.804113] (-) TimerEvent: {}
+[77.905367] (-) TimerEvent: {}
+[78.006720] (-) TimerEvent: {}
+[78.107834] (-) TimerEvent: {}
+[78.208963] (-) TimerEvent: {}
+[78.309996] (-) TimerEvent: {}
+[78.411062] (-) TimerEvent: {}
+[78.512110] (-) TimerEvent: {}
+[78.613288] (-) TimerEvent: {}
+[78.714646] (-) TimerEvent: {}
+[78.815932] (-) TimerEvent: {}
+[78.917089] (-) TimerEvent: {}
+[79.018201] (-) TimerEvent: {}
+[79.119272] (-) TimerEvent: {}
+[79.220395] (-) TimerEvent: {}
+[79.321610] (-) TimerEvent: {}
+[79.422690] (-) TimerEvent: {}
+[79.523809] (-) TimerEvent: {}
+[79.624904] (-) TimerEvent: {}
+[79.726891] (-) TimerEvent: {}
+[79.828081] (-) TimerEvent: {}
+[79.930034] (-) TimerEvent: {}
+[80.031210] (-) TimerEvent: {}
+[80.132375] (-) TimerEvent: {}
+[80.233648] (-) TimerEvent: {}
+[80.334737] (-) TimerEvent: {}
+[80.435856] (-) TimerEvent: {}
+[80.537086] (-) TimerEvent: {}
+[80.638375] (-) TimerEvent: {}
+[80.739808] (-) TimerEvent: {}
+[80.841009] (-) TimerEvent: {}
+[80.942240] (-) TimerEvent: {}
+[81.043420] (-) TimerEvent: {}
+[81.144549] (-) TimerEvent: {}
+[81.245778] (-) TimerEvent: {}
+[81.346907] (-) TimerEvent: {}
+[81.448153] (-) TimerEvent: {}
+[81.549281] (-) TimerEvent: {}
+[81.650388] (-) TimerEvent: {}
+[81.751687] (-) TimerEvent: {}
+[81.852810] (-) TimerEvent: {}
+[81.953874] (-) TimerEvent: {}
+[82.055235] (-) TimerEvent: {}
+[82.156432] (-) TimerEvent: {}
+[82.257516] (-) TimerEvent: {}
+[82.358578] (-) TimerEvent: {}
+[82.459638] (-) TimerEvent: {}
+[82.530627] (r2_mission) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable blue_mission_node\x1b[0m\n'}
+[82.559838] (-) TimerEvent: {}
+[82.660961] (-) TimerEvent: {}
+[82.762300] (-) TimerEvent: {}
+[82.863483] (-) TimerEvent: {}
+[82.964834] (-) TimerEvent: {}
+[83.066131] (-) TimerEvent: {}
+[83.167435] (-) TimerEvent: {}
+[83.268783] (-) TimerEvent: {}
+[83.369956] (-) TimerEvent: {}
+[83.471088] (-) TimerEvent: {}
+[83.572187] (-) TimerEvent: {}
+[83.673271] (-) TimerEvent: {}
+[83.774377] (-) TimerEvent: {}
+[83.875586] (-) TimerEvent: {}
+[83.976890] (-) TimerEvent: {}
+[84.078143] (-) TimerEvent: {}
+[84.179420] (-) TimerEvent: {}
+[84.280514] (-) TimerEvent: {}
+[84.381688] (-) TimerEvent: {}
+[84.482815] (-) TimerEvent: {}
+[84.583878] (-) TimerEvent: {}
+[84.685043] (-) TimerEvent: {}
+[84.786091] (-) TimerEvent: {}
+[84.887228] (-) TimerEvent: {}
+[84.988485] (-) TimerEvent: {}
+[85.089695] (-) TimerEvent: {}
+[85.190774] (-) TimerEvent: {}
+[85.291863] (-) TimerEvent: {}
+[85.393001] (-) TimerEvent: {}
+[85.494166] (-) TimerEvent: {}
+[85.595793] (-) TimerEvent: {}
+[85.697056] (-) TimerEvent: {}
+[85.798256] (-) TimerEvent: {}
+[85.899204] (-) TimerEvent: {}
+[86.000280] (-) TimerEvent: {}
+[86.101296] (-) TimerEvent: {}
+[86.205802] (-) TimerEvent: {}
+[86.236790] (r2_mission) StdoutLine: {'line': b'[100%] Built target blue_mission_node\n'}
+[86.299190] (r2_mission) CommandEnded: {'returncode': 0}
+[86.307406] (-) TimerEvent: {}
+[86.308795] (r2_mission) JobProgress: {'identifier': 'r2_mission', 'progress': 'install'}
+[86.309145] (r2_mission) Command: {'cmd': ['/usr/bin/cmake', '--install', '/root/nuc_ws/build/r2_mission'], 'cwd': '/root/nuc_ws/build/r2_mission', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('USER', 'root'), ('SSH_CLIENT', '192.168.127.1 5978 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/root/.vscode-server/cli/servers/Stable-fc3def6774c76082adf699d366f31a557ce5573f/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/root/nuc_ws/install/detection_interfaces/lib:/home/sunrise/yolov8_bpu_ws/install/astra_camera/lib:/home/sunrise/yolov8_bpu_ws/install/astra_camera_msgs/lib:/opt/tros/humble/lib/aarch64-linux-gnu:/opt/tros/humble/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/hobot/lib:/app/lib:/app/pub/lib:/middleware/lib:/middleware/pub/lib:/usr/hobot/lib/sensor:/system/lib:/system/usr/lib:/lib'), ('BROWSER', '/root/.vscode-server/cli/servers/Stable-fc3def6774c76082adf699d366f31a557ce5573f/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/root'), ('TERM_PROGRAM_VERSION', '1.128.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/0/vscode-ipc-13a3860b-bd96-4aca-81f8-606cdac14e19.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/cli/servers/Stable-fc3def6774c76082adf699d366f31a557ce5573f/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/cli/servers/Stable-fc3def6774c76082adf699d366f31a557ce5573f/server/node'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/root/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/0/bus'), ('COLORTERM', 'truecolor'), ('DEBUGINFOD_URLS', ''), ('TROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/root/nuc_ws/install:/home/sunrise/yolov8_bpu_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('CLAUDE_CODE_SSE_PORT', '40014'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '4'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/usr/bin:/root/.npm-global/bin:/root/.local/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/root/.vscode-server/cli/servers/Stable-fc3def6774c76082adf699d366f31a557ce5573f/server/bin/remote-cli:/usr/bin:/root/.npm-global/bin:/root/.local/bin:/opt/tros/humble/bin:/opt/ros/humble/bin:/usr/hobot/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/root/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/bundled/scripts/noConfigScripts'), ('XDG_RUNTIME_DIR', '/run/user/0'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/root/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-727925dfe9f5f408.txt'), ('LANG', 'zh_CN.UTF-8'), ('PYTHONSTARTUP', '/root/.vscode-server/data/User/workspaceStorage/e8a4ff05734f609f5190758930daf7ff-1/ms-python.python/pythonrc.py'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/0/vscode-git-48e5be0f1a.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/root/nuc_ws/install/r2_mission:/root/nuc_ws/install/detection_interfaces:/home/sunrise/yolov8_bpu_ws/install/yolov8_bpu:/home/sunrise/yolov8_bpu_ws/install/astra_camera:/home/sunrise/yolov8_bpu_ws/install/astra_camera_msgs:/opt/tros/humble:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/root/nuc_ws/build/r2_mission'), ('LC_ALL', 'zh_CN.UTF-8'), ('COPILOT_DEBUG_NONCE', 'd32c0e1ac4aa323d25c24c27e5167647'), ('SSH_CONNECTION', '192.168.127.1 5978 192.168.127.10 22'), ('PYTHONPATH', '/root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages:/home/sunrise/yolov8_bpu_ws/install/yolov8_bpu/lib/python3.10/site-packages:/home/sunrise/yolov8_bpu_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages:/opt/tros/humble/lib/python3.10/site-packages:/opt/tros/humble/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/nuc_ws/install/detection_interfaces:/root/nuc_ws/install/r2_mission:/home/sunrise/yolov8_bpu_ws/install/astra_camera:/home/sunrise/yolov8_bpu_ws/install/astra_camera_msgs:/home/sunrise/yolov8_bpu_ws/install/yolov8_bpu:/opt/tros/humble:/opt/ros/humble')]), 'shell': False}
+[86.346877] (r2_mission) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[86.348921] (r2_mission) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/r2_mission/lib/r2_mission/r2_mission_node\n'}
+[86.350304] (r2_mission) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/r2_mission/lib/r2_mission/blue_mission_node\n'}
+[86.387418] (r2_mission) StdoutLine: {'line': b'-- Set runtime path of "/root/nuc_ws/install/r2_mission/lib/r2_mission/blue_mission_node" to ""\n'}
+[86.388784] (r2_mission) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/r2_mission/share/r2_mission/launch\n'}
+[86.389926] (r2_mission) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/r2_mission/share/r2_mission/launch/bringup.launch.py\n'}
+[86.390842] (r2_mission) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/r2_mission/share/r2_mission/launch/bluebringup.launch.py\n'}
+[86.392211] (r2_mission) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/r2_mission/share/r2_mission/config\n'}
+[86.393517] (r2_mission) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/r2_mission/share/r2_mission/config/params.yaml\n'}
+[86.394504] (r2_mission) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/r2_mission/share/ament_index/resource_index/package_run_dependencies/r2_mission\n'}
+[86.398035] (r2_mission) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/r2_mission/share/ament_index/resource_index/parent_prefix_path/r2_mission\n'}
+[86.399010] (r2_mission) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/r2_mission/share/r2_mission/environment/ament_prefix_path.sh\n'}
+[86.399935] (r2_mission) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/r2_mission/share/r2_mission/environment/ament_prefix_path.dsv\n'}
+[86.401025] (r2_mission) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/r2_mission/share/r2_mission/environment/path.sh\n'}
+[86.402024] (r2_mission) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/r2_mission/share/r2_mission/environment/path.dsv\n'}
+[86.403001] (r2_mission) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/r2_mission/share/r2_mission/local_setup.bash\n'}
+[86.404052] (r2_mission) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/r2_mission/share/r2_mission/local_setup.sh\n'}
+[86.404811] (r2_mission) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/r2_mission/share/r2_mission/local_setup.zsh\n'}
+[86.405488] (r2_mission) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/r2_mission/share/r2_mission/local_setup.dsv\n'}
+[86.406159] (r2_mission) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/r2_mission/share/r2_mission/package.dsv\n'}
+[86.406816] (r2_mission) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/r2_mission/share/ament_index/resource_index/packages/r2_mission\n'}
+[86.408020] (-) TimerEvent: {}
+[86.408855] (r2_mission) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/r2_mission/share/r2_mission/cmake/r2_missionConfig.cmake\n'}
+[86.409783] (r2_mission) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/r2_mission/share/r2_mission/cmake/r2_missionConfig-version.cmake\n'}
+[86.410548] (r2_mission) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/r2_mission/share/r2_mission/package.xml\n'}
+[86.411326] (r2_mission) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/r2_mission/lib/libr2_serial_driver_core.a\n'}
+[86.418078] (r2_mission) CommandEnded: {'returncode': 0}
+[86.509624] (-) TimerEvent: {}
+[86.535005] (r2_mission) JobEnded: {'identifier': 'r2_mission', 'rc': 0}
+[86.540040] (-) EventReactorShutdown: {}

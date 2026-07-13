@@ -1,0 +1,32 @@
+[0.113s] Invoking command in '/root/nuc_ws/build/r2_mission': CMAKE_PREFIX_PATH=/root/nuc_ws/install/detection_interfaces:/root/nuc_ws/install/r2_mission:/home/sunrise/yolov8_bpu_ws/install/astra_camera:/home/sunrise/yolov8_bpu_ws/install/astra_camera_msgs:/home/sunrise/yolov8_bpu_ws/install/yolov8_bpu:/opt/tros/humble:/opt/ros/humble LD_LIBRARY_PATH=/root/nuc_ws/install/detection_interfaces/lib:/home/sunrise/yolov8_bpu_ws/install/astra_camera/lib:/home/sunrise/yolov8_bpu_ws/install/astra_camera_msgs/lib:/opt/tros/humble/lib/aarch64-linux-gnu:/opt/tros/humble/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/hobot/lib:/app/lib:/app/pub/lib:/middleware/lib:/middleware/pub/lib:/usr/hobot/lib/sensor:/system/lib:/system/usr/lib:/lib /usr/bin/cmake --build /root/nuc_ws/build/r2_mission -- -j8 -l8
+[0.428s] [ 42%] Built target r2_serial_driver_core
+[0.573s] [ 71%] Built target blue_mission_node
+[0.581s] [100%] Built target r2_mission_node
+[0.638s] Invoked command in '/root/nuc_ws/build/r2_mission' returned '0': CMAKE_PREFIX_PATH=/root/nuc_ws/install/detection_interfaces:/root/nuc_ws/install/r2_mission:/home/sunrise/yolov8_bpu_ws/install/astra_camera:/home/sunrise/yolov8_bpu_ws/install/astra_camera_msgs:/home/sunrise/yolov8_bpu_ws/install/yolov8_bpu:/opt/tros/humble:/opt/ros/humble LD_LIBRARY_PATH=/root/nuc_ws/install/detection_interfaces/lib:/home/sunrise/yolov8_bpu_ws/install/astra_camera/lib:/home/sunrise/yolov8_bpu_ws/install/astra_camera_msgs/lib:/opt/tros/humble/lib/aarch64-linux-gnu:/opt/tros/humble/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/hobot/lib:/app/lib:/app/pub/lib:/middleware/lib:/middleware/pub/lib:/usr/hobot/lib/sensor:/system/lib:/system/usr/lib:/lib /usr/bin/cmake --build /root/nuc_ws/build/r2_mission -- -j8 -l8
+[0.693s] Invoking command in '/root/nuc_ws/build/r2_mission': CMAKE_PREFIX_PATH=/root/nuc_ws/install/detection_interfaces:/root/nuc_ws/install/r2_mission:/home/sunrise/yolov8_bpu_ws/install/astra_camera:/home/sunrise/yolov8_bpu_ws/install/astra_camera_msgs:/home/sunrise/yolov8_bpu_ws/install/yolov8_bpu:/opt/tros/humble:/opt/ros/humble LD_LIBRARY_PATH=/root/nuc_ws/install/detection_interfaces/lib:/home/sunrise/yolov8_bpu_ws/install/astra_camera/lib:/home/sunrise/yolov8_bpu_ws/install/astra_camera_msgs/lib:/opt/tros/humble/lib/aarch64-linux-gnu:/opt/tros/humble/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/hobot/lib:/app/lib:/app/pub/lib:/middleware/lib:/middleware/pub/lib:/usr/hobot/lib/sensor:/system/lib:/system/usr/lib:/lib /usr/bin/cmake --install /root/nuc_ws/build/r2_mission
+[0.737s] -- Install configuration: ""
+[0.738s] -- Up-to-date: /root/nuc_ws/install/r2_mission/lib/r2_mission/r2_mission_node
+[0.740s] -- Up-to-date: /root/nuc_ws/install/r2_mission/lib/r2_mission/blue_mission_node
+[0.742s] -- Up-to-date: /root/nuc_ws/install/r2_mission/share/r2_mission/launch
+[0.743s] -- Up-to-date: /root/nuc_ws/install/r2_mission/share/r2_mission/launch/bringup.launch.py
+[0.743s] -- Installing: /root/nuc_ws/install/r2_mission/share/r2_mission/launch/bluebringup.launch.py
+[0.744s] -- Up-to-date: /root/nuc_ws/install/r2_mission/share/r2_mission/config
+[0.745s] -- Up-to-date: /root/nuc_ws/install/r2_mission/share/r2_mission/config/params.yaml
+[0.746s] -- Installing: /root/nuc_ws/install/r2_mission/share/r2_mission/config/params_blue.yaml
+[0.748s] -- Up-to-date: /root/nuc_ws/install/r2_mission/share/ament_index/resource_index/package_run_dependencies/r2_mission
+[0.749s] -- Up-to-date: /root/nuc_ws/install/r2_mission/share/ament_index/resource_index/parent_prefix_path/r2_mission
+[0.750s] -- Up-to-date: /root/nuc_ws/install/r2_mission/share/r2_mission/environment/ament_prefix_path.sh
+[0.751s] -- Up-to-date: /root/nuc_ws/install/r2_mission/share/r2_mission/environment/ament_prefix_path.dsv
+[0.751s] -- Up-to-date: /root/nuc_ws/install/r2_mission/share/r2_mission/environment/path.sh
+[0.752s] -- Up-to-date: /root/nuc_ws/install/r2_mission/share/r2_mission/environment/path.dsv
+[0.754s] -- Up-to-date: /root/nuc_ws/install/r2_mission/share/r2_mission/local_setup.bash
+[0.756s] -- Up-to-date: /root/nuc_ws/install/r2_mission/share/r2_mission/local_setup.sh
+[0.757s] -- Up-to-date: /root/nuc_ws/install/r2_mission/share/r2_mission/local_setup.zsh
+[0.758s] -- Up-to-date: /root/nuc_ws/install/r2_mission/share/r2_mission/local_setup.dsv
+[0.759s] -- Installing: /root/nuc_ws/install/r2_mission/share/r2_mission/package.dsv
+[0.759s] -- Up-to-date: /root/nuc_ws/install/r2_mission/share/ament_index/resource_index/packages/r2_mission
+[0.760s] -- Up-to-date: /root/nuc_ws/install/r2_mission/share/r2_mission/cmake/r2_missionConfig.cmake
+[0.764s] -- Up-to-date: /root/nuc_ws/install/r2_mission/share/r2_mission/cmake/r2_missionConfig-version.cmake
+[0.765s] -- Up-to-date: /root/nuc_ws/install/r2_mission/share/r2_mission/package.xml
+[0.767s] -- Up-to-date: /root/nuc_ws/install/r2_mission/lib/libr2_serial_driver_core.a
+[0.768s] Invoked command in '/root/nuc_ws/build/r2_mission' returned '0': CMAKE_PREFIX_PATH=/root/nuc_ws/install/detection_interfaces:/root/nuc_ws/install/r2_mission:/home/sunrise/yolov8_bpu_ws/install/astra_camera:/home/sunrise/yolov8_bpu_ws/install/astra_camera_msgs:/home/sunrise/yolov8_bpu_ws/install/yolov8_bpu:/opt/tros/humble:/opt/ros/humble LD_LIBRARY_PATH=/root/nuc_ws/install/detection_interfaces/lib:/home/sunrise/yolov8_bpu_ws/install/astra_camera/lib:/home/sunrise/yolov8_bpu_ws/install/astra_camera_msgs/lib:/opt/tros/humble/lib/aarch64-linux-gnu:/opt/tros/humble/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/hobot/lib:/app/lib:/app/pub/lib:/middleware/lib:/middleware/pub/lib:/usr/hobot/lib/sensor:/system/lib:/system/usr/lib:/lib /usr/bin/cmake --install /root/nuc_ws/build/r2_mission

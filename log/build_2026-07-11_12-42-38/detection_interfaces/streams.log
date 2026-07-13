@@ -1,0 +1,164 @@
+[0.079s] Invoking command in '/root/nuc_ws/build/detection_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sunrise/yolov8_bpu_ws/install/yolov8_bpu:/opt/tros/humble:/opt/ros/humble /usr/bin/cmake --build /root/nuc_ws/build/detection_interfaces -- -j8 -l8
+[0.422s] [  2%] Built target detection_interfaces__cpp
+[0.429s] [ 12%] Built target detection_interfaces__rosidl_generator_c
+[0.517s] [ 12%] Built target ament_cmake_python_copy_detection_interfaces
+[0.612s] [ 23%] Built target detection_interfaces__rosidl_typesupport_cpp
+[0.642s] [ 41%] Built target detection_interfaces__rosidl_typesupport_introspection_cpp
+[0.652s] [ 43%] Built target detection_interfaces__rosidl_typesupport_introspection_c
+[0.673s] [ 53%] Built target detection_interfaces__rosidl_typesupport_fastrtps_cpp
+[0.716s] [ 64%] Built target detection_interfaces__rosidl_typesupport_c
+[0.775s] [ 74%] Built target detection_interfaces__rosidl_typesupport_fastrtps_c
+[0.899s] [ 74%] Built target detection_interfaces
+[1.023s] [ 76%] Built target detection_interfaces__py
+[1.151s] [ 84%] Built target detection_interfaces__rosidl_generator_py
+[1.310s] [ 89%] Built target detection_interfaces__rosidl_typesupport_introspection_c__pyext
+[1.318s] [ 94%] Built target detection_interfaces__rosidl_typesupport_fastrtps_c__pyext
+[1.359s] [100%] Built target detection_interfaces__rosidl_typesupport_c__pyext
+[2.660s] running egg_info
+[2.810s] writing detection_interfaces.egg-info/PKG-INFO
+[2.814s] writing dependency_links to detection_interfaces.egg-info/dependency_links.txt
+[2.817s] writing top-level names to detection_interfaces.egg-info/top_level.txt
+[3.268s] reading manifest file 'detection_interfaces.egg-info/SOURCES.txt'
+[3.277s] writing manifest file 'detection_interfaces.egg-info/SOURCES.txt'
+[3.587s] [100%] Built target ament_cmake_python_build_detection_interfaces_egg
+[3.658s] Invoked command in '/root/nuc_ws/build/detection_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sunrise/yolov8_bpu_ws/install/yolov8_bpu:/opt/tros/humble:/opt/ros/humble /usr/bin/cmake --build /root/nuc_ws/build/detection_interfaces -- -j8 -l8
+[3.724s] Invoking command in '/root/nuc_ws/build/detection_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sunrise/yolov8_bpu_ws/install/yolov8_bpu:/opt/tros/humble:/opt/ros/humble /usr/bin/cmake --install /root/nuc_ws/build/detection_interfaces
+[3.770s] -- Install configuration: ""
+[3.773s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/ament_index/resource_index/rosidl_interfaces/detection_interfaces
+[3.775s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces
+[3.779s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg
+[3.784s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail
+[3.786s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__functions.h
+[3.789s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__type_support.h
+[3.791s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__functions.c
+[3.792s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__functions.h
+[3.794s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__type_support.h
+[3.795s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__struct.h
+[3.797s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__struct.h
+[3.800s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__functions.c
+[3.802s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/rosidl_generator_c__visibility_control.h
+[3.803s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detection_array.h
+[3.805s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detection_result.h
+[3.806s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/environment/library_path.sh
+[3.807s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/environment/library_path.dsv
+[3.808s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_generator_c.so
+[3.809s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces
+[3.810s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg
+[3.811s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail
+[3.812s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__rosidl_typesupport_fastrtps_c.h
+[3.813s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__rosidl_typesupport_fastrtps_c.h
+[3.813s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[3.814s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_fastrtps_c.so
+[3.815s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces
+[3.816s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg
+[3.817s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail
+[3.817s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__struct.hpp
+[3.818s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__builder.hpp
+[3.819s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__type_support.hpp
+[3.820s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__builder.hpp
+[3.821s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__traits.hpp
+[3.822s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__type_support.hpp
+[3.823s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__struct.hpp
+[3.823s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__traits.hpp
+[3.824s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detection_result.hpp
+[3.825s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp
+[3.826s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detection_array.hpp
+[3.827s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces
+[3.828s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg
+[3.829s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail
+[3.830s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__rosidl_typesupport_fastrtps_cpp.hpp
+[3.831s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__rosidl_typesupport_fastrtps_cpp.hpp
+[3.832s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/dds_fastrtps
+[3.833s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[3.833s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_fastrtps_cpp.so
+[3.834s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces
+[3.835s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg
+[3.836s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail
+[3.837s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__type_support.c
+[3.837s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__type_support.c
+[3.838s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__rosidl_typesupport_introspection_c.h
+[3.839s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__rosidl_typesupport_introspection_c.h
+[3.841s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[3.844s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_introspection_c.so
+[3.847s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_c.so
+[3.848s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces
+[3.849s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg
+[3.850s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail
+[3.851s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__type_support.cpp
+[3.852s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__type_support.cpp
+[3.853s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__rosidl_typesupport_introspection_cpp.hpp
+[3.854s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__rosidl_typesupport_introspection_cpp.hpp
+[3.855s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_introspection_cpp.so
+[3.856s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_cpp.so
+[3.857s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/environment/pythonpath.sh
+[3.858s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/environment/pythonpath.dsv
+[3.859s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces-1.0.0-py3.10.egg-info
+[3.860s] -- Installing: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces-1.0.0-py3.10.egg-info/dependency_links.txt
+[3.861s] -- Installing: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces-1.0.0-py3.10.egg-info/PKG-INFO
+[3.862s] -- Installing: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces-1.0.0-py3.10.egg-info/SOURCES.txt
+[3.863s] -- Installing: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces-1.0.0-py3.10.egg-info/top_level.txt
+[3.863s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces
+[3.864s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/detection_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[3.865s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/libdetection_interfaces__rosidl_generator_py.so
+[3.866s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/_detection_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
+[3.867s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/detection_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[3.868s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/detection_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[3.869s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/msg
+[3.870s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/msg/_detection_result_s.c
+[3.871s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/msg/_detection_array_s.c
+[3.872s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/msg/_detection_array.py
+[3.873s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/msg/_detection_result.py
+[3.874s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/msg/__init__.py
+[3.874s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/_detection_interfaces_s.ep.rosidl_typesupport_introspection_c.c
+[3.875s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/__init__.py
+[3.876s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/_detection_interfaces_s.ep.rosidl_typesupport_c.c
+[4.091s] Listing '/root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces'...
+[4.092s] Listing '/root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/msg'...
+[4.155s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/detection_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so
+[4.157s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/detection_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so
+[4.158s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/detection_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so
+[4.170s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_generator_py.so
+[4.171s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/msg/DetectionResult.idl
+[4.172s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/msg/DetectionArray.idl
+[4.173s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/msg/DetectionResult.msg
+[4.173s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/msg/DetectionArray.msg
+[4.174s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/ament_index/resource_index/package_run_dependencies/detection_interfaces
+[4.175s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/ament_index/resource_index/parent_prefix_path/detection_interfaces
+[4.176s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/environment/ament_prefix_path.sh
+[4.177s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/environment/ament_prefix_path.dsv
+[4.178s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/environment/path.sh
+[4.178s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/environment/path.dsv
+[4.179s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/local_setup.bash
+[4.184s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/local_setup.sh
+[4.189s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/local_setup.zsh
+[4.190s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/local_setup.dsv
+[4.191s] -- Installing: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/package.dsv
+[4.195s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/ament_index/resource_index/packages/detection_interfaces
+[4.197s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/export_detection_interfaces__rosidl_generator_cExport.cmake
+[4.200s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/export_detection_interfaces__rosidl_generator_cExport-noconfig.cmake
+[4.202s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/export_detection_interfaces__rosidl_typesupport_fastrtps_cExport.cmake
+[4.203s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/export_detection_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[4.204s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/export_detection_interfaces__rosidl_generator_cppExport.cmake
+[4.205s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/export_detection_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake
+[4.206s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/export_detection_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[4.207s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfaces__rosidl_typesupport_introspection_cExport.cmake
+[4.208s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[4.208s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfaces__rosidl_typesupport_cExport.cmake
+[4.209s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfaces__rosidl_typesupport_cExport-noconfig.cmake
+[4.212s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfaces__rosidl_typesupport_introspection_cppExport.cmake
+[4.213s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[4.214s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfaces__rosidl_typesupport_cppExport.cmake
+[4.215s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfaces__rosidl_typesupport_cppExport-noconfig.cmake
+[4.216s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/export_detection_interfaces__rosidl_generator_pyExport.cmake
+[4.244s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/export_detection_interfaces__rosidl_generator_pyExport-noconfig.cmake
+[4.245s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/rosidl_cmake-extras.cmake
+[4.246s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake
+[4.247s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake
+[4.248s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/ament_cmake_export_libraries-extras.cmake
+[4.251s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/ament_cmake_export_targets-extras.cmake
+[4.252s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[4.253s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[4.254s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfacesConfig.cmake
+[4.255s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfacesConfig-version.cmake
+[4.255s] -- Up-to-date: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/package.xml
+[4.257s] Invoked command in '/root/nuc_ws/build/detection_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/sunrise/yolov8_bpu_ws/install/yolov8_bpu:/opt/tros/humble:/opt/ros/humble /usr/bin/cmake --install /root/nuc_ws/build/detection_interfaces

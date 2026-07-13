@@ -1,0 +1,1184 @@
+[0.000000] (-) TimerEvent: {}
+[0.003206] (detection_interfaces) JobQueued: {'identifier': 'detection_interfaces', 'dependencies': OrderedDict()}
+[0.003587] (r2_mission) JobQueued: {'identifier': 'r2_mission', 'dependencies': OrderedDict([('detection_interfaces', '/root/nuc_ws/install/detection_interfaces')])}
+[0.005513] (detection_interfaces) JobStarted: {'identifier': 'detection_interfaces'}
+[0.079152] (detection_interfaces) JobProgress: {'identifier': 'detection_interfaces', 'progress': 'cmake'}
+[0.086014] (detection_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/root/nuc_ws/nuc_ws/src/nuc_ws/src/detection_interfaces', '-DCMAKE_INSTALL_PREFIX=/root/nuc_ws/install/detection_interfaces'], 'cwd': '/root/nuc_ws/build/detection_interfaces', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('ANTHROPIC_MODEL', 'deepseek-v4-pro[1m]'), ('AI_AGENT', 'claude-code_2-1-206_agent'), ('USER', 'root'), ('SSH_CLIENT', '10.119.149.36 10787 22'), ('CLAUDE_CODE_ENTRYPOINT', 'cli'), ('GIT_EDITOR', 'true'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/root/.vscode-server/cli/servers/Stable-4fe60c8b1cdac1c4c174f2fb180d0d758272d713/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/sunrise/yolov8_bpu_ws/install/astra_camera/lib:/home/sunrise/yolov8_bpu_ws/install/astra_camera_msgs/lib:/opt/tros/humble/lib/aarch64-linux-gnu:/opt/tros/humble/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/hobot/lib:/app/lib:/app/pub/lib:/middleware/lib:/middleware/pub/lib:/usr/hobot/lib/sensor:/system/lib:/system/usr/lib:/lib:'), ('BROWSER', '/root/.vscode-server/cli/servers/Stable-4fe60c8b1cdac1c4c174f2fb180d0d758272d713/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/root'), ('TERM_PROGRAM_VERSION', '1.127.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/0/vscode-ipc-685ef213-fae2-4150-8943-5b56d8206a7e.sock'), ('ANTHROPIC_DEFAULT_SONNET_MODEL', 'deepseek-v4-pro[1m]'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/cli/servers/Stable-4fe60c8b1cdac1c4c174f2fb180d0d758272d713/server/extensions/git/dist/askpass-main.js'), ('CLAUDE_CODE_CHILD_SESSION', '1'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/cli/servers/Stable-4fe60c8b1cdac1c4c174f2fb180d0d758272d713/server/node'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/root/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/0/bus'), ('COLORTERM', 'truecolor'), ('DEBUGINFOD_URLS', ''), ('TROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/home/sunrise/yolov8_bpu_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('CLAUDE_CODE_SSE_PORT', '13011'), ('XDG_SESSION_CLASS', 'user'), ('ANTHROPIC_BASE_URL', 'https://api.deepseek.com/anthropic'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('ANTHROPIC_DEFAULT_OPUS_MODEL', 'deepseek-v4-pro[1m]'), ('PATH', '/usr/bin:/root/.npm-global/bin:/root/.local/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/root/.vscode-server/cli/servers/Stable-4fe60c8b1cdac1c4c174f2fb180d0d758272d713/server/bin/remote-cli:/usr/bin:/root/.npm-global/bin:/root/.local/bin:/opt/tros/humble/bin:/opt/ros/humble/bin:/usr/hobot/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/root/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/bundled/scripts/noConfigScripts'), ('COREPACK_ENABLE_AUTO_PIN', '0'), ('XDG_RUNTIME_DIR', '/run/user/0'), ('CLAUDE_EFFORT', 'high'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/root/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-0c85081f7dcbc700.txt'), ('NoDefaultCurrentDirectoryInExePath', '1'), ('LANG', 'zh_CN.UTF-8'), ('PYTHONSTARTUP', '/root/.vscode-server/data/User/workspaceStorage/7fbf9b37a72bdd8b5000e40a6300048d/ms-python.python/pythonrc.py'), ('ANTHROPIC_DEFAULT_HAIKU_MODEL', 'deepseek-v4-flash'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/0/vscode-git-26e9fb4068.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/sunrise/yolov8_bpu_ws/install/yolov8_bpu:/home/sunrise/yolov8_bpu_ws/install/astra_camera:/home/sunrise/yolov8_bpu_ws/install/astra_camera_msgs:/opt/tros/humble:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('ANTHROPIC_AUTH_TOKEN', 'sk-f3aae6b04a344439914906c5855e7726'), ('CLAUDE_CODE_SESSION_ID', '58b7421d-80c7-47dd-b6c6-d8eb4126c4d4'), ('CLAUDECODE', '1'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/root/nuc_ws/build/detection_interfaces'), ('LC_ALL', 'zh_CN.UTF-8'), ('COPILOT_DEBUG_NONCE', '64f91145d90aa361c710fc64124b3598'), ('SSH_CONNECTION', '10.119.149.36 10787 10.119.149.117 22'), ('CLAUDE_CODE_EXECPATH', '/usr/lib/node_modules/@anthropic-ai/claude-code/bin/claude.exe'), ('PYTHONPATH', '/home/sunrise/yolov8_bpu_ws/install/yolov8_bpu/lib/python3.10/site-packages:/home/sunrise/yolov8_bpu_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages:/opt/tros/humble/lib/python3.10/site-packages:/opt/tros/humble/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/sunrise/yolov8_bpu_ws/install/astra_camera:/home/sunrise/yolov8_bpu_ws/install/astra_camera_msgs:/home/sunrise/yolov8_bpu_ws/install/yolov8_bpu:/opt/tros/humble:/opt/ros/humble')]), 'shell': False}
+[0.101663] (-) TimerEvent: {}
+[0.202498] (-) TimerEvent: {}
+[0.303200] (-) TimerEvent: {}
+[0.409070] (-) TimerEvent: {}
+[0.510373] (-) TimerEvent: {}
+[0.611045] (-) TimerEvent: {}
+[0.711598] (-) TimerEvent: {}
+[0.762989] (detection_interfaces) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.2.0\n'}
+[0.811855] (-) TimerEvent: {}
+[0.920968] (-) TimerEvent: {}
+[1.021679] (-) TimerEvent: {}
+[1.122377] (-) TimerEvent: {}
+[1.222999] (-) TimerEvent: {}
+[1.323581] (-) TimerEvent: {}
+[1.357592] (detection_interfaces) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.2.0\n'}
+[1.420640] (detection_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[1.423923] (-) TimerEvent: {}
+[1.524518] (-) TimerEvent: {}
+[1.625166] (-) TimerEvent: {}
+[1.725799] (-) TimerEvent: {}
+[1.826395] (-) TimerEvent: {}
+[1.904575] (detection_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[1.926658] (-) TimerEvent: {}
+[1.955420] (detection_interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[1.958523] (detection_interfaces) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[1.966243] (detection_interfaces) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[1.989148] (detection_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[2.026927] (-) TimerEvent: {}
+[2.127511] (-) TimerEvent: {}
+[2.228050] (-) TimerEvent: {}
+[2.328637] (-) TimerEvent: {}
+[2.429204] (-) TimerEvent: {}
+[2.515096] (detection_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[2.529425] (-) TimerEvent: {}
+[2.567664] (detection_interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[2.569185] (detection_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[2.571907] (detection_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[2.606118] (detection_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[2.629670] (-) TimerEvent: {}
+[2.730222] (-) TimerEvent: {}
+[2.830860] (-) TimerEvent: {}
+[2.931495] (-) TimerEvent: {}
+[3.032066] (-) TimerEvent: {}
+[3.132571] (-) TimerEvent: {}
+[3.233123] (-) TimerEvent: {}
+[3.333656] (-) TimerEvent: {}
+[3.434169] (-) TimerEvent: {}
+[3.534692] (-) TimerEvent: {}
+[3.635270] (-) TimerEvent: {}
+[3.735810] (-) TimerEvent: {}
+[3.836331] (-) TimerEvent: {}
+[3.936812] (-) TimerEvent: {}
+[4.037349] (-) TimerEvent: {}
+[4.137866] (-) TimerEvent: {}
+[4.238391] (-) TimerEvent: {}
+[4.338890] (-) TimerEvent: {}
+[4.439432] (-) TimerEvent: {}
+[4.540049] (-) TimerEvent: {}
+[4.640570] (-) TimerEvent: {}
+[4.741212] (-) TimerEvent: {}
+[4.841764] (-) TimerEvent: {}
+[4.942282] (-) TimerEvent: {}
+[5.042845] (-) TimerEvent: {}
+[5.143391] (-) TimerEvent: {}
+[5.243901] (-) TimerEvent: {}
+[5.344390] (-) TimerEvent: {}
+[5.444995] (-) TimerEvent: {}
+[5.545817] (-) TimerEvent: {}
+[5.646481] (-) TimerEvent: {}
+[5.737475] (detection_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[5.746717] (-) TimerEvent: {}
+[5.847269] (-) TimerEvent: {}
+[5.947834] (-) TimerEvent: {}
+[6.048370] (-) TimerEvent: {}
+[6.148969] (-) TimerEvent: {}
+[6.249512] (-) TimerEvent: {}
+[6.350069] (-) TimerEvent: {}
+[6.450615] (-) TimerEvent: {}
+[6.506965] (detection_interfaces) StdoutLine: {'line': b'-- Found builtin_interfaces: 1.2.2 (/opt/ros/humble/share/builtin_interfaces/cmake)\n'}
+[6.550962] (-) TimerEvent: {}
+[6.651541] (-) TimerEvent: {}
+[6.752144] (-) TimerEvent: {}
+[6.759093] (detection_interfaces) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[6.796740] (detection_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[6.852345] (-) TimerEvent: {}
+[6.865027] (detection_interfaces) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[6.952604] (-) TimerEvent: {}
+[7.011669] (detection_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[7.052819] (-) TimerEvent: {}
+[7.140905] (detection_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[7.153045] (-) TimerEvent: {}
+[7.253753] (-) TimerEvent: {}
+[7.257284] (detection_interfaces) StdoutLine: {'line': b'-- Found std_msgs: 4.9.0 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[7.353993] (-) TimerEvent: {}
+[7.361981] (detection_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[7.454232] (-) TimerEvent: {}
+[7.554776] (-) TimerEvent: {}
+[7.655300] (-) TimerEvent: {}
+[7.755849] (-) TimerEvent: {}
+[7.856412] (-) TimerEvent: {}
+[7.956983] (-) TimerEvent: {}
+[8.057832] (-) TimerEvent: {}
+[8.158312] (-) TimerEvent: {}
+[8.258841] (-) TimerEvent: {}
+[8.359394] (-) TimerEvent: {}
+[8.459977] (-) TimerEvent: {}
+[8.560592] (-) TimerEvent: {}
+[8.661270] (-) TimerEvent: {}
+[8.761820] (-) TimerEvent: {}
+[8.862397] (-) TimerEvent: {}
+[8.962874] (-) TimerEvent: {}
+[9.063357] (-) TimerEvent: {}
+[9.163905] (-) TimerEvent: {}
+[9.264553] (-) TimerEvent: {}
+[9.365078] (-) TimerEvent: {}
+[9.465738] (-) TimerEvent: {}
+[9.566315] (-) TimerEvent: {}
+[9.666870] (-) TimerEvent: {}
+[9.756409] (detection_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[9.767150] (-) TimerEvent: {}
+[9.867800] (-) TimerEvent: {}
+[9.968389] (-) TimerEvent: {}
+[10.068928] (-) TimerEvent: {}
+[10.169567] (-) TimerEvent: {}
+[10.270135] (-) TimerEvent: {}
+[10.370791] (-) TimerEvent: {}
+[10.471365] (-) TimerEvent: {}
+[10.571904] (-) TimerEvent: {}
+[10.672448] (-) TimerEvent: {}
+[10.772992] (-) TimerEvent: {}
+[10.873541] (-) TimerEvent: {}
+[10.974169] (-) TimerEvent: {}
+[11.074692] (-) TimerEvent: {}
+[11.175591] (-) TimerEvent: {}
+[11.276210] (-) TimerEvent: {}
+[11.376783] (-) TimerEvent: {}
+[11.477372] (-) TimerEvent: {}
+[11.577930] (-) TimerEvent: {}
+[11.678543] (-) TimerEvent: {}
+[11.779243] (-) TimerEvent: {}
+[11.879848] (-) TimerEvent: {}
+[11.980423] (-) TimerEvent: {}
+[12.081087] (-) TimerEvent: {}
+[12.181681] (-) TimerEvent: {}
+[12.282402] (-) TimerEvent: {}
+[12.383007] (-) TimerEvent: {}
+[12.483613] (-) TimerEvent: {}
+[12.584247] (-) TimerEvent: {}
+[12.684809] (-) TimerEvent: {}
+[12.785374] (-) TimerEvent: {}
+[12.885490] (detection_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[12.886599] (-) TimerEvent: {}
+[12.987146] (-) TimerEvent: {}
+[13.087732] (-) TimerEvent: {}
+[13.188251] (-) TimerEvent: {}
+[13.288852] (-) TimerEvent: {}
+[13.389407] (-) TimerEvent: {}
+[13.489959] (-) TimerEvent: {}
+[13.590556] (-) TimerEvent: {}
+[13.691121] (-) TimerEvent: {}
+[13.791640] (-) TimerEvent: {}
+[14.027357] (-) TimerEvent: {}
+[14.030194] (detection_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[14.127580] (-) TimerEvent: {}
+[14.228076] (-) TimerEvent: {}
+[14.328665] (-) TimerEvent: {}
+[14.365627] (detection_interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[14.376667] (detection_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[14.428868] (-) TimerEvent: {}
+[14.529402] (-) TimerEvent: {}
+[14.600946] (detection_interfaces) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/aarch64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[14.602027] (detection_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[14.602746] (detection_interfaces) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[14.603474] (detection_interfaces) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/aarch64-linux-gnu/libpython3.10.so\n'}
+[14.629635] (-) TimerEvent: {}
+[14.730279] (-) TimerEvent: {}
+[14.801251] (detection_interfaces) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[14.831914] (-) TimerEvent: {}
+[14.932516] (-) TimerEvent: {}
+[15.033056] (-) TimerEvent: {}
+[15.133683] (-) TimerEvent: {}
+[15.234373] (-) TimerEvent: {}
+[15.283261] (detection_interfaces) StdoutLine: {'line': b'-- Configuring done\n'}
+[15.334640] (-) TimerEvent: {}
+[15.441441] (-) TimerEvent: {}
+[15.520712] (detection_interfaces) StdoutLine: {'line': b'-- Generating done\n'}
+[15.541940] (-) TimerEvent: {}
+[15.611161] (detection_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /root/nuc_ws/build/detection_interfaces\n'}
+[15.642187] (-) TimerEvent: {}
+[15.670004] (detection_interfaces) CommandEnded: {'returncode': 0}
+[15.673927] (detection_interfaces) JobProgress: {'identifier': 'detection_interfaces', 'progress': 'build'}
+[15.674183] (detection_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/nuc_ws/build/detection_interfaces', '--', '-j8', '-l8'], 'cwd': '/root/nuc_ws/build/detection_interfaces', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('ANTHROPIC_MODEL', 'deepseek-v4-pro[1m]'), ('AI_AGENT', 'claude-code_2-1-206_agent'), ('USER', 'root'), ('SSH_CLIENT', '10.119.149.36 10787 22'), ('CLAUDE_CODE_ENTRYPOINT', 'cli'), ('GIT_EDITOR', 'true'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/root/.vscode-server/cli/servers/Stable-4fe60c8b1cdac1c4c174f2fb180d0d758272d713/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/sunrise/yolov8_bpu_ws/install/astra_camera/lib:/home/sunrise/yolov8_bpu_ws/install/astra_camera_msgs/lib:/opt/tros/humble/lib/aarch64-linux-gnu:/opt/tros/humble/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/hobot/lib:/app/lib:/app/pub/lib:/middleware/lib:/middleware/pub/lib:/usr/hobot/lib/sensor:/system/lib:/system/usr/lib:/lib:'), ('BROWSER', '/root/.vscode-server/cli/servers/Stable-4fe60c8b1cdac1c4c174f2fb180d0d758272d713/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/root'), ('TERM_PROGRAM_VERSION', '1.127.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/0/vscode-ipc-685ef213-fae2-4150-8943-5b56d8206a7e.sock'), ('ANTHROPIC_DEFAULT_SONNET_MODEL', 'deepseek-v4-pro[1m]'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/cli/servers/Stable-4fe60c8b1cdac1c4c174f2fb180d0d758272d713/server/extensions/git/dist/askpass-main.js'), ('CLAUDE_CODE_CHILD_SESSION', '1'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/cli/servers/Stable-4fe60c8b1cdac1c4c174f2fb180d0d758272d713/server/node'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/root/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/0/bus'), ('COLORTERM', 'truecolor'), ('DEBUGINFOD_URLS', ''), ('TROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/home/sunrise/yolov8_bpu_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('CLAUDE_CODE_SSE_PORT', '13011'), ('XDG_SESSION_CLASS', 'user'), ('ANTHROPIC_BASE_URL', 'https://api.deepseek.com/anthropic'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('ANTHROPIC_DEFAULT_OPUS_MODEL', 'deepseek-v4-pro[1m]'), ('PATH', '/usr/bin:/root/.npm-global/bin:/root/.local/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/root/.vscode-server/cli/servers/Stable-4fe60c8b1cdac1c4c174f2fb180d0d758272d713/server/bin/remote-cli:/usr/bin:/root/.npm-global/bin:/root/.local/bin:/opt/tros/humble/bin:/opt/ros/humble/bin:/usr/hobot/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/root/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/bundled/scripts/noConfigScripts'), ('COREPACK_ENABLE_AUTO_PIN', '0'), ('XDG_RUNTIME_DIR', '/run/user/0'), ('CLAUDE_EFFORT', 'high'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/root/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-0c85081f7dcbc700.txt'), ('NoDefaultCurrentDirectoryInExePath', '1'), ('LANG', 'zh_CN.UTF-8'), ('PYTHONSTARTUP', '/root/.vscode-server/data/User/workspaceStorage/7fbf9b37a72bdd8b5000e40a6300048d/ms-python.python/pythonrc.py'), ('ANTHROPIC_DEFAULT_HAIKU_MODEL', 'deepseek-v4-flash'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/0/vscode-git-26e9fb4068.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/sunrise/yolov8_bpu_ws/install/yolov8_bpu:/home/sunrise/yolov8_bpu_ws/install/astra_camera:/home/sunrise/yolov8_bpu_ws/install/astra_camera_msgs:/opt/tros/humble:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('ANTHROPIC_AUTH_TOKEN', 'sk-f3aae6b04a344439914906c5855e7726'), ('CLAUDE_CODE_SESSION_ID', '58b7421d-80c7-47dd-b6c6-d8eb4126c4d4'), ('CLAUDECODE', '1'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/root/nuc_ws/build/detection_interfaces'), ('LC_ALL', 'zh_CN.UTF-8'), ('COPILOT_DEBUG_NONCE', '64f91145d90aa361c710fc64124b3598'), ('SSH_CONNECTION', '10.119.149.36 10787 10.119.149.117 22'), ('CLAUDE_CODE_EXECPATH', '/usr/lib/node_modules/@anthropic-ai/claude-code/bin/claude.exe'), ('PYTHONPATH', '/home/sunrise/yolov8_bpu_ws/install/yolov8_bpu/lib/python3.10/site-packages:/home/sunrise/yolov8_bpu_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages:/opt/tros/humble/lib/python3.10/site-packages:/opt/tros/humble/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/sunrise/yolov8_bpu_ws/install/astra_camera:/home/sunrise/yolov8_bpu_ws/install/astra_camera_msgs:/home/sunrise/yolov8_bpu_ws/install/yolov8_bpu:/opt/tros/humble:/opt/ros/humble')]), 'shell': False}
+[15.742549] (-) TimerEvent: {}
+[15.845241] (-) TimerEvent: {}
+[15.890621] (detection_interfaces) StdoutLine: {'line': b'[  2%] Generating C code for ROS interfaces\n'}
+[15.945468] (-) TimerEvent: {}
+[16.046125] (-) TimerEvent: {}
+[16.146738] (-) TimerEvent: {}
+[16.247337] (-) TimerEvent: {}
+[16.347860] (-) TimerEvent: {}
+[16.448501] (-) TimerEvent: {}
+[16.549116] (-) TimerEvent: {}
+[16.649799] (-) TimerEvent: {}
+[16.750386] (-) TimerEvent: {}
+[16.851012] (-) TimerEvent: {}
+[16.951616] (-) TimerEvent: {}
+[17.052155] (-) TimerEvent: {}
+[17.153428] (-) TimerEvent: {}
+[17.254046] (-) TimerEvent: {}
+[17.355892] (-) TimerEvent: {}
+[17.456449] (-) TimerEvent: {}
+[17.556970] (-) TimerEvent: {}
+[17.657562] (-) TimerEvent: {}
+[17.758201] (-) TimerEvent: {}
+[17.861009] (-) TimerEvent: {}
+[17.961673] (-) TimerEvent: {}
+[18.062228] (-) TimerEvent: {}
+[18.162754] (-) TimerEvent: {}
+[18.263267] (-) TimerEvent: {}
+[18.363822] (-) TimerEvent: {}
+[18.464349] (-) TimerEvent: {}
+[18.564932] (-) TimerEvent: {}
+[18.665468] (-) TimerEvent: {}
+[18.765969] (-) TimerEvent: {}
+[18.866520] (-) TimerEvent: {}
+[18.997242] (-) TimerEvent: {}
+[19.097777] (-) TimerEvent: {}
+[19.198340] (-) TimerEvent: {}
+[19.298898] (-) TimerEvent: {}
+[19.399416] (-) TimerEvent: {}
+[19.499977] (-) TimerEvent: {}
+[19.600599] (-) TimerEvent: {}
+[19.701274] (-) TimerEvent: {}
+[19.745833] (detection_interfaces) StdoutLine: {'line': b'[  5%] Building C object CMakeFiles/detection_interfaces__rosidl_generator_c.dir/rosidl_generator_c/detection_interfaces/msg/detail/detection_result__functions.c.o\n'}
+[19.801589] (-) TimerEvent: {}
+[19.902165] (-) TimerEvent: {}
+[20.002707] (-) TimerEvent: {}
+[20.103215] (-) TimerEvent: {}
+[20.160298] (detection_interfaces) StdoutLine: {'line': b'[  7%] Building C object CMakeFiles/detection_interfaces__rosidl_generator_c.dir/rosidl_generator_c/detection_interfaces/msg/detail/detection_array__functions.c.o\n'}
+[20.203429] (-) TimerEvent: {}
+[20.303963] (-) TimerEvent: {}
+[20.404529] (-) TimerEvent: {}
+[20.477114] (detection_interfaces) StdoutLine: {'line': b'[ 10%] Linking C shared library libdetection_interfaces__rosidl_generator_c.so\n'}
+[20.504796] (-) TimerEvent: {}
+[20.605483] (-) TimerEvent: {}
+[20.706233] (-) TimerEvent: {}
+[20.728677] (detection_interfaces) StdoutLine: {'line': b'[ 10%] Built target detection_interfaces__rosidl_generator_c\n'}
+[20.806500] (-) TimerEvent: {}
+[20.878074] (detection_interfaces) StdoutLine: {'line': b'[ 10%] Built target ament_cmake_python_copy_detection_interfaces\n'}
+[20.906712] (-) TimerEvent: {}
+[20.931353] (detection_interfaces) StdoutLine: {'line': b'[ 12%] Generating C introspection for ROS interfaces\n'}
+[21.006934] (-) TimerEvent: {}
+[21.107620] (-) TimerEvent: {}
+[21.208142] (-) TimerEvent: {}
+[21.308658] (-) TimerEvent: {}
+[21.409149] (-) TimerEvent: {}
+[21.509748] (-) TimerEvent: {}
+[21.610367] (-) TimerEvent: {}
+[21.713069] (-) TimerEvent: {}
+[21.813576] (-) TimerEvent: {}
+[21.914162] (-) TimerEvent: {}
+[22.014721] (-) TimerEvent: {}
+[22.115798] (-) TimerEvent: {}
+[22.216407] (-) TimerEvent: {}
+[22.316960] (-) TimerEvent: {}
+[22.417897] (-) TimerEvent: {}
+[22.520940] (-) TimerEvent: {}
+[22.621463] (-) TimerEvent: {}
+[22.722163] (-) TimerEvent: {}
+[22.822783] (-) TimerEvent: {}
+[22.923275] (-) TimerEvent: {}
+[23.023837] (-) TimerEvent: {}
+[23.124370] (-) TimerEvent: {}
+[23.224871] (-) TimerEvent: {}
+[23.325405] (-) TimerEvent: {}
+[23.425949] (-) TimerEvent: {}
+[23.526568] (-) TimerEvent: {}
+[23.627272] (-) TimerEvent: {}
+[23.728162] (-) TimerEvent: {}
+[23.828753] (-) TimerEvent: {}
+[23.929360] (-) TimerEvent: {}
+[24.030035] (-) TimerEvent: {}
+[24.041966] (detection_interfaces) StdoutLine: {'line': b'[ 15%] Building C object CMakeFiles/detection_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/detection_interfaces/msg/detail/detection_result__type_support.c.o\n'}
+[24.130422] (-) TimerEvent: {}
+[24.231386] (-) TimerEvent: {}
+[24.251404] (detection_interfaces) StdoutLine: {'line': b'[ 17%] Building C object CMakeFiles/detection_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/detection_interfaces/msg/detail/detection_array__type_support.c.o\n'}
+[24.331616] (-) TimerEvent: {}
+[24.437090] (-) TimerEvent: {}
+[24.483753] (detection_interfaces) StdoutLine: {'line': b'[ 20%] Linking C shared library libdetection_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[24.537397] (-) TimerEvent: {}
+[24.637988] (-) TimerEvent: {}
+[24.686786] (detection_interfaces) StdoutLine: {'line': b'[ 20%] Built target detection_interfaces__rosidl_typesupport_introspection_c\n'}
+[24.738221] (-) TimerEvent: {}
+[24.838801] (-) TimerEvent: {}
+[24.939544] (-) TimerEvent: {}
+[25.040100] (-) TimerEvent: {}
+[25.140640] (-) TimerEvent: {}
+[25.241237] (-) TimerEvent: {}
+[25.341816] (-) TimerEvent: {}
+[25.442359] (-) TimerEvent: {}
+[25.542934] (-) TimerEvent: {}
+[25.643856] (-) TimerEvent: {}
+[25.744565] (-) TimerEvent: {}
+[25.845850] (-) TimerEvent: {}
+[25.946365] (-) TimerEvent: {}
+[26.047165] (-) TimerEvent: {}
+[26.147655] (-) TimerEvent: {}
+[26.248230] (-) TimerEvent: {}
+[26.348735] (-) TimerEvent: {}
+[26.449221] (-) TimerEvent: {}
+[26.552866] (-) TimerEvent: {}
+[26.588546] (detection_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[26.653119] (-) TimerEvent: {}
+[26.753781] (-) TimerEvent: {}
+[26.790341] (detection_interfaces) StdoutLine: {'line': b'creating detection_interfaces.egg-info\n'}
+[26.791881] (detection_interfaces) StdoutLine: {'line': b'writing detection_interfaces.egg-info/PKG-INFO\n'}
+[26.795307] (detection_interfaces) StdoutLine: {'line': b'writing dependency_links to detection_interfaces.egg-info/dependency_links.txt\n'}
+[26.798087] (detection_interfaces) StdoutLine: {'line': b'writing top-level names to detection_interfaces.egg-info/top_level.txt\n'}
+[26.799607] (detection_interfaces) StdoutLine: {'line': b"writing manifest file 'detection_interfaces.egg-info/SOURCES.txt'\n"}
+[26.854029] (-) TimerEvent: {}
+[26.954554] (-) TimerEvent: {}
+[27.055076] (-) TimerEvent: {}
+[27.155684] (-) TimerEvent: {}
+[27.256330] (-) TimerEvent: {}
+[27.331659] (detection_interfaces) StdoutLine: {'line': b"reading manifest file 'detection_interfaces.egg-info/SOURCES.txt'\n"}
+[27.340574] (detection_interfaces) StdoutLine: {'line': b"writing manifest file 'detection_interfaces.egg-info/SOURCES.txt'\n"}
+[27.356592] (-) TimerEvent: {}
+[27.457276] (-) TimerEvent: {}
+[27.557863] (-) TimerEvent: {}
+[27.658480] (-) TimerEvent: {}
+[27.666110] (detection_interfaces) StdoutLine: {'line': b'[ 20%] Built target ament_cmake_python_build_detection_interfaces_egg\n'}
+[27.722798] (detection_interfaces) StdoutLine: {'line': b'[ 23%] Generating C type support for eProsima Fast-RTPS\n'}
+[27.758708] (-) TimerEvent: {}
+[27.859308] (-) TimerEvent: {}
+[27.959936] (-) TimerEvent: {}
+[28.060515] (-) TimerEvent: {}
+[28.161146] (-) TimerEvent: {}
+[28.261741] (-) TimerEvent: {}
+[28.362289] (-) TimerEvent: {}
+[28.462863] (-) TimerEvent: {}
+[28.563537] (-) TimerEvent: {}
+[28.664110] (-) TimerEvent: {}
+[28.764591] (-) TimerEvent: {}
+[28.865135] (-) TimerEvent: {}
+[28.965805] (-) TimerEvent: {}
+[29.066383] (-) TimerEvent: {}
+[29.166927] (-) TimerEvent: {}
+[29.267473] (-) TimerEvent: {}
+[29.368002] (-) TimerEvent: {}
+[29.468484] (-) TimerEvent: {}
+[29.568972] (-) TimerEvent: {}
+[29.669498] (-) TimerEvent: {}
+[29.770039] (-) TimerEvent: {}
+[29.870703] (-) TimerEvent: {}
+[29.971292] (-) TimerEvent: {}
+[30.007944] (<colcon_parallel_executor.executor.parallel.ParallelExecutorExtension object at 0xffffb5501090>) ParallelStatus: {'processing': ('detection_interfaces',)}
+[30.071511] (-) TimerEvent: {}
+[30.172116] (-) TimerEvent: {}
+[30.272622] (-) TimerEvent: {}
+[30.373173] (-) TimerEvent: {}
+[30.473684] (-) TimerEvent: {}
+[30.574208] (-) TimerEvent: {}
+[30.674858] (-) TimerEvent: {}
+[30.775546] (-) TimerEvent: {}
+[30.876186] (-) TimerEvent: {}
+[30.976758] (-) TimerEvent: {}
+[30.986676] (detection_interfaces) StdoutLine: {'line': b'[ 25%] Building CXX object CMakeFiles/detection_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/detection_interfaces/msg/detail/detection_result__type_support_c.cpp.o\n'}
+[30.988677] (detection_interfaces) StdoutLine: {'line': b'[ 28%] Building CXX object CMakeFiles/detection_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/detection_interfaces/msg/detail/detection_array__type_support_c.cpp.o\n'}
+[31.077048] (-) TimerEvent: {}
+[31.177650] (-) TimerEvent: {}
+[31.278216] (-) TimerEvent: {}
+[31.378747] (-) TimerEvent: {}
+[31.479298] (-) TimerEvent: {}
+[31.579935] (-) TimerEvent: {}
+[31.680622] (-) TimerEvent: {}
+[31.781266] (-) TimerEvent: {}
+[31.881842] (-) TimerEvent: {}
+[31.982442] (-) TimerEvent: {}
+[32.083186] (-) TimerEvent: {}
+[32.183762] (-) TimerEvent: {}
+[32.284366] (-) TimerEvent: {}
+[32.384963] (-) TimerEvent: {}
+[32.485523] (-) TimerEvent: {}
+[32.586067] (-) TimerEvent: {}
+[32.686735] (-) TimerEvent: {}
+[32.787384] (-) TimerEvent: {}
+[32.887953] (-) TimerEvent: {}
+[32.988516] (-) TimerEvent: {}
+[33.089156] (-) TimerEvent: {}
+[33.189768] (-) TimerEvent: {}
+[33.290382] (-) TimerEvent: {}
+[33.391068] (-) TimerEvent: {}
+[33.491663] (-) TimerEvent: {}
+[33.592235] (-) TimerEvent: {}
+[33.654834] (detection_interfaces) StdoutLine: {'line': b'[ 30%] Linking CXX shared library libdetection_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[33.692516] (-) TimerEvent: {}
+[33.793197] (-) TimerEvent: {}
+[33.893785] (-) TimerEvent: {}
+[34.003380] (-) TimerEvent: {}
+[34.103979] (-) TimerEvent: {}
+[34.179858] (detection_interfaces) StdoutLine: {'line': b'[ 30%] Built target detection_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[34.204212] (-) TimerEvent: {}
+[34.228172] (detection_interfaces) StdoutLine: {'line': b'[ 33%] Generating C type support dispatch for ROS interfaces\n'}
+[34.286374] (detection_interfaces) StdoutLine: {'line': b'[ 35%] Generating C++ code for ROS interfaces\n'}
+[34.304485] (-) TimerEvent: {}
+[34.404992] (-) TimerEvent: {}
+[34.505484] (-) TimerEvent: {}
+[34.606047] (-) TimerEvent: {}
+[34.706556] (-) TimerEvent: {}
+[34.807068] (-) TimerEvent: {}
+[34.907588] (-) TimerEvent: {}
+[35.008075] (-) TimerEvent: {}
+[35.108577] (-) TimerEvent: {}
+[35.209052] (-) TimerEvent: {}
+[35.309525] (-) TimerEvent: {}
+[35.410078] (-) TimerEvent: {}
+[35.510610] (-) TimerEvent: {}
+[35.611193] (-) TimerEvent: {}
+[35.716618] (-) TimerEvent: {}
+[35.821717] (-) TimerEvent: {}
+[35.922278] (-) TimerEvent: {}
+[36.022859] (-) TimerEvent: {}
+[36.123408] (-) TimerEvent: {}
+[36.223947] (-) TimerEvent: {}
+[36.324433] (-) TimerEvent: {}
+[36.424969] (-) TimerEvent: {}
+[36.525512] (-) TimerEvent: {}
+[36.626039] (-) TimerEvent: {}
+[36.726659] (-) TimerEvent: {}
+[36.827323] (-) TimerEvent: {}
+[36.927885] (-) TimerEvent: {}
+[37.025149] (detection_interfaces) StdoutLine: {'line': b'[ 41%] Building CXX object CMakeFiles/detection_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/detection_interfaces/msg/detection_array__type_support.cpp.o\n'}
+[37.026154] (detection_interfaces) StdoutLine: {'line': b'[ 41%] Building CXX object CMakeFiles/detection_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/detection_interfaces/msg/detection_result__type_support.cpp.o\n'}
+[37.028177] (-) TimerEvent: {}
+[37.128731] (-) TimerEvent: {}
+[37.229317] (-) TimerEvent: {}
+[37.240019] (detection_interfaces) StdoutLine: {'line': b'[ 43%] Linking CXX shared library libdetection_interfaces__rosidl_typesupport_c.so\n'}
+[37.329572] (-) TimerEvent: {}
+[37.430217] (-) TimerEvent: {}
+[37.480130] (detection_interfaces) StdoutLine: {'line': b'[ 43%] Built target detection_interfaces__rosidl_typesupport_c\n'}
+[37.530515] (-) TimerEvent: {}
+[37.632297] (-) TimerEvent: {}
+[37.685809] (detection_interfaces) StdoutLine: {'line': b'[ 43%] Built target detection_interfaces__cpp\n'}
+[37.732691] (-) TimerEvent: {}
+[37.749950] (detection_interfaces) StdoutLine: {'line': b'[ 46%] Generating C++ type support dispatch for ROS interfaces\n'}
+[37.772604] (detection_interfaces) StdoutLine: {'line': b'[ 48%] Generating C++ type support for eProsima Fast-RTPS\n'}
+[37.795778] (detection_interfaces) StdoutLine: {'line': b'[ 51%] Generating C++ introspection for ROS interfaces\n'}
+[37.832925] (-) TimerEvent: {}
+[37.933485] (-) TimerEvent: {}
+[38.034094] (-) TimerEvent: {}
+[38.134690] (-) TimerEvent: {}
+[38.235293] (-) TimerEvent: {}
+[38.337344] (-) TimerEvent: {}
+[38.440912] (-) TimerEvent: {}
+[38.541781] (-) TimerEvent: {}
+[38.646907] (-) TimerEvent: {}
+[38.750906] (-) TimerEvent: {}
+[38.859481] (-) TimerEvent: {}
+[38.960009] (-) TimerEvent: {}
+[39.091614] (-) TimerEvent: {}
+[39.192393] (-) TimerEvent: {}
+[39.293260] (-) TimerEvent: {}
+[39.395038] (-) TimerEvent: {}
+[39.503700] (-) TimerEvent: {}
+[39.607226] (-) TimerEvent: {}
+[39.707859] (-) TimerEvent: {}
+[39.808416] (-) TimerEvent: {}
+[39.908950] (-) TimerEvent: {}
+[40.010943] (-) TimerEvent: {}
+[40.111505] (-) TimerEvent: {}
+[40.212054] (-) TimerEvent: {}
+[40.312572] (-) TimerEvent: {}
+[40.418253] (-) TimerEvent: {}
+[40.519070] (-) TimerEvent: {}
+[40.620953] (-) TimerEvent: {}
+[40.721850] (-) TimerEvent: {}
+[40.810826] (detection_interfaces) StdoutLine: {'line': b'[ 53%] Building CXX object CMakeFiles/detection_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/detection_interfaces/msg/detection_result__type_support.cpp.o\n'}
+[40.822219] (-) TimerEvent: {}
+[40.925304] (-) TimerEvent: {}
+[41.027827] (-) TimerEvent: {}
+[41.128658] (-) TimerEvent: {}
+[41.229406] (-) TimerEvent: {}
+[41.330044] (-) TimerEvent: {}
+[41.430715] (-) TimerEvent: {}
+[41.539160] (-) TimerEvent: {}
+[41.542909] (detection_interfaces) StdoutLine: {'line': b'[ 56%] Building CXX object CMakeFiles/detection_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/detection_interfaces/msg/detail/detection_result__type_support.cpp.o\n'}
+[41.639374] (-) TimerEvent: {}
+[41.662902] (detection_interfaces) StdoutLine: {'line': b'[ 58%] Building CXX object CMakeFiles/detection_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/detection_interfaces/msg/detail/dds_fastrtps/detection_result__type_support.cpp.o\n'}
+[41.739661] (-) TimerEvent: {}
+[41.840267] (-) TimerEvent: {}
+[41.940931] (-) TimerEvent: {}
+[42.041649] (-) TimerEvent: {}
+[42.142327] (-) TimerEvent: {}
+[42.242991] (-) TimerEvent: {}
+[42.343594] (-) TimerEvent: {}
+[42.446242] (-) TimerEvent: {}
+[42.550943] (-) TimerEvent: {}
+[42.660937] (-) TimerEvent: {}
+[42.763927] (-) TimerEvent: {}
+[42.866886] (-) TimerEvent: {}
+[42.967687] (-) TimerEvent: {}
+[43.068317] (-) TimerEvent: {}
+[43.168977] (-) TimerEvent: {}
+[43.269577] (-) TimerEvent: {}
+[43.370896] (-) TimerEvent: {}
+[43.401012] (detection_interfaces) StdoutLine: {'line': b'[ 61%] Building CXX object CMakeFiles/detection_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/detection_interfaces/msg/detection_array__type_support.cpp.o\n'}
+[43.471214] (-) TimerEvent: {}
+[43.571880] (-) TimerEvent: {}
+[43.681039] (-) TimerEvent: {}
+[43.781800] (-) TimerEvent: {}
+[43.890931] (-) TimerEvent: {}
+[44.000895] (-) TimerEvent: {}
+[44.150953] (-) TimerEvent: {}
+[44.252101] (-) TimerEvent: {}
+[44.352689] (-) TimerEvent: {}
+[44.458843] (-) TimerEvent: {}
+[44.570948] (-) TimerEvent: {}
+[44.676518] (-) TimerEvent: {}
+[44.790815] (-) TimerEvent: {}
+[44.891410] (-) TimerEvent: {}
+[45.001170] (-) TimerEvent: {}
+[45.107557] (detection_interfaces) StdoutLine: {'line': b'[ 64%] Building CXX object CMakeFiles/detection_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/detection_interfaces/msg/detail/detection_array__type_support.cpp.o\n'}
+[45.108636] (-) TimerEvent: {}
+[45.210909] (-) TimerEvent: {}
+[45.317263] (-) TimerEvent: {}
+[45.417878] (-) TimerEvent: {}
+[45.518512] (-) TimerEvent: {}
+[45.620899] (-) TimerEvent: {}
+[45.725682] (-) TimerEvent: {}
+[45.765554] (detection_interfaces) StdoutLine: {'line': b'[ 66%] Building CXX object CMakeFiles/detection_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/detection_interfaces/msg/detail/dds_fastrtps/detection_array__type_support.cpp.o\n'}
+[45.825919] (-) TimerEvent: {}
+[45.926530] (-) TimerEvent: {}
+[46.027167] (-) TimerEvent: {}
+[46.127905] (-) TimerEvent: {}
+[46.227437] (detection_interfaces) StdoutLine: {'line': b'[ 69%] Linking CXX shared library libdetection_interfaces__rosidl_typesupport_cpp.so\n'}
+[46.228301] (-) TimerEvent: {}
+[46.329180] (-) TimerEvent: {}
+[46.430908] (-) TimerEvent: {}
+[46.535268] (-) TimerEvent: {}
+[46.611703] (detection_interfaces) StdoutLine: {'line': b'[ 69%] Built target detection_interfaces__rosidl_typesupport_cpp\n'}
+[46.635547] (-) TimerEvent: {}
+[46.737595] (-) TimerEvent: {}
+[46.844377] (-) TimerEvent: {}
+[46.945486] (-) TimerEvent: {}
+[47.048252] (-) TimerEvent: {}
+[47.148867] (-) TimerEvent: {}
+[47.250898] (-) TimerEvent: {}
+[47.355245] (-) TimerEvent: {}
+[47.455876] (-) TimerEvent: {}
+[47.556569] (-) TimerEvent: {}
+[47.657233] (-) TimerEvent: {}
+[47.757874] (-) TimerEvent: {}
+[47.863091] (-) TimerEvent: {}
+[47.963770] (-) TimerEvent: {}
+[48.064431] (-) TimerEvent: {}
+[48.165436] (-) TimerEvent: {}
+[48.266321] (-) TimerEvent: {}
+[48.367005] (-) TimerEvent: {}
+[48.480949] (-) TimerEvent: {}
+[48.585492] (-) TimerEvent: {}
+[48.690961] (-) TimerEvent: {}
+[48.791680] (-) TimerEvent: {}
+[48.892438] (-) TimerEvent: {}
+[48.993122] (-) TimerEvent: {}
+[49.096296] (-) TimerEvent: {}
+[49.196943] (-) TimerEvent: {}
+[49.297754] (-) TimerEvent: {}
+[49.398328] (-) TimerEvent: {}
+[49.498889] (-) TimerEvent: {}
+[49.599545] (-) TimerEvent: {}
+[49.702638] (-) TimerEvent: {}
+[49.724844] (detection_interfaces) StdoutLine: {'line': b'[ 71%] Linking CXX shared library libdetection_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[49.802929] (-) TimerEvent: {}
+[49.903612] (-) TimerEvent: {}
+[50.004314] (-) TimerEvent: {}
+[50.071150] (detection_interfaces) StdoutLine: {'line': b'[ 74%] Linking CXX shared library libdetection_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[50.104621] (-) TimerEvent: {}
+[50.210999] (-) TimerEvent: {}
+[50.317848] (-) TimerEvent: {}
+[50.341610] (detection_interfaces) StdoutLine: {'line': b'[ 74%] Built target detection_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[50.418073] (-) TimerEvent: {}
+[50.518669] (-) TimerEvent: {}
+[50.619351] (-) TimerEvent: {}
+[50.704968] (detection_interfaces) StdoutLine: {'line': b'[ 74%] Built target detection_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[50.720951] (-) TimerEvent: {}
+[50.821564] (-) TimerEvent: {}
+[50.827456] (detection_interfaces) StdoutLine: {'line': b'[ 74%] Built target detection_interfaces\n'}
+[50.921949] (-) TimerEvent: {}
+[50.949665] (detection_interfaces) StdoutLine: {'line': b'[ 76%] Generating Python code for ROS interfaces\n'}
+[51.022167] (-) TimerEvent: {}
+[51.122741] (-) TimerEvent: {}
+[51.223284] (-) TimerEvent: {}
+[51.323895] (-) TimerEvent: {}
+[51.424458] (-) TimerEvent: {}
+[51.525046] (-) TimerEvent: {}
+[51.627665] (-) TimerEvent: {}
+[51.728741] (-) TimerEvent: {}
+[51.829352] (-) TimerEvent: {}
+[51.929945] (-) TimerEvent: {}
+[52.030569] (-) TimerEvent: {}
+[52.131179] (-) TimerEvent: {}
+[52.231755] (-) TimerEvent: {}
+[52.332317] (-) TimerEvent: {}
+[52.432881] (-) TimerEvent: {}
+[52.533481] (-) TimerEvent: {}
+[52.634246] (-) TimerEvent: {}
+[52.734842] (-) TimerEvent: {}
+[52.835431] (-) TimerEvent: {}
+[52.936020] (-) TimerEvent: {}
+[53.036606] (-) TimerEvent: {}
+[53.137165] (-) TimerEvent: {}
+[53.237730] (-) TimerEvent: {}
+[53.339345] (-) TimerEvent: {}
+[53.439894] (-) TimerEvent: {}
+[53.540485] (-) TimerEvent: {}
+[53.641116] (-) TimerEvent: {}
+[53.741730] (-) TimerEvent: {}
+[53.842690] (-) TimerEvent: {}
+[53.943291] (-) TimerEvent: {}
+[54.043844] (-) TimerEvent: {}
+[54.144511] (-) TimerEvent: {}
+[54.247383] (-) TimerEvent: {}
+[54.347955] (-) TimerEvent: {}
+[54.448540] (-) TimerEvent: {}
+[54.549191] (-) TimerEvent: {}
+[54.649771] (-) TimerEvent: {}
+[54.750363] (-) TimerEvent: {}
+[54.850990] (-) TimerEvent: {}
+[54.951554] (-) TimerEvent: {}
+[55.055711] (-) TimerEvent: {}
+[55.156270] (-) TimerEvent: {}
+[55.256854] (-) TimerEvent: {}
+[55.357407] (-) TimerEvent: {}
+[55.458000] (-) TimerEvent: {}
+[55.558622] (-) TimerEvent: {}
+[55.659189] (-) TimerEvent: {}
+[55.759772] (-) TimerEvent: {}
+[55.860349] (-) TimerEvent: {}
+[55.960951] (-) TimerEvent: {}
+[56.063778] (-) TimerEvent: {}
+[56.164634] (-) TimerEvent: {}
+[56.265266] (-) TimerEvent: {}
+[56.371172] (-) TimerEvent: {}
+[56.448405] (detection_interfaces) StdoutLine: {'line': b'[ 76%] Built target detection_interfaces__py\n'}
+[56.471417] (-) TimerEvent: {}
+[56.566493] (detection_interfaces) StdoutLine: {'line': b'[ 79%] Building C object CMakeFiles/detection_interfaces__rosidl_generator_py.dir/rosidl_generator_py/detection_interfaces/msg/_detection_result_s.c.o\n'}
+[56.572976] (-) TimerEvent: {}
+[56.673642] (-) TimerEvent: {}
+[56.774244] (-) TimerEvent: {}
+[56.874852] (-) TimerEvent: {}
+[56.975459] (-) TimerEvent: {}
+[57.076748] (-) TimerEvent: {}
+[57.177312] (-) TimerEvent: {}
+[57.277929] (-) TimerEvent: {}
+[57.378590] (-) TimerEvent: {}
+[57.479328] (-) TimerEvent: {}
+[57.506598] (detection_interfaces) StdoutLine: {'line': b'[ 82%] Building C object CMakeFiles/detection_interfaces__rosidl_generator_py.dir/rosidl_generator_py/detection_interfaces/msg/_detection_array_s.c.o\n'}
+[57.579590] (-) TimerEvent: {}
+[57.680314] (-) TimerEvent: {}
+[57.780975] (-) TimerEvent: {}
+[57.881566] (-) TimerEvent: {}
+[57.982173] (-) TimerEvent: {}
+[58.082788] (-) TimerEvent: {}
+[58.183366] (-) TimerEvent: {}
+[58.237721] (detection_interfaces) StdoutLine: {'line': b'[ 84%] Linking C shared library rosidl_generator_py/detection_interfaces/libdetection_interfaces__rosidl_generator_py.so\n'}
+[58.283606] (-) TimerEvent: {}
+[58.384169] (-) TimerEvent: {}
+[58.484743] (-) TimerEvent: {}
+[58.536494] (detection_interfaces) StdoutLine: {'line': b'[ 84%] Built target detection_interfaces__rosidl_generator_py\n'}
+[58.584996] (-) TimerEvent: {}
+[58.661599] (detection_interfaces) StdoutLine: {'line': b'[ 87%] Building C object CMakeFiles/detection_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/detection_interfaces/_detection_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\n'}
+[58.686806] (-) TimerEvent: {}
+[58.787446] (-) TimerEvent: {}
+[58.888092] (-) TimerEvent: {}
+[58.988677] (-) TimerEvent: {}
+[59.089274] (-) TimerEvent: {}
+[59.189958] (-) TimerEvent: {}
+[59.290507] (-) TimerEvent: {}
+[59.348123] (detection_interfaces) StdoutLine: {'line': b'[ 89%] Linking C shared library rosidl_generator_py/detection_interfaces/detection_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[59.390974] (-) TimerEvent: {}
+[59.491911] (-) TimerEvent: {}
+[59.592575] (-) TimerEvent: {}
+[59.649388] (detection_interfaces) StdoutLine: {'line': b'[ 89%] Built target detection_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[59.692836] (-) TimerEvent: {}
+[59.793465] (-) TimerEvent: {}
+[59.801009] (detection_interfaces) StdoutLine: {'line': b'[ 92%] Building C object CMakeFiles/detection_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/detection_interfaces/_detection_interfaces_s.ep.rosidl_typesupport_c.c.o\n'}
+[59.893724] (-) TimerEvent: {}
+[60.000908] (-) TimerEvent: {}
+[60.010124] (<colcon_parallel_executor.executor.parallel.ParallelExecutorExtension object at 0xffffb5501090>) ParallelStatus: {'processing': ('detection_interfaces',)}
+[60.101180] (-) TimerEvent: {}
+[60.201769] (-) TimerEvent: {}
+[60.302304] (-) TimerEvent: {}
+[60.402873] (-) TimerEvent: {}
+[60.503580] (-) TimerEvent: {}
+[60.517265] (detection_interfaces) StdoutLine: {'line': b'[ 94%] Linking C shared library rosidl_generator_py/detection_interfaces/detection_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[60.603905] (-) TimerEvent: {}
+[60.704565] (-) TimerEvent: {}
+[60.805259] (-) TimerEvent: {}
+[60.818092] (detection_interfaces) StdoutLine: {'line': b'[ 94%] Built target detection_interfaces__rosidl_typesupport_c__pyext\n'}
+[60.906256] (-) TimerEvent: {}
+[60.937898] (detection_interfaces) StdoutLine: {'line': b'[ 97%] Building C object CMakeFiles/detection_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/detection_interfaces/_detection_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\n'}
+[61.006493] (-) TimerEvent: {}
+[61.107111] (-) TimerEvent: {}
+[61.207668] (-) TimerEvent: {}
+[61.308251] (-) TimerEvent: {}
+[61.409798] (-) TimerEvent: {}
+[61.510421] (-) TimerEvent: {}
+[61.611071] (-) TimerEvent: {}
+[61.620933] (detection_interfaces) StdoutLine: {'line': b'[100%] Linking C shared library rosidl_generator_py/detection_interfaces/detection_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[61.711473] (-) TimerEvent: {}
+[61.812093] (-) TimerEvent: {}
+[61.912739] (-) TimerEvent: {}
+[61.922114] (detection_interfaces) StdoutLine: {'line': b'[100%] Built target detection_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[62.001664] (detection_interfaces) CommandEnded: {'returncode': 0}
+[62.004330] (detection_interfaces) JobProgress: {'identifier': 'detection_interfaces', 'progress': 'install'}
+[62.020304] (-) TimerEvent: {}
+[62.045926] (detection_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/root/nuc_ws/build/detection_interfaces'], 'cwd': '/root/nuc_ws/build/detection_interfaces', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('ANTHROPIC_MODEL', 'deepseek-v4-pro[1m]'), ('AI_AGENT', 'claude-code_2-1-206_agent'), ('USER', 'root'), ('SSH_CLIENT', '10.119.149.36 10787 22'), ('CLAUDE_CODE_ENTRYPOINT', 'cli'), ('GIT_EDITOR', 'true'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/root/.vscode-server/cli/servers/Stable-4fe60c8b1cdac1c4c174f2fb180d0d758272d713/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/home/sunrise/yolov8_bpu_ws/install/astra_camera/lib:/home/sunrise/yolov8_bpu_ws/install/astra_camera_msgs/lib:/opt/tros/humble/lib/aarch64-linux-gnu:/opt/tros/humble/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/hobot/lib:/app/lib:/app/pub/lib:/middleware/lib:/middleware/pub/lib:/usr/hobot/lib/sensor:/system/lib:/system/usr/lib:/lib:'), ('BROWSER', '/root/.vscode-server/cli/servers/Stable-4fe60c8b1cdac1c4c174f2fb180d0d758272d713/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/root'), ('TERM_PROGRAM_VERSION', '1.127.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/0/vscode-ipc-685ef213-fae2-4150-8943-5b56d8206a7e.sock'), ('ANTHROPIC_DEFAULT_SONNET_MODEL', 'deepseek-v4-pro[1m]'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/cli/servers/Stable-4fe60c8b1cdac1c4c174f2fb180d0d758272d713/server/extensions/git/dist/askpass-main.js'), ('CLAUDE_CODE_CHILD_SESSION', '1'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/cli/servers/Stable-4fe60c8b1cdac1c4c174f2fb180d0d758272d713/server/node'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/root/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/0/bus'), ('COLORTERM', 'truecolor'), ('DEBUGINFOD_URLS', ''), ('TROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/home/sunrise/yolov8_bpu_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('CLAUDE_CODE_SSE_PORT', '13011'), ('XDG_SESSION_CLASS', 'user'), ('ANTHROPIC_BASE_URL', 'https://api.deepseek.com/anthropic'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('ANTHROPIC_DEFAULT_OPUS_MODEL', 'deepseek-v4-pro[1m]'), ('PATH', '/usr/bin:/root/.npm-global/bin:/root/.local/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/root/.vscode-server/cli/servers/Stable-4fe60c8b1cdac1c4c174f2fb180d0d758272d713/server/bin/remote-cli:/usr/bin:/root/.npm-global/bin:/root/.local/bin:/opt/tros/humble/bin:/opt/ros/humble/bin:/usr/hobot/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/root/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/bundled/scripts/noConfigScripts'), ('COREPACK_ENABLE_AUTO_PIN', '0'), ('XDG_RUNTIME_DIR', '/run/user/0'), ('CLAUDE_EFFORT', 'high'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/root/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-0c85081f7dcbc700.txt'), ('NoDefaultCurrentDirectoryInExePath', '1'), ('LANG', 'zh_CN.UTF-8'), ('PYTHONSTARTUP', '/root/.vscode-server/data/User/workspaceStorage/7fbf9b37a72bdd8b5000e40a6300048d/ms-python.python/pythonrc.py'), ('ANTHROPIC_DEFAULT_HAIKU_MODEL', 'deepseek-v4-flash'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/0/vscode-git-26e9fb4068.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/home/sunrise/yolov8_bpu_ws/install/yolov8_bpu:/home/sunrise/yolov8_bpu_ws/install/astra_camera:/home/sunrise/yolov8_bpu_ws/install/astra_camera_msgs:/opt/tros/humble:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('ANTHROPIC_AUTH_TOKEN', 'sk-f3aae6b04a344439914906c5855e7726'), ('CLAUDE_CODE_SESSION_ID', '58b7421d-80c7-47dd-b6c6-d8eb4126c4d4'), ('CLAUDECODE', '1'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/root/nuc_ws/build/detection_interfaces'), ('LC_ALL', 'zh_CN.UTF-8'), ('COPILOT_DEBUG_NONCE', '64f91145d90aa361c710fc64124b3598'), ('SSH_CONNECTION', '10.119.149.36 10787 10.119.149.117 22'), ('CLAUDE_CODE_EXECPATH', '/usr/lib/node_modules/@anthropic-ai/claude-code/bin/claude.exe'), ('PYTHONPATH', '/home/sunrise/yolov8_bpu_ws/install/yolov8_bpu/lib/python3.10/site-packages:/home/sunrise/yolov8_bpu_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages:/opt/tros/humble/lib/python3.10/site-packages:/opt/tros/humble/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/home/sunrise/yolov8_bpu_ws/install/astra_camera:/home/sunrise/yolov8_bpu_ws/install/astra_camera_msgs:/home/sunrise/yolov8_bpu_ws/install/yolov8_bpu:/opt/tros/humble:/opt/ros/humble')]), 'shell': False}
+[62.097340] (detection_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[62.100445] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/share/ament_index/resource_index/rosidl_interfaces/detection_interfaces\n'}
+[62.103347] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces\n'}
+[62.105705] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg\n'}
+[62.107734] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail\n'}
+[62.109828] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__functions.h\n'}
+[62.112368] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__type_support.h\n'}
+[62.115020] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__functions.c\n'}
+[62.117456] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__functions.h\n'}
+[62.119840] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__type_support.h\n'}
+[62.120613] (-) TimerEvent: {}
+[62.122441] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__struct.h\n'}
+[62.125407] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__struct.h\n'}
+[62.128265] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__functions.c\n'}
+[62.132106] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[62.134463] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detection_array.h\n'}
+[62.136766] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detection_result.h\n'}
+[62.139728] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/environment/library_path.sh\n'}
+[62.142446] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/environment/library_path.dsv\n'}
+[62.145520] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_generator_c.so\n'}
+[62.151238] (detection_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/root/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_generator_c.so" to ""\n'}
+[62.153460] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces\n'}
+[62.155390] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg\n'}
+[62.157127] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail\n'}
+[62.158922] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__rosidl_typesupport_fastrtps_c.h\n'}
+[62.162100] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__rosidl_typesupport_fastrtps_c.h\n'}
+[62.164665] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[62.167957] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[62.174714] (detection_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/root/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[62.177258] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces\n'}
+[62.179036] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg\n'}
+[62.180931] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail\n'}
+[62.182866] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__struct.hpp\n'}
+[62.184684] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__builder.hpp\n'}
+[62.186298] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__type_support.hpp\n'}
+[62.187983] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__builder.hpp\n'}
+[62.189460] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__traits.hpp\n'}
+[62.191439] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__type_support.hpp\n'}
+[62.192702] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__struct.hpp\n'}
+[62.194307] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__traits.hpp\n'}
+[62.196134] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detection_result.hpp\n'}
+[62.197892] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/rosidl_generator_cpp__visibility_control.hpp\n'}
+[62.199332] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detection_array.hpp\n'}
+[62.201543] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces\n'}
+[62.203141] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg\n'}
+[62.204532] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail\n'}
+[62.211638] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[62.212576] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[62.213958] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/dds_fastrtps\n'}
+[62.215773] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[62.217128] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[62.218444] (detection_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/root/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[62.220095] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces\n'}
+[62.221679] (-) TimerEvent: {}
+[62.221907] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg\n'}
+[62.223229] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail\n'}
+[62.224729] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__type_support.c\n'}
+[62.225449] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__type_support.c\n'}
+[62.226437] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__rosidl_typesupport_introspection_c.h\n'}
+[62.227358] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__rosidl_typesupport_introspection_c.h\n'}
+[62.228091] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[62.237205] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[62.239048] (detection_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/root/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[62.240483] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_c.so\n'}
+[62.242147] (detection_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/root/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[62.243648] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces\n'}
+[62.244753] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg\n'}
+[62.246231] (detection_interfaces) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail\n'}
+[62.247032] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__type_support.cpp\n'}
+[62.247913] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__type_support.cpp\n'}
+[62.248596] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_result__rosidl_typesupport_introspection_cpp.hpp\n'}
+[62.249274] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/include/detection_interfaces/detection_interfaces/msg/detail/detection_array__rosidl_typesupport_introspection_cpp.hpp\n'}
+[62.249934] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[62.258549] (detection_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/root/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[62.260145] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_cpp.so\n'}
+[62.260923] (detection_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/root/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[62.261723] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/environment/pythonpath.sh\n'}
+[62.271414] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/environment/pythonpath.dsv\n'}
+[62.272178] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces-1.0.0-py3.10.egg-info\n'}
+[62.272851] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces-1.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[62.274163] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces-1.0.0-py3.10.egg-info/PKG-INFO\n'}
+[62.275444] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces-1.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[62.276121] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces-1.0.0-py3.10.egg-info/top_level.txt\n'}
+[62.276760] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces\n'}
+[62.277349] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/detection_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[62.282281] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/libdetection_interfaces__rosidl_generator_py.so\n'}
+[62.283032] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/_detection_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[62.284510] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/detection_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[62.286819] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/detection_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[62.301917] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/msg\n'}
+[62.303571] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/msg/_detection_result_s.c\n'}
+[62.304468] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/msg/_detection_array_s.c\n'}
+[62.305240] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/msg/_detection_array.py\n'}
+[62.305867] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/msg/_detection_result.py\n'}
+[62.306474] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/msg/__init__.py\n'}
+[62.307087] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/_detection_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[62.307762] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/__init__.py\n'}
+[62.308377] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/_detection_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[62.322347] (-) TimerEvent: {}
+[62.422871] (-) TimerEvent: {}
+[62.526193] (-) TimerEvent: {}
+[62.602976] (detection_interfaces) StdoutLine: {'line': b"Listing '/root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces'...\n"}
+[62.604036] (detection_interfaces) StdoutLine: {'line': b"Compiling '/root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/__init__.py'...\n"}
+[62.604757] (detection_interfaces) StdoutLine: {'line': b"Listing '/root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/msg'...\n"}
+[62.605398] (detection_interfaces) StdoutLine: {'line': b"Compiling '/root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/msg/__init__.py'...\n"}
+[62.606082] (detection_interfaces) StdoutLine: {'line': b"Compiling '/root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/msg/_detection_array.py'...\n"}
+[62.606978] (detection_interfaces) StdoutLine: {'line': b"Compiling '/root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/msg/_detection_result.py'...\n"}
+[62.626511] (-) TimerEvent: {}
+[62.665668] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/detection_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so\n'}
+[62.667598] (detection_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/detection_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[62.669376] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/detection_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so\n'}
+[62.670739] (detection_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/detection_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[62.672262] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/detection_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so\n'}
+[62.674356] (detection_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages/detection_interfaces/detection_interfaces_s__rosidl_typesupport_c.cpython-310-aarch64-linux-gnu.so" to ""\n'}
+[62.675179] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_generator_py.so\n'}
+[62.676640] (detection_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/root/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_generator_py.so" to ""\n'}
+[62.677991] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/msg/DetectionResult.idl\n'}
+[62.680443] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/msg/DetectionArray.idl\n'}
+[62.682867] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/msg/DetectionResult.msg\n'}
+[62.685386] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/msg/DetectionArray.msg\n'}
+[62.687635] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/share/ament_index/resource_index/package_run_dependencies/detection_interfaces\n'}
+[62.698355] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/share/ament_index/resource_index/parent_prefix_path/detection_interfaces\n'}
+[62.700834] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/environment/ament_prefix_path.sh\n'}
+[62.702797] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/environment/ament_prefix_path.dsv\n'}
+[62.704681] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/environment/path.sh\n'}
+[62.706919] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/environment/path.dsv\n'}
+[62.708609] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/local_setup.bash\n'}
+[62.710289] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/local_setup.sh\n'}
+[62.712330] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/local_setup.zsh\n'}
+[62.712977] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/local_setup.dsv\n'}
+[62.713595] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/package.dsv\n'}
+[62.714184] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/share/ament_index/resource_index/packages/detection_interfaces\n'}
+[62.714900] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/export_detection_interfaces__rosidl_generator_cExport.cmake\n'}
+[62.715691] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/export_detection_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[62.716332] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/export_detection_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[62.716925] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/export_detection_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[62.717513] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/export_detection_interfaces__rosidl_generator_cppExport.cmake\n'}
+[62.718250] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/export_detection_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[62.718948] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/export_detection_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[62.719586] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[62.723879] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[62.725865] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[62.726649] (-) TimerEvent: {}
+[62.726958] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[62.727614] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[62.728289] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[62.728975] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[62.730348] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[62.731447] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/export_detection_interfaces__rosidl_generator_pyExport.cmake\n'}
+[62.732374] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/export_detection_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[62.733549] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[62.734483] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[62.735358] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[62.736628] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[62.737390] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[62.739371] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[62.740228] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[62.742100] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfacesConfig.cmake\n'}
+[62.743126] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake/detection_interfacesConfig-version.cmake\n'}
+[62.744103] (detection_interfaces) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/detection_interfaces/share/detection_interfaces/package.xml\n'}
+[62.744826] (detection_interfaces) CommandEnded: {'returncode': 0}
+[62.827007] (-) TimerEvent: {}
+[62.927807] (-) TimerEvent: {}
+[62.973498] (detection_interfaces) JobEnded: {'identifier': 'detection_interfaces', 'rc': 0}
+[62.982864] (r2_mission) JobStarted: {'identifier': 'r2_mission'}
+[63.028083] (-) TimerEvent: {}
+[63.029182] (r2_mission) JobProgress: {'identifier': 'r2_mission', 'progress': 'cmake'}
+[63.033710] (r2_mission) Command: {'cmd': ['/usr/bin/cmake', '/root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_mission', '-DCMAKE_INSTALL_PREFIX=/root/nuc_ws/install/r2_mission'], 'cwd': '/root/nuc_ws/build/r2_mission', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('ANTHROPIC_MODEL', 'deepseek-v4-pro[1m]'), ('AI_AGENT', 'claude-code_2-1-206_agent'), ('USER', 'root'), ('SSH_CLIENT', '10.119.149.36 10787 22'), ('CLAUDE_CODE_ENTRYPOINT', 'cli'), ('GIT_EDITOR', 'true'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/root/.vscode-server/cli/servers/Stable-4fe60c8b1cdac1c4c174f2fb180d0d758272d713/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/root/nuc_ws/install/detection_interfaces/lib:/home/sunrise/yolov8_bpu_ws/install/astra_camera/lib:/home/sunrise/yolov8_bpu_ws/install/astra_camera_msgs/lib:/opt/tros/humble/lib/aarch64-linux-gnu:/opt/tros/humble/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/hobot/lib:/app/lib:/app/pub/lib:/middleware/lib:/middleware/pub/lib:/usr/hobot/lib/sensor:/system/lib:/system/usr/lib:/lib'), ('BROWSER', '/root/.vscode-server/cli/servers/Stable-4fe60c8b1cdac1c4c174f2fb180d0d758272d713/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/root'), ('TERM_PROGRAM_VERSION', '1.127.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/0/vscode-ipc-685ef213-fae2-4150-8943-5b56d8206a7e.sock'), ('ANTHROPIC_DEFAULT_SONNET_MODEL', 'deepseek-v4-pro[1m]'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/cli/servers/Stable-4fe60c8b1cdac1c4c174f2fb180d0d758272d713/server/extensions/git/dist/askpass-main.js'), ('CLAUDE_CODE_CHILD_SESSION', '1'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/cli/servers/Stable-4fe60c8b1cdac1c4c174f2fb180d0d758272d713/server/node'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/root/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/0/bus'), ('COLORTERM', 'truecolor'), ('DEBUGINFOD_URLS', ''), ('TROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/home/sunrise/yolov8_bpu_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('CLAUDE_CODE_SSE_PORT', '13011'), ('XDG_SESSION_CLASS', 'user'), ('ANTHROPIC_BASE_URL', 'https://api.deepseek.com/anthropic'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('ANTHROPIC_DEFAULT_OPUS_MODEL', 'deepseek-v4-pro[1m]'), ('PATH', '/usr/bin:/root/.npm-global/bin:/root/.local/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/root/.vscode-server/cli/servers/Stable-4fe60c8b1cdac1c4c174f2fb180d0d758272d713/server/bin/remote-cli:/usr/bin:/root/.npm-global/bin:/root/.local/bin:/opt/tros/humble/bin:/opt/ros/humble/bin:/usr/hobot/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/root/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/bundled/scripts/noConfigScripts'), ('COREPACK_ENABLE_AUTO_PIN', '0'), ('XDG_RUNTIME_DIR', '/run/user/0'), ('CLAUDE_EFFORT', 'high'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/root/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-0c85081f7dcbc700.txt'), ('NoDefaultCurrentDirectoryInExePath', '1'), ('LANG', 'zh_CN.UTF-8'), ('PYTHONSTARTUP', '/root/.vscode-server/data/User/workspaceStorage/7fbf9b37a72bdd8b5000e40a6300048d/ms-python.python/pythonrc.py'), ('ANTHROPIC_DEFAULT_HAIKU_MODEL', 'deepseek-v4-flash'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/0/vscode-git-26e9fb4068.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/root/nuc_ws/install/detection_interfaces:/home/sunrise/yolov8_bpu_ws/install/yolov8_bpu:/home/sunrise/yolov8_bpu_ws/install/astra_camera:/home/sunrise/yolov8_bpu_ws/install/astra_camera_msgs:/opt/tros/humble:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('ANTHROPIC_AUTH_TOKEN', 'sk-f3aae6b04a344439914906c5855e7726'), ('CLAUDE_CODE_SESSION_ID', '58b7421d-80c7-47dd-b6c6-d8eb4126c4d4'), ('CLAUDECODE', '1'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/root/nuc_ws/build/r2_mission'), ('LC_ALL', 'zh_CN.UTF-8'), ('COPILOT_DEBUG_NONCE', '64f91145d90aa361c710fc64124b3598'), ('SSH_CONNECTION', '10.119.149.36 10787 10.119.149.117 22'), ('CLAUDE_CODE_EXECPATH', '/usr/lib/node_modules/@anthropic-ai/claude-code/bin/claude.exe'), ('PYTHONPATH', '/root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages:/home/sunrise/yolov8_bpu_ws/install/yolov8_bpu/lib/python3.10/site-packages:/home/sunrise/yolov8_bpu_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages:/opt/tros/humble/lib/python3.10/site-packages:/opt/tros/humble/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/nuc_ws/install/detection_interfaces:/home/sunrise/yolov8_bpu_ws/install/astra_camera:/home/sunrise/yolov8_bpu_ws/install/astra_camera_msgs:/home/sunrise/yolov8_bpu_ws/install/yolov8_bpu:/opt/tros/humble:/opt/ros/humble')]), 'shell': False}
+[63.128316] (-) TimerEvent: {}
+[63.228973] (-) TimerEvent: {}
+[63.329909] (-) TimerEvent: {}
+[63.405583] (r2_mission) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.2.0\n'}
+[63.430119] (-) TimerEvent: {}
+[63.531294] (-) TimerEvent: {}
+[63.631941] (-) TimerEvent: {}
+[63.732606] (-) TimerEvent: {}
+[63.795354] (r2_mission) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.2.0\n'}
+[63.833901] (-) TimerEvent: {}
+[63.836245] (r2_mission) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[63.934169] (-) TimerEvent: {}
+[64.034916] (-) TimerEvent: {}
+[64.136112] (-) TimerEvent: {}
+[64.236687] (-) TimerEvent: {}
+[64.285935] (r2_mission) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[64.336881] (-) TimerEvent: {}
+[64.337946] (r2_mission) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[64.339294] (r2_mission) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[64.341453] (r2_mission) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[64.360724] (r2_mission) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[64.437171] (-) TimerEvent: {}
+[64.538002] (-) TimerEvent: {}
+[64.638830] (-) TimerEvent: {}
+[64.741051] (-) TimerEvent: {}
+[64.849933] (-) TimerEvent: {}
+[64.898170] (r2_mission) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[64.950189] (r2_mission) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[64.952323] (-) TimerEvent: {}
+[64.952564] (r2_mission) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[64.954593] (r2_mission) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[64.968595] (r2_mission) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[65.052542] (-) TimerEvent: {}
+[65.153097] (-) TimerEvent: {}
+[65.253685] (-) TimerEvent: {}
+[65.354234] (-) TimerEvent: {}
+[65.454828] (-) TimerEvent: {}
+[65.555430] (-) TimerEvent: {}
+[65.656020] (-) TimerEvent: {}
+[65.756801] (-) TimerEvent: {}
+[65.857484] (-) TimerEvent: {}
+[65.958001] (-) TimerEvent: {}
+[66.058576] (-) TimerEvent: {}
+[66.159147] (-) TimerEvent: {}
+[66.259702] (-) TimerEvent: {}
+[66.360225] (-) TimerEvent: {}
+[66.460850] (-) TimerEvent: {}
+[66.561402] (-) TimerEvent: {}
+[66.662025] (-) TimerEvent: {}
+[66.762591] (-) TimerEvent: {}
+[66.863228] (-) TimerEvent: {}
+[66.963930] (-) TimerEvent: {}
+[67.064489] (-) TimerEvent: {}
+[67.165023] (-) TimerEvent: {}
+[67.265533] (-) TimerEvent: {}
+[67.366064] (-) TimerEvent: {}
+[67.466577] (-) TimerEvent: {}
+[67.567109] (-) TimerEvent: {}
+[67.667717] (-) TimerEvent: {}
+[67.768355] (-) TimerEvent: {}
+[67.869001] (-) TimerEvent: {}
+[67.969554] (-) TimerEvent: {}
+[68.070165] (-) TimerEvent: {}
+[68.170785] (-) TimerEvent: {}
+[68.176778] (r2_mission) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[68.271067] (-) TimerEvent: {}
+[68.371636] (-) TimerEvent: {}
+[68.472189] (-) TimerEvent: {}
+[68.572713] (-) TimerEvent: {}
+[68.673275] (-) TimerEvent: {}
+[68.780900] (-) TimerEvent: {}
+[68.881446] (-) TimerEvent: {}
+[68.936956] (r2_mission) StdoutLine: {'line': b'-- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[68.981757] (-) TimerEvent: {}
+[69.082480] (-) TimerEvent: {}
+[69.183157] (-) TimerEvent: {}
+[69.258180] (r2_mission) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[69.283407] (-) TimerEvent: {}
+[69.294252] (r2_mission) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[69.353040] (r2_mission) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[69.383675] (-) TimerEvent: {}
+[69.440146] (r2_mission) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[69.483928] (-) TimerEvent: {}
+[69.554460] (r2_mission) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[69.584252] (-) TimerEvent: {}
+[69.684969] (-) TimerEvent: {}
+[69.785550] (-) TimerEvent: {}
+[69.886239] (-) TimerEvent: {}
+[69.986839] (-) TimerEvent: {}
+[70.087409] (-) TimerEvent: {}
+[70.187987] (-) TimerEvent: {}
+[70.250554] (r2_mission) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[70.273330] (r2_mission) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[70.288193] (-) TimerEvent: {}
+[70.388712] (-) TimerEvent: {}
+[70.489255] (-) TimerEvent: {}
+[70.589812] (-) TimerEvent: {}
+[70.690356] (-) TimerEvent: {}
+[70.791827] (-) TimerEvent: {}
+[70.799420] (r2_mission) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/aarch64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[70.892088] (-) TimerEvent: {}
+[70.957819] (r2_mission) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[70.992331] (-) TimerEvent: {}
+[71.092862] (-) TimerEvent: {}
+[71.176389] (r2_mission) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[71.193085] (-) TimerEvent: {}
+[71.241952] (r2_mission) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[71.293386] (-) TimerEvent: {}
+[71.393984] (-) TimerEvent: {}
+[71.494543] (-) TimerEvent: {}
+[71.595061] (-) TimerEvent: {}
+[71.695676] (-) TimerEvent: {}
+[71.702830] (r2_mission) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[71.708538] (r2_mission) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[71.795948] (-) TimerEvent: {}
+[71.896645] (-) TimerEvent: {}
+[71.997230] (-) TimerEvent: {}
+[72.098400] (-) TimerEvent: {}
+[72.199079] (-) TimerEvent: {}
+[72.204185] (r2_mission) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[72.214068] (r2_mission) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[72.299316] (-) TimerEvent: {}
+[72.399827] (-) TimerEvent: {}
+[72.500419] (-) TimerEvent: {}
+[72.601232] (-) TimerEvent: {}
+[72.694198] (r2_mission) StdoutLine: {'line': b'-- Found detection_interfaces: 1.0.0 (/root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake)\n'}
+[72.701501] (-) TimerEvent: {}
+[72.803972] (-) TimerEvent: {}
+[72.904571] (-) TimerEvent: {}
+[73.005111] (-) TimerEvent: {}
+[73.105705] (-) TimerEvent: {}
+[73.206386] (-) TimerEvent: {}
+[73.307043] (-) TimerEvent: {}
+[73.407659] (-) TimerEvent: {}
+[73.478496] (r2_mission) StdoutLine: {'line': b'-- Configuring done\n'}
+[73.507907] (-) TimerEvent: {}
+[73.569244] (r2_mission) StdoutLine: {'line': b'-- Generating done\n'}
+[73.607511] (r2_mission) StdoutLine: {'line': b'-- Build files have been written to: /root/nuc_ws/build/r2_mission\n'}
+[73.608425] (-) TimerEvent: {}
+[73.691849] (r2_mission) CommandEnded: {'returncode': 0}
+[73.695541] (r2_mission) JobProgress: {'identifier': 'r2_mission', 'progress': 'build'}
+[73.697629] (r2_mission) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/nuc_ws/build/r2_mission', '--', '-j8', '-l8'], 'cwd': '/root/nuc_ws/build/r2_mission', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('ANTHROPIC_MODEL', 'deepseek-v4-pro[1m]'), ('AI_AGENT', 'claude-code_2-1-206_agent'), ('USER', 'root'), ('SSH_CLIENT', '10.119.149.36 10787 22'), ('CLAUDE_CODE_ENTRYPOINT', 'cli'), ('GIT_EDITOR', 'true'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/root/.vscode-server/cli/servers/Stable-4fe60c8b1cdac1c4c174f2fb180d0d758272d713/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/root/nuc_ws/install/detection_interfaces/lib:/home/sunrise/yolov8_bpu_ws/install/astra_camera/lib:/home/sunrise/yolov8_bpu_ws/install/astra_camera_msgs/lib:/opt/tros/humble/lib/aarch64-linux-gnu:/opt/tros/humble/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/hobot/lib:/app/lib:/app/pub/lib:/middleware/lib:/middleware/pub/lib:/usr/hobot/lib/sensor:/system/lib:/system/usr/lib:/lib'), ('BROWSER', '/root/.vscode-server/cli/servers/Stable-4fe60c8b1cdac1c4c174f2fb180d0d758272d713/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/root'), ('TERM_PROGRAM_VERSION', '1.127.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/0/vscode-ipc-685ef213-fae2-4150-8943-5b56d8206a7e.sock'), ('ANTHROPIC_DEFAULT_SONNET_MODEL', 'deepseek-v4-pro[1m]'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/cli/servers/Stable-4fe60c8b1cdac1c4c174f2fb180d0d758272d713/server/extensions/git/dist/askpass-main.js'), ('CLAUDE_CODE_CHILD_SESSION', '1'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/cli/servers/Stable-4fe60c8b1cdac1c4c174f2fb180d0d758272d713/server/node'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/root/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/0/bus'), ('COLORTERM', 'truecolor'), ('DEBUGINFOD_URLS', ''), ('TROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/home/sunrise/yolov8_bpu_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('CLAUDE_CODE_SSE_PORT', '13011'), ('XDG_SESSION_CLASS', 'user'), ('ANTHROPIC_BASE_URL', 'https://api.deepseek.com/anthropic'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('ANTHROPIC_DEFAULT_OPUS_MODEL', 'deepseek-v4-pro[1m]'), ('PATH', '/usr/bin:/root/.npm-global/bin:/root/.local/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/root/.vscode-server/cli/servers/Stable-4fe60c8b1cdac1c4c174f2fb180d0d758272d713/server/bin/remote-cli:/usr/bin:/root/.npm-global/bin:/root/.local/bin:/opt/tros/humble/bin:/opt/ros/humble/bin:/usr/hobot/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/root/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/bundled/scripts/noConfigScripts'), ('COREPACK_ENABLE_AUTO_PIN', '0'), ('XDG_RUNTIME_DIR', '/run/user/0'), ('CLAUDE_EFFORT', 'high'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/root/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-0c85081f7dcbc700.txt'), ('NoDefaultCurrentDirectoryInExePath', '1'), ('LANG', 'zh_CN.UTF-8'), ('PYTHONSTARTUP', '/root/.vscode-server/data/User/workspaceStorage/7fbf9b37a72bdd8b5000e40a6300048d/ms-python.python/pythonrc.py'), ('ANTHROPIC_DEFAULT_HAIKU_MODEL', 'deepseek-v4-flash'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/0/vscode-git-26e9fb4068.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/root/nuc_ws/install/detection_interfaces:/home/sunrise/yolov8_bpu_ws/install/yolov8_bpu:/home/sunrise/yolov8_bpu_ws/install/astra_camera:/home/sunrise/yolov8_bpu_ws/install/astra_camera_msgs:/opt/tros/humble:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('ANTHROPIC_AUTH_TOKEN', 'sk-f3aae6b04a344439914906c5855e7726'), ('CLAUDE_CODE_SESSION_ID', '58b7421d-80c7-47dd-b6c6-d8eb4126c4d4'), ('CLAUDECODE', '1'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/root/nuc_ws/build/r2_mission'), ('LC_ALL', 'zh_CN.UTF-8'), ('COPILOT_DEBUG_NONCE', '64f91145d90aa361c710fc64124b3598'), ('SSH_CONNECTION', '10.119.149.36 10787 10.119.149.117 22'), ('CLAUDE_CODE_EXECPATH', '/usr/lib/node_modules/@anthropic-ai/claude-code/bin/claude.exe'), ('PYTHONPATH', '/root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages:/home/sunrise/yolov8_bpu_ws/install/yolov8_bpu/lib/python3.10/site-packages:/home/sunrise/yolov8_bpu_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages:/opt/tros/humble/lib/python3.10/site-packages:/opt/tros/humble/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/nuc_ws/install/detection_interfaces:/home/sunrise/yolov8_bpu_ws/install/astra_camera:/home/sunrise/yolov8_bpu_ws/install/astra_camera_msgs:/home/sunrise/yolov8_bpu_ws/install/yolov8_bpu:/opt/tros/humble:/opt/ros/humble')]), 'shell': False}
+[73.711949] (-) TimerEvent: {}
+[73.812550] (-) TimerEvent: {}
+[73.913176] (-) TimerEvent: {}
+[73.985156] (r2_mission) StdoutLine: {'line': b'[ 14%] Building CXX object r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/src/serial_interface.cpp.o\n'}
+[74.013464] (-) TimerEvent: {}
+[74.114116] (-) TimerEvent: {}
+[74.214673] (-) TimerEvent: {}
+[74.330957] (-) TimerEvent: {}
+[74.431487] (-) TimerEvent: {}
+[74.532046] (-) TimerEvent: {}
+[74.632706] (-) TimerEvent: {}
+[74.733328] (-) TimerEvent: {}
+[74.834118] (-) TimerEvent: {}
+[74.934672] (-) TimerEvent: {}
+[75.035214] (-) TimerEvent: {}
+[75.135768] (-) TimerEvent: {}
+[75.236359] (-) TimerEvent: {}
+[75.336973] (-) TimerEvent: {}
+[75.437570] (-) TimerEvent: {}
+[75.538155] (-) TimerEvent: {}
+[75.638718] (-) TimerEvent: {}
+[75.739296] (-) TimerEvent: {}
+[75.839953] (-) TimerEvent: {}
+[75.940564] (-) TimerEvent: {}
+[76.041224] (-) TimerEvent: {}
+[76.141877] (-) TimerEvent: {}
+[76.242523] (-) TimerEvent: {}
+[76.343142] (-) TimerEvent: {}
+[76.444722] (-) TimerEvent: {}
+[76.472190] (r2_mission) StdoutLine: {'line': b'[ 28%] Building CXX object r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/src/command_encoder.cpp.o\n'}
+[76.544956] (-) TimerEvent: {}
+[76.645573] (-) TimerEvent: {}
+[76.746262] (-) TimerEvent: {}
+[76.846860] (-) TimerEvent: {}
+[76.947406] (-) TimerEvent: {}
+[77.048025] (-) TimerEvent: {}
+[77.148548] (-) TimerEvent: {}
+[77.208343] (r2_mission) StderrLine: {'line': b'/root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_serial_driver/src/command_encoder.cpp: In static member function \xe2\x80\x98static const char* CommandEncoder::expectedAck(const std::vector<unsigned char>&)\xe2\x80\x99:\n'}
+[77.209418] (r2_mission) StderrLine: {'line': b'/root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_serial_driver/src/command_encoder.cpp:82:10: error: \xe2\x80\x98string\xe2\x80\x99 is not a member of \xe2\x80\x98std\xe2\x80\x99\n'}
+[77.210170] (r2_mission) StderrLine: {'line': b'   82 |     std::string cmd(frame.begin() + 1, frame.begin() + 5);\n'}
+[77.212564] (r2_mission) StderrLine: {'line': b'      |          ^~~~~~\n'}
+[77.213340] (r2_mission) StderrLine: {'line': b'/root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_serial_driver/src/command_encoder.cpp:4:1: note: \xe2\x80\x98std::string\xe2\x80\x99 is defined in header \xe2\x80\x98<string>\xe2\x80\x99; did you forget to \xe2\x80\x98#include <string>\xe2\x80\x99?\n'}
+[77.214057] (r2_mission) StderrLine: {'line': b'    3 | #include <cstdio>\n'}
+[77.214764] (r2_mission) StderrLine: {'line': b'  +++ |+#include <string>\n'}
+[77.215440] (r2_mission) StderrLine: {'line': b'    4 | \n'}
+[77.216058] (r2_mission) StderrLine: {'line': b'/root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_serial_driver/src/command_encoder.cpp:83:10: error: \xe2\x80\x98string\xe2\x80\x99 is not a member of \xe2\x80\x98std\xe2\x80\x99\n'}
+[77.216690] (r2_mission) StderrLine: {'line': b'   83 |     std::string data(frame.begin() + 5, frame.begin() + 10);\n'}
+[77.217355] (r2_mission) StderrLine: {'line': b'      |          ^~~~~~\n'}
+[77.218074] (r2_mission) StderrLine: {'line': b'/root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_serial_driver/src/command_encoder.cpp:83:10: note: \xe2\x80\x98std::string\xe2\x80\x99 is defined in header \xe2\x80\x98<string>\xe2\x80\x99; did you forget to \xe2\x80\x98#include <string>\xe2\x80\x99?\n'}
+[77.224521] (r2_mission) StderrLine: {'line': b'/root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_serial_driver/src/command_encoder.cpp:85:9: error: \xe2\x80\x98cmd\xe2\x80\x99 was not declared in this scope\n'}
+[77.225645] (r2_mission) StderrLine: {'line': b'   85 |     if (cmd == "stop") return "Car stopped";\n'}
+[77.226422] (r2_mission) StderrLine: {'line': b'      |         ^~~\n'}
+[77.239600] (r2_mission) StderrLine: {'line': b'/root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_serial_driver/src/command_encoder.cpp:86:9: error: \xe2\x80\x98cmd\xe2\x80\x99 was not declared in this scope\n'}
+[77.240518] (r2_mission) StderrLine: {'line': b'   86 |     if (cmd == "fwrd") return "Car forward";\n'}
+[77.241273] (r2_mission) StderrLine: {'line': b'      |         ^~~\n'}
+[77.248816] (-) TimerEvent: {}
+[77.255015] (r2_mission) StderrLine: {'line': b'/root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_serial_driver/src/command_encoder.cpp:87:9: error: \xe2\x80\x98cmd\xe2\x80\x99 was not declared in this scope\n'}
+[77.256013] (r2_mission) StderrLine: {'line': b'   87 |     if (cmd == "bwrd") return "Car backward";\n'}
+[77.256785] (r2_mission) StderrLine: {'line': b'      |         ^~~\n'}
+[77.271052] (r2_mission) StderrLine: {'line': b'/root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_serial_driver/src/command_encoder.cpp:88:9: error: \xe2\x80\x98cmd\xe2\x80\x99 was not declared in this scope\n'}
+[77.271976] (r2_mission) StderrLine: {'line': b'   88 |     if (cmd == "ltrn") return "Car turn left";\n'}
+[77.272697] (r2_mission) StderrLine: {'line': b'      |         ^~~\n'}
+[77.286869] (r2_mission) StderrLine: {'line': b'/root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_serial_driver/src/command_encoder.cpp:89:9: error: \xe2\x80\x98cmd\xe2\x80\x99 was not declared in this scope\n'}
+[77.288102] (r2_mission) StderrLine: {'line': b'   89 |     if (cmd == "rtrn") return "Car turn right";\n'}
+[77.288877] (r2_mission) StderrLine: {'line': b'      |         ^~~\n'}
+[77.303619] (r2_mission) StderrLine: {'line': b'/root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_serial_driver/src/command_encoder.cpp:90:9: error: \xe2\x80\x98cmd\xe2\x80\x99 was not declared in this scope\n'}
+[77.304706] (r2_mission) StderrLine: {'line': b'   90 |     if (cmd == "ltrl") return "Car translate left";\n'}
+[77.305572] (r2_mission) StderrLine: {'line': b'      |         ^~~\n'}
+[77.319903] (r2_mission) StderrLine: {'line': b'/root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_serial_driver/src/command_encoder.cpp:91:9: error: \xe2\x80\x98cmd\xe2\x80\x99 was not declared in this scope\n'}
+[77.320942] (r2_mission) StderrLine: {'line': b'   91 |     if (cmd == "rtrl") return "Car translate right";\n'}
+[77.321670] (r2_mission) StderrLine: {'line': b'      |         ^~~\n'}
+[77.337653] (r2_mission) StderrLine: {'line': b'/root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_serial_driver/src/command_encoder.cpp:93:9: error: \xe2\x80\x98cmd\xe2\x80\x99 was not declared in this scope\n'}
+[77.340188] (r2_mission) StderrLine: {'line': b'   93 |     if (cmd == "upwd") return (data == "55555") ? "car block up" : "car lift up";\n'}
+[77.341109] (r2_mission) StderrLine: {'line': b'      |         ^~~\n'}
+[77.341873] (r2_mission) StderrLine: {'line': b'/root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_serial_driver/src/command_encoder.cpp:93:32: error: \xe2\x80\x98data\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98std::data\xe2\x80\x99?\n'}
+[77.342572] (r2_mission) StderrLine: {'line': b'   93 |     if (cmd == "upwd") return (data == "55555") ? "car block up" : "car lift up";\n'}
+[77.343278] (r2_mission) StderrLine: {'line': b'      |                                ^~~~\n'}
+[77.343918] (r2_mission) StderrLine: {'line': b'      |                                std::data\n'}
+[77.344528] (r2_mission) StderrLine: {'line': b'In file included from /usr/include/c++/11/vector:69,\n'}
+[77.345163] (r2_mission) StderrLine: {'line': b'                 from /root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_serial_driver/src/command_encoder.h:5,\n'}
+[77.345790] (r2_mission) StderrLine: {'line': b'                 from /root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_serial_driver/src/command_encoder.cpp:1:\n'}
+[77.346405] (r2_mission) StderrLine: {'line': b'/usr/include/c++/11/bits/range_access.h:319:5: note: \xe2\x80\x98std::data\xe2\x80\x99 declared here\n'}
+[77.347132] (r2_mission) StderrLine: {'line': b'  319 |     data(initializer_list<_Tp> __il) noexcept\n'}
+[77.347785] (r2_mission) StderrLine: {'line': b'      |     ^~~~\n'}
+[77.349011] (-) TimerEvent: {}
+[77.357105] (r2_mission) StderrLine: {'line': b'/root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_serial_driver/src/command_encoder.cpp:94:9: error: \xe2\x80\x98cmd\xe2\x80\x99 was not declared in this scope\n'}
+[77.358946] (r2_mission) StderrLine: {'line': b'   94 |     if (cmd == "dwnd") return (data == "55555") ? "car block down" : "car lift down";\n'}
+[77.359684] (r2_mission) StderrLine: {'line': b'      |         ^~~\n'}
+[77.360404] (r2_mission) StderrLine: {'line': b'/root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_serial_driver/src/command_encoder.cpp:94:32: error: \xe2\x80\x98data\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98std::data\xe2\x80\x99?\n'}
+[77.361425] (r2_mission) StderrLine: {'line': b'   94 |     if (cmd == "dwnd") return (data == "55555") ? "car block down" : "car lift down";\n'}
+[77.362208] (r2_mission) StderrLine: {'line': b'      |                                ^~~~\n'}
+[77.362938] (r2_mission) StderrLine: {'line': b'      |                                std::data\n'}
+[77.363741] (r2_mission) StderrLine: {'line': b'In file included from /usr/include/c++/11/vector:69,\n'}
+[77.364480] (r2_mission) StderrLine: {'line': b'                 from /root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_serial_driver/src/command_encoder.h:5,\n'}
+[77.365411] (r2_mission) StderrLine: {'line': b'                 from /root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_serial_driver/src/command_encoder.cpp:1:\n'}
+[77.366181] (r2_mission) StderrLine: {'line': b'/usr/include/c++/11/bits/range_access.h:319:5: note: \xe2\x80\x98std::data\xe2\x80\x99 declared here\n'}
+[77.366947] (r2_mission) StderrLine: {'line': b'  319 |     data(initializer_list<_Tp> __il) noexcept\n'}
+[77.367613] (r2_mission) StderrLine: {'line': b'      |     ^~~~\n'}
+[77.374031] (r2_mission) StderrLine: {'line': b'/root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_serial_driver/src/command_encoder.cpp:96:9: error: \xe2\x80\x98cmd\xe2\x80\x99 was not declared in this scope\n'}
+[77.375040] (r2_mission) StderrLine: {'line': b'   96 |     if (cmd == "doff") return "doff set";\n'}
+[77.375979] (r2_mission) StderrLine: {'line': b'      |         ^~~\n'}
+[77.389908] (r2_mission) StderrLine: {'line': b'/root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_serial_driver/src/command_encoder.cpp:97:9: error: \xe2\x80\x98cmd\xe2\x80\x99 was not declared in this scope\n'}
+[77.390980] (r2_mission) StderrLine: {'line': b'   97 |     if (cmd == "dofs") return "dofs set";\n'}
+[77.391909] (r2_mission) StderrLine: {'line': b'      |         ^~~\n'}
+[77.407654] (r2_mission) StderrLine: {'line': b'/root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_serial_driver/src/command_encoder.cpp:98:9: error: \xe2\x80\x98cmd\xe2\x80\x99 was not declared in this scope\n'}
+[77.408677] (r2_mission) StderrLine: {'line': b'   98 |     if (cmd == "doft") return "doft set";\n'}
+[77.409382] (r2_mission) StderrLine: {'line': b'      |         ^~~\n'}
+[77.428864] (r2_mission) StderrLine: {'line': b'/root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_serial_driver/src/command_encoder.cpp:100:9: error: \xe2\x80\x98cmd\xe2\x80\x99 was not declared in this scope\n'}
+[77.432936] (r2_mission) StderrLine: {'line': b'  100 |     if (cmd == "suck") return (data == "55555") ? "suck vacuum" : "suck blow";\n'}
+[77.434139] (r2_mission) StderrLine: {'line': b'      |         ^~~\n'}
+[77.435049] (r2_mission) StderrLine: {'line': b'/root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_serial_driver/src/command_encoder.cpp:100:32: error: \xe2\x80\x98data\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98std::data\xe2\x80\x99?\n'}
+[77.435782] (r2_mission) StderrLine: {'line': b'  100 |     if (cmd == "suck") return (data == "55555") ? "suck vacuum" : "suck blow";\n'}
+[77.436495] (r2_mission) StderrLine: {'line': b'      |                                ^~~~\n'}
+[77.437198] (r2_mission) StderrLine: {'line': b'      |                                std::data\n'}
+[77.438015] (r2_mission) StderrLine: {'line': b'In file included from /usr/include/c++/11/vector:69,\n'}
+[77.438760] (r2_mission) StderrLine: {'line': b'                 from /root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_serial_driver/src/command_encoder.h:5,\n'}
+[77.439411] (r2_mission) StderrLine: {'line': b'                 from /root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_serial_driver/src/command_encoder.cpp:1:\n'}
+[77.440104] (r2_mission) StderrLine: {'line': b'/usr/include/c++/11/bits/range_access.h:319:5: note: \xe2\x80\x98std::data\xe2\x80\x99 declared here\n'}
+[77.440890] (r2_mission) StderrLine: {'line': b'  319 |     data(initializer_list<_Tp> __il) noexcept\n'}
+[77.441681] (r2_mission) StderrLine: {'line': b'      |     ^~~~\n'}
+[77.446829] (r2_mission) StderrLine: {'line': b'/root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_serial_driver/src/command_encoder.cpp:102:9: error: \xe2\x80\x98cmd\xe2\x80\x99 was not declared in this scope\n'}
+[77.447825] (r2_mission) StderrLine: {'line': b'  102 |     if (cmd == "taup") return "table up";\n'}
+[77.448515] (r2_mission) StderrLine: {'line': b'      |         ^~~\n'}
+[77.449180] (-) TimerEvent: {}
+[77.463903] (r2_mission) StderrLine: {'line': b'/root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_serial_driver/src/command_encoder.cpp:103:9: error: \xe2\x80\x98cmd\xe2\x80\x99 was not declared in this scope\n'}
+[77.465037] (r2_mission) StderrLine: {'line': b'  103 |     if (cmd == "tadw") return "table down";\n'}
+[77.465804] (r2_mission) StderrLine: {'line': b'      |         ^~~\n'}
+[77.480339] (r2_mission) StderrLine: {'line': b'/root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_serial_driver/src/command_encoder.cpp:105:9: error: \xe2\x80\x98cmd\xe2\x80\x99 was not declared in this scope\n'}
+[77.483370] (r2_mission) StderrLine: {'line': b'  105 |     if (cmd == "fing") return (data == "55555") ? "finger grip" : "finger release";\n'}
+[77.484345] (r2_mission) StderrLine: {'line': b'      |         ^~~\n'}
+[77.485242] (r2_mission) StderrLine: {'line': b'/root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_serial_driver/src/command_encoder.cpp:105:32: error: \xe2\x80\x98data\xe2\x80\x99 was not declared in this scope; did you mean \xe2\x80\x98std::data\xe2\x80\x99?\n'}
+[77.485949] (r2_mission) StderrLine: {'line': b'  105 |     if (cmd == "fing") return (data == "55555") ? "finger grip" : "finger release";\n'}
+[77.486681] (r2_mission) StderrLine: {'line': b'      |                                ^~~~\n'}
+[77.487396] (r2_mission) StderrLine: {'line': b'      |                                std::data\n'}
+[77.488126] (r2_mission) StderrLine: {'line': b'In file included from /usr/include/c++/11/vector:69,\n'}
+[77.488850] (r2_mission) StderrLine: {'line': b'                 from /root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_serial_driver/src/command_encoder.h:5,\n'}
+[77.489573] (r2_mission) StderrLine: {'line': b'                 from /root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_serial_driver/src/command_encoder.cpp:1:\n'}
+[77.490371] (r2_mission) StderrLine: {'line': b'/usr/include/c++/11/bits/range_access.h:319:5: note: \xe2\x80\x98std::data\xe2\x80\x99 declared here\n'}
+[77.492300] (r2_mission) StderrLine: {'line': b'  319 |     data(initializer_list<_Tp> __il) noexcept\n'}
+[77.493993] (r2_mission) StderrLine: {'line': b'      |     ^~~~\n'}
+[77.501885] (r2_mission) StderrLine: {'line': b'/root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_serial_driver/src/command_encoder.cpp:106:9: error: \xe2\x80\x98cmd\xe2\x80\x99 was not declared in this scope\n'}
+[77.506197] (r2_mission) StderrLine: {'line': b'  106 |     if (cmd == "fwrs") return "finger wrist set";\n'}
+[77.507303] (r2_mission) StderrLine: {'line': b'      |         ^~~\n'}
+[77.549763] (-) TimerEvent: {}
+[77.570460] (r2_mission) StderrLine: {'line': b'gmake[2]: *** [r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/build.make:90\xef\xbc\x9ar2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/src/command_encoder.cpp.o] \xe9\x94\x99\xe8\xaf\xaf 1\n'}
+[77.572877] (r2_mission) StderrLine: {'line': b'gmake[1]: *** [CMakeFiles/Makefile2:208\xef\xbc\x9ar2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/all] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[77.574036] (r2_mission) StderrLine: {'line': b'gmake: *** [Makefile:146\xef\xbc\x9aall] \xe9\x94\x99\xe8\xaf\xaf 2\n'}
+[77.582760] (r2_mission) CommandEnded: {'returncode': 2}
+[77.645119] (r2_mission) JobEnded: {'identifier': 'r2_mission', 'rc': 2}
+[77.650049] (-) TimerEvent: {}
+[77.660938] (-) EventReactorShutdown: {}

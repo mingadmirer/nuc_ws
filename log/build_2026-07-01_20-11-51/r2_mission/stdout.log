@@ -1,3 +1,0 @@
-[ 60%] Built target r2_serial_driver_core
-Consolidate compiler generated dependencies of target r2_mission_node
-[ 80%] Building CXX object CMakeFiles/r2_mission_node.dir/src/mission_node.cpp.o

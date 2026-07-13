@@ -1,8 +1,8 @@
-# Install script for directory: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/src/r2_mission
+# Install script for directory: /root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_mission
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/mingadmirer/nuc_ws/install/r2_mission")
+  set(CMAKE_INSTALL_PREFIX "/root/nuc_ws/install/r2_mission")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -49,12 +49,12 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/r2_mission/r2_mission_node"
          RPATH "")
   endif()
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/r2_mission" TYPE EXECUTABLE FILES "/home/mingadmirer/nuc_ws/build/r2_mission/r2_mission_node")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/r2_mission" TYPE EXECUTABLE FILES "/root/nuc_ws/build/r2_mission/r2_mission_node")
   if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/r2_mission/r2_mission_node" AND
      NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/r2_mission/r2_mission_node")
     file(RPATH_CHANGE
          FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/r2_mission/r2_mission_node"
-         OLD_RPATH "/opt/ros/humble/lib:/home/mingadmirer/nuc_ws/install/detection_interfaces/lib:"
+         OLD_RPATH "/opt/ros/humble/lib:/root/nuc_ws/install/detection_interfaces/lib:"
          NEW_RPATH "")
     if(CMAKE_INSTALL_DO_STRIP)
       execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/r2_mission/r2_mission_node")
@@ -63,19 +63,39 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/r2_mission/launch" TYPE DIRECTORY FILES "/home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/src/r2_mission/launch/")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/r2_mission/blue_mission_node" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/r2_mission/blue_mission_node")
+    file(RPATH_CHECK
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/r2_mission/blue_mission_node"
+         RPATH "")
+  endif()
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/r2_mission" TYPE EXECUTABLE FILES "/root/nuc_ws/build/r2_mission/blue_mission_node")
+  if(EXISTS "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/r2_mission/blue_mission_node" AND
+     NOT IS_SYMLINK "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/r2_mission/blue_mission_node")
+    file(RPATH_CHANGE
+         FILE "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/r2_mission/blue_mission_node"
+         OLD_RPATH "/opt/ros/humble/lib:/root/nuc_ws/install/detection_interfaces/lib:"
+         NEW_RPATH "")
+    if(CMAKE_INSTALL_DO_STRIP)
+      execute_process(COMMAND "/usr/bin/strip" "$ENV{DESTDIR}${CMAKE_INSTALL_PREFIX}/lib/r2_mission/blue_mission_node")
+    endif()
+  endif()
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/r2_mission/config" TYPE DIRECTORY FILES "/home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/src/r2_mission/config/")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/r2_mission/launch" TYPE DIRECTORY FILES "/root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_mission/launch/")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/home/mingadmirer/nuc_ws/build/r2_mission/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/r2_mission")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/r2_mission/config" TYPE DIRECTORY FILES "/root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_mission/config/")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/home/mingadmirer/nuc_ws/build/r2_mission/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/r2_mission")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/package_run_dependencies" TYPE FILE FILES "/root/nuc_ws/build/r2_mission/ament_cmake_index/share/ament_index/resource_index/package_run_dependencies/r2_mission")
+endif()
+
+if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/parent_prefix_path" TYPE FILE FILES "/root/nuc_ws/build/r2_mission/ament_cmake_index/share/ament_index/resource_index/parent_prefix_path/r2_mission")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -83,7 +103,7 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/r2_mission/environment" TYPE FILE FILES "/home/mingadmirer/nuc_ws/build/r2_mission/ament_cmake_environment_hooks/ament_prefix_path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/r2_mission/environment" TYPE FILE FILES "/root/nuc_ws/build/r2_mission/ament_cmake_environment_hooks/ament_prefix_path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
@@ -91,47 +111,47 @@ if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/r2_mission/environment" TYPE FILE FILES "/home/mingadmirer/nuc_ws/build/r2_mission/ament_cmake_environment_hooks/path.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/r2_mission/environment" TYPE FILE FILES "/root/nuc_ws/build/r2_mission/ament_cmake_environment_hooks/path.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/r2_mission" TYPE FILE FILES "/home/mingadmirer/nuc_ws/build/r2_mission/ament_cmake_environment_hooks/local_setup.bash")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/r2_mission" TYPE FILE FILES "/root/nuc_ws/build/r2_mission/ament_cmake_environment_hooks/local_setup.bash")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/r2_mission" TYPE FILE FILES "/home/mingadmirer/nuc_ws/build/r2_mission/ament_cmake_environment_hooks/local_setup.sh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/r2_mission" TYPE FILE FILES "/root/nuc_ws/build/r2_mission/ament_cmake_environment_hooks/local_setup.sh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/r2_mission" TYPE FILE FILES "/home/mingadmirer/nuc_ws/build/r2_mission/ament_cmake_environment_hooks/local_setup.zsh")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/r2_mission" TYPE FILE FILES "/root/nuc_ws/build/r2_mission/ament_cmake_environment_hooks/local_setup.zsh")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/r2_mission" TYPE FILE FILES "/home/mingadmirer/nuc_ws/build/r2_mission/ament_cmake_environment_hooks/local_setup.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/r2_mission" TYPE FILE FILES "/root/nuc_ws/build/r2_mission/ament_cmake_environment_hooks/local_setup.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/r2_mission" TYPE FILE FILES "/home/mingadmirer/nuc_ws/build/r2_mission/ament_cmake_environment_hooks/package.dsv")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/r2_mission" TYPE FILE FILES "/root/nuc_ws/build/r2_mission/ament_cmake_environment_hooks/package.dsv")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/home/mingadmirer/nuc_ws/build/r2_mission/ament_cmake_index/share/ament_index/resource_index/packages/r2_mission")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/ament_index/resource_index/packages" TYPE FILE FILES "/root/nuc_ws/build/r2_mission/ament_cmake_index/share/ament_index/resource_index/packages/r2_mission")
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
   file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/r2_mission/cmake" TYPE FILE FILES
-    "/home/mingadmirer/nuc_ws/build/r2_mission/ament_cmake_core/r2_missionConfig.cmake"
-    "/home/mingadmirer/nuc_ws/build/r2_mission/ament_cmake_core/r2_missionConfig-version.cmake"
+    "/root/nuc_ws/build/r2_mission/ament_cmake_core/r2_missionConfig.cmake"
+    "/root/nuc_ws/build/r2_mission/ament_cmake_core/r2_missionConfig-version.cmake"
     )
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/r2_mission" TYPE FILE FILES "/home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/src/r2_mission/package.xml")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/share/r2_mission" TYPE FILE FILES "/root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_mission/package.xml")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/mingadmirer/nuc_ws/build/r2_mission/r2_serial_driver/cmake_install.cmake")
+  include("/root/nuc_ws/build/r2_mission/r2_serial_driver/cmake_install.cmake")
 
 endif()
 
@@ -143,5 +163,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/mingadmirer/nuc_ws/build/r2_mission/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/root/nuc_ws/build/r2_mission/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

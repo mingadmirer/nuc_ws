@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/src/detection_interfaces
+CMAKE_SOURCE_DIR = /root/nuc_ws/nuc_ws/src/nuc_ws/src/detection_interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mingadmirer/nuc_ws/build/detection_interfaces
+CMAKE_BINARY_DIR = /root/nuc_ws/build/detection_interfaces
 
 # Utility rule file for detection_interfaces__py.
 
@@ -122,8 +122,8 @@ rosidl_generator_py/detection_interfaces/_detection_interfaces_s.ep.rosidl_types
 rosidl_generator_py/detection_interfaces/_detection_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/std_msgs/msg/UInt64MultiArray.idl
 rosidl_generator_py/detection_interfaces/_detection_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/std_msgs/msg/UInt8.idl
 rosidl_generator_py/detection_interfaces/_detection_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c: /opt/ros/humble/share/std_msgs/msg/UInt8MultiArray.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/mingadmirer/nuc_ws/build/detection_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
-	cd /home/mingadmirer/nuc_ws/build/detection_interfaces/detection_interfaces__py && /usr/bin/python3 /opt/ros/humble/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /home/mingadmirer/nuc_ws/build/detection_interfaces/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/nuc_ws/build/detection_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating Python code for ROS interfaces"
+	cd /root/nuc_ws/build/detection_interfaces/detection_interfaces__py && /usr/bin/python3 /opt/ros/humble/share/rosidl_generator_py/cmake/../../../lib/rosidl_generator_py/rosidl_generator_py --generator-arguments-file /root/nuc_ws/build/detection_interfaces/rosidl_generator_py__arguments.json --typesupport-impls "rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c;rosidl_typesupport_c"
 
 rosidl_generator_py/detection_interfaces/_detection_interfaces_s.ep.rosidl_typesupport_introspection_c.c: rosidl_generator_py/detection_interfaces/_detection_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_py/detection_interfaces/_detection_interfaces_s.ep.rosidl_typesupport_introspection_c.c
@@ -163,10 +163,10 @@ detection_interfaces__py/CMakeFiles/detection_interfaces__py.dir/build: detectio
 .PHONY : detection_interfaces__py/CMakeFiles/detection_interfaces__py.dir/build
 
 detection_interfaces__py/CMakeFiles/detection_interfaces__py.dir/clean:
-	cd /home/mingadmirer/nuc_ws/build/detection_interfaces/detection_interfaces__py && $(CMAKE_COMMAND) -P CMakeFiles/detection_interfaces__py.dir/cmake_clean.cmake
+	cd /root/nuc_ws/build/detection_interfaces/detection_interfaces__py && $(CMAKE_COMMAND) -P CMakeFiles/detection_interfaces__py.dir/cmake_clean.cmake
 .PHONY : detection_interfaces__py/CMakeFiles/detection_interfaces__py.dir/clean
 
 detection_interfaces__py/CMakeFiles/detection_interfaces__py.dir/depend:
-	cd /home/mingadmirer/nuc_ws/build/detection_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/src/detection_interfaces /home/mingadmirer/nuc_ws/build/detection_interfaces/detection_interfaces__py /home/mingadmirer/nuc_ws/build/detection_interfaces /home/mingadmirer/nuc_ws/build/detection_interfaces/detection_interfaces__py /home/mingadmirer/nuc_ws/build/detection_interfaces/detection_interfaces__py/CMakeFiles/detection_interfaces__py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/nuc_ws/build/detection_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/nuc_ws/nuc_ws/src/nuc_ws/src/detection_interfaces /root/nuc_ws/build/detection_interfaces/detection_interfaces__py /root/nuc_ws/build/detection_interfaces /root/nuc_ws/build/detection_interfaces/detection_interfaces__py /root/nuc_ws/build/detection_interfaces/detection_interfaces__py/CMakeFiles/detection_interfaces__py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : detection_interfaces__py/CMakeFiles/detection_interfaces__py.dir/depend
 

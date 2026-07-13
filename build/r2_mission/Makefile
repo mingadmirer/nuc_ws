@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/src/r2_mission
+CMAKE_SOURCE_DIR = /root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_mission
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mingadmirer/nuc_ws/build/r2_mission
+CMAKE_BINARY_DIR = /root/nuc_ws/build/r2_mission
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,9 +142,9 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mingadmirer/nuc_ws/build/r2_mission/CMakeFiles /home/mingadmirer/nuc_ws/build/r2_mission//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/nuc_ws/build/r2_mission/CMakeFiles /root/nuc_ws/build/r2_mission//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mingadmirer/nuc_ws/build/r2_mission/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/nuc_ws/build/r2_mission/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -211,6 +211,19 @@ r2_mission_node/fast:
 .PHONY : r2_mission_node/fast
 
 #=============================================================================
+# Target rules for targets named blue_mission_node
+
+# Build rule for target.
+blue_mission_node: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 blue_mission_node
+.PHONY : blue_mission_node
+
+# fast build rule for target.
+blue_mission_node/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blue_mission_node.dir/build.make CMakeFiles/blue_mission_node.dir/build
+.PHONY : blue_mission_node/fast
+
+#=============================================================================
 # Target rules for targets named r2_serial_driver_core
 
 # Build rule for target.
@@ -222,6 +235,30 @@ r2_serial_driver_core: cmake_check_build_system
 r2_serial_driver_core/fast:
 	$(MAKE) $(MAKESILENT) -f r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/build.make r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/build
 .PHONY : r2_serial_driver_core/fast
+
+src/bluemisson_node.o: src/bluemisson_node.cpp.o
+.PHONY : src/bluemisson_node.o
+
+# target to build an object file
+src/bluemisson_node.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blue_mission_node.dir/build.make CMakeFiles/blue_mission_node.dir/src/bluemisson_node.cpp.o
+.PHONY : src/bluemisson_node.cpp.o
+
+src/bluemisson_node.i: src/bluemisson_node.cpp.i
+.PHONY : src/bluemisson_node.i
+
+# target to preprocess a source file
+src/bluemisson_node.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blue_mission_node.dir/build.make CMakeFiles/blue_mission_node.dir/src/bluemisson_node.cpp.i
+.PHONY : src/bluemisson_node.cpp.i
+
+src/bluemisson_node.s: src/bluemisson_node.cpp.s
+.PHONY : src/bluemisson_node.s
+
+# target to generate assembly for a file
+src/bluemisson_node.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/blue_mission_node.dir/build.make CMakeFiles/blue_mission_node.dir/src/bluemisson_node.cpp.s
+.PHONY : src/bluemisson_node.cpp.s
 
 src/mission_node.o: src/mission_node.cpp.o
 .PHONY : src/mission_node.o
@@ -262,8 +299,12 @@ help:
 	@echo "... test"
 	@echo "... r2_mission_uninstall"
 	@echo "... uninstall"
+	@echo "... blue_mission_node"
 	@echo "... r2_mission_node"
 	@echo "... r2_serial_driver_core"
+	@echo "... src/bluemisson_node.o"
+	@echo "... src/bluemisson_node.i"
+	@echo "... src/bluemisson_node.s"
 	@echo "... src/mission_node.o"
 	@echo "... src/mission_node.i"
 	@echo "... src/mission_node.s"

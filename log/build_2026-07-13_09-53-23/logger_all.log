@@ -1,0 +1,215 @@
+[1.024s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'build', '--packages-select', 'r2_mission', '--cmake-args', '-DCMAKE_C_COMPILER_LAUNCHER=ccache', '-DCMAKE_CXX_COMPILER_LAUNCHER=ccache']
+[1.025s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='build', build_base='build', install_base='install', merge_install=False, symlink_install=False, test_result_base=None, continue_on_error=False, executor='parallel', parallel_workers=8, event_handlers=None, ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['.'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=['r2_mission'], packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], cmake_args=['-DCMAKE_C_COMPILER_LAUNCHER=ccache', '-DCMAKE_CXX_COMPILER_LAUNCHER=ccache'], cmake_target=None, cmake_target_skip_unavailable=False, cmake_clean_cache=False, cmake_clean_first=False, cmake_force_configure=False, ament_cmake_args=None, catkin_cmake_args=None, catkin_skip_building_tests=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0xffff8d18fd90>, verb_extension=<colcon_core.verb.build.BuildVerb object at 0xffff8d18f880>, main=<bound method BuildVerb.main of <colcon_core.verb.build.BuildVerb object at 0xffff8d18f880>>)
+[1.365s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[1.366s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[1.367s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[1.367s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[1.368s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) discover
+[1.369s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[1.369s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/root/nuc_ws'
+[1.370s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ignore', 'ignore_ament_install']
+[1.371s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore'
+[1.372s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ignore_ament_install'
+[1.373s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_pkg']
+[1.373s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_pkg'
+[1.374s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['colcon_meta']
+[1.375s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'colcon_meta'
+[1.375s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['ros']
+[1.376s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'ros'
+[1.508s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['cmake', 'python']
+[1.508s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'cmake'
+[1.509s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python'
+[1.510s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extensions ['python_setup_py']
+[1.510s] Level 1:colcon.colcon_core.package_identification:_identify(.) by extension 'python_setup_py'
+[1.512s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extensions ['ignore', 'ignore_ament_install']
+[1.513s] Level 1:colcon.colcon_core.package_identification:_identify(build) by extension 'ignore'
+[1.513s] Level 1:colcon.colcon_core.package_identification:_identify(build) ignored
+[1.515s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extensions ['ignore', 'ignore_ament_install']
+[1.516s] Level 1:colcon.colcon_core.package_identification:_identify(install) by extension 'ignore'
+[1.516s] Level 1:colcon.colcon_core.package_identification:_identify(install) ignored
+[1.517s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extensions ['ignore', 'ignore_ament_install']
+[1.518s] Level 1:colcon.colcon_core.package_identification:_identify(log) by extension 'ignore'
+[1.519s] Level 1:colcon.colcon_core.package_identification:_identify(log) ignored
+[1.520s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws) by extensions ['ignore', 'ignore_ament_install']
+[1.520s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws) by extension 'ignore'
+[1.521s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws) by extension 'ignore_ament_install'
+[1.522s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws) by extensions ['colcon_pkg']
+[1.522s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws) by extension 'colcon_pkg'
+[1.523s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws) by extensions ['colcon_meta']
+[1.524s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws) by extension 'colcon_meta'
+[1.524s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws) by extensions ['ros']
+[1.525s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws) by extension 'ros'
+[1.526s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws) by extensions ['cmake', 'python']
+[1.526s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws) by extension 'cmake'
+[1.527s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws) by extension 'python'
+[1.528s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws) by extensions ['python_setup_py']
+[1.528s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws) by extension 'python_setup_py'
+[1.529s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/framework) by extensions ['ignore', 'ignore_ament_install']
+[1.531s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/framework) by extension 'ignore'
+[1.531s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/framework) by extension 'ignore_ament_install'
+[1.532s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/framework) by extensions ['colcon_pkg']
+[1.533s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/framework) by extension 'colcon_pkg'
+[1.534s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/framework) by extensions ['colcon_meta']
+[1.535s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/framework) by extension 'colcon_meta'
+[1.536s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/framework) by extensions ['ros']
+[1.536s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/framework) by extension 'ros'
+[1.538s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/framework) by extensions ['cmake', 'python']
+[1.539s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/framework) by extension 'cmake'
+[1.540s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/framework) by extension 'python'
+[1.540s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/framework) by extensions ['python_setup_py']
+[1.541s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/framework) by extension 'python_setup_py'
+[1.542s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/src) by extensions ['ignore', 'ignore_ament_install']
+[1.543s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/src) by extension 'ignore'
+[1.544s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/src) by extension 'ignore_ament_install'
+[1.545s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/src) by extensions ['colcon_pkg']
+[1.545s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/src) by extension 'colcon_pkg'
+[1.546s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/src) by extensions ['colcon_meta']
+[1.546s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/src) by extension 'colcon_meta'
+[1.547s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/src) by extensions ['ros']
+[1.548s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/src) by extension 'ros'
+[1.549s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/src) by extensions ['cmake', 'python']
+[1.550s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/src) by extension 'cmake'
+[1.550s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/src) by extension 'python'
+[1.551s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/src) by extensions ['python_setup_py']
+[1.551s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/src) by extension 'python_setup_py'
+[1.553s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/src/nuc_ws) by extensions ['ignore', 'ignore_ament_install']
+[1.554s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/src/nuc_ws) by extension 'ignore'
+[1.555s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/src/nuc_ws) by extension 'ignore_ament_install'
+[1.556s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/src/nuc_ws) by extensions ['colcon_pkg']
+[1.557s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/src/nuc_ws) by extension 'colcon_pkg'
+[1.557s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/src/nuc_ws) by extensions ['colcon_meta']
+[1.558s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/src/nuc_ws) by extension 'colcon_meta'
+[1.559s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/src/nuc_ws) by extensions ['ros']
+[1.559s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/src/nuc_ws) by extension 'ros'
+[1.561s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/src/nuc_ws) by extensions ['cmake', 'python']
+[1.561s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/src/nuc_ws) by extension 'cmake'
+[1.562s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/src/nuc_ws) by extension 'python'
+[1.563s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/src/nuc_ws) by extensions ['python_setup_py']
+[1.564s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/src/nuc_ws) by extension 'python_setup_py'
+[1.565s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/src/nuc_ws/log) by extensions ['ignore', 'ignore_ament_install']
+[1.567s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/src/nuc_ws/log) by extension 'ignore'
+[1.568s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/src/nuc_ws/log) ignored
+[1.570s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/src/nuc_ws/src) by extensions ['ignore', 'ignore_ament_install']
+[1.571s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/src/nuc_ws/src) by extension 'ignore'
+[1.572s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/src/nuc_ws/src) by extension 'ignore_ament_install'
+[1.573s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/src/nuc_ws/src) by extensions ['colcon_pkg']
+[1.574s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/src/nuc_ws/src) by extension 'colcon_pkg'
+[1.575s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/src/nuc_ws/src) by extensions ['colcon_meta']
+[1.576s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/src/nuc_ws/src) by extension 'colcon_meta'
+[1.577s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/src/nuc_ws/src) by extensions ['ros']
+[1.578s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/src/nuc_ws/src) by extension 'ros'
+[1.580s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/src/nuc_ws/src) by extensions ['cmake', 'python']
+[1.581s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/src/nuc_ws/src) by extension 'cmake'
+[1.582s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/src/nuc_ws/src) by extension 'python'
+[1.583s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/src/nuc_ws/src) by extensions ['python_setup_py']
+[1.583s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/src/nuc_ws/src) by extension 'python_setup_py'
+[1.585s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/src/nuc_ws/src/detection_interfaces) by extensions ['ignore', 'ignore_ament_install']
+[1.586s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/src/nuc_ws/src/detection_interfaces) by extension 'ignore'
+[1.587s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/src/nuc_ws/src/detection_interfaces) by extension 'ignore_ament_install'
+[1.589s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/src/nuc_ws/src/detection_interfaces) by extensions ['colcon_pkg']
+[1.590s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/src/nuc_ws/src/detection_interfaces) by extension 'colcon_pkg'
+[1.591s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/src/nuc_ws/src/detection_interfaces) by extensions ['colcon_meta']
+[1.592s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/src/nuc_ws/src/detection_interfaces) by extension 'colcon_meta'
+[1.593s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/src/nuc_ws/src/detection_interfaces) by extensions ['ros']
+[1.593s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/src/nuc_ws/src/detection_interfaces) by extension 'ros'
+[1.614s] DEBUG:colcon.colcon_core.package_identification:Package 'nuc_ws/src/nuc_ws/src/detection_interfaces' with type 'ros.ament_cmake' and name 'detection_interfaces'
+[1.615s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/src/nuc_ws/src/r2_mission) by extensions ['ignore', 'ignore_ament_install']
+[1.616s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/src/nuc_ws/src/r2_mission) by extension 'ignore'
+[1.618s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/src/nuc_ws/src/r2_mission) by extension 'ignore_ament_install'
+[1.619s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/src/nuc_ws/src/r2_mission) by extensions ['colcon_pkg']
+[1.619s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/src/nuc_ws/src/r2_mission) by extension 'colcon_pkg'
+[1.620s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/src/nuc_ws/src/r2_mission) by extensions ['colcon_meta']
+[1.621s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/src/nuc_ws/src/r2_mission) by extension 'colcon_meta'
+[1.622s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/src/nuc_ws/src/r2_mission) by extensions ['ros']
+[1.622s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/src/nuc_ws/src/r2_mission) by extension 'ros'
+[1.630s] DEBUG:colcon.colcon_core.package_identification:Package 'nuc_ws/src/nuc_ws/src/r2_mission' with type 'ros.ament_cmake' and name 'r2_mission'
+[1.631s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/src/nuc_ws/src/r2_serial_driver) by extensions ['ignore', 'ignore_ament_install']
+[1.632s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/src/nuc_ws/src/r2_serial_driver) by extension 'ignore'
+[1.633s] Level 1:colcon.colcon_core.package_identification:_identify(nuc_ws/src/nuc_ws/src/r2_serial_driver) ignored
+[1.634s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
+[1.634s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) discover
+[1.635s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) using defaults
+[1.635s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) discover
+[1.636s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) using defaults
+[1.811s] INFO:colcon.colcon_core.package_selection:Skipping not selected package 'detection_interfaces' in 'nuc_ws/src/nuc_ws/src/detection_interfaces'
+[1.815s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) check parameters
+[1.816s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) discover
+[1.835s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 2 installed packages in /root/nuc_ws/install
+[1.840s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 3 installed packages in /home/sunrise/yolov8_bpu_ws/install
+[1.845s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 58 installed packages in /opt/tros/humble
+[1.856s] DEBUG:colcon.colcon_installed_package_information.package_discovery:Found 210 installed packages in /opt/ros/humble
+[1.865s] Level 1:colcon.colcon_core.package_discovery:discover_packages(prefix_path) using defaults
+[2.208s] Level 5:colcon.colcon_core.verb:set package 'r2_mission' build argument 'cmake_args' from command line to '['-DCMAKE_C_COMPILER_LAUNCHER=ccache', '-DCMAKE_CXX_COMPILER_LAUNCHER=ccache']'
+[2.209s] Level 5:colcon.colcon_core.verb:set package 'r2_mission' build argument 'cmake_target' from command line to 'None'
+[2.209s] Level 5:colcon.colcon_core.verb:set package 'r2_mission' build argument 'cmake_target_skip_unavailable' from command line to 'False'
+[2.210s] Level 5:colcon.colcon_core.verb:set package 'r2_mission' build argument 'cmake_clean_cache' from command line to 'False'
+[2.210s] Level 5:colcon.colcon_core.verb:set package 'r2_mission' build argument 'cmake_clean_first' from command line to 'False'
+[2.210s] Level 5:colcon.colcon_core.verb:set package 'r2_mission' build argument 'cmake_force_configure' from command line to 'False'
+[2.210s] Level 5:colcon.colcon_core.verb:set package 'r2_mission' build argument 'ament_cmake_args' from command line to 'None'
+[2.211s] Level 5:colcon.colcon_core.verb:set package 'r2_mission' build argument 'catkin_cmake_args' from command line to 'None'
+[2.211s] Level 5:colcon.colcon_core.verb:set package 'r2_mission' build argument 'catkin_skip_building_tests' from command line to 'False'
+[2.211s] DEBUG:colcon.colcon_core.verb:Building package 'r2_mission' with the following arguments: {'ament_cmake_args': None, 'build_base': '/root/nuc_ws/build/r2_mission', 'catkin_cmake_args': None, 'catkin_skip_building_tests': False, 'cmake_args': ['-DCMAKE_C_COMPILER_LAUNCHER=ccache', '-DCMAKE_CXX_COMPILER_LAUNCHER=ccache'], 'cmake_clean_cache': False, 'cmake_clean_first': False, 'cmake_force_configure': False, 'cmake_target': None, 'cmake_target_skip_unavailable': False, 'install_base': '/root/nuc_ws/install/r2_mission', 'merge_install': False, 'path': '/root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_mission', 'symlink_install': False, 'test_result_base': None}
+[2.213s] INFO:colcon.colcon_core.executor:Executing jobs using 'parallel' executor
+[2.222s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete
+[2.223s] INFO:colcon.colcon_ros.task.ament_cmake.build:Building ROS package in '/root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_mission' with build type 'ament_cmake'
+[2.225s] INFO:colcon.colcon_cmake.task.cmake.build:Building CMake package in '/root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_mission'
+[2.240s] INFO:colcon.colcon_core.plugin_system:Skipping extension 'colcon_core.shell.bat': Not used on non-Windows systems
+[2.242s] INFO:colcon.colcon_core.shell:Skip shell extension 'powershell' for command environment: Not usable outside of PowerShell
+[2.243s] DEBUG:colcon.colcon_core.shell:Skip shell extension 'dsv' for command environment
+[2.304s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/nuc_ws/build/r2_mission': CMAKE_PREFIX_PATH=/root/nuc_ws/install/detection_interfaces:/root/nuc_ws/install/r2_mission:/home/sunrise/yolov8_bpu_ws/install/astra_camera:/home/sunrise/yolov8_bpu_ws/install/astra_camera_msgs:/home/sunrise/yolov8_bpu_ws/install/yolov8_bpu:/opt/tros/humble:/opt/ros/humble LD_LIBRARY_PATH=/root/nuc_ws/install/detection_interfaces/lib:/home/sunrise/yolov8_bpu_ws/install/astra_camera/lib:/home/sunrise/yolov8_bpu_ws/install/astra_camera_msgs/lib:/opt/tros/humble/lib/aarch64-linux-gnu:/opt/tros/humble/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/hobot/lib:/app/lib:/app/pub/lib:/middleware/lib:/middleware/pub/lib:/usr/hobot/lib/sensor:/system/lib:/system/usr/lib:/lib /usr/bin/cmake /root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_mission -DCMAKE_C_COMPILER_LAUNCHER=ccache -DCMAKE_CXX_COMPILER_LAUNCHER=ccache -DCMAKE_INSTALL_PREFIX=/root/nuc_ws/install/r2_mission
+[6.970s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/nuc_ws/build/r2_mission' returned '0': CMAKE_PREFIX_PATH=/root/nuc_ws/install/detection_interfaces:/root/nuc_ws/install/r2_mission:/home/sunrise/yolov8_bpu_ws/install/astra_camera:/home/sunrise/yolov8_bpu_ws/install/astra_camera_msgs:/home/sunrise/yolov8_bpu_ws/install/yolov8_bpu:/opt/tros/humble:/opt/ros/humble LD_LIBRARY_PATH=/root/nuc_ws/install/detection_interfaces/lib:/home/sunrise/yolov8_bpu_ws/install/astra_camera/lib:/home/sunrise/yolov8_bpu_ws/install/astra_camera_msgs/lib:/opt/tros/humble/lib/aarch64-linux-gnu:/opt/tros/humble/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/hobot/lib:/app/lib:/app/pub/lib:/middleware/lib:/middleware/pub/lib:/usr/hobot/lib/sensor:/system/lib:/system/usr/lib:/lib /usr/bin/cmake /root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_mission -DCMAKE_C_COMPILER_LAUNCHER=ccache -DCMAKE_CXX_COMPILER_LAUNCHER=ccache -DCMAKE_INSTALL_PREFIX=/root/nuc_ws/install/r2_mission
+[6.981s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/nuc_ws/build/r2_mission': CMAKE_PREFIX_PATH=/root/nuc_ws/install/detection_interfaces:/root/nuc_ws/install/r2_mission:/home/sunrise/yolov8_bpu_ws/install/astra_camera:/home/sunrise/yolov8_bpu_ws/install/astra_camera_msgs:/home/sunrise/yolov8_bpu_ws/install/yolov8_bpu:/opt/tros/humble:/opt/ros/humble LD_LIBRARY_PATH=/root/nuc_ws/install/detection_interfaces/lib:/home/sunrise/yolov8_bpu_ws/install/astra_camera/lib:/home/sunrise/yolov8_bpu_ws/install/astra_camera_msgs/lib:/opt/tros/humble/lib/aarch64-linux-gnu:/opt/tros/humble/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/hobot/lib:/app/lib:/app/pub/lib:/middleware/lib:/middleware/pub/lib:/usr/hobot/lib/sensor:/system/lib:/system/usr/lib:/lib /usr/bin/cmake --build /root/nuc_ws/build/r2_mission -- -j8 -l8
+[12.038s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/nuc_ws/build/r2_mission' returned '0': CMAKE_PREFIX_PATH=/root/nuc_ws/install/detection_interfaces:/root/nuc_ws/install/r2_mission:/home/sunrise/yolov8_bpu_ws/install/astra_camera:/home/sunrise/yolov8_bpu_ws/install/astra_camera_msgs:/home/sunrise/yolov8_bpu_ws/install/yolov8_bpu:/opt/tros/humble:/opt/ros/humble LD_LIBRARY_PATH=/root/nuc_ws/install/detection_interfaces/lib:/home/sunrise/yolov8_bpu_ws/install/astra_camera/lib:/home/sunrise/yolov8_bpu_ws/install/astra_camera_msgs/lib:/opt/tros/humble/lib/aarch64-linux-gnu:/opt/tros/humble/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/hobot/lib:/app/lib:/app/pub/lib:/middleware/lib:/middleware/pub/lib:/usr/hobot/lib/sensor:/system/lib:/system/usr/lib:/lib /usr/bin/cmake --build /root/nuc_ws/build/r2_mission -- -j8 -l8
+[12.083s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoking command in '/root/nuc_ws/build/r2_mission': CMAKE_PREFIX_PATH=/root/nuc_ws/install/detection_interfaces:/root/nuc_ws/install/r2_mission:/home/sunrise/yolov8_bpu_ws/install/astra_camera:/home/sunrise/yolov8_bpu_ws/install/astra_camera_msgs:/home/sunrise/yolov8_bpu_ws/install/yolov8_bpu:/opt/tros/humble:/opt/ros/humble LD_LIBRARY_PATH=/root/nuc_ws/install/detection_interfaces/lib:/home/sunrise/yolov8_bpu_ws/install/astra_camera/lib:/home/sunrise/yolov8_bpu_ws/install/astra_camera_msgs/lib:/opt/tros/humble/lib/aarch64-linux-gnu:/opt/tros/humble/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/hobot/lib:/app/lib:/app/pub/lib:/middleware/lib:/middleware/pub/lib:/usr/hobot/lib/sensor:/system/lib:/system/usr/lib:/lib /usr/bin/cmake --install /root/nuc_ws/build/r2_mission
+[12.231s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(r2_mission)
+[12.235s] DEBUG:colcon.colcon_core.event_handler.log_command:Invoked command in '/root/nuc_ws/build/r2_mission' returned '0': CMAKE_PREFIX_PATH=/root/nuc_ws/install/detection_interfaces:/root/nuc_ws/install/r2_mission:/home/sunrise/yolov8_bpu_ws/install/astra_camera:/home/sunrise/yolov8_bpu_ws/install/astra_camera_msgs:/home/sunrise/yolov8_bpu_ws/install/yolov8_bpu:/opt/tros/humble:/opt/ros/humble LD_LIBRARY_PATH=/root/nuc_ws/install/detection_interfaces/lib:/home/sunrise/yolov8_bpu_ws/install/astra_camera/lib:/home/sunrise/yolov8_bpu_ws/install/astra_camera_msgs/lib:/opt/tros/humble/lib/aarch64-linux-gnu:/opt/tros/humble/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/hobot/lib:/app/lib:/app/pub/lib:/middleware/lib:/middleware/pub/lib:/usr/hobot/lib/sensor:/system/lib:/system/usr/lib:/lib /usr/bin/cmake --install /root/nuc_ws/build/r2_mission
+[12.252s] Level 1:colcon.colcon_core.environment:checking '/root/nuc_ws/install/r2_mission' for CMake module files
+[12.255s] Level 1:colcon.colcon_core.environment:checking '/root/nuc_ws/install/r2_mission' for CMake config files
+[12.257s] Level 1:colcon.colcon_core.shell:create_environment_hook('r2_mission', 'cmake_prefix_path')
+[12.259s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/nuc_ws/install/r2_mission/share/r2_mission/hook/cmake_prefix_path.ps1'
+[12.263s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/nuc_ws/install/r2_mission/share/r2_mission/hook/cmake_prefix_path.dsv'
+[12.266s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/nuc_ws/install/r2_mission/share/r2_mission/hook/cmake_prefix_path.sh'
+[12.273s] Level 1:colcon.colcon_core.environment:checking '/root/nuc_ws/install/r2_mission/lib'
+[12.274s] Level 1:colcon.colcon_core.environment:checking '/root/nuc_ws/install/r2_mission/bin'
+[12.275s] Level 1:colcon.colcon_core.environment:checking '/root/nuc_ws/install/r2_mission/lib/pkgconfig/r2_mission.pc'
+[12.276s] Level 1:colcon.colcon_core.environment:checking '/root/nuc_ws/install/r2_mission/lib/python3.10/site-packages'
+[12.279s] Level 1:colcon.colcon_core.environment:checking '/root/nuc_ws/install/r2_mission/bin'
+[12.282s] INFO:colcon.colcon_core.shell:Creating package script '/root/nuc_ws/install/r2_mission/share/r2_mission/package.ps1'
+[12.291s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/nuc_ws/install/r2_mission/share/r2_mission/package.dsv'
+[12.296s] INFO:colcon.colcon_core.shell:Creating package script '/root/nuc_ws/install/r2_mission/share/r2_mission/package.sh'
+[12.302s] INFO:colcon.colcon_core.shell:Creating package script '/root/nuc_ws/install/r2_mission/share/r2_mission/package.bash'
+[12.309s] INFO:colcon.colcon_core.shell:Creating package script '/root/nuc_ws/install/r2_mission/share/r2_mission/package.zsh'
+[12.314s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/nuc_ws/install/r2_mission/share/colcon-core/packages/r2_mission)
+[12.319s] Level 1:colcon.colcon_core.environment:create_environment_scripts_only(r2_mission)
+[12.321s] Level 1:colcon.colcon_core.environment:checking '/root/nuc_ws/install/r2_mission' for CMake module files
+[12.325s] Level 1:colcon.colcon_core.environment:checking '/root/nuc_ws/install/r2_mission' for CMake config files
+[12.327s] Level 1:colcon.colcon_core.shell:create_environment_hook('r2_mission', 'cmake_prefix_path')
+[12.329s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/nuc_ws/install/r2_mission/share/r2_mission/hook/cmake_prefix_path.ps1'
+[12.332s] INFO:colcon.colcon_core.shell:Creating environment descriptor '/root/nuc_ws/install/r2_mission/share/r2_mission/hook/cmake_prefix_path.dsv'
+[12.335s] INFO:colcon.colcon_core.shell:Creating environment hook '/root/nuc_ws/install/r2_mission/share/r2_mission/hook/cmake_prefix_path.sh'
+[12.340s] Level 1:colcon.colcon_core.environment:checking '/root/nuc_ws/install/r2_mission/lib'
+[12.340s] Level 1:colcon.colcon_core.environment:checking '/root/nuc_ws/install/r2_mission/bin'
+[12.341s] Level 1:colcon.colcon_core.environment:checking '/root/nuc_ws/install/r2_mission/lib/pkgconfig/r2_mission.pc'
+[12.343s] Level 1:colcon.colcon_core.environment:checking '/root/nuc_ws/install/r2_mission/lib/python3.10/site-packages'
+[12.346s] Level 1:colcon.colcon_core.environment:checking '/root/nuc_ws/install/r2_mission/bin'
+[12.348s] INFO:colcon.colcon_core.shell:Creating package script '/root/nuc_ws/install/r2_mission/share/r2_mission/package.ps1'
+[12.354s] INFO:colcon.colcon_core.shell:Creating package descriptor '/root/nuc_ws/install/r2_mission/share/r2_mission/package.dsv'
+[12.358s] INFO:colcon.colcon_core.shell:Creating package script '/root/nuc_ws/install/r2_mission/share/r2_mission/package.sh'
+[12.361s] INFO:colcon.colcon_core.shell:Creating package script '/root/nuc_ws/install/r2_mission/share/r2_mission/package.bash'
+[12.365s] INFO:colcon.colcon_core.shell:Creating package script '/root/nuc_ws/install/r2_mission/share/r2_mission/package.zsh'
+[12.368s] Level 1:colcon.colcon_core.environment:create_file_with_runtime_dependencies(/root/nuc_ws/install/r2_mission/share/colcon-core/packages/r2_mission)
+[12.371s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:closing loop
+[12.372s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:loop closed
+[12.373s] DEBUG:colcon.colcon_parallel_executor.executor.parallel:run_until_complete finished with '0'
+[12.374s] DEBUG:colcon.colcon_core.event_reactor:joining thread
+[12.376s] DEBUG:colcon.colcon_core.event_reactor:joined thread
+[12.379s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/nuc_ws/install/local_setup.ps1'
+[12.386s] INFO:colcon.colcon_core.shell:Creating prefix util module '/root/nuc_ws/install/_local_setup_util_ps1.py'
+[12.399s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/nuc_ws/install/setup.ps1'
+[12.409s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/nuc_ws/install/local_setup.sh'
+[12.414s] INFO:colcon.colcon_core.shell:Creating prefix util module '/root/nuc_ws/install/_local_setup_util_sh.py'
+[12.419s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/nuc_ws/install/setup.sh'
+[12.430s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/nuc_ws/install/local_setup.bash'
+[12.434s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/nuc_ws/install/setup.bash'
+[12.444s] INFO:colcon.colcon_core.shell:Creating prefix script '/root/nuc_ws/install/local_setup.zsh'
+[12.448s] INFO:colcon.colcon_core.shell:Creating prefix chain script '/root/nuc_ws/install/setup.zsh'

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/src/r2_mission
+CMAKE_SOURCE_DIR = /root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_mission
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mingadmirer/nuc_ws/build/r2_mission
+CMAKE_BINARY_DIR = /root/nuc_ws/build/r2_mission
 
 # Include any dependencies generated for this target.
 include r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/depend.make
@@ -70,32 +70,32 @@ include r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/progress.make
 include r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/flags.make
 
 r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/src/serial_interface.cpp.o: r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/flags.make
-r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/src/serial_interface.cpp.o: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/src/r2_serial_driver/src/serial_interface.cpp
+r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/src/serial_interface.cpp.o: /root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_serial_driver/src/serial_interface.cpp
 r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/src/serial_interface.cpp.o: r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mingadmirer/nuc_ws/build/r2_mission/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/src/serial_interface.cpp.o"
-	cd /home/mingadmirer/nuc_ws/build/r2_mission/r2_serial_driver && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/src/serial_interface.cpp.o -MF CMakeFiles/r2_serial_driver_core.dir/src/serial_interface.cpp.o.d -o CMakeFiles/r2_serial_driver_core.dir/src/serial_interface.cpp.o -c /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/src/r2_serial_driver/src/serial_interface.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/nuc_ws/build/r2_mission/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/src/serial_interface.cpp.o"
+	cd /root/nuc_ws/build/r2_mission/r2_serial_driver && ccache /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/src/serial_interface.cpp.o -MF CMakeFiles/r2_serial_driver_core.dir/src/serial_interface.cpp.o.d -o CMakeFiles/r2_serial_driver_core.dir/src/serial_interface.cpp.o -c /root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_serial_driver/src/serial_interface.cpp
 
 r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/src/serial_interface.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/r2_serial_driver_core.dir/src/serial_interface.cpp.i"
-	cd /home/mingadmirer/nuc_ws/build/r2_mission/r2_serial_driver && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/src/r2_serial_driver/src/serial_interface.cpp > CMakeFiles/r2_serial_driver_core.dir/src/serial_interface.cpp.i
+	cd /root/nuc_ws/build/r2_mission/r2_serial_driver && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_serial_driver/src/serial_interface.cpp > CMakeFiles/r2_serial_driver_core.dir/src/serial_interface.cpp.i
 
 r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/src/serial_interface.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/r2_serial_driver_core.dir/src/serial_interface.cpp.s"
-	cd /home/mingadmirer/nuc_ws/build/r2_mission/r2_serial_driver && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/src/r2_serial_driver/src/serial_interface.cpp -o CMakeFiles/r2_serial_driver_core.dir/src/serial_interface.cpp.s
+	cd /root/nuc_ws/build/r2_mission/r2_serial_driver && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_serial_driver/src/serial_interface.cpp -o CMakeFiles/r2_serial_driver_core.dir/src/serial_interface.cpp.s
 
 r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/src/command_encoder.cpp.o: r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/flags.make
-r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/src/command_encoder.cpp.o: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/src/r2_serial_driver/src/command_encoder.cpp
+r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/src/command_encoder.cpp.o: /root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_serial_driver/src/command_encoder.cpp
 r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/src/command_encoder.cpp.o: r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mingadmirer/nuc_ws/build/r2_mission/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/src/command_encoder.cpp.o"
-	cd /home/mingadmirer/nuc_ws/build/r2_mission/r2_serial_driver && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/src/command_encoder.cpp.o -MF CMakeFiles/r2_serial_driver_core.dir/src/command_encoder.cpp.o.d -o CMakeFiles/r2_serial_driver_core.dir/src/command_encoder.cpp.o -c /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/src/r2_serial_driver/src/command_encoder.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/nuc_ws/build/r2_mission/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/src/command_encoder.cpp.o"
+	cd /root/nuc_ws/build/r2_mission/r2_serial_driver && ccache /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/src/command_encoder.cpp.o -MF CMakeFiles/r2_serial_driver_core.dir/src/command_encoder.cpp.o.d -o CMakeFiles/r2_serial_driver_core.dir/src/command_encoder.cpp.o -c /root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_serial_driver/src/command_encoder.cpp
 
 r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/src/command_encoder.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/r2_serial_driver_core.dir/src/command_encoder.cpp.i"
-	cd /home/mingadmirer/nuc_ws/build/r2_mission/r2_serial_driver && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/src/r2_serial_driver/src/command_encoder.cpp > CMakeFiles/r2_serial_driver_core.dir/src/command_encoder.cpp.i
+	cd /root/nuc_ws/build/r2_mission/r2_serial_driver && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_serial_driver/src/command_encoder.cpp > CMakeFiles/r2_serial_driver_core.dir/src/command_encoder.cpp.i
 
 r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/src/command_encoder.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/r2_serial_driver_core.dir/src/command_encoder.cpp.s"
-	cd /home/mingadmirer/nuc_ws/build/r2_mission/r2_serial_driver && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/src/r2_serial_driver/src/command_encoder.cpp -o CMakeFiles/r2_serial_driver_core.dir/src/command_encoder.cpp.s
+	cd /root/nuc_ws/build/r2_mission/r2_serial_driver && /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_serial_driver/src/command_encoder.cpp -o CMakeFiles/r2_serial_driver_core.dir/src/command_encoder.cpp.s
 
 # Object files for target r2_serial_driver_core
 r2_serial_driver_core_OBJECTS = \
@@ -109,19 +109,19 @@ r2_serial_driver/libr2_serial_driver_core.a: r2_serial_driver/CMakeFiles/r2_seri
 r2_serial_driver/libr2_serial_driver_core.a: r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/src/command_encoder.cpp.o
 r2_serial_driver/libr2_serial_driver_core.a: r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/build.make
 r2_serial_driver/libr2_serial_driver_core.a: r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mingadmirer/nuc_ws/build/r2_mission/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libr2_serial_driver_core.a"
-	cd /home/mingadmirer/nuc_ws/build/r2_mission/r2_serial_driver && $(CMAKE_COMMAND) -P CMakeFiles/r2_serial_driver_core.dir/cmake_clean_target.cmake
-	cd /home/mingadmirer/nuc_ws/build/r2_mission/r2_serial_driver && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/r2_serial_driver_core.dir/link.txt --verbose=$(VERBOSE)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/nuc_ws/build/r2_mission/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libr2_serial_driver_core.a"
+	cd /root/nuc_ws/build/r2_mission/r2_serial_driver && $(CMAKE_COMMAND) -P CMakeFiles/r2_serial_driver_core.dir/cmake_clean_target.cmake
+	cd /root/nuc_ws/build/r2_mission/r2_serial_driver && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/r2_serial_driver_core.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
 r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/build: r2_serial_driver/libr2_serial_driver_core.a
 .PHONY : r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/build
 
 r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/clean:
-	cd /home/mingadmirer/nuc_ws/build/r2_mission/r2_serial_driver && $(CMAKE_COMMAND) -P CMakeFiles/r2_serial_driver_core.dir/cmake_clean.cmake
+	cd /root/nuc_ws/build/r2_mission/r2_serial_driver && $(CMAKE_COMMAND) -P CMakeFiles/r2_serial_driver_core.dir/cmake_clean.cmake
 .PHONY : r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/clean
 
 r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/depend:
-	cd /home/mingadmirer/nuc_ws/build/r2_mission && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/src/r2_mission /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/src/r2_serial_driver /home/mingadmirer/nuc_ws/build/r2_mission /home/mingadmirer/nuc_ws/build/r2_mission/r2_serial_driver /home/mingadmirer/nuc_ws/build/r2_mission/r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/nuc_ws/build/r2_mission && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_mission /root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_serial_driver /root/nuc_ws/build/r2_mission /root/nuc_ws/build/r2_mission/r2_serial_driver /root/nuc_ws/build/r2_mission/r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/depend
 

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/src/detection_interfaces
+CMAKE_SOURCE_DIR = /root/nuc_ws/nuc_ws/src/nuc_ws/src/detection_interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mingadmirer/nuc_ws/build/detection_interfaces
+CMAKE_BINARY_DIR = /root/nuc_ws/build/detection_interfaces
 
 # Utility rule file for detection_interfaces__cpp.
 
@@ -127,8 +127,8 @@ rosidl_generator_cpp/detection_interfaces/msg/detection_result.hpp: /opt/ros/hum
 rosidl_generator_cpp/detection_interfaces/msg/detection_result.hpp: /opt/ros/humble/share/std_msgs/msg/UInt64MultiArray.idl
 rosidl_generator_cpp/detection_interfaces/msg/detection_result.hpp: /opt/ros/humble/share/std_msgs/msg/UInt8.idl
 rosidl_generator_cpp/detection_interfaces/msg/detection_result.hpp: /opt/ros/humble/share/std_msgs/msg/UInt8MultiArray.idl
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/mingadmirer/nuc_ws/build/detection_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
-	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /home/mingadmirer/nuc_ws/build/detection_interfaces/rosidl_generator_cpp__arguments.json
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/root/nuc_ws/build/detection_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code for ROS interfaces"
+	/usr/bin/python3 /opt/ros/humble/share/rosidl_generator_cpp/cmake/../../../lib/rosidl_generator_cpp/rosidl_generator_cpp --generator-arguments-file /root/nuc_ws/build/detection_interfaces/rosidl_generator_cpp__arguments.json
 
 rosidl_generator_cpp/detection_interfaces/msg/detail/detection_result__builder.hpp: rosidl_generator_cpp/detection_interfaces/msg/detection_result.hpp
 	@$(CMAKE_COMMAND) -E touch_nocreate rosidl_generator_cpp/detection_interfaces/msg/detail/detection_result__builder.hpp
@@ -180,6 +180,6 @@ CMakeFiles/detection_interfaces__cpp.dir/clean:
 .PHONY : CMakeFiles/detection_interfaces__cpp.dir/clean
 
 CMakeFiles/detection_interfaces__cpp.dir/depend:
-	cd /home/mingadmirer/nuc_ws/build/detection_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/src/detection_interfaces /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/src/detection_interfaces /home/mingadmirer/nuc_ws/build/detection_interfaces /home/mingadmirer/nuc_ws/build/detection_interfaces /home/mingadmirer/nuc_ws/build/detection_interfaces/CMakeFiles/detection_interfaces__cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/nuc_ws/build/detection_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/nuc_ws/nuc_ws/src/nuc_ws/src/detection_interfaces /root/nuc_ws/nuc_ws/src/nuc_ws/src/detection_interfaces /root/nuc_ws/build/detection_interfaces /root/nuc_ws/build/detection_interfaces /root/nuc_ws/build/detection_interfaces/CMakeFiles/detection_interfaces__cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/detection_interfaces__cpp.dir/depend
 

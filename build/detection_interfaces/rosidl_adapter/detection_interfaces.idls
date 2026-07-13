@@ -1,2 +1,2 @@
-/home/mingadmirer/nuc_ws/build/detection_interfaces/rosidl_adapter/detection_interfaces:msg/DetectionResult.idl
-/home/mingadmirer/nuc_ws/build/detection_interfaces/rosidl_adapter/detection_interfaces:msg/DetectionArray.idl
+/root/nuc_ws/build/detection_interfaces/rosidl_adapter/detection_interfaces:msg/DetectionResult.idl
+/root/nuc_ws/build/detection_interfaces/rosidl_adapter/detection_interfaces:msg/DetectionArray.idl

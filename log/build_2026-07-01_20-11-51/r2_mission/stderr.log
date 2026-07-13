@@ -1,9 +1,0 @@
-/home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/src/r2_mission/src/mission_node.cpp:394:5: error: expected unqualified-id before ‘return’
-  394 |     return ok;
-      |     ^~~~~~
-/home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/src/r2_mission/src/mission_node.cpp:395:1: error: expected declaration before ‘}’ token
-  395 | }
-      | ^
-gmake[2]: *** [CMakeFiles/r2_mission_node.dir/build.make:76：CMakeFiles/r2_mission_node.dir/src/mission_node.cpp.o] 错误 1
-gmake[1]: *** [CMakeFiles/Makefile2:154：CMakeFiles/r2_mission_node.dir/all] 错误 2
-gmake: *** [Makefile:146：all] 错误 2

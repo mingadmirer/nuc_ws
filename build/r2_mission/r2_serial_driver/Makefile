@@ -57,10 +57,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/src/r2_mission
+CMAKE_SOURCE_DIR = /root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_mission
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mingadmirer/nuc_ws/build/r2_mission
+CMAKE_BINARY_DIR = /root/nuc_ws/build/r2_mission
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -142,14 +142,14 @@ install/strip/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/mingadmirer/nuc_ws/build/r2_mission && $(CMAKE_COMMAND) -E cmake_progress_start /home/mingadmirer/nuc_ws/build/r2_mission/CMakeFiles /home/mingadmirer/nuc_ws/build/r2_mission/r2_serial_driver//CMakeFiles/progress.marks
-	cd /home/mingadmirer/nuc_ws/build/r2_mission && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 r2_serial_driver/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/mingadmirer/nuc_ws/build/r2_mission/CMakeFiles 0
+	cd /root/nuc_ws/build/r2_mission && $(CMAKE_COMMAND) -E cmake_progress_start /root/nuc_ws/build/r2_mission/CMakeFiles /root/nuc_ws/build/r2_mission/r2_serial_driver//CMakeFiles/progress.marks
+	cd /root/nuc_ws/build/r2_mission && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 r2_serial_driver/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /root/nuc_ws/build/r2_mission/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/mingadmirer/nuc_ws/build/r2_mission && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 r2_serial_driver/clean
+	cd /root/nuc_ws/build/r2_mission && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 r2_serial_driver/clean
 .PHONY : clean
 
 # The main clean target
@@ -158,22 +158,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/mingadmirer/nuc_ws/build/r2_mission && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 r2_serial_driver/preinstall
+	cd /root/nuc_ws/build/r2_mission && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 r2_serial_driver/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/mingadmirer/nuc_ws/build/r2_mission && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 r2_serial_driver/preinstall
+	cd /root/nuc_ws/build/r2_mission && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 r2_serial_driver/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/mingadmirer/nuc_ws/build/r2_mission && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /root/nuc_ws/build/r2_mission && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/rule:
-	cd /home/mingadmirer/nuc_ws/build/r2_mission && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/rule
+	cd /root/nuc_ws/build/r2_mission && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/rule
 .PHONY : r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/rule
 
 # Convenience name for target.
@@ -182,7 +182,7 @@ r2_serial_driver_core: r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/rul
 
 # fast build rule for target.
 r2_serial_driver_core/fast:
-	cd /home/mingadmirer/nuc_ws/build/r2_mission && $(MAKE) $(MAKESILENT) -f r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/build.make r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/build
+	cd /root/nuc_ws/build/r2_mission && $(MAKE) $(MAKESILENT) -f r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/build.make r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/build
 .PHONY : r2_serial_driver_core/fast
 
 src/command_encoder.o: src/command_encoder.cpp.o
@@ -190,7 +190,7 @@ src/command_encoder.o: src/command_encoder.cpp.o
 
 # target to build an object file
 src/command_encoder.cpp.o:
-	cd /home/mingadmirer/nuc_ws/build/r2_mission && $(MAKE) $(MAKESILENT) -f r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/build.make r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/src/command_encoder.cpp.o
+	cd /root/nuc_ws/build/r2_mission && $(MAKE) $(MAKESILENT) -f r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/build.make r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/src/command_encoder.cpp.o
 .PHONY : src/command_encoder.cpp.o
 
 src/command_encoder.i: src/command_encoder.cpp.i
@@ -198,7 +198,7 @@ src/command_encoder.i: src/command_encoder.cpp.i
 
 # target to preprocess a source file
 src/command_encoder.cpp.i:
-	cd /home/mingadmirer/nuc_ws/build/r2_mission && $(MAKE) $(MAKESILENT) -f r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/build.make r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/src/command_encoder.cpp.i
+	cd /root/nuc_ws/build/r2_mission && $(MAKE) $(MAKESILENT) -f r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/build.make r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/src/command_encoder.cpp.i
 .PHONY : src/command_encoder.cpp.i
 
 src/command_encoder.s: src/command_encoder.cpp.s
@@ -206,7 +206,7 @@ src/command_encoder.s: src/command_encoder.cpp.s
 
 # target to generate assembly for a file
 src/command_encoder.cpp.s:
-	cd /home/mingadmirer/nuc_ws/build/r2_mission && $(MAKE) $(MAKESILENT) -f r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/build.make r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/src/command_encoder.cpp.s
+	cd /root/nuc_ws/build/r2_mission && $(MAKE) $(MAKESILENT) -f r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/build.make r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/src/command_encoder.cpp.s
 .PHONY : src/command_encoder.cpp.s
 
 src/serial_interface.o: src/serial_interface.cpp.o
@@ -214,7 +214,7 @@ src/serial_interface.o: src/serial_interface.cpp.o
 
 # target to build an object file
 src/serial_interface.cpp.o:
-	cd /home/mingadmirer/nuc_ws/build/r2_mission && $(MAKE) $(MAKESILENT) -f r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/build.make r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/src/serial_interface.cpp.o
+	cd /root/nuc_ws/build/r2_mission && $(MAKE) $(MAKESILENT) -f r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/build.make r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/src/serial_interface.cpp.o
 .PHONY : src/serial_interface.cpp.o
 
 src/serial_interface.i: src/serial_interface.cpp.i
@@ -222,7 +222,7 @@ src/serial_interface.i: src/serial_interface.cpp.i
 
 # target to preprocess a source file
 src/serial_interface.cpp.i:
-	cd /home/mingadmirer/nuc_ws/build/r2_mission && $(MAKE) $(MAKESILENT) -f r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/build.make r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/src/serial_interface.cpp.i
+	cd /root/nuc_ws/build/r2_mission && $(MAKE) $(MAKESILENT) -f r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/build.make r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/src/serial_interface.cpp.i
 .PHONY : src/serial_interface.cpp.i
 
 src/serial_interface.s: src/serial_interface.cpp.s
@@ -230,7 +230,7 @@ src/serial_interface.s: src/serial_interface.cpp.s
 
 # target to generate assembly for a file
 src/serial_interface.cpp.s:
-	cd /home/mingadmirer/nuc_ws/build/r2_mission && $(MAKE) $(MAKESILENT) -f r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/build.make r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/src/serial_interface.cpp.s
+	cd /root/nuc_ws/build/r2_mission && $(MAKE) $(MAKESILENT) -f r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/build.make r2_serial_driver/CMakeFiles/r2_serial_driver_core.dir/src/serial_interface.cpp.s
 .PHONY : src/serial_interface.cpp.s
 
 # Help Target
@@ -264,6 +264,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/mingadmirer/nuc_ws/build/r2_mission && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /root/nuc_ws/build/r2_mission && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

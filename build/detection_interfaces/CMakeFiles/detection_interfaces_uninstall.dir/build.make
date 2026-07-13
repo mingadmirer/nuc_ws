@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/src/detection_interfaces
+CMAKE_SOURCE_DIR = /root/nuc_ws/nuc_ws/src/nuc_ws/src/detection_interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mingadmirer/nuc_ws/build/detection_interfaces
+CMAKE_BINARY_DIR = /root/nuc_ws/build/detection_interfaces
 
 # Utility rule file for detection_interfaces_uninstall.
 
@@ -67,7 +67,7 @@ include CMakeFiles/detection_interfaces_uninstall.dir/compiler_depend.make
 include CMakeFiles/detection_interfaces_uninstall.dir/progress.make
 
 CMakeFiles/detection_interfaces_uninstall:
-	/usr/bin/cmake -P /home/mingadmirer/nuc_ws/build/detection_interfaces/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
+	/usr/bin/cmake -P /root/nuc_ws/build/detection_interfaces/ament_cmake_uninstall_target/ament_cmake_uninstall_target.cmake
 
 detection_interfaces_uninstall: CMakeFiles/detection_interfaces_uninstall
 detection_interfaces_uninstall: CMakeFiles/detection_interfaces_uninstall.dir/build.make
@@ -82,6 +82,6 @@ CMakeFiles/detection_interfaces_uninstall.dir/clean:
 .PHONY : CMakeFiles/detection_interfaces_uninstall.dir/clean
 
 CMakeFiles/detection_interfaces_uninstall.dir/depend:
-	cd /home/mingadmirer/nuc_ws/build/detection_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/src/detection_interfaces /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/src/detection_interfaces /home/mingadmirer/nuc_ws/build/detection_interfaces /home/mingadmirer/nuc_ws/build/detection_interfaces /home/mingadmirer/nuc_ws/build/detection_interfaces/CMakeFiles/detection_interfaces_uninstall.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/nuc_ws/build/detection_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/nuc_ws/nuc_ws/src/nuc_ws/src/detection_interfaces /root/nuc_ws/nuc_ws/src/nuc_ws/src/detection_interfaces /root/nuc_ws/build/detection_interfaces /root/nuc_ws/build/detection_interfaces /root/nuc_ws/build/detection_interfaces/CMakeFiles/detection_interfaces_uninstall.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/detection_interfaces_uninstall.dir/depend
 

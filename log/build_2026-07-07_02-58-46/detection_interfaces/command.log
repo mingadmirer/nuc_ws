@@ -1,4 +1,0 @@
-Invoking command in '/home/mingadmirer/nuc_ws/build/detection_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mingadmirer/nuc_ws/build/detection_interfaces -- -j8 -l8
-Invoked command in '/home/mingadmirer/nuc_ws/build/detection_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/mingadmirer/nuc_ws/build/detection_interfaces -- -j8 -l8
-Invoking command in '/home/mingadmirer/nuc_ws/build/detection_interfaces': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mingadmirer/nuc_ws/build/detection_interfaces
-Invoked command in '/home/mingadmirer/nuc_ws/build/detection_interfaces' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/mingadmirer/nuc_ws/build/detection_interfaces

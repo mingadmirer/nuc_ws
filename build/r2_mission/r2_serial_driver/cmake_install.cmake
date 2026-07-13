@@ -1,8 +1,8 @@
-# Install script for directory: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/src/r2_serial_driver
+# Install script for directory: /root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_serial_driver
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
-  set(CMAKE_INSTALL_PREFIX "/home/mingadmirer/nuc_ws/install/r2_mission")
+  set(CMAKE_INSTALL_PREFIX "/root/nuc_ws/install/r2_mission")
 endif()
 string(REGEX REPLACE "/$" "" CMAKE_INSTALL_PREFIX "${CMAKE_INSTALL_PREFIX}")
 
@@ -43,6 +43,6 @@ if(NOT DEFINED CMAKE_OBJDUMP)
 endif()
 
 if("x${CMAKE_INSTALL_COMPONENT}x" STREQUAL "xUnspecifiedx" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/home/mingadmirer/nuc_ws/build/r2_mission/r2_serial_driver/libr2_serial_driver_core.a")
+  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib" TYPE STATIC_LIBRARY FILES "/root/nuc_ws/build/r2_mission/r2_serial_driver/libr2_serial_driver_core.a")
 endif()
 

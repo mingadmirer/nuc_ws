@@ -1,6 +1,7 @@
 #include "command_encoder.h"
 
 #include <cstdio>
+#include <string>
 
 // MotionType → 4 字符 ASCII 命令名
 const char* CommandEncoder::cmdName(MotionType motion) {

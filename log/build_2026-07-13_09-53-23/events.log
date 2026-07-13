@@ -1,0 +1,164 @@
+[0.000000] (-) TimerEvent: {}
+[0.000456] (-) JobUnselected: {'identifier': 'detection_interfaces'}
+[0.000867] (r2_mission) JobQueued: {'identifier': 'r2_mission', 'dependencies': OrderedDict([('detection_interfaces', '/root/nuc_ws/install/detection_interfaces')])}
+[0.004260] (r2_mission) JobStarted: {'identifier': 'r2_mission'}
+[0.074114] (r2_mission) JobProgress: {'identifier': 'r2_mission', 'progress': 'cmake'}
+[0.080123] (r2_mission) Command: {'cmd': ['/usr/bin/cmake', '/root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_mission', '-DCMAKE_C_COMPILER_LAUNCHER=ccache', '-DCMAKE_CXX_COMPILER_LAUNCHER=ccache', '-DCMAKE_INSTALL_PREFIX=/root/nuc_ws/install/r2_mission'], 'cwd': '/root/nuc_ws/build/r2_mission', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('ANTHROPIC_MODEL', 'deepseek-v4-pro[1m]'), ('AI_AGENT', 'claude-code_2-1-186_agent'), ('USER', 'root'), ('SSH_CLIENT', '10.119.149.36 3689 22'), ('CLAUDE_CODE_ENTRYPOINT', 'cli'), ('GIT_EDITOR', 'true'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/root/.vscode-server/cli/servers/Stable-fc3def6774c76082adf699d366f31a557ce5573f/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/root/nuc_ws/install/detection_interfaces/lib:/home/sunrise/yolov8_bpu_ws/install/astra_camera/lib:/home/sunrise/yolov8_bpu_ws/install/astra_camera_msgs/lib:/opt/tros/humble/lib/aarch64-linux-gnu:/opt/tros/humble/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/hobot/lib:/app/lib:/app/pub/lib:/middleware/lib:/middleware/pub/lib:/usr/hobot/lib/sensor:/system/lib:/system/usr/lib:/lib'), ('BROWSER', '/root/.vscode-server/cli/servers/Stable-fc3def6774c76082adf699d366f31a557ce5573f/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/root'), ('TERM_PROGRAM_VERSION', '1.128.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/0/vscode-ipc-f702804d-62de-4456-839c-f511f1e24dd5.sock'), ('ANTHROPIC_DEFAULT_SONNET_MODEL', 'deepseek-v4-pro[1m]'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/cli/servers/Stable-fc3def6774c76082adf699d366f31a557ce5573f/server/extensions/git/dist/askpass-main.js'), ('CLAUDE_CODE_CHILD_SESSION', '1'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/cli/servers/Stable-fc3def6774c76082adf699d366f31a557ce5573f/server/node'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/root/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/0/bus'), ('COLORTERM', 'truecolor'), ('DEBUGINFOD_URLS', ''), ('TROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/root/nuc_ws/install:/home/sunrise/yolov8_bpu_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('CLAUDE_CODE_SSE_PORT', '52780'), ('XDG_SESSION_CLASS', 'user'), ('ANTHROPIC_BASE_URL', 'https://api.deepseek.com/anthropic'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('ANTHROPIC_DEFAULT_OPUS_MODEL', 'deepseek-v4-pro[1m]'), ('PATH', '/usr/bin:/root/.npm-global/bin:/root/.local/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/root/.vscode-server/cli/servers/Stable-fc3def6774c76082adf699d366f31a557ce5573f/server/bin/remote-cli:/usr/bin:/root/.npm-global/bin:/root/.local/bin:/opt/tros/humble/bin:/opt/ros/humble/bin:/usr/hobot/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/root/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/bundled/scripts/noConfigScripts'), ('COREPACK_ENABLE_AUTO_PIN', '0'), ('XDG_RUNTIME_DIR', '/run/user/0'), ('CLAUDE_EFFORT', 'high'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/root/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-09808e277b8688ce.txt'), ('NoDefaultCurrentDirectoryInExePath', '1'), ('LANG', 'zh_CN.UTF-8'), ('PYTHONSTARTUP', '/root/.vscode-server/data/User/workspaceStorage/7fbf9b37a72bdd8b5000e40a6300048d/ms-python.python/pythonrc.py'), ('ANTHROPIC_DEFAULT_HAIKU_MODEL', 'deepseek-v4-flash'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/0/vscode-git-26e9fb4068.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/root/nuc_ws/install/r2_mission:/root/nuc_ws/install/detection_interfaces:/home/sunrise/yolov8_bpu_ws/install/yolov8_bpu:/home/sunrise/yolov8_bpu_ws/install/astra_camera:/home/sunrise/yolov8_bpu_ws/install/astra_camera_msgs:/opt/tros/humble:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('ANTHROPIC_AUTH_TOKEN', 'sk-f3aae6b04a344439914906c5855e7726'), ('CLAUDE_CODE_SESSION_ID', '58b7421d-80c7-47dd-b6c6-d8eb4126c4d4'), ('CLAUDECODE', '1'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/root/nuc_ws/build/r2_mission'), ('LC_ALL', 'zh_CN.UTF-8'), ('COPILOT_DEBUG_NONCE', '64f91145d90aa361c710fc64124b3598'), ('SSH_CONNECTION', '10.119.149.36 3689 10.119.149.117 22'), ('CLAUDE_CODE_EXECPATH', '/usr/lib/node_modules/@anthropic-ai/claude-code-linux-arm64/claude'), ('PYTHONPATH', '/root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages:/home/sunrise/yolov8_bpu_ws/install/yolov8_bpu/lib/python3.10/site-packages:/home/sunrise/yolov8_bpu_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages:/opt/tros/humble/lib/python3.10/site-packages:/opt/tros/humble/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/nuc_ws/install/detection_interfaces:/root/nuc_ws/install/r2_mission:/home/sunrise/yolov8_bpu_ws/install/astra_camera:/home/sunrise/yolov8_bpu_ws/install/astra_camera_msgs:/home/sunrise/yolov8_bpu_ws/install/yolov8_bpu:/opt/tros/humble:/opt/ros/humble')]), 'shell': False}
+[0.097547] (-) TimerEvent: {}
+[0.180890] (r2_mission) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.197748] (-) TimerEvent: {}
+[0.298694] (-) TimerEvent: {}
+[0.399315] (-) TimerEvent: {}
+[0.500039] (-) TimerEvent: {}
+[0.600692] (-) TimerEvent: {}
+[0.701314] (-) TimerEvent: {}
+[0.801930] (-) TimerEvent: {}
+[0.902518] (-) TimerEvent: {}
+[1.003110] (-) TimerEvent: {}
+[1.103723] (-) TimerEvent: {}
+[1.204321] (-) TimerEvent: {}
+[1.305004] (-) TimerEvent: {}
+[1.407238] (-) TimerEvent: {}
+[1.507866] (-) TimerEvent: {}
+[1.517911] (r2_mission) StdoutLine: {'line': b'-- Found rclcpp: 16.0.14 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[1.608179] (-) TimerEvent: {}
+[1.708847] (-) TimerEvent: {}
+[1.793673] (r2_mission) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[1.809065] (-) TimerEvent: {}
+[1.817366] (r2_mission) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[1.875633] (r2_mission) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[1.917602] (-) TimerEvent: {}
+[1.971240] (r2_mission) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[2.017803] (-) TimerEvent: {}
+[2.096185] (r2_mission) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[2.118053] (-) TimerEvent: {}
+[2.218646] (-) TimerEvent: {}
+[2.319335] (-) TimerEvent: {}
+[2.420009] (-) TimerEvent: {}
+[2.425439] (r2_mission) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[2.444634] (r2_mission) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.8 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[2.520485] (-) TimerEvent: {}
+[2.621138] (-) TimerEvent: {}
+[2.722474] (-) TimerEvent: {}
+[2.823101] (-) TimerEvent: {}
+[2.923859] (-) TimerEvent: {}
+[3.024763] (-) TimerEvent: {}
+[3.125434] (-) TimerEvent: {}
+[3.202034] (r2_mission) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[3.225636] (-) TimerEvent: {}
+[3.327283] (-) TimerEvent: {}
+[3.428016] (-) TimerEvent: {}
+[3.528691] (-) TimerEvent: {}
+[3.629406] (-) TimerEvent: {}
+[3.707661] (r2_mission) StdoutLine: {'line': b'-- Found detection_interfaces: 1.0.0 (/root/nuc_ws/install/detection_interfaces/share/detection_interfaces/cmake)\n'}
+[3.735729] (-) TimerEvent: {}
+[3.836363] (-) TimerEvent: {}
+[3.936964] (-) TimerEvent: {}
+[4.037892] (-) TimerEvent: {}
+[4.139257] (-) TimerEvent: {}
+[4.239893] (-) TimerEvent: {}
+[4.340493] (-) TimerEvent: {}
+[4.441072] (-) TimerEvent: {}
+[4.510045] (r2_mission) StdoutLine: {'line': b'-- Configuring done\n'}
+[4.541319] (-) TimerEvent: {}
+[4.629378] (r2_mission) StdoutLine: {'line': b'-- Generating done\n'}
+[4.641613] (-) TimerEvent: {}
+[4.678585] (r2_mission) StdoutLine: {'line': b'-- Build files have been written to: /root/nuc_ws/build/r2_mission\n'}
+[4.741863] (-) TimerEvent: {}
+[4.747830] (r2_mission) CommandEnded: {'returncode': 0}
+[4.751526] (r2_mission) JobProgress: {'identifier': 'r2_mission', 'progress': 'build'}
+[4.756593] (r2_mission) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/nuc_ws/build/r2_mission', '--', '-j8', '-l8'], 'cwd': '/root/nuc_ws/build/r2_mission', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('ANTHROPIC_MODEL', 'deepseek-v4-pro[1m]'), ('AI_AGENT', 'claude-code_2-1-186_agent'), ('USER', 'root'), ('SSH_CLIENT', '10.119.149.36 3689 22'), ('CLAUDE_CODE_ENTRYPOINT', 'cli'), ('GIT_EDITOR', 'true'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/root/.vscode-server/cli/servers/Stable-fc3def6774c76082adf699d366f31a557ce5573f/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/root/nuc_ws/install/detection_interfaces/lib:/home/sunrise/yolov8_bpu_ws/install/astra_camera/lib:/home/sunrise/yolov8_bpu_ws/install/astra_camera_msgs/lib:/opt/tros/humble/lib/aarch64-linux-gnu:/opt/tros/humble/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/hobot/lib:/app/lib:/app/pub/lib:/middleware/lib:/middleware/pub/lib:/usr/hobot/lib/sensor:/system/lib:/system/usr/lib:/lib'), ('BROWSER', '/root/.vscode-server/cli/servers/Stable-fc3def6774c76082adf699d366f31a557ce5573f/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/root'), ('TERM_PROGRAM_VERSION', '1.128.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/0/vscode-ipc-f702804d-62de-4456-839c-f511f1e24dd5.sock'), ('ANTHROPIC_DEFAULT_SONNET_MODEL', 'deepseek-v4-pro[1m]'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/cli/servers/Stable-fc3def6774c76082adf699d366f31a557ce5573f/server/extensions/git/dist/askpass-main.js'), ('CLAUDE_CODE_CHILD_SESSION', '1'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/cli/servers/Stable-fc3def6774c76082adf699d366f31a557ce5573f/server/node'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/root/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/0/bus'), ('COLORTERM', 'truecolor'), ('DEBUGINFOD_URLS', ''), ('TROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/root/nuc_ws/install:/home/sunrise/yolov8_bpu_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('CLAUDE_CODE_SSE_PORT', '52780'), ('XDG_SESSION_CLASS', 'user'), ('ANTHROPIC_BASE_URL', 'https://api.deepseek.com/anthropic'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('ANTHROPIC_DEFAULT_OPUS_MODEL', 'deepseek-v4-pro[1m]'), ('PATH', '/usr/bin:/root/.npm-global/bin:/root/.local/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/root/.vscode-server/cli/servers/Stable-fc3def6774c76082adf699d366f31a557ce5573f/server/bin/remote-cli:/usr/bin:/root/.npm-global/bin:/root/.local/bin:/opt/tros/humble/bin:/opt/ros/humble/bin:/usr/hobot/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/root/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/bundled/scripts/noConfigScripts'), ('COREPACK_ENABLE_AUTO_PIN', '0'), ('XDG_RUNTIME_DIR', '/run/user/0'), ('CLAUDE_EFFORT', 'high'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/root/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-09808e277b8688ce.txt'), ('NoDefaultCurrentDirectoryInExePath', '1'), ('LANG', 'zh_CN.UTF-8'), ('PYTHONSTARTUP', '/root/.vscode-server/data/User/workspaceStorage/7fbf9b37a72bdd8b5000e40a6300048d/ms-python.python/pythonrc.py'), ('ANTHROPIC_DEFAULT_HAIKU_MODEL', 'deepseek-v4-flash'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/0/vscode-git-26e9fb4068.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/root/nuc_ws/install/r2_mission:/root/nuc_ws/install/detection_interfaces:/home/sunrise/yolov8_bpu_ws/install/yolov8_bpu:/home/sunrise/yolov8_bpu_ws/install/astra_camera:/home/sunrise/yolov8_bpu_ws/install/astra_camera_msgs:/opt/tros/humble:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('ANTHROPIC_AUTH_TOKEN', 'sk-f3aae6b04a344439914906c5855e7726'), ('CLAUDE_CODE_SESSION_ID', '58b7421d-80c7-47dd-b6c6-d8eb4126c4d4'), ('CLAUDECODE', '1'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/root/nuc_ws/build/r2_mission'), ('LC_ALL', 'zh_CN.UTF-8'), ('COPILOT_DEBUG_NONCE', '64f91145d90aa361c710fc64124b3598'), ('SSH_CONNECTION', '10.119.149.36 3689 10.119.149.117 22'), ('CLAUDE_CODE_EXECPATH', '/usr/lib/node_modules/@anthropic-ai/claude-code-linux-arm64/claude'), ('PYTHONPATH', '/root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages:/home/sunrise/yolov8_bpu_ws/install/yolov8_bpu/lib/python3.10/site-packages:/home/sunrise/yolov8_bpu_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages:/opt/tros/humble/lib/python3.10/site-packages:/opt/tros/humble/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/nuc_ws/install/detection_interfaces:/root/nuc_ws/install/r2_mission:/home/sunrise/yolov8_bpu_ws/install/astra_camera:/home/sunrise/yolov8_bpu_ws/install/astra_camera_msgs:/home/sunrise/yolov8_bpu_ws/install/yolov8_bpu:/opt/tros/humble:/opt/ros/humble')]), 'shell': False}
+[4.847788] (-) TimerEvent: {}
+[4.953188] (-) TimerEvent: {}
+[5.013237] (r2_mission) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target r2_serial_driver_core\n'}
+[5.053477] (-) TimerEvent: {}
+[5.078476] (r2_mission) StdoutLine: {'line': b'[ 14%] Linking CXX static library libr2_serial_driver_core.a\n'}
+[5.153807] (-) TimerEvent: {}
+[5.254400] (-) TimerEvent: {}
+[5.304885] (r2_mission) StdoutLine: {'line': b'[ 42%] Built target r2_serial_driver_core\n'}
+[5.357180] (-) TimerEvent: {}
+[5.403787] (r2_mission) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target r2_mission_node\n'}
+[5.419475] (r2_mission) StdoutLine: {'line': b'Consolidate compiler generated dependencies of target blue_mission_node\n'}
+[5.462602] (-) TimerEvent: {}
+[5.512738] (r2_mission) StdoutLine: {'line': b'[ 57%] Linking CXX executable r2_mission_node\n'}
+[5.530600] (r2_mission) StdoutLine: {'line': b'[ 71%] Linking CXX executable blue_mission_node\n'}
+[5.577911] (-) TimerEvent: {}
+[5.687748] (-) TimerEvent: {}
+[5.790383] (-) TimerEvent: {}
+[5.891352] (-) TimerEvent: {}
+[5.992199] (-) TimerEvent: {}
+[6.093190] (-) TimerEvent: {}
+[6.197985] (-) TimerEvent: {}
+[6.299047] (-) TimerEvent: {}
+[6.400144] (-) TimerEvent: {}
+[6.501355] (-) TimerEvent: {}
+[6.603223] (-) TimerEvent: {}
+[6.704662] (-) TimerEvent: {}
+[6.805386] (-) TimerEvent: {}
+[6.906181] (-) TimerEvent: {}
+[7.007595] (-) TimerEvent: {}
+[7.108457] (-) TimerEvent: {}
+[7.209255] (-) TimerEvent: {}
+[7.314115] (-) TimerEvent: {}
+[7.415046] (-) TimerEvent: {}
+[7.515677] (-) TimerEvent: {}
+[7.616654] (-) TimerEvent: {}
+[7.718097] (-) TimerEvent: {}
+[7.818725] (-) TimerEvent: {}
+[7.919332] (-) TimerEvent: {}
+[8.020206] (-) TimerEvent: {}
+[8.120793] (-) TimerEvent: {}
+[8.221455] (-) TimerEvent: {}
+[8.322123] (-) TimerEvent: {}
+[8.422817] (-) TimerEvent: {}
+[8.523429] (-) TimerEvent: {}
+[8.624946] (-) TimerEvent: {}
+[8.725640] (-) TimerEvent: {}
+[8.826596] (-) TimerEvent: {}
+[8.927297] (-) TimerEvent: {}
+[9.028648] (-) TimerEvent: {}
+[9.129207] (-) TimerEvent: {}
+[9.229740] (-) TimerEvent: {}
+[9.330431] (-) TimerEvent: {}
+[9.431023] (-) TimerEvent: {}
+[9.531615] (-) TimerEvent: {}
+[9.632269] (-) TimerEvent: {}
+[9.698459] (r2_mission) StdoutLine: {'line': b'[ 85%] Built target blue_mission_node\n'}
+[9.732841] (-) TimerEvent: {}
+[9.745092] (r2_mission) StdoutLine: {'line': b'[100%] Built target r2_mission_node\n'}
+[9.809837] (r2_mission) CommandEnded: {'returncode': 0}
+[9.818857] (r2_mission) JobProgress: {'identifier': 'r2_mission', 'progress': 'install'}
+[9.833030] (-) TimerEvent: {}
+[9.861078] (r2_mission) Command: {'cmd': ['/usr/bin/cmake', '--install', '/root/nuc_ws/build/r2_mission'], 'cwd': '/root/nuc_ws/build/r2_mission', 'env': OrderedDict([('PYTHON_BASIC_REPL', '1'), ('ANTHROPIC_MODEL', 'deepseek-v4-pro[1m]'), ('AI_AGENT', 'claude-code_2-1-186_agent'), ('USER', 'root'), ('SSH_CLIENT', '10.119.149.36 3689 22'), ('CLAUDE_CODE_ENTRYPOINT', 'cli'), ('GIT_EDITOR', 'true'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/root/.vscode-server/cli/servers/Stable-fc3def6774c76082adf699d366f31a557ce5573f/server/extensions/git/dist/askpass.sh'), ('SHLVL', '2'), ('LD_LIBRARY_PATH', '/root/nuc_ws/install/detection_interfaces/lib:/home/sunrise/yolov8_bpu_ws/install/astra_camera/lib:/home/sunrise/yolov8_bpu_ws/install/astra_camera_msgs/lib:/opt/tros/humble/lib/aarch64-linux-gnu:/opt/tros/humble/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/aarch64-linux-gnu:/opt/ros/humble/lib:/usr/hobot/lib:/app/lib:/app/pub/lib:/middleware/lib:/middleware/pub/lib:/usr/hobot/lib/sensor:/system/lib:/system/usr/lib:/lib'), ('BROWSER', '/root/.vscode-server/cli/servers/Stable-fc3def6774c76082adf699d366f31a557ce5573f/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/root'), ('TERM_PROGRAM_VERSION', '1.128.0'), ('VSCODE_IPC_HOOK_CLI', '/run/user/0/vscode-ipc-f702804d-62de-4456-839c-f511f1e24dd5.sock'), ('ANTHROPIC_DEFAULT_SONNET_MODEL', 'deepseek-v4-pro[1m]'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/cli/servers/Stable-fc3def6774c76082adf699d366f31a557ce5573f/server/extensions/git/dist/askpass-main.js'), ('CLAUDE_CODE_CHILD_SESSION', '1'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/cli/servers/Stable-fc3def6774c76082adf699d366f31a557ce5573f/server/node'), ('PYDEVD_DISABLE_FILE_VALIDATION', '1'), ('BUNDLED_DEBUGPY_PATH', '/root/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/bundled/libs/debugpy'), ('VSCODE_PYTHON_AUTOACTIVATE_GUARD', '1'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/0/bus'), ('COLORTERM', 'truecolor'), ('DEBUGINFOD_URLS', ''), ('TROS_DISTRO', 'humble'), ('COLCON_PREFIX_PATH', '/root/nuc_ws/install:/home/sunrise/yolov8_bpu_ws/install'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('CLAUDE_CODE_SSE_PORT', '52780'), ('XDG_SESSION_CLASS', 'user'), ('ANTHROPIC_BASE_URL', 'https://api.deepseek.com/anthropic'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '2'), ('ROS_LOCALHOST_ONLY', '0'), ('ANTHROPIC_DEFAULT_OPUS_MODEL', 'deepseek-v4-pro[1m]'), ('PATH', '/usr/bin:/root/.npm-global/bin:/root/.local/bin:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/debugCommand:/root/.vscode-server/data/User/globalStorage/github.copilot-chat/copilotCli:/root/.vscode-server/cli/servers/Stable-fc3def6774c76082adf699d366f31a557ce5573f/server/bin/remote-cli:/usr/bin:/root/.npm-global/bin:/root/.local/bin:/opt/tros/humble/bin:/opt/ros/humble/bin:/usr/hobot/bin/:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/root/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/bundled/scripts/noConfigScripts'), ('COREPACK_ENABLE_AUTO_PIN', '0'), ('XDG_RUNTIME_DIR', '/run/user/0'), ('CLAUDE_EFFORT', 'high'), ('VSCODE_DEBUGPY_ADAPTER_ENDPOINTS', '/root/.vscode-server/extensions/ms-python.debugpy-2026.6.0-linux-arm64/.noConfigDebugAdapterEndpoints/endpoint-09808e277b8688ce.txt'), ('NoDefaultCurrentDirectoryInExePath', '1'), ('LANG', 'zh_CN.UTF-8'), ('PYTHONSTARTUP', '/root/.vscode-server/data/User/workspaceStorage/7fbf9b37a72bdd8b5000e40a6300048d/ms-python.python/pythonrc.py'), ('ANTHROPIC_DEFAULT_HAIKU_MODEL', 'deepseek-v4-flash'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/0/vscode-git-26e9fb4068.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/root/nuc_ws/install/r2_mission:/root/nuc_ws/install/detection_interfaces:/home/sunrise/yolov8_bpu_ws/install/yolov8_bpu:/home/sunrise/yolov8_bpu_ws/install/astra_camera:/home/sunrise/yolov8_bpu_ws/install/astra_camera_msgs:/opt/tros/humble:/opt/ros/humble'), ('SHELL', '/bin/bash'), ('ANTHROPIC_AUTH_TOKEN', 'sk-f3aae6b04a344439914906c5855e7726'), ('CLAUDE_CODE_SESSION_ID', '58b7421d-80c7-47dd-b6c6-d8eb4126c4d4'), ('CLAUDECODE', '1'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/root/nuc_ws/build/r2_mission'), ('LC_ALL', 'zh_CN.UTF-8'), ('COPILOT_DEBUG_NONCE', '64f91145d90aa361c710fc64124b3598'), ('SSH_CONNECTION', '10.119.149.36 3689 10.119.149.117 22'), ('CLAUDE_CODE_EXECPATH', '/usr/lib/node_modules/@anthropic-ai/claude-code-linux-arm64/claude'), ('PYTHONPATH', '/root/nuc_ws/install/detection_interfaces/local/lib/python3.10/dist-packages:/home/sunrise/yolov8_bpu_ws/install/yolov8_bpu/lib/python3.10/site-packages:/home/sunrise/yolov8_bpu_ws/install/astra_camera_msgs/local/lib/python3.10/dist-packages:/opt/tros/humble/lib/python3.10/site-packages:/opt/tros/humble/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/root/nuc_ws/install/detection_interfaces:/root/nuc_ws/install/r2_mission:/home/sunrise/yolov8_bpu_ws/install/astra_camera:/home/sunrise/yolov8_bpu_ws/install/astra_camera_msgs:/home/sunrise/yolov8_bpu_ws/install/yolov8_bpu:/opt/tros/humble:/opt/ros/humble')]), 'shell': False}
+[9.909005] (r2_mission) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[9.910509] (r2_mission) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/r2_mission/lib/r2_mission/r2_mission_node\n'}
+[9.933296] (-) TimerEvent: {}
+[9.948656] (r2_mission) StdoutLine: {'line': b'-- Set runtime path of "/root/nuc_ws/install/r2_mission/lib/r2_mission/r2_mission_node" to ""\n'}
+[9.950307] (r2_mission) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/r2_mission/lib/r2_mission/blue_mission_node\n'}
+[9.990298] (r2_mission) StdoutLine: {'line': b'-- Set runtime path of "/root/nuc_ws/install/r2_mission/lib/r2_mission/blue_mission_node" to ""\n'}
+[9.991204] (r2_mission) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/r2_mission/share/r2_mission/launch\n'}
+[9.992718] (r2_mission) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/r2_mission/share/r2_mission/launch/bringup.launch.py\n'}
+[9.993754] (r2_mission) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/r2_mission/share/r2_mission/launch/bluebringup.launch.py\n'}
+[9.994743] (r2_mission) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/r2_mission/share/r2_mission/config\n'}
+[9.995446] (r2_mission) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/r2_mission/share/r2_mission/config/params.yaml\n'}
+[9.996214] (r2_mission) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/r2_mission/share/ament_index/resource_index/package_run_dependencies/r2_mission\n'}
+[9.996875] (r2_mission) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/r2_mission/share/ament_index/resource_index/parent_prefix_path/r2_mission\n'}
+[9.997898] (r2_mission) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/r2_mission/share/r2_mission/environment/ament_prefix_path.sh\n'}
+[9.998683] (r2_mission) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/r2_mission/share/r2_mission/environment/ament_prefix_path.dsv\n'}
+[10.001008] (r2_mission) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/r2_mission/share/r2_mission/environment/path.sh\n'}
+[10.002228] (r2_mission) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/r2_mission/share/r2_mission/environment/path.dsv\n'}
+[10.003143] (r2_mission) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/r2_mission/share/r2_mission/local_setup.bash\n'}
+[10.003825] (r2_mission) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/r2_mission/share/r2_mission/local_setup.sh\n'}
+[10.004375] (r2_mission) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/r2_mission/share/r2_mission/local_setup.zsh\n'}
+[10.004899] (r2_mission) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/r2_mission/share/r2_mission/local_setup.dsv\n'}
+[10.005482] (r2_mission) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/r2_mission/share/r2_mission/package.dsv\n'}
+[10.005984] (r2_mission) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/r2_mission/share/ament_index/resource_index/packages/r2_mission\n'}
+[10.006467] (r2_mission) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/r2_mission/share/r2_mission/cmake/r2_missionConfig.cmake\n'}
+[10.006950] (r2_mission) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/r2_mission/share/r2_mission/cmake/r2_missionConfig-version.cmake\n'}
+[10.008210] (r2_mission) StdoutLine: {'line': b'-- Up-to-date: /root/nuc_ws/install/r2_mission/share/r2_mission/package.xml\n'}
+[10.009491] (r2_mission) StdoutLine: {'line': b'-- Installing: /root/nuc_ws/install/r2_mission/lib/libr2_serial_driver_core.a\n'}
+[10.012946] (r2_mission) CommandEnded: {'returncode': 0}
+[10.033803] (-) TimerEvent: {}
+[10.134504] (-) TimerEvent: {}
+[10.151663] (r2_mission) JobEnded: {'identifier': 'r2_mission', 'rc': 0}
+[10.155251] (-) EventReactorShutdown: {}

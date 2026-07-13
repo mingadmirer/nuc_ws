@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/src/detection_interfaces
+CMAKE_SOURCE_DIR = /root/nuc_ws/nuc_ws/src/nuc_ws/src/detection_interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mingadmirer/nuc_ws/build/detection_interfaces
+CMAKE_BINARY_DIR = /root/nuc_ws/build/detection_interfaces
 
 # Utility rule file for detection_interfaces.
 
@@ -66,8 +66,8 @@ include CMakeFiles/detection_interfaces.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/detection_interfaces.dir/progress.make
 
-CMakeFiles/detection_interfaces: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/src/detection_interfaces/msg/DetectionResult.msg
-CMakeFiles/detection_interfaces: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/src/detection_interfaces/msg/DetectionArray.msg
+CMakeFiles/detection_interfaces: /root/nuc_ws/nuc_ws/src/nuc_ws/src/detection_interfaces/msg/DetectionResult.msg
+CMakeFiles/detection_interfaces: /root/nuc_ws/nuc_ws/src/nuc_ws/src/detection_interfaces/msg/DetectionArray.msg
 CMakeFiles/detection_interfaces: /opt/ros/humble/share/builtin_interfaces/msg/Duration.idl
 CMakeFiles/detection_interfaces: /opt/ros/humble/share/builtin_interfaces/msg/Time.idl
 CMakeFiles/detection_interfaces: /opt/ros/humble/share/std_msgs/msg/Bool.idl
@@ -114,6 +114,6 @@ CMakeFiles/detection_interfaces.dir/clean:
 .PHONY : CMakeFiles/detection_interfaces.dir/clean
 
 CMakeFiles/detection_interfaces.dir/depend:
-	cd /home/mingadmirer/nuc_ws/build/detection_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/src/detection_interfaces /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/src/detection_interfaces /home/mingadmirer/nuc_ws/build/detection_interfaces /home/mingadmirer/nuc_ws/build/detection_interfaces /home/mingadmirer/nuc_ws/build/detection_interfaces/CMakeFiles/detection_interfaces.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/nuc_ws/build/detection_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/nuc_ws/nuc_ws/src/nuc_ws/src/detection_interfaces /root/nuc_ws/nuc_ws/src/nuc_ws/src/detection_interfaces /root/nuc_ws/build/detection_interfaces /root/nuc_ws/build/detection_interfaces /root/nuc_ws/build/detection_interfaces/CMakeFiles/detection_interfaces.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/detection_interfaces.dir/depend
 

@@ -4,7 +4,7 @@ r2_mission:
     # ── 开环运动：速度(0~10000) + 时长(s) ──
     # Step0: 初始右移靠近
     initial_right_speed: 2000
-    initial_right_time_s: 2.0
+    initial_right_time_s: 3.0
 
     # Step1: 向后 0.2m（向梅林方向前进）
     # 此部分在红队参数中废弃

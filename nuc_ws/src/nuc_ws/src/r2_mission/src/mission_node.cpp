@@ -222,18 +222,14 @@ void MissionNode::transitionTo(State s) {
     }
 
     case RECOVERY: {
-        RCLCPP_WARN(get_logger(), "下位机连接丢失，关闭串口，3s后重新握手...");
+        RCLCPP_WARN(get_logger(), "★★★ 底盘断电 → 关闭串口，等待 CHASSIS_ON ★★★");
         serial_.close();
-        delay_timer_ = create_wall_timer(3s, [this]() {
-            delay_timer_->cancel();
-            if (handshakeSTM32()) {
-                RCLCPP_INFO(get_logger(), "恢复成功，重新开始任务");
-                transitionTo(INIT);
-            } else {
-                RCLCPP_ERROR(get_logger(), "恢复失败，节点继续但串口不可用");
-                // 不转移状态，等下次失败再触发恢复
-            }
-        });
+        if (handshakeSTM32()) {
+            RCLCPP_INFO(get_logger(), "恢复成功，重新开始任务");
+            transitionTo(INIT);
+        } else {
+            RCLCPP_ERROR(get_logger(), "恢复失败");
+        }
         break;
     }
 
@@ -243,6 +239,21 @@ void MissionNode::transitionTo(State s) {
 
 // ── 主循环 tick（10Hz）──
 void MissionNode::onTick() {
+    // 轮询串口，检测底盘断电
+    if (state_ != RECOVERY && serial_.isOpen()) {
+        uint8_t buf[256] = {};
+        int n = serial_.recv(buf, sizeof(buf) - 1, 10);  // 非阻塞，10ms超时
+        if (n > 0) {
+            std::string msg(reinterpret_cast<char*>(buf), n);
+            if (msg.find("CHASSIS_OFF") != std::string::npos) {
+                RCLCPP_WARN(get_logger(), "★★★ 底盘断电 CHASSIS_OFF，回到初始状态 ★★★");
+                sendFrameReliable(CommandEncoder::encodeStop());
+                transitionTo(RECOVERY);
+                return;
+            }
+        }
+    }
+
     auto dt = (now() - state_enter_).seconds();
 
     if (state_ == APPROACH_SPEAR && dt > 15.0) {
@@ -263,7 +274,7 @@ void MissionNode::onDetection(const detection_interfaces::msg::DetectionArray::S
     if (state_ != APPROACH_SPEAR && state_ != ALIGN_LATERAL) return;
     if (servo_moving_) return;  // 移动中，不收集
 
-    // 每收到一帧 /detections 就计数（不管有没有 lance）
+    // 每收到一帧 /detections 就计数（不管有没有 fist）
     servo_frame_count_++;
 
     for (const auto& d : msg->detections) {
@@ -280,30 +291,30 @@ void MissionNode::onDetection(const detection_interfaces::msg::DetectionArray::S
         s.cy_norm  = (d.y1 + d.y2) * 0.5f;
         servo_buffer_.push_back(s);
 
-        RCLCPP_INFO(get_logger(), "[%s] 第%d帧 检测: lance 深度=%.0fmm 像素=(%.0f,%.0f) 有效帧=%zu/%d",
+        RCLCPP_INFO(get_logger(), "[%s] 第%d帧 检测: fist 深度=%.0fmm 像素=(%.0f,%.0f) 有效帧=%zu/%d",
                     stateName(state_).c_str(), servo_frame_count_,
                     d.depth_mm, s.cx_norm * img_width_, s.cy_norm * 400.0f,
                     servo_buffer_.size(), det_window_size_);
-        break;  // 一帧只取第一个 lance
+        break;  // 一帧只取第一个 fist
     }
 
-    // 无论本帧有没有 lance，连续 30 帧后做一致性检查
+    // 无论本帧有没有 fist，连续 30 帧后做一致性检查
     if (servo_frame_count_ >= det_window_size_) {
-        int total_lance = static_cast<int>(servo_buffer_.size());
+        int total_fist = static_cast<int>(servo_buffer_.size());
 
         RCLCPP_INFO(get_logger(),
-            "[%s] 窗口满: 连续%d帧中 %d帧有lance",
-            stateName(state_).c_str(), servo_frame_count_, total_lance);
+            "[%s] 窗口满: 连续%d帧中 %d帧有fist",
+            stateName(state_).c_str(), servo_frame_count_, total_fist);
 
-        if (total_lance < det_min_inliers_) {
-            // lance 帧本身就不够 20，丢弃最早 10 个计数，继续
+        if (total_fist < det_min_inliers_) {
+            // fist 帧本身就不够 20，丢弃最早 10 个计数，继续
             RCLCPP_WARN(get_logger(),
-                "[%s] lance帧不足(%d<%d)，丢弃10帧继续",
-                stateName(state_).c_str(), total_lance, det_min_inliers_);
+                "[%s] fist帧不足(%d<%d)，丢弃10帧继续",
+                stateName(state_).c_str(), total_fist, det_min_inliers_);
             servo_frame_count_ -= 10;
             if (servo_frame_count_ < 0) servo_frame_count_ = 0;
             // 也清理掉对应时间段的有效帧
-            int to_drop = std::min(10, total_lance);
+            int to_drop = std::min(10, total_fist);
             servo_buffer_.erase(servo_buffer_.begin(),
                                 servo_buffer_.begin() + to_drop);
             return;
@@ -335,7 +346,7 @@ void MissionNode::onDetection(const detection_interfaces::msg::DetectionArray::S
 
         RCLCPP_INFO(get_logger(),
             "[%s] 一致性: 深度中位数=%.0f 像素中位数=%.0f 一致帧=%d/%d (需>=%d)",
-            stateName(state_).c_str(), med_d, med_c, inliers, total_lance, det_min_inliers_);
+            stateName(state_).c_str(), med_d, med_c, inliers, total_fist, det_min_inliers_);
 
         if (inliers >= det_min_inliers_) {
             float avg_d  = sum_d / static_cast<float>(inliers);
@@ -404,7 +415,7 @@ void MissionNode::onDetection(const detection_interfaces::msg::DetectionArray::S
             servo_frame_count_ -= 10;
             if (servo_frame_count_ < 0) servo_frame_count_ = 0;
             servo_buffer_.erase(servo_buffer_.begin(),
-                                servo_buffer_.begin() + std::min(10, total_lance));
+                                servo_buffer_.begin() + std::min(10, total_fist));
         }
     }
 }
@@ -418,15 +429,14 @@ void MissionNode::sendWristAngle(int deg) {
 
 // ── STM32 握手（阻塞轮询直到就绪）──
 bool MissionNode::handshakeSTM32() {
-    RCLCPP_INFO(get_logger(), "等待 STM32 上电: %s", serial_device_.c_str());
+    RCLCPP_INFO(get_logger(), "等待底盘上电: %s", serial_device_.c_str());
 
-    const uint8_t hs_cmd[] = {'M','s','t','o','p','0','0','0','0','0'};
-    bool ready = false;
+    // TODO: 暂时注释握手应答等待逻辑，只打开串口等待 CHASSIS_ON
     int retry = 0;
 
-    while (!ready && rclcpp::ok()) {
+    // 1. 等待串口打开
+    while (rclcpp::ok()) {
         ++retry;
-
         if (!serial_.isOpen()) {
             if (!serial_.open(serial_device_, baudrate_)) {
                 RCLCPP_WARN(get_logger(), "[第%d次] 串口未就绪，1秒后重试...", retry);
@@ -436,38 +446,33 @@ bool MissionNode::handshakeSTM32() {
             RCLCPP_INFO(get_logger(), "[第%d次] 串口已打开", retry);
         }
 
-        serial_.flush();
-        serial_.send(hs_cmd, 10);
-
-        std::this_thread::sleep_for(std::chrono::milliseconds(100));
-        uint8_t buf[64] = {};
-        int n = serial_.recv(buf, sizeof(buf) - 1, 100);
+        // 2. 等待底盘上电消息 CHASSIS_ON
+        RCLCPP_INFO(get_logger(), "等待底盘 CHASSIS_ON ...");
+        uint8_t buf[256] = {};
+        int n = serial_.recv(buf, sizeof(buf) - 1, 1000);
         if (n > 0) {
             std::string resp(reinterpret_cast<char*>(buf), n);
-            RCLCPP_INFO(get_logger(), "[第%d次] 握手返回: %s", retry, resp.c_str());
-            if (resp.find("Car stopped") != std::string::npos) {
-                ready = true;
-                RCLCPP_INFO(get_logger(), "STM32 固件就绪！（%d次握手成功）", retry);
-            } else {
-                RCLCPP_WARN(get_logger(), "[第%d次] 返回异常，重试...", retry);
+            RCLCPP_INFO(get_logger(), "串口收到: %s", resp.c_str());
+            if (resp.find("CHASSIS_ON") != std::string::npos) {
+                RCLCPP_INFO(get_logger(), "★★★ 底盘已上电 CHASSIS_ON ★★★");
+                // 3. 等待2秒让底盘初始化完成
+                RCLCPP_INFO(get_logger(), "等待底盘初始化 2s...");
+                std::this_thread::sleep_for(std::chrono::seconds(2));
+                RCLCPP_INFO(get_logger(), "STM32 握手完成");
+                return true;
             }
-        } else {
-            RCLCPP_WARN(get_logger(), "[第%d次] 无应答，重试...", retry);
-        }
-
-        if (!ready) {
-            std::this_thread::sleep_for(std::chrono::seconds(1));
         }
     }
-
-    if (!ready) {
-        RCLCPP_ERROR(get_logger(), "STM32 握手失败！");
-    }
-    return ready;
+    return false;
 }
 
 // ── 串口（委托 SerialInterface::sendReliable）──
 bool MissionNode::sendFrameReliable(const std::vector<uint8_t>& frame) {
+    // TODO: 暂时注释重试等待应答逻辑
+    serial_.send(frame.data(), frame.size());
+    consecutive_failures_ = 0;
+    return true;
+    /*
     const char* expected = CommandEncoder::expectedAck(frame);
     bool ok = serial_.sendReliable(frame.data(), frame.size(), expected);
     if (ok) {
@@ -486,6 +491,7 @@ bool MissionNode::sendFrameReliable(const std::vector<uint8_t>& frame) {
         transitionTo(RECOVERY);
     }
     return false;
+    */
 }
 
 // ── main ──

@@ -4,7 +4,7 @@
 # compile CXX with /usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/src/r2_serial_driver/src
+CXX_INCLUDES = -I/root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_serial_driver/src
 
 CXX_FLAGS = -Wall -Wextra -Wpedantic
 

@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/src/detection_interfaces
+CMAKE_SOURCE_DIR = /root/nuc_ws/nuc_ws/src/nuc_ws/src/detection_interfaces
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mingadmirer/nuc_ws/build/detection_interfaces
+CMAKE_BINARY_DIR = /root/nuc_ws/build/detection_interfaces
 
 # Include any dependencies generated for this target.
 include CMakeFiles/detection_interfaces__rosidl_generator_py.dir/depend.make
@@ -72,30 +72,30 @@ include CMakeFiles/detection_interfaces__rosidl_generator_py.dir/flags.make
 CMakeFiles/detection_interfaces__rosidl_generator_py.dir/rosidl_generator_py/detection_interfaces/msg/_detection_result_s.c.o: CMakeFiles/detection_interfaces__rosidl_generator_py.dir/flags.make
 CMakeFiles/detection_interfaces__rosidl_generator_py.dir/rosidl_generator_py/detection_interfaces/msg/_detection_result_s.c.o: rosidl_generator_py/detection_interfaces/msg/_detection_result_s.c
 CMakeFiles/detection_interfaces__rosidl_generator_py.dir/rosidl_generator_py/detection_interfaces/msg/_detection_result_s.c.o: CMakeFiles/detection_interfaces__rosidl_generator_py.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mingadmirer/nuc_ws/build/detection_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/detection_interfaces__rosidl_generator_py.dir/rosidl_generator_py/detection_interfaces/msg/_detection_result_s.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/detection_interfaces__rosidl_generator_py.dir/rosidl_generator_py/detection_interfaces/msg/_detection_result_s.c.o -MF CMakeFiles/detection_interfaces__rosidl_generator_py.dir/rosidl_generator_py/detection_interfaces/msg/_detection_result_s.c.o.d -o CMakeFiles/detection_interfaces__rosidl_generator_py.dir/rosidl_generator_py/detection_interfaces/msg/_detection_result_s.c.o -c /home/mingadmirer/nuc_ws/build/detection_interfaces/rosidl_generator_py/detection_interfaces/msg/_detection_result_s.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/nuc_ws/build/detection_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/detection_interfaces__rosidl_generator_py.dir/rosidl_generator_py/detection_interfaces/msg/_detection_result_s.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/detection_interfaces__rosidl_generator_py.dir/rosidl_generator_py/detection_interfaces/msg/_detection_result_s.c.o -MF CMakeFiles/detection_interfaces__rosidl_generator_py.dir/rosidl_generator_py/detection_interfaces/msg/_detection_result_s.c.o.d -o CMakeFiles/detection_interfaces__rosidl_generator_py.dir/rosidl_generator_py/detection_interfaces/msg/_detection_result_s.c.o -c /root/nuc_ws/build/detection_interfaces/rosidl_generator_py/detection_interfaces/msg/_detection_result_s.c
 
 CMakeFiles/detection_interfaces__rosidl_generator_py.dir/rosidl_generator_py/detection_interfaces/msg/_detection_result_s.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/detection_interfaces__rosidl_generator_py.dir/rosidl_generator_py/detection_interfaces/msg/_detection_result_s.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mingadmirer/nuc_ws/build/detection_interfaces/rosidl_generator_py/detection_interfaces/msg/_detection_result_s.c > CMakeFiles/detection_interfaces__rosidl_generator_py.dir/rosidl_generator_py/detection_interfaces/msg/_detection_result_s.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/nuc_ws/build/detection_interfaces/rosidl_generator_py/detection_interfaces/msg/_detection_result_s.c > CMakeFiles/detection_interfaces__rosidl_generator_py.dir/rosidl_generator_py/detection_interfaces/msg/_detection_result_s.c.i
 
 CMakeFiles/detection_interfaces__rosidl_generator_py.dir/rosidl_generator_py/detection_interfaces/msg/_detection_result_s.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/detection_interfaces__rosidl_generator_py.dir/rosidl_generator_py/detection_interfaces/msg/_detection_result_s.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mingadmirer/nuc_ws/build/detection_interfaces/rosidl_generator_py/detection_interfaces/msg/_detection_result_s.c -o CMakeFiles/detection_interfaces__rosidl_generator_py.dir/rosidl_generator_py/detection_interfaces/msg/_detection_result_s.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/nuc_ws/build/detection_interfaces/rosidl_generator_py/detection_interfaces/msg/_detection_result_s.c -o CMakeFiles/detection_interfaces__rosidl_generator_py.dir/rosidl_generator_py/detection_interfaces/msg/_detection_result_s.c.s
 
 CMakeFiles/detection_interfaces__rosidl_generator_py.dir/rosidl_generator_py/detection_interfaces/msg/_detection_array_s.c.o: CMakeFiles/detection_interfaces__rosidl_generator_py.dir/flags.make
 CMakeFiles/detection_interfaces__rosidl_generator_py.dir/rosidl_generator_py/detection_interfaces/msg/_detection_array_s.c.o: rosidl_generator_py/detection_interfaces/msg/_detection_array_s.c
 CMakeFiles/detection_interfaces__rosidl_generator_py.dir/rosidl_generator_py/detection_interfaces/msg/_detection_array_s.c.o: CMakeFiles/detection_interfaces__rosidl_generator_py.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mingadmirer/nuc_ws/build/detection_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/detection_interfaces__rosidl_generator_py.dir/rosidl_generator_py/detection_interfaces/msg/_detection_array_s.c.o"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/detection_interfaces__rosidl_generator_py.dir/rosidl_generator_py/detection_interfaces/msg/_detection_array_s.c.o -MF CMakeFiles/detection_interfaces__rosidl_generator_py.dir/rosidl_generator_py/detection_interfaces/msg/_detection_array_s.c.o.d -o CMakeFiles/detection_interfaces__rosidl_generator_py.dir/rosidl_generator_py/detection_interfaces/msg/_detection_array_s.c.o -c /home/mingadmirer/nuc_ws/build/detection_interfaces/rosidl_generator_py/detection_interfaces/msg/_detection_array_s.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/nuc_ws/build/detection_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building C object CMakeFiles/detection_interfaces__rosidl_generator_py.dir/rosidl_generator_py/detection_interfaces/msg/_detection_array_s.c.o"
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/detection_interfaces__rosidl_generator_py.dir/rosidl_generator_py/detection_interfaces/msg/_detection_array_s.c.o -MF CMakeFiles/detection_interfaces__rosidl_generator_py.dir/rosidl_generator_py/detection_interfaces/msg/_detection_array_s.c.o.d -o CMakeFiles/detection_interfaces__rosidl_generator_py.dir/rosidl_generator_py/detection_interfaces/msg/_detection_array_s.c.o -c /root/nuc_ws/build/detection_interfaces/rosidl_generator_py/detection_interfaces/msg/_detection_array_s.c
 
 CMakeFiles/detection_interfaces__rosidl_generator_py.dir/rosidl_generator_py/detection_interfaces/msg/_detection_array_s.c.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/detection_interfaces__rosidl_generator_py.dir/rosidl_generator_py/detection_interfaces/msg/_detection_array_s.c.i"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/mingadmirer/nuc_ws/build/detection_interfaces/rosidl_generator_py/detection_interfaces/msg/_detection_array_s.c > CMakeFiles/detection_interfaces__rosidl_generator_py.dir/rosidl_generator_py/detection_interfaces/msg/_detection_array_s.c.i
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /root/nuc_ws/build/detection_interfaces/rosidl_generator_py/detection_interfaces/msg/_detection_array_s.c > CMakeFiles/detection_interfaces__rosidl_generator_py.dir/rosidl_generator_py/detection_interfaces/msg/_detection_array_s.c.i
 
 CMakeFiles/detection_interfaces__rosidl_generator_py.dir/rosidl_generator_py/detection_interfaces/msg/_detection_array_s.c.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/detection_interfaces__rosidl_generator_py.dir/rosidl_generator_py/detection_interfaces/msg/_detection_array_s.c.s"
-	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/mingadmirer/nuc_ws/build/detection_interfaces/rosidl_generator_py/detection_interfaces/msg/_detection_array_s.c -o CMakeFiles/detection_interfaces__rosidl_generator_py.dir/rosidl_generator_py/detection_interfaces/msg/_detection_array_s.c.s
+	/usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /root/nuc_ws/build/detection_interfaces/rosidl_generator_py/detection_interfaces/msg/_detection_array_s.c -o CMakeFiles/detection_interfaces__rosidl_generator_py.dir/rosidl_generator_py/detection_interfaces/msg/_detection_array_s.c.s
 
 # Object files for target detection_interfaces__rosidl_generator_py
 detection_interfaces__rosidl_generator_py_OBJECTS = \
@@ -108,12 +108,12 @@ detection_interfaces__rosidl_generator_py_EXTERNAL_OBJECTS =
 rosidl_generator_py/detection_interfaces/libdetection_interfaces__rosidl_generator_py.so: CMakeFiles/detection_interfaces__rosidl_generator_py.dir/rosidl_generator_py/detection_interfaces/msg/_detection_result_s.c.o
 rosidl_generator_py/detection_interfaces/libdetection_interfaces__rosidl_generator_py.so: CMakeFiles/detection_interfaces__rosidl_generator_py.dir/rosidl_generator_py/detection_interfaces/msg/_detection_array_s.c.o
 rosidl_generator_py/detection_interfaces/libdetection_interfaces__rosidl_generator_py.so: CMakeFiles/detection_interfaces__rosidl_generator_py.dir/build.make
-rosidl_generator_py/detection_interfaces/libdetection_interfaces__rosidl_generator_py.so: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+rosidl_generator_py/detection_interfaces/libdetection_interfaces__rosidl_generator_py.so: /usr/lib/aarch64-linux-gnu/libpython3.10.so
 rosidl_generator_py/detection_interfaces/libdetection_interfaces__rosidl_generator_py.so: libdetection_interfaces__rosidl_typesupport_c.so
 rosidl_generator_py/detection_interfaces/libdetection_interfaces__rosidl_generator_py.so: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_py.so
 rosidl_generator_py/detection_interfaces/libdetection_interfaces__rosidl_generator_py.so: libdetection_interfaces__rosidl_generator_c.so
 rosidl_generator_py/detection_interfaces/libdetection_interfaces__rosidl_generator_py.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_py.so
-rosidl_generator_py/detection_interfaces/libdetection_interfaces__rosidl_generator_py.so: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+rosidl_generator_py/detection_interfaces/libdetection_interfaces__rosidl_generator_py.so: /usr/lib/aarch64-linux-gnu/libpython3.10.so
 rosidl_generator_py/detection_interfaces/libdetection_interfaces__rosidl_generator_py.so: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_c.so
 rosidl_generator_py/detection_interfaces/libdetection_interfaces__rosidl_generator_py.so: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so
 rosidl_generator_py/detection_interfaces/libdetection_interfaces__rosidl_generator_py.so: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_c.so
@@ -121,7 +121,7 @@ rosidl_generator_py/detection_interfaces/libdetection_interfaces__rosidl_generat
 rosidl_generator_py/detection_interfaces/libdetection_interfaces__rosidl_generator_py.so: /opt/ros/humble/lib/librosidl_runtime_c.so
 rosidl_generator_py/detection_interfaces/libdetection_interfaces__rosidl_generator_py.so: /opt/ros/humble/lib/librcutils.so
 rosidl_generator_py/detection_interfaces/libdetection_interfaces__rosidl_generator_py.so: CMakeFiles/detection_interfaces__rosidl_generator_py.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mingadmirer/nuc_ws/build/detection_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C shared library rosidl_generator_py/detection_interfaces/libdetection_interfaces__rosidl_generator_py.so"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/nuc_ws/build/detection_interfaces/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking C shared library rosidl_generator_py/detection_interfaces/libdetection_interfaces__rosidl_generator_py.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/detection_interfaces__rosidl_generator_py.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -133,6 +133,6 @@ CMakeFiles/detection_interfaces__rosidl_generator_py.dir/clean:
 .PHONY : CMakeFiles/detection_interfaces__rosidl_generator_py.dir/clean
 
 CMakeFiles/detection_interfaces__rosidl_generator_py.dir/depend:
-	cd /home/mingadmirer/nuc_ws/build/detection_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/src/detection_interfaces /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/src/detection_interfaces /home/mingadmirer/nuc_ws/build/detection_interfaces /home/mingadmirer/nuc_ws/build/detection_interfaces /home/mingadmirer/nuc_ws/build/detection_interfaces/CMakeFiles/detection_interfaces__rosidl_generator_py.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/nuc_ws/build/detection_interfaces && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/nuc_ws/nuc_ws/src/nuc_ws/src/detection_interfaces /root/nuc_ws/nuc_ws/src/nuc_ws/src/detection_interfaces /root/nuc_ws/build/detection_interfaces /root/nuc_ws/build/detection_interfaces /root/nuc_ws/build/detection_interfaces/CMakeFiles/detection_interfaces__rosidl_generator_py.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/detection_interfaces__rosidl_generator_py.dir/depend
 

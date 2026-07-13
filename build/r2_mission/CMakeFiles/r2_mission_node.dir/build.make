@@ -53,10 +53,10 @@ RM = /usr/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/src/r2_mission
+CMAKE_SOURCE_DIR = /root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_mission
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/mingadmirer/nuc_ws/build/r2_mission
+CMAKE_BINARY_DIR = /root/nuc_ws/build/r2_mission
 
 # Include any dependencies generated for this target.
 include CMakeFiles/r2_mission_node.dir/depend.make
@@ -70,18 +70,18 @@ include CMakeFiles/r2_mission_node.dir/progress.make
 include CMakeFiles/r2_mission_node.dir/flags.make
 
 CMakeFiles/r2_mission_node.dir/src/mission_node.cpp.o: CMakeFiles/r2_mission_node.dir/flags.make
-CMakeFiles/r2_mission_node.dir/src/mission_node.cpp.o: /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/src/r2_mission/src/mission_node.cpp
+CMakeFiles/r2_mission_node.dir/src/mission_node.cpp.o: /root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_mission/src/mission_node.cpp
 CMakeFiles/r2_mission_node.dir/src/mission_node.cpp.o: CMakeFiles/r2_mission_node.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/mingadmirer/nuc_ws/build/r2_mission/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/r2_mission_node.dir/src/mission_node.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/r2_mission_node.dir/src/mission_node.cpp.o -MF CMakeFiles/r2_mission_node.dir/src/mission_node.cpp.o.d -o CMakeFiles/r2_mission_node.dir/src/mission_node.cpp.o -c /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/src/r2_mission/src/mission_node.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/root/nuc_ws/build/r2_mission/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/r2_mission_node.dir/src/mission_node.cpp.o"
+	ccache /usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/r2_mission_node.dir/src/mission_node.cpp.o -MF CMakeFiles/r2_mission_node.dir/src/mission_node.cpp.o.d -o CMakeFiles/r2_mission_node.dir/src/mission_node.cpp.o -c /root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_mission/src/mission_node.cpp
 
 CMakeFiles/r2_mission_node.dir/src/mission_node.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/r2_mission_node.dir/src/mission_node.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/src/r2_mission/src/mission_node.cpp > CMakeFiles/r2_mission_node.dir/src/mission_node.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_mission/src/mission_node.cpp > CMakeFiles/r2_mission_node.dir/src/mission_node.cpp.i
 
 CMakeFiles/r2_mission_node.dir/src/mission_node.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/r2_mission_node.dir/src/mission_node.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/src/r2_mission/src/mission_node.cpp -o CMakeFiles/r2_mission_node.dir/src/mission_node.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_mission/src/mission_node.cpp -o CMakeFiles/r2_mission_node.dir/src/mission_node.cpp.s
 
 # Object files for target r2_mission_node
 r2_mission_node_OBJECTS = \
@@ -94,12 +94,12 @@ r2_mission_node: CMakeFiles/r2_mission_node.dir/src/mission_node.cpp.o
 r2_mission_node: CMakeFiles/r2_mission_node.dir/build.make
 r2_mission_node: r2_serial_driver/libr2_serial_driver_core.a
 r2_mission_node: /opt/ros/humble/lib/librclcpp.so
-r2_mission_node: /home/mingadmirer/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_fastrtps_c.so
-r2_mission_node: /home/mingadmirer/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_fastrtps_cpp.so
-r2_mission_node: /home/mingadmirer/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_introspection_c.so
-r2_mission_node: /home/mingadmirer/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_introspection_cpp.so
-r2_mission_node: /home/mingadmirer/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_cpp.so
-r2_mission_node: /home/mingadmirer/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_generator_py.so
+r2_mission_node: /root/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_fastrtps_c.so
+r2_mission_node: /root/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_fastrtps_cpp.so
+r2_mission_node: /root/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_introspection_c.so
+r2_mission_node: /root/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_introspection_cpp.so
+r2_mission_node: /root/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_cpp.so
+r2_mission_node: /root/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_generator_py.so
 r2_mission_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_c.so
 r2_mission_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_fastrtps_cpp.so
 r2_mission_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_introspection_c.so
@@ -143,7 +143,7 @@ r2_mission_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_f
 r2_mission_node: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_c.so
 r2_mission_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_fastrtps_cpp.so
 r2_mission_node: /opt/ros/humble/lib/librosidl_typesupport_fastrtps_cpp.so
-r2_mission_node: /opt/ros/humble/lib/libfastcdr.so.1.0.29
+r2_mission_node: /opt/ros/humble/lib/libfastcdr.so.1.0.24
 r2_mission_node: /opt/ros/humble/lib/librmw.so
 r2_mission_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_c.so
 r2_mission_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_introspection_cpp.so
@@ -151,8 +151,8 @@ r2_mission_node: /opt/ros/humble/lib/librosidl_typesupport_introspection_cpp.so
 r2_mission_node: /opt/ros/humble/lib/librosidl_typesupport_introspection_c.so
 r2_mission_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_typesupport_cpp.so
 r2_mission_node: /opt/ros/humble/lib/librosidl_typesupport_cpp.so
-r2_mission_node: /home/mingadmirer/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_c.so
-r2_mission_node: /home/mingadmirer/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_generator_c.so
+r2_mission_node: /root/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_typesupport_c.so
+r2_mission_node: /root/nuc_ws/install/detection_interfaces/lib/libdetection_interfaces__rosidl_generator_c.so
 r2_mission_node: /opt/ros/humble/lib/libstd_msgs__rosidl_typesupport_c.so
 r2_mission_node: /opt/ros/humble/lib/libstd_msgs__rosidl_generator_c.so
 r2_mission_node: /opt/ros/humble/lib/libbuiltin_interfaces__rosidl_generator_py.so
@@ -162,9 +162,9 @@ r2_mission_node: /opt/ros/humble/lib/librosidl_typesupport_c.so
 r2_mission_node: /opt/ros/humble/lib/librcpputils.so
 r2_mission_node: /opt/ros/humble/lib/librosidl_runtime_c.so
 r2_mission_node: /opt/ros/humble/lib/librcutils.so
-r2_mission_node: /usr/lib/x86_64-linux-gnu/libpython3.10.so
+r2_mission_node: /usr/lib/aarch64-linux-gnu/libpython3.10.so
 r2_mission_node: CMakeFiles/r2_mission_node.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/mingadmirer/nuc_ws/build/r2_mission/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable r2_mission_node"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/root/nuc_ws/build/r2_mission/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable r2_mission_node"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/r2_mission_node.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -176,6 +176,6 @@ CMakeFiles/r2_mission_node.dir/clean:
 .PHONY : CMakeFiles/r2_mission_node.dir/clean
 
 CMakeFiles/r2_mission_node.dir/depend:
-	cd /home/mingadmirer/nuc_ws/build/r2_mission && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/src/r2_mission /home/mingadmirer/nuc_ws/nuc_ws/src/nuc_ws/src/r2_mission /home/mingadmirer/nuc_ws/build/r2_mission /home/mingadmirer/nuc_ws/build/r2_mission /home/mingadmirer/nuc_ws/build/r2_mission/CMakeFiles/r2_mission_node.dir/DependInfo.cmake --color=$(COLOR)
+	cd /root/nuc_ws/build/r2_mission && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_mission /root/nuc_ws/nuc_ws/src/nuc_ws/src/r2_mission /root/nuc_ws/build/r2_mission /root/nuc_ws/build/r2_mission /root/nuc_ws/build/r2_mission/CMakeFiles/r2_mission_node.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/r2_mission_node.dir/depend
 

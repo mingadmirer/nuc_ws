@@ -1,7 +1,0 @@
-{
-  "package_name": "detection_interfaces",
-  "non_idl_tuples": [
-    "/root/nuc_ws/nuc_ws/src/nuc_ws/src/detection_interfaces:msg/DetectionResult.msg",
-    "/root/nuc_ws/nuc_ws/src/nuc_ws/src/detection_interfaces:msg/DetectionArray.msg"
-  ]
-}
